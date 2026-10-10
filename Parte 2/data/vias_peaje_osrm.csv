@@ -1,0 +1,2479 @@
+i,j,origen,destino,via,km_en_ruta,estado_via_2026
+0,1,A Coruña,Albacete,AP-9,14.2,vigente
+0,1,A Coruña,Albacete,AP-6,70.2,vigente
+0,2,A Coruña,Alicante,AP-9,14.2,vigente
+0,2,A Coruña,Alicante,AP-6,70.2,vigente
+0,3,A Coruña,Almería,AP-9,14.2,vigente
+0,3,A Coruña,Almería,AP-6,70.2,vigente
+0,3,A Coruña,Almería,R-4,52.9,vigente
+0,4,A Coruña,Ávila,AP-9,14.2,vigente
+0,5,A Coruña,Badajoz,AP-9,174.8,vigente
+0,6,A Coruña,Barcelona,AP-9,14.2,vigente
+0,6,A Coruña,Barcelona,AP-71,36.9,vigente
+0,6,A Coruña,Barcelona,AP-1B,55.7,liberada
+0,6,A Coruña,Barcelona,AP-68,205.7,vigente
+0,6,A Coruña,Barcelona,AP-2,216.3,liberada
+0,6,A Coruña,Barcelona,AP-7N,48.6,liberada
+0,7,A Coruña,Bilbao,AP-9,14.2,vigente
+0,7,A Coruña,Bilbao,AP-8,13.4,verificar
+0,8,A Coruña,Burgos,AP-9,14.2,vigente
+0,8,A Coruña,Burgos,AP-71,36.9,vigente
+0,9,A Coruña,Cáceres,AP-9,14.2,vigente
+0,10,A Coruña,Cádiz,AP-9,14.2,vigente
+0,10,A Coruña,Cádiz,AP-4,92.5,liberada
+0,11,A Coruña,Castellón de la Plana,AP-9,14.2,vigente
+0,11,A Coruña,Castellón de la Plana,AP-6,70.2,vigente
+0,11,A Coruña,Castellón de la Plana,AP-7N,37.7,liberada
+0,12,A Coruña,Ciudad Real,AP-9,14.2,vigente
+0,12,A Coruña,Ciudad Real,AP-6,70.2,vigente
+0,13,A Coruña,Córdoba,AP-9,14.2,vigente
+0,13,A Coruña,Córdoba,AP-6,70.2,vigente
+0,13,A Coruña,Córdoba,R-4,52.9,vigente
+0,14,A Coruña,Cuenca,AP-9,14.2,vigente
+0,14,A Coruña,Cuenca,AP-6,70.2,vigente
+0,15,A Coruña,Girona,AP-9,14.2,vigente
+0,15,A Coruña,Girona,AP-71,36.9,vigente
+0,15,A Coruña,Girona,AP-1B,55.7,liberada
+0,15,A Coruña,Girona,AP-68,205.7,vigente
+0,15,A Coruña,Girona,AP-2,123.2,liberada
+0,16,A Coruña,Granada,AP-9,14.2,vigente
+0,16,A Coruña,Granada,AP-6,70.2,vigente
+0,16,A Coruña,Granada,R-4,52.9,vigente
+0,17,A Coruña,Guadalajara,AP-9,14.2,vigente
+0,17,A Coruña,Guadalajara,AP-6,70.2,vigente
+0,18,A Coruña,Huelva,AP-9,174.8,vigente
+0,19,A Coruña,Huesca,AP-9,14.2,vigente
+0,19,A Coruña,Huesca,AP-71,36.9,vigente
+0,19,A Coruña,Huesca,AP-1B,55.7,liberada
+0,19,A Coruña,Huesca,AP-68,205.7,vigente
+0,20,A Coruña,Jaén,AP-9,14.2,vigente
+0,20,A Coruña,Jaén,AP-6,70.2,vigente
+0,20,A Coruña,Jaén,R-4,52.9,vigente
+0,21,A Coruña,León,AP-9,14.2,vigente
+0,21,A Coruña,León,AP-71,43.5,vigente
+0,22,A Coruña,Lleida,AP-9,14.2,vigente
+0,22,A Coruña,Lleida,AP-71,36.9,vigente
+0,22,A Coruña,Lleida,AP-1B,55.7,liberada
+0,22,A Coruña,Lleida,AP-68,205.7,vigente
+0,22,A Coruña,Lleida,AP-2,123.2,liberada
+0,23,A Coruña,Logroño,AP-9,14.2,vigente
+0,23,A Coruña,Logroño,AP-71,36.9,vigente
+0,24,A Coruña,Lugo,AP-9,14.2,vigente
+0,25,A Coruña,Madrid,AP-9,14.2,vigente
+0,25,A Coruña,Madrid,AP-6,70.2,vigente
+0,26,A Coruña,Málaga,AP-9,14.2,vigente
+0,26,A Coruña,Málaga,AP-6,70.2,vigente
+0,26,A Coruña,Málaga,R-4,52.9,vigente
+0,26,A Coruña,Málaga,AP-46,25.9,vigente
+0,27,A Coruña,Murcia,AP-9,14.2,vigente
+0,27,A Coruña,Murcia,AP-6,70.2,vigente
+0,28,A Coruña,Ourense,AP-9,68.8,vigente
+0,28,A Coruña,Ourense,AP-53,56.3,vigente
+0,29,A Coruña,Oviedo,AP-9,14.2,vigente
+0,30,A Coruña,Palencia,AP-9,14.2,vigente
+0,30,A Coruña,Palencia,AP-71,36.9,vigente
+0,31,A Coruña,Pamplona,AP-9,14.2,vigente
+0,31,A Coruña,Pamplona,AP-71,36.9,vigente
+0,31,A Coruña,Pamplona,AP-1B,83.0,liberada
+0,31,A Coruña,Pamplona,AP-15,14.5,vigente
+0,32,A Coruña,Pontevedra,AP-9,126.5,vigente
+0,33,A Coruña,Salamanca,AP-9,14.2,vigente
+0,34,A Coruña,San Sebastián,AP-9,14.2,vigente
+0,34,A Coruña,San Sebastián,AP-8,61.4,verificar
+0,35,A Coruña,Santander,AP-9,14.2,vigente
+0,36,A Coruña,Segovia,AP-9,14.2,vigente
+0,37,A Coruña,Sevilla,AP-9,14.2,vigente
+0,38,A Coruña,Soria,AP-9,14.2,vigente
+0,38,A Coruña,Soria,AP-71,36.9,vigente
+0,39,A Coruña,Tarragona,AP-9,14.2,vigente
+0,39,A Coruña,Tarragona,AP-71,36.9,vigente
+0,39,A Coruña,Tarragona,AP-1B,55.7,liberada
+0,39,A Coruña,Tarragona,AP-68,205.7,vigente
+0,39,A Coruña,Tarragona,AP-2,176.2,liberada
+0,40,A Coruña,Teruel,AP-9,14.2,vigente
+0,40,A Coruña,Teruel,AP-6,70.2,vigente
+0,41,A Coruña,Toledo,AP-9,14.2,vigente
+0,41,A Coruña,Toledo,AP-6,70.2,vigente
+0,42,A Coruña,Valencia,AP-9,14.2,vigente
+0,42,A Coruña,Valencia,AP-6,70.2,vigente
+0,43,A Coruña,Valladolid,AP-9,14.2,vigente
+0,44,A Coruña,Vitoria-Gasteiz,AP-9,14.2,vigente
+0,44,A Coruña,Vitoria-Gasteiz,AP-71,36.9,vigente
+0,44,A Coruña,Vitoria-Gasteiz,AP-1B,83.0,liberada
+0,45,A Coruña,Zamora,AP-9,14.2,vigente
+0,46,A Coruña,Zaragoza,AP-9,14.2,vigente
+0,46,A Coruña,Zaragoza,AP-71,36.9,vigente
+0,46,A Coruña,Zaragoza,AP-1B,55.7,liberada
+0,46,A Coruña,Zaragoza,AP-68,205.7,vigente
+1,0,Albacete,A Coruña,AP-6,70.1,vigente
+1,0,Albacete,A Coruña,AP-9,13.7,vigente
+1,4,Albacete,Ávila,AP-6,41.6,vigente
+1,4,Albacete,Ávila,AP-51,23.2,vigente
+1,6,Albacete,Barcelona,AP-7N,249.7,liberada
+1,6,Albacete,Barcelona,C-32,53.5,verificar
+1,7,Albacete,Bilbao,R-3,20.2,vigente
+1,7,Albacete,Bilbao,AP-1B,76.1,liberada
+1,7,Albacete,Bilbao,AP-68,68.1,vigente
+1,8,Albacete,Burgos,R-3,20.2,vigente
+1,11,Albacete,Castellón de la Plana,AP-7N,37.7,liberada
+1,15,Albacete,Girona,AP-7N,406.5,liberada
+1,17,Albacete,Guadalajara,R-3,16.4,vigente
+1,21,Albacete,León,AP-6,70.1,vigente
+1,22,Albacete,Lleida,AP-7N,223.7,liberada
+1,22,Albacete,Lleida,AP-2,54.4,liberada
+1,23,Albacete,Logroño,R-3,16.4,vigente
+1,24,Albacete,Lugo,AP-6,70.1,vigente
+1,26,Albacete,Málaga,AP-46,25.9,vigente
+1,28,Albacete,Ourense,AP-6,70.1,vigente
+1,29,Albacete,Oviedo,AP-6,70.1,vigente
+1,29,Albacete,Oviedo,AP-66,77.2,vigente
+1,30,Albacete,Palencia,AP-6,70.1,vigente
+1,31,Albacete,Pamplona,AP-68,85.3,vigente
+1,31,Albacete,Pamplona,AP-15,82.8,vigente
+1,32,Albacete,Pontevedra,AP-6,70.1,vigente
+1,33,Albacete,Salamanca,AP-6,41.6,vigente
+1,33,Albacete,Salamanca,AP-51,23.2,vigente
+1,34,Albacete,San Sebastián,AP-68,85.3,vigente
+1,34,Albacete,San Sebastián,AP-15,98.4,vigente
+1,35,Albacete,Santander,R-3,20.2,vigente
+1,36,Albacete,Segovia,AP-6,21.8,vigente
+1,36,Albacete,Segovia,AP-61,27.3,vigente
+1,38,Albacete,Soria,R-3,16.4,vigente
+1,39,Albacete,Tarragona,AP-7N,223.7,liberada
+1,43,Albacete,Valladolid,AP-6,68.4,vigente
+1,44,Albacete,Vitoria-Gasteiz,R-3,20.2,vigente
+1,44,Albacete,Vitoria-Gasteiz,AP-1B,83.0,liberada
+1,45,Albacete,Zamora,AP-6,70.1,vigente
+2,0,Alicante,A Coruña,AP-6,70.1,vigente
+2,0,Alicante,A Coruña,AP-9,13.7,vigente
+2,4,Alicante,Ávila,AP-6,41.6,vigente
+2,4,Alicante,Ávila,AP-51,23.2,vigente
+2,6,Alicante,Barcelona,AP-7N,249.7,liberada
+2,6,Alicante,Barcelona,C-32,53.5,verificar
+2,7,Alicante,Bilbao,AP-68,293.8,vigente
+2,8,Alicante,Burgos,R-3,20.2,vigente
+2,10,Alicante,Cádiz,AP-4,25.7,liberada
+2,11,Alicante,Castellón de la Plana,AP-7N,37.7,liberada
+2,15,Alicante,Girona,AP-7N,406.5,liberada
+2,17,Alicante,Guadalajara,R-3,16.4,vigente
+2,21,Alicante,León,AP-6,70.1,vigente
+2,22,Alicante,Lleida,AP-7N,223.7,liberada
+2,22,Alicante,Lleida,AP-2,54.4,liberada
+2,23,Alicante,Logroño,AP-68,155.2,vigente
+2,24,Alicante,Lugo,AP-6,70.1,vigente
+2,26,Alicante,Málaga,AP-46,25.9,vigente
+2,28,Alicante,Ourense,AP-6,70.1,vigente
+2,29,Alicante,Oviedo,AP-6,70.1,vigente
+2,29,Alicante,Oviedo,AP-66,77.2,vigente
+2,30,Alicante,Palencia,AP-6,70.1,vigente
+2,31,Alicante,Pamplona,AP-68,85.3,vigente
+2,31,Alicante,Pamplona,AP-15,82.8,vigente
+2,32,Alicante,Pontevedra,AP-6,70.1,vigente
+2,33,Alicante,Salamanca,AP-6,41.6,vigente
+2,33,Alicante,Salamanca,AP-51,23.2,vigente
+2,34,Alicante,San Sebastián,AP-68,85.3,vigente
+2,34,Alicante,San Sebastián,AP-15,98.4,vigente
+2,35,Alicante,Santander,R-3,20.2,vigente
+2,36,Alicante,Segovia,AP-6,21.8,vigente
+2,36,Alicante,Segovia,AP-61,27.3,vigente
+2,39,Alicante,Tarragona,AP-7N,223.7,liberada
+2,43,Alicante,Valladolid,AP-6,68.4,vigente
+2,44,Alicante,Vitoria-Gasteiz,AP-68,220.8,vigente
+2,45,Alicante,Zamora,AP-6,70.1,vigente
+3,0,Almería,A Coruña,R-4,52.8,vigente
+3,0,Almería,A Coruña,AP-6,70.1,vigente
+3,0,Almería,A Coruña,AP-9,13.7,vigente
+3,6,Almería,Barcelona,AP-7N,249.7,liberada
+3,6,Almería,Barcelona,C-32,53.5,verificar
+3,7,Almería,Bilbao,M-12,10.1,vigente
+3,7,Almería,Bilbao,AP-1B,76.1,liberada
+3,7,Almería,Bilbao,AP-68,68.1,vigente
+3,8,Almería,Burgos,M-12,10.1,vigente
+3,10,Almería,Cádiz,AP-7S,78.3,vigente
+3,10,Almería,Cádiz,AP-4,3.1,liberada
+3,11,Almería,Castellón de la Plana,AP-7N,37.7,liberada
+3,15,Almería,Girona,AP-7N,406.5,liberada
+3,21,Almería,León,R-4,52.8,vigente
+3,21,Almería,León,AP-6,70.1,vigente
+3,22,Almería,Lleida,AP-7N,223.7,liberada
+3,22,Almería,Lleida,AP-2,54.4,liberada
+3,23,Almería,Logroño,AP-68,155.2,vigente
+3,24,Almería,Lugo,R-4,52.8,vigente
+3,24,Almería,Lugo,AP-6,70.1,vigente
+3,28,Almería,Ourense,R-4,52.8,vigente
+3,28,Almería,Ourense,AP-6,70.1,vigente
+3,29,Almería,Oviedo,R-4,52.8,vigente
+3,29,Almería,Oviedo,AP-6,70.1,vigente
+3,29,Almería,Oviedo,AP-66,77.2,vigente
+3,30,Almería,Palencia,R-4,52.8,vigente
+3,30,Almería,Palencia,AP-6,70.1,vigente
+3,31,Almería,Pamplona,AP-68,85.3,vigente
+3,31,Almería,Pamplona,AP-15,82.8,vigente
+3,32,Almería,Pontevedra,R-4,52.8,vigente
+3,32,Almería,Pontevedra,AP-6,70.1,vigente
+3,34,Almería,San Sebastián,AP-68,85.3,vigente
+3,34,Almería,San Sebastián,AP-15,98.4,vigente
+3,35,Almería,Santander,M-12,10.1,vigente
+3,36,Almería,Segovia,R-4,52.8,vigente
+3,36,Almería,Segovia,AP-6,21.8,vigente
+3,36,Almería,Segovia,AP-61,27.3,vigente
+3,39,Almería,Tarragona,AP-7N,223.7,liberada
+3,43,Almería,Valladolid,R-4,52.8,vigente
+3,43,Almería,Valladolid,AP-6,68.4,vigente
+3,44,Almería,Vitoria-Gasteiz,M-12,10.1,vigente
+3,44,Almería,Vitoria-Gasteiz,AP-1B,83.0,liberada
+3,45,Almería,Zamora,R-4,52.8,vigente
+3,45,Almería,Zamora,AP-6,70.1,vigente
+4,0,Ávila,A Coruña,AP-9,13.7,vigente
+4,1,Ávila,Albacete,AP-51,23.5,vigente
+4,1,Ávila,Albacete,AP-6,41.4,vigente
+4,2,Ávila,Alicante,AP-51,23.5,vigente
+4,2,Ávila,Alicante,AP-6,41.4,vigente
+4,6,Ávila,Barcelona,AP-51,23.5,vigente
+4,6,Ávila,Barcelona,AP-6,41.4,vigente
+4,6,Ávila,Barcelona,AP-2,216.3,liberada
+4,6,Ávila,Barcelona,AP-7N,48.6,liberada
+4,7,Ávila,Bilbao,AP-1B,76.1,liberada
+4,7,Ávila,Bilbao,AP-68,68.1,vigente
+4,10,Ávila,Cádiz,AP-4,92.5,liberada
+4,11,Ávila,Castellón de la Plana,AP-51,23.5,vigente
+4,11,Ávila,Castellón de la Plana,AP-6,41.4,vigente
+4,11,Ávila,Castellón de la Plana,AP-7N,37.7,liberada
+4,14,Ávila,Cuenca,AP-51,23.5,vigente
+4,14,Ávila,Cuenca,AP-6,41.4,vigente
+4,15,Ávila,Girona,AP-51,23.5,vigente
+4,15,Ávila,Girona,AP-6,41.4,vigente
+4,15,Ávila,Girona,AP-2,123.2,liberada
+4,17,Ávila,Guadalajara,AP-51,23.5,vigente
+4,17,Ávila,Guadalajara,AP-6,41.4,vigente
+4,19,Ávila,Huesca,AP-51,23.5,vigente
+4,19,Ávila,Huesca,AP-6,41.4,vigente
+4,22,Ávila,Lleida,AP-51,23.5,vigente
+4,22,Ávila,Lleida,AP-6,41.4,vigente
+4,22,Ávila,Lleida,AP-2,123.2,liberada
+4,23,Ávila,Logroño,AP-1B,55.7,liberada
+4,23,Ávila,Logroño,AP-68,39.5,vigente
+4,25,Ávila,Madrid,AP-51,23.5,vigente
+4,25,Ávila,Madrid,AP-6,41.4,vigente
+4,26,Ávila,Málaga,AP-46,25.9,vigente
+4,27,Ávila,Murcia,AP-51,23.5,vigente
+4,27,Ávila,Murcia,AP-6,41.4,vigente
+4,29,Ávila,Oviedo,AP-66,77.2,vigente
+4,31,Ávila,Pamplona,AP-1B,83.0,liberada
+4,31,Ávila,Pamplona,AP-15,14.5,vigente
+4,34,Ávila,San Sebastián,AP-1B,83.0,liberada
+4,34,Ávila,San Sebastián,AP-1E,44.2,verificar
+4,34,Ávila,San Sebastián,AP-1/AP-8,41.9,verificar
+4,36,Ávila,Segovia,AP-51,22.5,vigente
+4,38,Ávila,Soria,AP-51,22.5,vigente
+4,39,Ávila,Tarragona,AP-51,23.5,vigente
+4,39,Ávila,Tarragona,AP-6,41.4,vigente
+4,39,Ávila,Tarragona,AP-2,176.2,liberada
+4,40,Ávila,Teruel,AP-51,23.5,vigente
+4,40,Ávila,Teruel,AP-6,41.4,vigente
+4,42,Ávila,Valencia,AP-51,23.5,vigente
+4,42,Ávila,Valencia,AP-6,41.4,vigente
+4,44,Ávila,Vitoria-Gasteiz,AP-1B,83.0,liberada
+4,46,Ávila,Zaragoza,AP-51,23.5,vigente
+4,46,Ávila,Zaragoza,AP-6,41.4,vigente
+5,0,Badajoz,A Coruña,AP-9,175.3,vigente
+5,6,Badajoz,Barcelona,AP-2,216.3,liberada
+5,6,Badajoz,Barcelona,AP-7N,48.6,liberada
+5,7,Badajoz,Bilbao,AP-1B,76.1,liberada
+5,7,Badajoz,Bilbao,AP-68,68.1,vigente
+5,10,Badajoz,Cádiz,AP-4,92.5,liberada
+5,11,Badajoz,Castellón de la Plana,AP-7N,37.7,liberada
+5,15,Badajoz,Girona,AP-2,123.2,liberada
+5,22,Badajoz,Lleida,AP-2,123.2,liberada
+5,23,Badajoz,Logroño,AP-1B,55.7,liberada
+5,23,Badajoz,Logroño,AP-68,39.5,vigente
+5,26,Badajoz,Málaga,AP-46,25.9,vigente
+5,29,Badajoz,Oviedo,AP-66,77.2,vigente
+5,31,Badajoz,Pamplona,AP-1B,83.0,liberada
+5,31,Badajoz,Pamplona,AP-15,14.5,vigente
+5,32,Badajoz,Pontevedra,AP-9,44.5,vigente
+5,34,Badajoz,San Sebastián,AP-1B,83.0,liberada
+5,34,Badajoz,San Sebastián,AP-1E,44.2,verificar
+5,34,Badajoz,San Sebastián,AP-1/AP-8,41.9,verificar
+5,36,Badajoz,Segovia,AP-51,22.5,vigente
+5,39,Badajoz,Tarragona,AP-2,176.2,liberada
+5,44,Badajoz,Vitoria-Gasteiz,AP-1B,83.0,liberada
+6,0,Barcelona,A Coruña,AP-7N,48.8,liberada
+6,0,Barcelona,A Coruña,AP-2,214.3,liberada
+6,0,Barcelona,A Coruña,AP-68,205.5,vigente
+6,0,Barcelona,A Coruña,AP-1B,49.2,liberada
+6,0,Barcelona,A Coruña,AP-71,36.4,vigente
+6,0,Barcelona,A Coruña,AP-9,13.7,vigente
+6,1,Barcelona,Albacete,C-32,55.4,verificar
+6,1,Barcelona,Albacete,AP-7N,249.1,liberada
+6,2,Barcelona,Alicante,C-32,55.4,verificar
+6,2,Barcelona,Alicante,AP-7N,249.1,liberada
+6,3,Barcelona,Almería,C-32,55.4,verificar
+6,3,Barcelona,Almería,AP-7N,249.1,liberada
+6,4,Barcelona,Ávila,AP-7N,48.8,liberada
+6,4,Barcelona,Ávila,AP-2,214.3,liberada
+6,4,Barcelona,Ávila,R-2,56.6,vigente
+6,4,Barcelona,Ávila,AP-6,41.6,vigente
+6,4,Barcelona,Ávila,AP-51,23.2,vigente
+6,5,Barcelona,Badajoz,AP-7N,48.8,liberada
+6,5,Barcelona,Badajoz,AP-2,214.3,liberada
+6,7,Barcelona,Bilbao,AP-7N,48.8,liberada
+6,7,Barcelona,Bilbao,AP-2,214.3,liberada
+6,7,Barcelona,Bilbao,AP-68,293.3,vigente
+6,8,Barcelona,Burgos,AP-7N,48.8,liberada
+6,8,Barcelona,Burgos,AP-2,214.3,liberada
+6,8,Barcelona,Burgos,AP-68,205.5,vigente
+6,8,Barcelona,Burgos,AP-1B,59.7,liberada
+6,9,Barcelona,Cáceres,AP-7N,48.8,liberada
+6,9,Barcelona,Cáceres,AP-2,214.3,liberada
+6,10,Barcelona,Cádiz,C-32,55.4,verificar
+6,10,Barcelona,Cádiz,AP-7N,249.1,liberada
+6,11,Barcelona,Castellón de la Plana,C-32,55.4,verificar
+6,11,Barcelona,Castellón de la Plana,AP-7N,203.5,liberada
+6,12,Barcelona,Ciudad Real,C-32,55.4,verificar
+6,12,Barcelona,Ciudad Real,AP-7N,249.1,liberada
+6,13,Barcelona,Córdoba,C-32,55.4,verificar
+6,13,Barcelona,Córdoba,AP-7N,249.1,liberada
+6,14,Barcelona,Cuenca,C-32,55.4,verificar
+6,14,Barcelona,Cuenca,AP-7N,249.1,liberada
+6,15,Barcelona,Girona,C-33,13.4,verificar
+6,15,Barcelona,Girona,AP-7N,71.4,liberada
+6,16,Barcelona,Granada,C-32,55.4,verificar
+6,16,Barcelona,Granada,AP-7N,249.1,liberada
+6,17,Barcelona,Guadalajara,AP-7N,48.8,liberada
+6,17,Barcelona,Guadalajara,AP-2,214.3,liberada
+6,18,Barcelona,Huelva,C-32,55.4,verificar
+6,18,Barcelona,Huelva,AP-7N,249.1,liberada
+6,20,Barcelona,Jaén,C-32,55.4,verificar
+6,20,Barcelona,Jaén,AP-7N,249.1,liberada
+6,21,Barcelona,León,AP-7N,48.8,liberada
+6,21,Barcelona,León,AP-2,214.3,liberada
+6,21,Barcelona,León,AP-68,205.5,vigente
+6,21,Barcelona,León,AP-1B,49.2,liberada
+6,23,Barcelona,Logroño,AP-7N,48.8,liberada
+6,23,Barcelona,Logroño,AP-2,214.3,liberada
+6,23,Barcelona,Logroño,AP-68,154.8,vigente
+6,24,Barcelona,Lugo,AP-7N,48.8,liberada
+6,24,Barcelona,Lugo,AP-2,214.3,liberada
+6,24,Barcelona,Lugo,AP-68,205.5,vigente
+6,24,Barcelona,Lugo,AP-1B,49.2,liberada
+6,24,Barcelona,Lugo,AP-71,36.4,vigente
+6,25,Barcelona,Madrid,AP-7N,48.8,liberada
+6,25,Barcelona,Madrid,AP-2,214.3,liberada
+6,26,Barcelona,Málaga,C-32,55.4,verificar
+6,26,Barcelona,Málaga,AP-7N,249.1,liberada
+6,26,Barcelona,Málaga,AP-46,25.9,vigente
+6,27,Barcelona,Murcia,C-32,55.4,verificar
+6,27,Barcelona,Murcia,AP-7N,249.1,liberada
+6,28,Barcelona,Ourense,AP-7N,48.8,liberada
+6,28,Barcelona,Ourense,AP-2,214.3,liberada
+6,28,Barcelona,Ourense,AP-68,205.5,vigente
+6,28,Barcelona,Ourense,AP-1B,49.2,liberada
+6,29,Barcelona,Oviedo,AP-7N,48.8,liberada
+6,29,Barcelona,Oviedo,AP-2,214.3,liberada
+6,29,Barcelona,Oviedo,AP-68,291.0,vigente
+6,29,Barcelona,Oviedo,AP-8,14.2,verificar
+6,30,Barcelona,Palencia,AP-7N,48.8,liberada
+6,30,Barcelona,Palencia,AP-2,214.3,liberada
+6,30,Barcelona,Palencia,AP-68,205.5,vigente
+6,30,Barcelona,Palencia,AP-1B,62.5,liberada
+6,31,Barcelona,Pamplona,AP-15,1.5,vigente
+6,32,Barcelona,Pontevedra,AP-7N,48.8,liberada
+6,32,Barcelona,Pontevedra,AP-2,214.3,liberada
+6,32,Barcelona,Pontevedra,AP-68,205.5,vigente
+6,32,Barcelona,Pontevedra,AP-1B,49.2,liberada
+6,33,Barcelona,Salamanca,AP-7N,48.8,liberada
+6,33,Barcelona,Salamanca,AP-2,214.3,liberada
+6,33,Barcelona,Salamanca,AP-68,205.5,vigente
+6,33,Barcelona,Salamanca,AP-1B,62.5,liberada
+6,34,Barcelona,San Sebastián,AP-15,17.1,vigente
+6,35,Barcelona,Santander,AP-7N,48.8,liberada
+6,35,Barcelona,Santander,AP-2,214.3,liberada
+6,35,Barcelona,Santander,AP-68,291.0,vigente
+6,35,Barcelona,Santander,AP-8,14.2,verificar
+6,36,Barcelona,Segovia,AP-7N,48.8,liberada
+6,36,Barcelona,Segovia,AP-2,214.3,liberada
+6,36,Barcelona,Segovia,R-2,56.6,vigente
+6,36,Barcelona,Segovia,AP-6,21.8,vigente
+6,36,Barcelona,Segovia,AP-61,27.3,vigente
+6,37,Barcelona,Sevilla,C-32,55.4,verificar
+6,37,Barcelona,Sevilla,AP-7N,249.1,liberada
+6,38,Barcelona,Soria,AP-7N,48.8,liberada
+6,38,Barcelona,Soria,AP-2,214.3,liberada
+6,38,Barcelona,Soria,AP-68,74.2,vigente
+6,39,Barcelona,Tarragona,C-32,55.4,verificar
+6,39,Barcelona,Tarragona,AP-7N,25.1,liberada
+6,40,Barcelona,Teruel,C-32,55.4,verificar
+6,40,Barcelona,Teruel,AP-7N,232.7,liberada
+6,41,Barcelona,Toledo,AP-7N,48.8,liberada
+6,41,Barcelona,Toledo,AP-2,214.3,liberada
+6,42,Barcelona,Valencia,C-32,55.4,verificar
+6,42,Barcelona,Valencia,AP-7N,249.1,liberada
+6,43,Barcelona,Valladolid,AP-7N,48.8,liberada
+6,43,Barcelona,Valladolid,AP-2,214.3,liberada
+6,43,Barcelona,Valladolid,AP-68,205.5,vigente
+6,43,Barcelona,Valladolid,AP-1B,62.5,liberada
+6,44,Barcelona,Vitoria-Gasteiz,AP-7N,48.8,liberada
+6,44,Barcelona,Vitoria-Gasteiz,AP-2,214.3,liberada
+6,44,Barcelona,Vitoria-Gasteiz,AP-68,220.3,vigente
+6,45,Barcelona,Zamora,AP-7N,48.8,liberada
+6,45,Barcelona,Zamora,AP-2,214.3,liberada
+6,45,Barcelona,Zamora,AP-68,205.5,vigente
+6,45,Barcelona,Zamora,AP-1B,62.5,liberada
+6,46,Barcelona,Zaragoza,AP-7N,48.8,liberada
+6,46,Barcelona,Zaragoza,AP-2,214.3,liberada
+7,0,Bilbao,A Coruña,AP-9,13.7,vigente
+7,1,Bilbao,Albacete,AP-68,68.0,vigente
+7,1,Bilbao,Albacete,AP-1B,83.5,liberada
+7,1,Bilbao,Albacete,R-3,20.7,vigente
+7,2,Bilbao,Alicante,AP-68,293.5,vigente
+7,3,Bilbao,Almería,AP-68,68.0,vigente
+7,3,Bilbao,Almería,AP-1B,83.5,liberada
+7,4,Bilbao,Ávila,AP-68,68.0,vigente
+7,4,Bilbao,Ávila,AP-1B,83.5,liberada
+7,5,Bilbao,Badajoz,AP-68,68.0,vigente
+7,5,Bilbao,Badajoz,AP-1B,83.5,liberada
+7,6,Bilbao,Barcelona,AP-68,293.2,vigente
+7,6,Bilbao,Barcelona,AP-2,216.3,liberada
+7,6,Bilbao,Barcelona,AP-7N,48.6,liberada
+7,8,Bilbao,Burgos,AP-68,68.0,vigente
+7,8,Bilbao,Burgos,AP-1B,80.7,liberada
+7,9,Bilbao,Cáceres,AP-68,68.0,vigente
+7,9,Bilbao,Cáceres,AP-1B,83.5,liberada
+7,10,Bilbao,Cádiz,AP-68,68.0,vigente
+7,10,Bilbao,Cádiz,AP-1B,83.5,liberada
+7,10,Bilbao,Cádiz,AP-4,92.5,liberada
+7,11,Bilbao,Castellón de la Plana,AP-68,293.5,vigente
+7,12,Bilbao,Ciudad Real,AP-68,68.0,vigente
+7,12,Bilbao,Ciudad Real,AP-1B,83.5,liberada
+7,13,Bilbao,Córdoba,AP-68,68.0,vigente
+7,13,Bilbao,Córdoba,AP-1B,83.5,liberada
+7,14,Bilbao,Cuenca,AP-68,68.0,vigente
+7,14,Bilbao,Cuenca,AP-1B,83.5,liberada
+7,14,Bilbao,Cuenca,R-3,20.7,vigente
+7,15,Bilbao,Girona,AP-68,293.2,vigente
+7,15,Bilbao,Girona,AP-2,123.2,liberada
+7,16,Bilbao,Granada,AP-68,68.0,vigente
+7,16,Bilbao,Granada,AP-1B,83.5,liberada
+7,17,Bilbao,Guadalajara,AP-68,118.2,vigente
+7,18,Bilbao,Huelva,AP-68,68.0,vigente
+7,18,Bilbao,Huelva,AP-1B,83.5,liberada
+7,19,Bilbao,Huesca,AP-68,35.6,vigente
+7,19,Bilbao,Huesca,AP-15,17.0,vigente
+7,20,Bilbao,Jaén,AP-68,68.0,vigente
+7,20,Bilbao,Jaén,AP-1B,83.5,liberada
+7,21,Bilbao,León,AP-68,68.0,vigente
+7,21,Bilbao,León,AP-1B,70.2,liberada
+7,22,Bilbao,Lleida,AP-68,293.2,vigente
+7,22,Bilbao,Lleida,AP-2,123.2,liberada
+7,23,Bilbao,Logroño,AP-68,126.9,vigente
+7,25,Bilbao,Madrid,AP-68,68.0,vigente
+7,25,Bilbao,Madrid,AP-1B,83.5,liberada
+7,26,Bilbao,Málaga,AP-68,68.0,vigente
+7,26,Bilbao,Málaga,AP-1B,83.5,liberada
+7,26,Bilbao,Málaga,AP-46,25.9,vigente
+7,27,Bilbao,Murcia,AP-68,68.0,vigente
+7,27,Bilbao,Murcia,AP-1B,83.5,liberada
+7,27,Bilbao,Murcia,R-3,20.7,vigente
+7,28,Bilbao,Ourense,AP-68,68.0,vigente
+7,28,Bilbao,Ourense,AP-1B,70.2,liberada
+7,30,Bilbao,Palencia,AP-68,68.0,vigente
+7,30,Bilbao,Palencia,AP-1B,83.5,liberada
+7,31,Bilbao,Pamplona,AP-68,35.6,vigente
+7,31,Bilbao,Pamplona,AP-15,14.5,vigente
+7,32,Bilbao,Pontevedra,AP-9,112.4,vigente
+7,33,Bilbao,Salamanca,AP-68,68.0,vigente
+7,33,Bilbao,Salamanca,AP-1B,83.5,liberada
+7,34,Bilbao,San Sebastián,AP-8,75.7,verificar
+7,36,Bilbao,Segovia,AP-68,68.0,vigente
+7,36,Bilbao,Segovia,AP-1B,83.5,liberada
+7,37,Bilbao,Sevilla,AP-68,68.0,vigente
+7,37,Bilbao,Sevilla,AP-1B,83.5,liberada
+7,38,Bilbao,Soria,AP-68,118.2,vigente
+7,39,Bilbao,Tarragona,AP-68,293.2,vigente
+7,39,Bilbao,Tarragona,AP-2,176.2,liberada
+7,40,Bilbao,Teruel,AP-68,293.5,vigente
+7,41,Bilbao,Toledo,AP-68,68.0,vigente
+7,41,Bilbao,Toledo,AP-1B,83.5,liberada
+7,42,Bilbao,Valencia,AP-68,293.5,vigente
+7,43,Bilbao,Valladolid,AP-68,68.0,vigente
+7,43,Bilbao,Valladolid,AP-1B,83.5,liberada
+7,44,Bilbao,Vitoria-Gasteiz,AP-68,35.6,vigente
+7,45,Bilbao,Zamora,AP-68,68.0,vigente
+7,45,Bilbao,Zamora,AP-1B,83.5,liberada
+7,46,Bilbao,Zaragoza,AP-68,293.2,vigente
+8,0,Burgos,A Coruña,AP-71,36.4,vigente
+8,0,Burgos,A Coruña,AP-9,13.7,vigente
+8,1,Burgos,Albacete,R-3,20.7,vigente
+8,2,Burgos,Alicante,R-3,20.7,vigente
+8,6,Burgos,Barcelona,AP-1B,55.7,liberada
+8,6,Burgos,Barcelona,AP-68,205.7,vigente
+8,6,Burgos,Barcelona,AP-2,216.3,liberada
+8,6,Burgos,Barcelona,AP-7N,48.6,liberada
+8,7,Burgos,Bilbao,AP-1B,76.1,liberada
+8,7,Burgos,Bilbao,AP-68,68.1,vigente
+8,10,Burgos,Cádiz,AP-4,92.5,liberada
+8,14,Burgos,Cuenca,R-3,20.7,vigente
+8,15,Burgos,Girona,AP-1B,55.7,liberada
+8,15,Burgos,Girona,AP-68,205.7,vigente
+8,15,Burgos,Girona,AP-2,123.2,liberada
+8,17,Burgos,Guadalajara,R-2,28.4,vigente
+8,19,Burgos,Huesca,AP-1B,55.7,liberada
+8,19,Burgos,Huesca,AP-68,205.7,vigente
+8,22,Burgos,Lleida,AP-1B,55.7,liberada
+8,22,Burgos,Lleida,AP-68,205.7,vigente
+8,22,Burgos,Lleida,AP-2,123.2,liberada
+8,24,Burgos,Lugo,AP-71,36.4,vigente
+8,26,Burgos,Málaga,AP-46,25.9,vigente
+8,27,Burgos,Murcia,R-3,20.7,vigente
+8,29,Burgos,Oviedo,AP-66,77.2,vigente
+8,31,Burgos,Pamplona,AP-1B,83.0,liberada
+8,31,Burgos,Pamplona,AP-15,14.5,vigente
+8,34,Burgos,San Sebastián,AP-1B,83.0,liberada
+8,34,Burgos,San Sebastián,AP-1E,44.2,verificar
+8,34,Burgos,San Sebastián,AP-1/AP-8,41.9,verificar
+8,39,Burgos,Tarragona,AP-1B,55.7,liberada
+8,39,Burgos,Tarragona,AP-68,205.7,vigente
+8,39,Burgos,Tarragona,AP-2,176.2,liberada
+8,42,Burgos,Valencia,R-3,20.7,vigente
+8,44,Burgos,Vitoria-Gasteiz,AP-1B,83.0,liberada
+8,46,Burgos,Zaragoza,AP-1B,55.7,liberada
+8,46,Burgos,Zaragoza,AP-68,205.7,vigente
+9,0,Cáceres,A Coruña,AP-9,13.7,vigente
+9,6,Cáceres,Barcelona,AP-2,216.3,liberada
+9,6,Cáceres,Barcelona,AP-7N,48.6,liberada
+9,7,Cáceres,Bilbao,AP-1B,76.1,liberada
+9,7,Cáceres,Bilbao,AP-68,68.1,vigente
+9,10,Cáceres,Cádiz,AP-4,92.5,liberada
+9,11,Cáceres,Castellón de la Plana,AP-7N,37.7,liberada
+9,15,Cáceres,Girona,AP-2,123.2,liberada
+9,22,Cáceres,Lleida,AP-2,123.2,liberada
+9,23,Cáceres,Logroño,AP-1B,55.7,liberada
+9,23,Cáceres,Logroño,AP-68,39.5,vigente
+9,26,Cáceres,Málaga,AP-46,25.9,vigente
+9,29,Cáceres,Oviedo,AP-66,77.2,vigente
+9,31,Cáceres,Pamplona,AP-1B,83.0,liberada
+9,31,Cáceres,Pamplona,AP-15,14.5,vigente
+9,32,Cáceres,Pontevedra,AP-9,44.5,vigente
+9,34,Cáceres,San Sebastián,AP-1B,83.0,liberada
+9,34,Cáceres,San Sebastián,AP-1E,44.2,verificar
+9,34,Cáceres,San Sebastián,AP-1/AP-8,41.9,verificar
+9,36,Cáceres,Segovia,AP-51,22.5,vigente
+9,39,Cáceres,Tarragona,AP-2,176.2,liberada
+9,44,Cáceres,Vitoria-Gasteiz,AP-1B,83.0,liberada
+10,0,Cádiz,A Coruña,AP-4,92.8,liberada
+10,0,Cádiz,A Coruña,AP-9,13.7,vigente
+10,1,Cádiz,Albacete,AP-4,90.1,liberada
+10,2,Cádiz,Alicante,AP-4,25.6,liberada
+10,3,Cádiz,Almería,AP-4,3.1,liberada
+10,3,Cádiz,Almería,AP-7S,77.5,vigente
+10,4,Cádiz,Ávila,AP-4,92.8,liberada
+10,5,Cádiz,Badajoz,AP-4,92.8,liberada
+10,6,Cádiz,Barcelona,AP-4,90.1,liberada
+10,6,Cádiz,Barcelona,AP-7N,249.7,liberada
+10,6,Cádiz,Barcelona,C-32,53.5,verificar
+10,7,Cádiz,Bilbao,AP-4,92.8,liberada
+10,7,Cádiz,Bilbao,AP-1B,76.1,liberada
+10,7,Cádiz,Bilbao,AP-68,68.1,vigente
+10,8,Cádiz,Burgos,AP-4,92.8,liberada
+10,9,Cádiz,Cáceres,AP-4,92.8,liberada
+10,11,Cádiz,Castellón de la Plana,AP-4,90.1,liberada
+10,11,Cádiz,Castellón de la Plana,AP-7N,37.7,liberada
+10,12,Cádiz,Ciudad Real,AP-4,90.1,liberada
+10,13,Cádiz,Córdoba,AP-4,90.1,liberada
+10,14,Cádiz,Cuenca,AP-4,90.1,liberada
+10,15,Cádiz,Girona,AP-4,90.1,liberada
+10,15,Cádiz,Girona,AP-7N,406.5,liberada
+10,16,Cádiz,Granada,AP-4,25.6,liberada
+10,17,Cádiz,Guadalajara,AP-4,90.1,liberada
+10,18,Cádiz,Huelva,AP-4,92.8,liberada
+10,19,Cádiz,Huesca,AP-4,90.1,liberada
+10,20,Cádiz,Jaén,AP-4,81.2,liberada
+10,21,Cádiz,León,AP-4,92.8,liberada
+10,22,Cádiz,Lleida,AP-4,90.1,liberada
+10,22,Cádiz,Lleida,AP-2,123.2,liberada
+10,23,Cádiz,Logroño,AP-4,92.8,liberada
+10,23,Cádiz,Logroño,AP-1B,55.7,liberada
+10,23,Cádiz,Logroño,AP-68,39.5,vigente
+10,24,Cádiz,Lugo,AP-4,92.8,liberada
+10,25,Cádiz,Madrid,AP-4,92.8,liberada
+10,26,Cádiz,Málaga,AP-4,3.1,liberada
+10,26,Cádiz,Málaga,AP-7S,77.5,vigente
+10,27,Cádiz,Murcia,AP-4,25.6,liberada
+10,28,Cádiz,Ourense,AP-4,92.8,liberada
+10,29,Cádiz,Oviedo,AP-4,92.8,liberada
+10,29,Cádiz,Oviedo,AP-66,77.2,vigente
+10,30,Cádiz,Palencia,AP-4,92.8,liberada
+10,31,Cádiz,Pamplona,AP-4,92.8,liberada
+10,31,Cádiz,Pamplona,AP-1B,83.0,liberada
+10,31,Cádiz,Pamplona,AP-15,14.5,vigente
+10,32,Cádiz,Pontevedra,AP-4,92.8,liberada
+10,32,Cádiz,Pontevedra,AP-9,44.5,vigente
+10,33,Cádiz,Salamanca,AP-4,92.8,liberada
+10,34,Cádiz,San Sebastián,AP-4,92.8,liberada
+10,34,Cádiz,San Sebastián,AP-1B,83.0,liberada
+10,34,Cádiz,San Sebastián,AP-1E,44.2,verificar
+10,34,Cádiz,San Sebastián,AP-1/AP-8,41.9,verificar
+10,35,Cádiz,Santander,AP-4,92.8,liberada
+10,36,Cádiz,Segovia,AP-4,92.8,liberada
+10,36,Cádiz,Segovia,AP-6,21.8,vigente
+10,36,Cádiz,Segovia,AP-61,27.3,vigente
+10,37,Cádiz,Sevilla,AP-4,92.8,liberada
+10,38,Cádiz,Soria,AP-4,90.1,liberada
+10,39,Cádiz,Tarragona,AP-4,90.1,liberada
+10,39,Cádiz,Tarragona,AP-7N,223.7,liberada
+10,40,Cádiz,Teruel,AP-4,90.1,liberada
+10,41,Cádiz,Toledo,AP-4,90.1,liberada
+10,42,Cádiz,Valencia,AP-4,90.1,liberada
+10,43,Cádiz,Valladolid,AP-4,92.8,liberada
+10,44,Cádiz,Vitoria-Gasteiz,AP-4,92.8,liberada
+10,44,Cádiz,Vitoria-Gasteiz,AP-1B,83.0,liberada
+10,45,Cádiz,Zamora,AP-4,92.8,liberada
+10,46,Cádiz,Zaragoza,AP-4,90.1,liberada
+11,0,Castellón de la Plana,A Coruña,AP-7N,37.2,liberada
+11,0,Castellón de la Plana,A Coruña,AP-6,70.1,vigente
+11,0,Castellón de la Plana,A Coruña,AP-9,13.7,vigente
+11,1,Castellón de la Plana,Albacete,AP-7N,37.2,liberada
+11,2,Castellón de la Plana,Alicante,AP-7N,37.2,liberada
+11,3,Castellón de la Plana,Almería,AP-7N,37.2,liberada
+11,4,Castellón de la Plana,Ávila,AP-7N,37.2,liberada
+11,4,Castellón de la Plana,Ávila,AP-6,41.6,vigente
+11,4,Castellón de la Plana,Ávila,AP-51,23.2,vigente
+11,5,Castellón de la Plana,Badajoz,AP-7N,37.2,liberada
+11,6,Castellón de la Plana,Barcelona,AP-7N,203.8,liberada
+11,6,Castellón de la Plana,Barcelona,C-32,53.5,verificar
+11,7,Castellón de la Plana,Bilbao,AP-68,293.8,vigente
+11,9,Castellón de la Plana,Cáceres,AP-7N,37.2,liberada
+11,10,Castellón de la Plana,Cádiz,AP-7N,37.2,liberada
+11,12,Castellón de la Plana,Ciudad Real,AP-7N,37.2,liberada
+11,13,Castellón de la Plana,Córdoba,AP-7N,37.2,liberada
+11,14,Castellón de la Plana,Cuenca,AP-7N,37.2,liberada
+11,15,Castellón de la Plana,Girona,AP-7N,360.5,liberada
+11,16,Castellón de la Plana,Granada,AP-7N,37.2,liberada
+11,18,Castellón de la Plana,Huelva,AP-7N,37.2,liberada
+11,20,Castellón de la Plana,Jaén,AP-7N,37.2,liberada
+11,21,Castellón de la Plana,León,AP-7N,37.2,liberada
+11,21,Castellón de la Plana,León,AP-6,70.1,vigente
+11,22,Castellón de la Plana,Lleida,AP-7N,177.7,liberada
+11,22,Castellón de la Plana,Lleida,AP-2,54.4,liberada
+11,23,Castellón de la Plana,Logroño,AP-68,155.2,vigente
+11,24,Castellón de la Plana,Lugo,AP-7N,37.2,liberada
+11,24,Castellón de la Plana,Lugo,AP-6,70.1,vigente
+11,25,Castellón de la Plana,Madrid,AP-7N,37.2,liberada
+11,26,Castellón de la Plana,Málaga,AP-7N,37.2,liberada
+11,26,Castellón de la Plana,Málaga,AP-46,25.9,vigente
+11,27,Castellón de la Plana,Murcia,AP-7N,37.2,liberada
+11,28,Castellón de la Plana,Ourense,AP-7N,37.2,liberada
+11,28,Castellón de la Plana,Ourense,AP-6,70.1,vigente
+11,29,Castellón de la Plana,Oviedo,AP-7N,37.2,liberada
+11,29,Castellón de la Plana,Oviedo,AP-6,70.1,vigente
+11,29,Castellón de la Plana,Oviedo,AP-66,77.2,vigente
+11,31,Castellón de la Plana,Pamplona,AP-68,85.3,vigente
+11,31,Castellón de la Plana,Pamplona,AP-15,82.8,vigente
+11,32,Castellón de la Plana,Pontevedra,AP-7N,37.2,liberada
+11,32,Castellón de la Plana,Pontevedra,AP-6,70.1,vigente
+11,33,Castellón de la Plana,Salamanca,AP-7N,37.2,liberada
+11,33,Castellón de la Plana,Salamanca,AP-6,41.6,vigente
+11,33,Castellón de la Plana,Salamanca,AP-51,23.2,vigente
+11,34,Castellón de la Plana,San Sebastián,AP-68,85.3,vigente
+11,34,Castellón de la Plana,San Sebastián,AP-15,98.4,vigente
+11,35,Castellón de la Plana,Santander,AP-68,291.5,vigente
+11,35,Castellón de la Plana,Santander,AP-8,14.2,verificar
+11,36,Castellón de la Plana,Segovia,AP-7N,37.2,liberada
+11,36,Castellón de la Plana,Segovia,AP-6,21.8,vigente
+11,36,Castellón de la Plana,Segovia,AP-61,27.3,vigente
+11,37,Castellón de la Plana,Sevilla,AP-7N,37.2,liberada
+11,39,Castellón de la Plana,Tarragona,AP-7N,177.7,liberada
+11,41,Castellón de la Plana,Toledo,AP-7N,37.2,liberada
+11,42,Castellón de la Plana,Valencia,AP-7N,37.2,liberada
+11,43,Castellón de la Plana,Valladolid,AP-7N,37.2,liberada
+11,43,Castellón de la Plana,Valladolid,AP-6,68.4,vigente
+11,44,Castellón de la Plana,Vitoria-Gasteiz,AP-68,220.8,vigente
+11,45,Castellón de la Plana,Zamora,AP-7N,37.2,liberada
+11,45,Castellón de la Plana,Zamora,AP-6,70.1,vigente
+12,0,Ciudad Real,A Coruña,AP-6,70.1,vigente
+12,0,Ciudad Real,A Coruña,AP-9,13.7,vigente
+12,6,Ciudad Real,Barcelona,AP-7N,249.7,liberada
+12,6,Ciudad Real,Barcelona,C-32,53.5,verificar
+12,7,Ciudad Real,Bilbao,M-12,10.1,vigente
+12,7,Ciudad Real,Bilbao,AP-1B,76.1,liberada
+12,7,Ciudad Real,Bilbao,AP-68,68.1,vigente
+12,8,Ciudad Real,Burgos,M-12,10.1,vigente
+12,11,Ciudad Real,Castellón de la Plana,AP-7N,37.7,liberada
+12,15,Ciudad Real,Girona,AP-7N,406.5,liberada
+12,21,Ciudad Real,León,AP-6,70.1,vigente
+12,22,Ciudad Real,Lleida,AP-2,123.2,liberada
+12,24,Ciudad Real,Lugo,AP-6,70.1,vigente
+12,26,Ciudad Real,Málaga,AP-46,25.9,vigente
+12,28,Ciudad Real,Ourense,AP-6,70.1,vigente
+12,29,Ciudad Real,Oviedo,AP-6,70.1,vigente
+12,29,Ciudad Real,Oviedo,AP-66,77.2,vigente
+12,30,Ciudad Real,Palencia,AP-6,70.1,vigente
+12,31,Ciudad Real,Pamplona,AP-15,69.0,vigente
+12,32,Ciudad Real,Pontevedra,AP-6,70.1,vigente
+12,34,Ciudad Real,San Sebastián,M-12,10.1,vigente
+12,34,Ciudad Real,San Sebastián,AP-1B,83.0,liberada
+12,34,Ciudad Real,San Sebastián,AP-1E,44.2,verificar
+12,34,Ciudad Real,San Sebastián,AP-1/AP-8,41.9,verificar
+12,35,Ciudad Real,Santander,M-12,10.1,vigente
+12,36,Ciudad Real,Segovia,AP-6,21.8,vigente
+12,36,Ciudad Real,Segovia,AP-61,27.3,vigente
+12,39,Ciudad Real,Tarragona,AP-7N,223.7,liberada
+12,43,Ciudad Real,Valladolid,AP-6,68.4,vigente
+12,44,Ciudad Real,Vitoria-Gasteiz,M-12,10.1,vigente
+12,44,Ciudad Real,Vitoria-Gasteiz,AP-1B,83.0,liberada
+12,45,Ciudad Real,Zamora,AP-6,70.1,vigente
+13,0,Córdoba,A Coruña,R-4,52.8,vigente
+13,0,Córdoba,A Coruña,AP-6,70.1,vigente
+13,0,Córdoba,A Coruña,AP-9,13.7,vigente
+13,6,Córdoba,Barcelona,AP-7N,249.7,liberada
+13,6,Córdoba,Barcelona,C-32,53.5,verificar
+13,7,Córdoba,Bilbao,M-12,10.1,vigente
+13,7,Córdoba,Bilbao,AP-1B,76.1,liberada
+13,7,Córdoba,Bilbao,AP-68,68.1,vigente
+13,8,Córdoba,Burgos,M-12,10.1,vigente
+13,11,Córdoba,Castellón de la Plana,AP-7N,37.7,liberada
+13,15,Córdoba,Girona,AP-7N,406.5,liberada
+13,21,Córdoba,León,R-4,52.8,vigente
+13,21,Córdoba,León,AP-6,70.1,vigente
+13,22,Córdoba,Lleida,AP-2,123.2,liberada
+13,24,Córdoba,Lugo,R-4,52.8,vigente
+13,24,Córdoba,Lugo,AP-6,70.1,vigente
+13,26,Córdoba,Málaga,AP-46,25.9,vigente
+13,29,Córdoba,Oviedo,R-4,52.8,vigente
+13,29,Córdoba,Oviedo,AP-6,70.1,vigente
+13,29,Córdoba,Oviedo,AP-66,77.2,vigente
+13,30,Córdoba,Palencia,R-4,52.8,vigente
+13,30,Córdoba,Palencia,AP-6,70.1,vigente
+13,31,Córdoba,Pamplona,AP-15,69.0,vigente
+13,32,Córdoba,Pontevedra,AP-9,44.5,vigente
+13,34,Córdoba,San Sebastián,M-12,10.1,vigente
+13,34,Córdoba,San Sebastián,AP-1B,83.0,liberada
+13,34,Córdoba,San Sebastián,AP-1E,44.2,verificar
+13,34,Córdoba,San Sebastián,AP-1/AP-8,41.9,verificar
+13,35,Córdoba,Santander,M-12,10.1,vigente
+13,36,Córdoba,Segovia,R-4,52.8,vigente
+13,36,Córdoba,Segovia,AP-6,21.8,vigente
+13,36,Córdoba,Segovia,AP-61,27.3,vigente
+13,39,Córdoba,Tarragona,AP-7N,223.7,liberada
+13,43,Córdoba,Valladolid,R-4,52.8,vigente
+13,43,Córdoba,Valladolid,AP-6,68.4,vigente
+13,44,Córdoba,Vitoria-Gasteiz,M-12,10.1,vigente
+13,44,Córdoba,Vitoria-Gasteiz,AP-1B,83.0,liberada
+14,0,Cuenca,A Coruña,AP-6,70.1,vigente
+14,0,Cuenca,A Coruña,AP-9,13.7,vigente
+14,4,Cuenca,Ávila,AP-6,41.6,vigente
+14,4,Cuenca,Ávila,AP-51,23.2,vigente
+14,6,Cuenca,Barcelona,AP-7N,249.7,liberada
+14,6,Cuenca,Barcelona,C-32,53.5,verificar
+14,7,Cuenca,Bilbao,R-3,20.2,vigente
+14,7,Cuenca,Bilbao,AP-1B,76.1,liberada
+14,7,Cuenca,Bilbao,AP-68,68.1,vigente
+14,8,Cuenca,Burgos,R-3,20.2,vigente
+14,11,Cuenca,Castellón de la Plana,AP-7N,37.7,liberada
+14,15,Cuenca,Girona,AP-7N,406.5,liberada
+14,21,Cuenca,León,AP-6,70.1,vigente
+14,22,Cuenca,Lleida,AP-2,117.4,liberada
+14,24,Cuenca,Lugo,AP-6,70.1,vigente
+14,26,Cuenca,Málaga,AP-46,25.9,vigente
+14,28,Cuenca,Ourense,AP-6,70.1,vigente
+14,29,Cuenca,Oviedo,AP-6,70.1,vigente
+14,29,Cuenca,Oviedo,AP-66,77.2,vigente
+14,30,Cuenca,Palencia,AP-6,70.1,vigente
+14,31,Cuenca,Pamplona,AP-68,85.3,vigente
+14,31,Cuenca,Pamplona,AP-15,82.8,vigente
+14,32,Cuenca,Pontevedra,AP-6,70.1,vigente
+14,33,Cuenca,Salamanca,AP-6,41.6,vigente
+14,33,Cuenca,Salamanca,AP-51,23.2,vigente
+14,34,Cuenca,San Sebastián,AP-68,85.3,vigente
+14,34,Cuenca,San Sebastián,AP-15,98.4,vigente
+14,35,Cuenca,Santander,R-3,20.2,vigente
+14,36,Cuenca,Segovia,AP-6,21.8,vigente
+14,36,Cuenca,Segovia,AP-61,27.3,vigente
+14,39,Cuenca,Tarragona,AP-7N,223.7,liberada
+14,43,Cuenca,Valladolid,AP-6,68.4,vigente
+14,44,Cuenca,Vitoria-Gasteiz,R-3,20.2,vigente
+14,44,Cuenca,Vitoria-Gasteiz,AP-1B,83.0,liberada
+14,45,Cuenca,Zamora,AP-6,70.1,vigente
+15,0,Girona,A Coruña,AP-2,107.4,liberada
+15,0,Girona,A Coruña,AP-68,205.5,vigente
+15,0,Girona,A Coruña,AP-1B,49.2,liberada
+15,0,Girona,A Coruña,AP-71,36.4,vigente
+15,0,Girona,A Coruña,AP-9,13.7,vigente
+15,1,Girona,Albacete,AP-7N,404.1,liberada
+15,2,Girona,Alicante,AP-7N,404.1,liberada
+15,3,Girona,Almería,AP-7N,404.1,liberada
+15,4,Girona,Ávila,AP-2,107.4,liberada
+15,4,Girona,Ávila,R-2,56.6,vigente
+15,4,Girona,Ávila,AP-6,41.6,vigente
+15,4,Girona,Ávila,AP-51,23.2,vigente
+15,5,Girona,Badajoz,AP-2,107.4,liberada
+15,6,Girona,Barcelona,AP-7N,71.1,liberada
+15,6,Girona,Barcelona,C-33,12.4,verificar
+15,7,Girona,Bilbao,AP-2,107.4,liberada
+15,7,Girona,Bilbao,AP-68,293.3,vigente
+15,8,Girona,Burgos,AP-2,107.4,liberada
+15,8,Girona,Burgos,AP-68,205.5,vigente
+15,8,Girona,Burgos,AP-1B,59.7,liberada
+15,9,Girona,Cáceres,AP-2,107.4,liberada
+15,10,Girona,Cádiz,AP-7N,404.1,liberada
+15,11,Girona,Castellón de la Plana,AP-7N,358.5,liberada
+15,12,Girona,Ciudad Real,AP-7N,404.1,liberada
+15,13,Girona,Córdoba,AP-7N,404.1,liberada
+15,14,Girona,Cuenca,AP-7N,404.1,liberada
+15,16,Girona,Granada,AP-7N,404.1,liberada
+15,17,Girona,Guadalajara,AP-2,107.4,liberada
+15,18,Girona,Huelva,AP-7N,404.1,liberada
+15,20,Girona,Jaén,AP-7N,404.1,liberada
+15,21,Girona,León,AP-2,107.4,liberada
+15,21,Girona,León,AP-68,205.5,vigente
+15,21,Girona,León,AP-1B,49.2,liberada
+15,23,Girona,Logroño,AP-2,107.4,liberada
+15,23,Girona,Logroño,AP-68,154.8,vigente
+15,24,Girona,Lugo,AP-2,107.4,liberada
+15,24,Girona,Lugo,AP-68,205.5,vigente
+15,24,Girona,Lugo,AP-1B,49.2,liberada
+15,24,Girona,Lugo,AP-71,36.4,vigente
+15,25,Girona,Madrid,AP-2,107.4,liberada
+15,26,Girona,Málaga,AP-7N,404.1,liberada
+15,26,Girona,Málaga,AP-46,25.9,vigente
+15,27,Girona,Murcia,AP-7N,404.1,liberada
+15,28,Girona,Ourense,AP-2,107.4,liberada
+15,28,Girona,Ourense,AP-68,205.5,vigente
+15,28,Girona,Ourense,AP-1B,49.2,liberada
+15,29,Girona,Oviedo,AP-2,107.4,liberada
+15,29,Girona,Oviedo,AP-68,291.0,vigente
+15,29,Girona,Oviedo,AP-8,14.2,verificar
+15,30,Girona,Palencia,AP-2,107.4,liberada
+15,30,Girona,Palencia,AP-68,205.5,vigente
+15,30,Girona,Palencia,AP-1B,62.5,liberada
+15,31,Girona,Pamplona,AP-15,1.5,vigente
+15,32,Girona,Pontevedra,AP-2,107.4,liberada
+15,32,Girona,Pontevedra,AP-68,205.5,vigente
+15,32,Girona,Pontevedra,AP-1B,49.2,liberada
+15,33,Girona,Salamanca,AP-2,107.4,liberada
+15,33,Girona,Salamanca,AP-68,205.5,vigente
+15,33,Girona,Salamanca,AP-1B,62.5,liberada
+15,34,Girona,San Sebastián,AP-7N,59.5,liberada
+15,34,Girona,San Sebastián,AP-1/AP-8,12.1,verificar
+15,35,Girona,Santander,AP-2,107.4,liberada
+15,35,Girona,Santander,AP-68,291.0,vigente
+15,35,Girona,Santander,AP-8,14.2,verificar
+15,36,Girona,Segovia,AP-2,107.4,liberada
+15,36,Girona,Segovia,R-2,56.6,vigente
+15,36,Girona,Segovia,AP-6,21.8,vigente
+15,36,Girona,Segovia,AP-61,27.3,vigente
+15,37,Girona,Sevilla,AP-7N,404.1,liberada
+15,38,Girona,Soria,AP-2,107.4,liberada
+15,38,Girona,Soria,AP-68,74.2,vigente
+15,39,Girona,Tarragona,AP-7N,180.1,liberada
+15,40,Girona,Teruel,AP-7N,387.7,liberada
+15,41,Girona,Toledo,AP-2,107.4,liberada
+15,42,Girona,Valencia,AP-7N,404.1,liberada
+15,43,Girona,Valladolid,AP-2,107.4,liberada
+15,43,Girona,Valladolid,AP-68,205.5,vigente
+15,43,Girona,Valladolid,AP-1B,62.5,liberada
+15,44,Girona,Vitoria-Gasteiz,AP-2,107.4,liberada
+15,44,Girona,Vitoria-Gasteiz,AP-68,220.3,vigente
+15,45,Girona,Zamora,AP-2,107.4,liberada
+15,45,Girona,Zamora,AP-68,205.5,vigente
+15,45,Girona,Zamora,AP-1B,62.5,liberada
+15,46,Girona,Zaragoza,AP-2,107.4,liberada
+16,0,Granada,A Coruña,R-4,52.8,vigente
+16,0,Granada,A Coruña,AP-6,70.1,vigente
+16,0,Granada,A Coruña,AP-9,13.7,vigente
+16,6,Granada,Barcelona,AP-7N,249.7,liberada
+16,6,Granada,Barcelona,C-32,53.5,verificar
+16,7,Granada,Bilbao,M-12,10.1,vigente
+16,7,Granada,Bilbao,AP-1B,76.1,liberada
+16,7,Granada,Bilbao,AP-68,68.1,vigente
+16,8,Granada,Burgos,M-12,10.1,vigente
+16,10,Granada,Cádiz,AP-4,25.7,liberada
+16,11,Granada,Castellón de la Plana,AP-7N,37.7,liberada
+16,15,Granada,Girona,AP-7N,406.5,liberada
+16,21,Granada,León,R-4,52.8,vigente
+16,21,Granada,León,AP-6,70.1,vigente
+16,22,Granada,Lleida,AP-7N,223.7,liberada
+16,22,Granada,Lleida,AP-2,54.4,liberada
+16,24,Granada,Lugo,R-4,52.8,vigente
+16,24,Granada,Lugo,AP-6,70.1,vigente
+16,26,Granada,Málaga,AP-46,25.9,vigente
+16,28,Granada,Ourense,R-4,52.8,vigente
+16,28,Granada,Ourense,AP-6,70.1,vigente
+16,29,Granada,Oviedo,R-4,52.8,vigente
+16,29,Granada,Oviedo,AP-6,70.1,vigente
+16,29,Granada,Oviedo,AP-66,77.2,vigente
+16,30,Granada,Palencia,R-4,52.8,vigente
+16,30,Granada,Palencia,AP-6,70.1,vigente
+16,31,Granada,Pamplona,AP-15,69.0,vigente
+16,32,Granada,Pontevedra,R-4,52.8,vigente
+16,32,Granada,Pontevedra,AP-6,70.1,vigente
+16,34,Granada,San Sebastián,M-12,10.1,vigente
+16,34,Granada,San Sebastián,AP-1B,83.0,liberada
+16,34,Granada,San Sebastián,AP-1E,44.2,verificar
+16,34,Granada,San Sebastián,AP-1/AP-8,41.9,verificar
+16,35,Granada,Santander,M-12,10.1,vigente
+16,36,Granada,Segovia,R-4,52.8,vigente
+16,36,Granada,Segovia,AP-6,21.8,vigente
+16,36,Granada,Segovia,AP-61,27.3,vigente
+16,39,Granada,Tarragona,AP-7N,223.7,liberada
+16,43,Granada,Valladolid,R-4,52.8,vigente
+16,43,Granada,Valladolid,AP-6,68.4,vigente
+16,44,Granada,Vitoria-Gasteiz,M-12,10.1,vigente
+16,44,Granada,Vitoria-Gasteiz,AP-1B,83.0,liberada
+16,45,Granada,Zamora,R-4,52.8,vigente
+16,45,Granada,Zamora,AP-6,70.1,vigente
+17,0,Guadalajara,A Coruña,AP-6,70.1,vigente
+17,0,Guadalajara,A Coruña,AP-9,13.7,vigente
+17,1,Guadalajara,Albacete,R-3,16.8,vigente
+17,2,Guadalajara,Alicante,R-3,16.8,vigente
+17,4,Guadalajara,Ávila,AP-6,41.6,vigente
+17,4,Guadalajara,Ávila,AP-51,23.2,vigente
+17,6,Guadalajara,Barcelona,AP-2,216.3,liberada
+17,6,Guadalajara,Barcelona,AP-7N,48.6,liberada
+17,7,Guadalajara,Bilbao,AP-68,118.4,vigente
+17,8,Guadalajara,Burgos,R-2,17.5,vigente
+17,15,Guadalajara,Girona,AP-2,123.2,liberada
+17,21,Guadalajara,León,AP-6,70.1,vigente
+17,22,Guadalajara,Lleida,AP-2,123.2,liberada
+17,24,Guadalajara,Lugo,AP-6,70.1,vigente
+17,26,Guadalajara,Málaga,AP-46,25.9,vigente
+17,27,Guadalajara,Murcia,R-3,16.8,vigente
+17,28,Guadalajara,Ourense,AP-6,70.1,vigente
+17,29,Guadalajara,Oviedo,AP-6,70.1,vigente
+17,29,Guadalajara,Oviedo,AP-66,77.2,vigente
+17,30,Guadalajara,Palencia,R-2,17.5,vigente
+17,31,Guadalajara,Pamplona,AP-15,69.0,vigente
+17,32,Guadalajara,Pontevedra,AP-6,70.1,vigente
+17,33,Guadalajara,Salamanca,AP-6,41.6,vigente
+17,33,Guadalajara,Salamanca,AP-51,23.2,vigente
+17,34,Guadalajara,San Sebastián,AP-15,84.6,vigente
+17,35,Guadalajara,Santander,R-2,17.5,vigente
+17,36,Guadalajara,Segovia,AP-6,21.8,vigente
+17,36,Guadalajara,Segovia,AP-61,27.3,vigente
+17,39,Guadalajara,Tarragona,AP-2,176.2,liberada
+17,42,Guadalajara,Valencia,R-3,16.8,vigente
+17,43,Guadalajara,Valladolid,AP-6,68.4,vigente
+17,44,Guadalajara,Vitoria-Gasteiz,AP-68,45.4,vigente
+17,45,Guadalajara,Zamora,AP-6,70.1,vigente
+18,0,Huelva,A Coruña,AP-9,175.3,vigente
+18,6,Huelva,Barcelona,AP-7N,249.7,liberada
+18,6,Huelva,Barcelona,C-32,53.5,verificar
+18,7,Huelva,Bilbao,AP-1B,76.1,liberada
+18,7,Huelva,Bilbao,AP-68,68.1,vigente
+18,10,Huelva,Cádiz,AP-4,92.5,liberada
+18,11,Huelva,Castellón de la Plana,AP-7N,37.7,liberada
+18,15,Huelva,Girona,AP-7N,406.5,liberada
+18,22,Huelva,Lleida,AP-2,123.2,liberada
+18,23,Huelva,Logroño,AP-1B,55.7,liberada
+18,23,Huelva,Logroño,AP-68,39.5,vigente
+18,26,Huelva,Málaga,AP-46,25.9,vigente
+18,29,Huelva,Oviedo,AP-66,77.2,vigente
+18,31,Huelva,Pamplona,AP-1B,83.0,liberada
+18,31,Huelva,Pamplona,AP-15,14.5,vigente
+18,32,Huelva,Pontevedra,AP-9,44.5,vigente
+18,34,Huelva,San Sebastián,AP-1B,83.0,liberada
+18,34,Huelva,San Sebastián,AP-1E,44.2,verificar
+18,34,Huelva,San Sebastián,AP-1/AP-8,41.9,verificar
+18,36,Huelva,Segovia,AP-6,21.8,vigente
+18,36,Huelva,Segovia,AP-61,27.3,vigente
+18,39,Huelva,Tarragona,AP-7N,223.7,liberada
+18,44,Huelva,Vitoria-Gasteiz,AP-1B,83.0,liberada
+19,0,Huesca,A Coruña,AP-68,205.5,vigente
+19,0,Huesca,A Coruña,AP-1B,49.2,liberada
+19,0,Huesca,A Coruña,AP-71,36.4,vigente
+19,0,Huesca,A Coruña,AP-9,13.7,vigente
+19,4,Huesca,Ávila,R-2,56.6,vigente
+19,4,Huesca,Ávila,AP-6,41.6,vigente
+19,4,Huesca,Ávila,AP-51,23.2,vigente
+19,7,Huesca,Bilbao,AP-15,17.1,vigente
+19,7,Huesca,Bilbao,AP-68,35.8,vigente
+19,8,Huesca,Burgos,AP-68,205.5,vigente
+19,8,Huesca,Burgos,AP-1B,59.7,liberada
+19,21,Huesca,León,AP-68,205.5,vigente
+19,21,Huesca,León,AP-1B,49.2,liberada
+19,23,Huesca,Logroño,AP-68,154.8,vigente
+19,24,Huesca,Lugo,AP-68,205.5,vigente
+19,24,Huesca,Lugo,AP-1B,49.2,liberada
+19,24,Huesca,Lugo,AP-71,36.4,vigente
+19,26,Huesca,Málaga,AP-46,25.9,vigente
+19,28,Huesca,Ourense,AP-68,205.5,vigente
+19,28,Huesca,Ourense,AP-1B,49.2,liberada
+19,29,Huesca,Oviedo,AP-15,17.1,vigente
+19,29,Huesca,Oviedo,AP-68,33.6,vigente
+19,29,Huesca,Oviedo,AP-8,14.2,verificar
+19,30,Huesca,Palencia,AP-68,205.5,vigente
+19,30,Huesca,Palencia,AP-1B,62.5,liberada
+19,31,Huesca,Pamplona,AP-15,1.5,vigente
+19,32,Huesca,Pontevedra,AP-68,205.5,vigente
+19,32,Huesca,Pontevedra,AP-1B,49.2,liberada
+19,33,Huesca,Salamanca,AP-68,205.5,vigente
+19,33,Huesca,Salamanca,AP-1B,62.5,liberada
+19,34,Huesca,San Sebastián,AP-15,17.1,vigente
+19,35,Huesca,Santander,AP-15,17.1,vigente
+19,35,Huesca,Santander,AP-68,33.6,vigente
+19,35,Huesca,Santander,AP-8,14.2,verificar
+19,36,Huesca,Segovia,R-2,56.6,vigente
+19,36,Huesca,Segovia,AP-6,21.8,vigente
+19,36,Huesca,Segovia,AP-61,27.3,vigente
+19,38,Huesca,Soria,AP-68,74.2,vigente
+19,39,Huesca,Tarragona,AP-2,54.4,liberada
+19,43,Huesca,Valladolid,AP-68,205.5,vigente
+19,43,Huesca,Valladolid,AP-1B,62.5,liberada
+19,44,Huesca,Vitoria-Gasteiz,AP-15,17.1,vigente
+19,45,Huesca,Zamora,AP-68,205.5,vigente
+19,45,Huesca,Zamora,AP-1B,62.5,liberada
+20,0,Jaén,A Coruña,R-4,52.8,vigente
+20,0,Jaén,A Coruña,AP-6,70.1,vigente
+20,0,Jaén,A Coruña,AP-9,13.7,vigente
+20,6,Jaén,Barcelona,AP-7N,249.7,liberada
+20,6,Jaén,Barcelona,C-32,53.5,verificar
+20,7,Jaén,Bilbao,M-12,10.1,vigente
+20,7,Jaén,Bilbao,AP-1B,76.1,liberada
+20,7,Jaén,Bilbao,AP-68,68.1,vigente
+20,8,Jaén,Burgos,M-12,10.1,vigente
+20,10,Jaén,Cádiz,AP-4,81.0,liberada
+20,11,Jaén,Castellón de la Plana,AP-7N,37.7,liberada
+20,15,Jaén,Girona,AP-7N,406.5,liberada
+20,21,Jaén,León,R-4,52.8,vigente
+20,21,Jaén,León,AP-6,70.1,vigente
+20,22,Jaén,Lleida,AP-2,123.2,liberada
+20,24,Jaén,Lugo,R-4,52.8,vigente
+20,24,Jaén,Lugo,AP-6,70.1,vigente
+20,26,Jaén,Málaga,AP-46,25.9,vigente
+20,28,Jaén,Ourense,R-4,52.8,vigente
+20,28,Jaén,Ourense,AP-6,70.1,vigente
+20,29,Jaén,Oviedo,R-4,52.8,vigente
+20,29,Jaén,Oviedo,AP-6,70.1,vigente
+20,29,Jaén,Oviedo,AP-66,77.2,vigente
+20,30,Jaén,Palencia,R-4,52.8,vigente
+20,30,Jaén,Palencia,AP-6,70.1,vigente
+20,31,Jaén,Pamplona,AP-15,69.0,vigente
+20,32,Jaén,Pontevedra,R-4,52.8,vigente
+20,32,Jaén,Pontevedra,AP-6,70.1,vigente
+20,34,Jaén,San Sebastián,M-12,10.1,vigente
+20,34,Jaén,San Sebastián,AP-1B,83.0,liberada
+20,34,Jaén,San Sebastián,AP-1E,44.2,verificar
+20,34,Jaén,San Sebastián,AP-1/AP-8,41.9,verificar
+20,35,Jaén,Santander,M-12,10.1,vigente
+20,36,Jaén,Segovia,R-4,52.8,vigente
+20,36,Jaén,Segovia,AP-6,21.8,vigente
+20,36,Jaén,Segovia,AP-61,27.3,vigente
+20,39,Jaén,Tarragona,AP-7N,223.7,liberada
+20,43,Jaén,Valladolid,R-4,52.8,vigente
+20,43,Jaén,Valladolid,AP-6,68.4,vigente
+20,44,Jaén,Vitoria-Gasteiz,M-12,10.1,vigente
+20,44,Jaén,Vitoria-Gasteiz,AP-1B,83.0,liberada
+20,45,Jaén,Zamora,R-4,52.8,vigente
+20,45,Jaén,Zamora,AP-6,70.1,vigente
+21,0,León,A Coruña,AP-71,37.5,vigente
+21,0,León,A Coruña,AP-9,13.7,vigente
+21,1,León,Albacete,AP-6,70.2,vigente
+21,2,León,Alicante,AP-6,70.2,vigente
+21,3,León,Almería,AP-6,70.2,vigente
+21,3,León,Almería,R-4,52.9,vigente
+21,6,León,Barcelona,AP-1B,55.7,liberada
+21,6,León,Barcelona,AP-68,205.7,vigente
+21,6,León,Barcelona,AP-2,216.3,liberada
+21,6,León,Barcelona,AP-7N,48.6,liberada
+21,7,León,Bilbao,AP-1B,76.1,liberada
+21,7,León,Bilbao,AP-68,68.1,vigente
+21,10,León,Cádiz,AP-4,92.5,liberada
+21,11,León,Castellón de la Plana,AP-6,70.2,vigente
+21,11,León,Castellón de la Plana,AP-7N,37.7,liberada
+21,12,León,Ciudad Real,AP-6,70.2,vigente
+21,13,León,Córdoba,AP-6,70.2,vigente
+21,13,León,Córdoba,R-4,52.9,vigente
+21,14,León,Cuenca,AP-6,70.2,vigente
+21,15,León,Girona,AP-1B,55.7,liberada
+21,15,León,Girona,AP-68,205.7,vigente
+21,15,León,Girona,AP-2,123.2,liberada
+21,16,León,Granada,AP-6,70.2,vigente
+21,16,León,Granada,R-4,52.9,vigente
+21,17,León,Guadalajara,AP-6,70.2,vigente
+21,19,León,Huesca,AP-1B,55.7,liberada
+21,19,León,Huesca,AP-68,205.7,vigente
+21,20,León,Jaén,AP-6,70.2,vigente
+21,20,León,Jaén,R-4,52.9,vigente
+21,22,León,Lleida,AP-1B,55.7,liberada
+21,22,León,Lleida,AP-68,205.7,vigente
+21,22,León,Lleida,AP-2,123.2,liberada
+21,24,León,Lugo,AP-71,37.5,vigente
+21,25,León,Madrid,AP-6,70.2,vigente
+21,26,León,Málaga,AP-6,70.2,vigente
+21,26,León,Málaga,R-4,52.9,vigente
+21,26,León,Málaga,AP-46,25.9,vigente
+21,27,León,Murcia,AP-6,70.2,vigente
+21,29,León,Oviedo,AP-66,76.5,vigente
+21,31,León,Pamplona,AP-1B,83.0,liberada
+21,31,León,Pamplona,AP-15,14.5,vigente
+21,32,León,Pontevedra,AP-71,37.5,vigente
+21,32,León,Pontevedra,AP-9,63.2,vigente
+21,34,León,San Sebastián,AP-1B,83.0,liberada
+21,34,León,San Sebastián,AP-1E,44.2,verificar
+21,34,León,San Sebastián,AP-1/AP-8,41.9,verificar
+21,39,León,Tarragona,AP-1B,55.7,liberada
+21,39,León,Tarragona,AP-68,205.7,vigente
+21,39,León,Tarragona,AP-2,176.2,liberada
+21,41,León,Toledo,AP-6,70.2,vigente
+21,42,León,Valencia,AP-6,70.2,vigente
+21,44,León,Vitoria-Gasteiz,AP-1B,83.0,liberada
+21,46,León,Zaragoza,AP-1B,55.7,liberada
+21,46,León,Zaragoza,AP-68,205.7,vigente
+22,0,Lleida,A Coruña,AP-2,121.1,liberada
+22,0,Lleida,A Coruña,AP-68,205.5,vigente
+22,0,Lleida,A Coruña,AP-1B,49.2,liberada
+22,0,Lleida,A Coruña,AP-71,36.4,vigente
+22,0,Lleida,A Coruña,AP-9,13.7,vigente
+22,1,Lleida,Albacete,AP-2,54.4,liberada
+22,1,Lleida,Albacete,AP-7N,189.4,liberada
+22,2,Lleida,Alicante,AP-2,54.4,liberada
+22,2,Lleida,Alicante,AP-7N,189.4,liberada
+22,3,Lleida,Almería,AP-2,54.4,liberada
+22,3,Lleida,Almería,AP-7N,189.4,liberada
+22,4,Lleida,Ávila,AP-2,121.1,liberada
+22,4,Lleida,Ávila,R-2,56.6,vigente
+22,4,Lleida,Ávila,AP-6,41.6,vigente
+22,4,Lleida,Ávila,AP-51,23.2,vigente
+22,5,Lleida,Badajoz,AP-2,121.1,liberada
+22,7,Lleida,Bilbao,AP-2,121.1,liberada
+22,7,Lleida,Bilbao,AP-68,293.3,vigente
+22,8,Lleida,Burgos,AP-2,121.1,liberada
+22,8,Lleida,Burgos,AP-68,205.5,vigente
+22,8,Lleida,Burgos,AP-1B,59.7,liberada
+22,9,Lleida,Cáceres,AP-2,121.1,liberada
+22,10,Lleida,Cádiz,AP-2,121.1,liberada
+22,11,Lleida,Castellón de la Plana,AP-2,54.4,liberada
+22,11,Lleida,Castellón de la Plana,AP-7N,143.8,liberada
+22,12,Lleida,Ciudad Real,AP-2,121.1,liberada
+22,13,Lleida,Córdoba,AP-2,121.1,liberada
+22,14,Lleida,Cuenca,AP-2,121.1,liberada
+22,16,Lleida,Granada,AP-2,54.4,liberada
+22,16,Lleida,Granada,AP-7N,189.4,liberada
+22,17,Lleida,Guadalajara,AP-2,121.1,liberada
+22,18,Lleida,Huelva,AP-2,121.1,liberada
+22,20,Lleida,Jaén,AP-2,121.1,liberada
+22,21,Lleida,León,AP-2,121.1,liberada
+22,21,Lleida,León,AP-68,205.5,vigente
+22,21,Lleida,León,AP-1B,49.2,liberada
+22,23,Lleida,Logroño,AP-2,121.1,liberada
+22,23,Lleida,Logroño,AP-68,154.8,vigente
+22,24,Lleida,Lugo,AP-2,121.1,liberada
+22,24,Lleida,Lugo,AP-68,205.5,vigente
+22,24,Lleida,Lugo,AP-1B,49.2,liberada
+22,24,Lleida,Lugo,AP-71,36.4,vigente
+22,25,Lleida,Madrid,AP-2,121.1,liberada
+22,26,Lleida,Málaga,AP-2,54.4,liberada
+22,26,Lleida,Málaga,AP-7N,189.4,liberada
+22,26,Lleida,Málaga,AP-46,25.9,vigente
+22,27,Lleida,Murcia,AP-2,54.4,liberada
+22,27,Lleida,Murcia,AP-7N,189.4,liberada
+22,28,Lleida,Ourense,AP-2,121.1,liberada
+22,28,Lleida,Ourense,AP-68,205.5,vigente
+22,28,Lleida,Ourense,AP-1B,49.2,liberada
+22,29,Lleida,Oviedo,AP-2,121.1,liberada
+22,29,Lleida,Oviedo,AP-68,291.0,vigente
+22,29,Lleida,Oviedo,AP-8,14.2,verificar
+22,30,Lleida,Palencia,AP-2,121.1,liberada
+22,30,Lleida,Palencia,AP-68,205.5,vigente
+22,30,Lleida,Palencia,AP-1B,62.5,liberada
+22,31,Lleida,Pamplona,AP-15,1.5,vigente
+22,32,Lleida,Pontevedra,AP-2,121.1,liberada
+22,32,Lleida,Pontevedra,AP-68,205.5,vigente
+22,32,Lleida,Pontevedra,AP-1B,49.2,liberada
+22,33,Lleida,Salamanca,AP-2,121.1,liberada
+22,33,Lleida,Salamanca,AP-68,205.5,vigente
+22,33,Lleida,Salamanca,AP-1B,62.5,liberada
+22,34,Lleida,San Sebastián,AP-15,17.1,vigente
+22,35,Lleida,Santander,AP-2,121.1,liberada
+22,35,Lleida,Santander,AP-68,291.0,vigente
+22,35,Lleida,Santander,AP-8,14.2,verificar
+22,36,Lleida,Segovia,AP-2,121.1,liberada
+22,36,Lleida,Segovia,R-2,56.6,vigente
+22,36,Lleida,Segovia,AP-6,21.8,vigente
+22,36,Lleida,Segovia,AP-61,27.3,vigente
+22,37,Lleida,Sevilla,AP-2,121.1,liberada
+22,38,Lleida,Soria,AP-2,121.1,liberada
+22,38,Lleida,Soria,AP-68,74.2,vigente
+22,39,Lleida,Tarragona,AP-2,54.4,liberada
+22,40,Lleida,Teruel,AP-2,121.1,liberada
+22,41,Lleida,Toledo,AP-2,121.1,liberada
+22,42,Lleida,Valencia,AP-2,54.4,liberada
+22,42,Lleida,Valencia,AP-7N,189.4,liberada
+22,43,Lleida,Valladolid,AP-2,121.1,liberada
+22,43,Lleida,Valladolid,AP-68,205.5,vigente
+22,43,Lleida,Valladolid,AP-1B,62.5,liberada
+22,44,Lleida,Vitoria-Gasteiz,AP-2,121.1,liberada
+22,44,Lleida,Vitoria-Gasteiz,AP-68,220.3,vigente
+22,45,Lleida,Zamora,AP-2,121.1,liberada
+22,45,Lleida,Zamora,AP-68,205.5,vigente
+22,45,Lleida,Zamora,AP-1B,62.5,liberada
+22,46,Lleida,Zaragoza,AP-2,121.1,liberada
+23,0,Logroño,A Coruña,AP-71,36.4,vigente
+23,0,Logroño,A Coruña,AP-9,13.7,vigente
+23,1,Logroño,Albacete,R-3,16.8,vigente
+23,2,Logroño,Alicante,AP-68,154.6,vigente
+23,3,Logroño,Almería,AP-68,154.6,vigente
+23,4,Logroño,Ávila,AP-68,39.4,vigente
+23,4,Logroño,Ávila,AP-1B,62.5,liberada
+23,5,Logroño,Badajoz,AP-68,39.4,vigente
+23,5,Logroño,Badajoz,AP-1B,62.5,liberada
+23,6,Logroño,Barcelona,AP-68,154.3,vigente
+23,6,Logroño,Barcelona,AP-2,216.3,liberada
+23,6,Logroño,Barcelona,AP-7N,48.6,liberada
+23,7,Logroño,Bilbao,AP-68,127.2,vigente
+23,9,Logroño,Cáceres,AP-68,39.4,vigente
+23,9,Logroño,Cáceres,AP-1B,62.5,liberada
+23,10,Logroño,Cádiz,AP-68,39.4,vigente
+23,10,Logroño,Cádiz,AP-1B,62.5,liberada
+23,10,Logroño,Cádiz,AP-4,92.5,liberada
+23,11,Logroño,Castellón de la Plana,AP-68,154.6,vigente
+23,15,Logroño,Girona,AP-68,154.3,vigente
+23,15,Logroño,Girona,AP-2,123.2,liberada
+23,18,Logroño,Huelva,AP-68,39.4,vigente
+23,18,Logroño,Huelva,AP-1B,62.5,liberada
+23,19,Logroño,Huesca,AP-68,154.3,vigente
+23,22,Logroño,Lleida,AP-68,154.3,vigente
+23,22,Logroño,Lleida,AP-2,123.2,liberada
+23,24,Logroño,Lugo,AP-71,36.4,vigente
+23,26,Logroño,Málaga,AP-46,25.9,vigente
+23,27,Logroño,Murcia,AP-68,154.6,vigente
+23,29,Logroño,Oviedo,AP-68,124.9,vigente
+23,29,Logroño,Oviedo,AP-8,14.2,verificar
+23,30,Logroño,Palencia,AP-68,39.4,vigente
+23,30,Logroño,Palencia,AP-1B,62.5,liberada
+23,33,Logroño,Salamanca,AP-68,39.4,vigente
+23,33,Logroño,Salamanca,AP-1B,62.5,liberada
+23,34,Logroño,San Sebastián,AP-15,15.6,vigente
+23,35,Logroño,Santander,AP-68,124.9,vigente
+23,35,Logroño,Santander,AP-8,14.2,verificar
+23,36,Logroño,Segovia,AP-68,39.4,vigente
+23,36,Logroño,Segovia,AP-1B,62.5,liberada
+23,37,Logroño,Sevilla,AP-68,39.4,vigente
+23,37,Logroño,Sevilla,AP-1B,62.5,liberada
+23,39,Logroño,Tarragona,AP-68,154.3,vigente
+23,39,Logroño,Tarragona,AP-2,176.2,liberada
+23,40,Logroño,Teruel,AP-68,154.6,vigente
+23,42,Logroño,Valencia,AP-68,154.6,vigente
+23,43,Logroño,Valladolid,AP-68,39.4,vigente
+23,43,Logroño,Valladolid,AP-1B,62.5,liberada
+23,44,Logroño,Vitoria-Gasteiz,AP-68,54.2,vigente
+23,45,Logroño,Zamora,AP-68,39.4,vigente
+23,45,Logroño,Zamora,AP-1B,62.5,liberada
+23,46,Logroño,Zaragoza,AP-68,154.3,vigente
+24,0,Lugo,A Coruña,AP-9,13.7,vigente
+24,1,Lugo,Albacete,AP-6,70.2,vigente
+24,2,Lugo,Alicante,AP-6,70.2,vigente
+24,3,Lugo,Almería,AP-6,70.2,vigente
+24,3,Lugo,Almería,R-4,52.9,vigente
+24,6,Lugo,Barcelona,AP-71,36.9,vigente
+24,6,Lugo,Barcelona,AP-1B,55.7,liberada
+24,6,Lugo,Barcelona,AP-68,205.7,vigente
+24,6,Lugo,Barcelona,AP-2,216.3,liberada
+24,6,Lugo,Barcelona,AP-7N,48.6,liberada
+24,7,Lugo,Bilbao,AP-8,13.4,verificar
+24,8,Lugo,Burgos,AP-71,36.9,vigente
+24,10,Lugo,Cádiz,AP-4,92.5,liberada
+24,11,Lugo,Castellón de la Plana,AP-6,70.2,vigente
+24,11,Lugo,Castellón de la Plana,AP-7N,37.7,liberada
+24,12,Lugo,Ciudad Real,AP-6,70.2,vigente
+24,13,Lugo,Córdoba,AP-6,70.2,vigente
+24,13,Lugo,Córdoba,R-4,52.9,vigente
+24,14,Lugo,Cuenca,AP-6,70.2,vigente
+24,15,Lugo,Girona,AP-71,36.9,vigente
+24,15,Lugo,Girona,AP-1B,55.7,liberada
+24,15,Lugo,Girona,AP-68,205.7,vigente
+24,15,Lugo,Girona,AP-2,123.2,liberada
+24,16,Lugo,Granada,AP-6,70.2,vigente
+24,16,Lugo,Granada,R-4,52.9,vigente
+24,17,Lugo,Guadalajara,AP-6,70.2,vigente
+24,19,Lugo,Huesca,AP-71,36.9,vigente
+24,19,Lugo,Huesca,AP-1B,55.7,liberada
+24,19,Lugo,Huesca,AP-68,205.7,vigente
+24,20,Lugo,Jaén,AP-6,70.2,vigente
+24,20,Lugo,Jaén,R-4,52.9,vigente
+24,21,Lugo,León,AP-71,43.5,vigente
+24,22,Lugo,Lleida,AP-71,36.9,vigente
+24,22,Lugo,Lleida,AP-1B,55.7,liberada
+24,22,Lugo,Lleida,AP-68,205.7,vigente
+24,22,Lugo,Lleida,AP-2,123.2,liberada
+24,23,Lugo,Logroño,AP-71,36.9,vigente
+24,25,Lugo,Madrid,AP-6,70.2,vigente
+24,26,Lugo,Málaga,AP-6,70.2,vigente
+24,26,Lugo,Málaga,R-4,52.9,vigente
+24,26,Lugo,Málaga,AP-46,25.9,vigente
+24,27,Lugo,Murcia,AP-6,70.2,vigente
+24,30,Lugo,Palencia,AP-71,36.9,vigente
+24,31,Lugo,Pamplona,AP-71,36.9,vigente
+24,31,Lugo,Pamplona,AP-1B,83.0,liberada
+24,31,Lugo,Pamplona,AP-15,14.5,vigente
+24,34,Lugo,San Sebastián,AP-71,36.9,vigente
+24,34,Lugo,San Sebastián,AP-1B,83.0,liberada
+24,34,Lugo,San Sebastián,AP-1E,44.2,verificar
+24,34,Lugo,San Sebastián,AP-1/AP-8,41.9,verificar
+24,38,Lugo,Soria,AP-71,36.9,vigente
+24,39,Lugo,Tarragona,AP-71,36.9,vigente
+24,39,Lugo,Tarragona,AP-1B,55.7,liberada
+24,39,Lugo,Tarragona,AP-68,205.7,vigente
+24,39,Lugo,Tarragona,AP-2,176.2,liberada
+24,40,Lugo,Teruel,AP-6,70.2,vigente
+24,41,Lugo,Toledo,AP-6,70.2,vigente
+24,42,Lugo,Valencia,AP-6,70.2,vigente
+24,44,Lugo,Vitoria-Gasteiz,AP-71,36.9,vigente
+24,44,Lugo,Vitoria-Gasteiz,AP-1B,83.0,liberada
+24,46,Lugo,Zaragoza,AP-71,36.9,vigente
+24,46,Lugo,Zaragoza,AP-1B,55.7,liberada
+24,46,Lugo,Zaragoza,AP-68,205.7,vigente
+25,0,Madrid,A Coruña,AP-6,70.1,vigente
+25,0,Madrid,A Coruña,AP-9,13.7,vigente
+25,4,Madrid,Ávila,AP-6,41.6,vigente
+25,4,Madrid,Ávila,AP-51,23.2,vigente
+25,6,Madrid,Barcelona,AP-2,216.3,liberada
+25,6,Madrid,Barcelona,AP-7N,48.6,liberada
+25,7,Madrid,Bilbao,AP-1B,76.1,liberada
+25,7,Madrid,Bilbao,AP-68,68.1,vigente
+25,10,Madrid,Cádiz,AP-4,92.5,liberada
+25,11,Madrid,Castellón de la Plana,AP-7N,37.7,liberada
+25,15,Madrid,Girona,AP-2,123.2,liberada
+25,21,Madrid,León,AP-6,70.1,vigente
+25,22,Madrid,Lleida,AP-2,123.2,liberada
+25,24,Madrid,Lugo,AP-6,70.1,vigente
+25,26,Madrid,Málaga,AP-46,25.9,vigente
+25,28,Madrid,Ourense,AP-6,70.1,vigente
+25,29,Madrid,Oviedo,AP-6,70.1,vigente
+25,29,Madrid,Oviedo,AP-66,77.2,vigente
+25,30,Madrid,Palencia,AP-6,70.1,vigente
+25,31,Madrid,Pamplona,AP-15,69.0,vigente
+25,32,Madrid,Pontevedra,AP-6,70.1,vigente
+25,33,Madrid,Salamanca,AP-6,41.6,vigente
+25,33,Madrid,Salamanca,AP-51,23.2,vigente
+25,34,Madrid,San Sebastián,AP-1B,83.0,liberada
+25,34,Madrid,San Sebastián,AP-1E,44.2,verificar
+25,34,Madrid,San Sebastián,AP-1/AP-8,41.9,verificar
+25,36,Madrid,Segovia,AP-6,21.8,vigente
+25,36,Madrid,Segovia,AP-61,27.3,vigente
+25,39,Madrid,Tarragona,AP-2,176.2,liberada
+25,43,Madrid,Valladolid,AP-6,68.4,vigente
+25,44,Madrid,Vitoria-Gasteiz,AP-1B,83.0,liberada
+25,45,Madrid,Zamora,AP-6,70.1,vigente
+26,0,Málaga,A Coruña,R-4,52.8,vigente
+26,0,Málaga,A Coruña,AP-6,70.1,vigente
+26,0,Málaga,A Coruña,AP-9,13.7,vigente
+26,6,Málaga,Barcelona,AP-7N,249.7,liberada
+26,6,Málaga,Barcelona,C-32,53.5,verificar
+26,7,Málaga,Bilbao,M-12,10.1,vigente
+26,7,Málaga,Bilbao,AP-1B,76.1,liberada
+26,7,Málaga,Bilbao,AP-68,68.1,vigente
+26,8,Málaga,Burgos,M-12,10.1,vigente
+26,10,Málaga,Cádiz,AP-7S,78.3,vigente
+26,10,Málaga,Cádiz,AP-4,3.1,liberada
+26,11,Málaga,Castellón de la Plana,AP-7N,37.7,liberada
+26,15,Málaga,Girona,AP-7N,406.5,liberada
+26,21,Málaga,León,R-4,52.8,vigente
+26,21,Málaga,León,AP-6,70.1,vigente
+26,22,Málaga,Lleida,AP-7N,223.7,liberada
+26,22,Málaga,Lleida,AP-2,54.4,liberada
+26,24,Málaga,Lugo,R-4,52.8,vigente
+26,24,Málaga,Lugo,AP-6,70.1,vigente
+26,29,Málaga,Oviedo,R-4,52.8,vigente
+26,29,Málaga,Oviedo,AP-6,70.1,vigente
+26,29,Málaga,Oviedo,AP-66,77.2,vigente
+26,30,Málaga,Palencia,R-4,52.8,vigente
+26,30,Málaga,Palencia,AP-6,70.1,vigente
+26,31,Málaga,Pamplona,AP-15,69.0,vigente
+26,32,Málaga,Pontevedra,AP-9,44.5,vigente
+26,34,Málaga,San Sebastián,M-12,10.1,vigente
+26,34,Málaga,San Sebastián,AP-1B,83.0,liberada
+26,34,Málaga,San Sebastián,AP-1E,44.2,verificar
+26,34,Málaga,San Sebastián,AP-1/AP-8,41.9,verificar
+26,35,Málaga,Santander,M-12,10.1,vigente
+26,36,Málaga,Segovia,R-4,52.8,vigente
+26,36,Málaga,Segovia,AP-6,21.8,vigente
+26,36,Málaga,Segovia,AP-61,27.3,vigente
+26,39,Málaga,Tarragona,AP-7N,223.7,liberada
+26,43,Málaga,Valladolid,R-4,52.8,vigente
+26,43,Málaga,Valladolid,AP-6,68.4,vigente
+26,44,Málaga,Vitoria-Gasteiz,M-12,10.1,vigente
+26,44,Málaga,Vitoria-Gasteiz,AP-1B,83.0,liberada
+27,0,Murcia,A Coruña,AP-6,70.1,vigente
+27,0,Murcia,A Coruña,AP-9,13.7,vigente
+27,4,Murcia,Ávila,AP-6,41.6,vigente
+27,4,Murcia,Ávila,AP-51,23.2,vigente
+27,6,Murcia,Barcelona,AP-7N,249.7,liberada
+27,6,Murcia,Barcelona,C-32,53.5,verificar
+27,7,Murcia,Bilbao,R-3,20.2,vigente
+27,7,Murcia,Bilbao,AP-1B,76.1,liberada
+27,7,Murcia,Bilbao,AP-68,68.1,vigente
+27,8,Murcia,Burgos,R-3,20.2,vigente
+27,10,Murcia,Cádiz,AP-4,25.7,liberada
+27,11,Murcia,Castellón de la Plana,AP-7N,37.7,liberada
+27,15,Murcia,Girona,AP-7N,406.5,liberada
+27,17,Murcia,Guadalajara,R-3,16.4,vigente
+27,21,Murcia,León,AP-6,70.1,vigente
+27,22,Murcia,Lleida,AP-7N,223.7,liberada
+27,22,Murcia,Lleida,AP-2,54.4,liberada
+27,23,Murcia,Logroño,AP-68,155.2,vigente
+27,24,Murcia,Lugo,AP-6,70.1,vigente
+27,26,Murcia,Málaga,AP-46,25.9,vigente
+27,28,Murcia,Ourense,AP-6,70.1,vigente
+27,29,Murcia,Oviedo,AP-6,70.1,vigente
+27,29,Murcia,Oviedo,AP-66,77.2,vigente
+27,30,Murcia,Palencia,AP-6,70.1,vigente
+27,31,Murcia,Pamplona,AP-68,85.3,vigente
+27,31,Murcia,Pamplona,AP-15,82.8,vigente
+27,32,Murcia,Pontevedra,AP-6,70.1,vigente
+27,33,Murcia,Salamanca,AP-6,41.6,vigente
+27,33,Murcia,Salamanca,AP-51,23.2,vigente
+27,34,Murcia,San Sebastián,AP-68,85.3,vigente
+27,34,Murcia,San Sebastián,AP-15,98.4,vigente
+27,35,Murcia,Santander,R-3,20.2,vigente
+27,36,Murcia,Segovia,AP-6,21.8,vigente
+27,36,Murcia,Segovia,AP-61,27.3,vigente
+27,38,Murcia,Soria,R-3,16.4,vigente
+27,39,Murcia,Tarragona,AP-7N,223.7,liberada
+27,43,Murcia,Valladolid,AP-6,68.4,vigente
+27,44,Murcia,Vitoria-Gasteiz,R-3,20.2,vigente
+27,44,Murcia,Vitoria-Gasteiz,AP-1B,83.0,liberada
+27,45,Murcia,Zamora,AP-6,70.1,vigente
+28,0,Ourense,A Coruña,AP-53,55.8,vigente
+28,0,Ourense,A Coruña,AP-9,69.7,vigente
+28,1,Ourense,Albacete,AP-6,70.2,vigente
+28,2,Ourense,Alicante,AP-6,70.2,vigente
+28,3,Ourense,Almería,AP-6,70.2,vigente
+28,3,Ourense,Almería,R-4,52.9,vigente
+28,6,Ourense,Barcelona,AP-1B,55.7,liberada
+28,6,Ourense,Barcelona,AP-68,205.7,vigente
+28,6,Ourense,Barcelona,AP-2,216.3,liberada
+28,6,Ourense,Barcelona,AP-7N,48.6,liberada
+28,7,Ourense,Bilbao,AP-1B,76.1,liberada
+28,7,Ourense,Bilbao,AP-68,68.1,vigente
+28,10,Ourense,Cádiz,AP-4,92.5,liberada
+28,11,Ourense,Castellón de la Plana,AP-6,70.2,vigente
+28,11,Ourense,Castellón de la Plana,AP-7N,37.7,liberada
+28,12,Ourense,Ciudad Real,AP-6,70.2,vigente
+28,14,Ourense,Cuenca,AP-6,70.2,vigente
+28,15,Ourense,Girona,AP-1B,55.7,liberada
+28,15,Ourense,Girona,AP-68,205.7,vigente
+28,15,Ourense,Girona,AP-2,123.2,liberada
+28,16,Ourense,Granada,AP-6,70.2,vigente
+28,16,Ourense,Granada,R-4,52.9,vigente
+28,17,Ourense,Guadalajara,AP-6,70.2,vigente
+28,19,Ourense,Huesca,AP-1B,55.7,liberada
+28,19,Ourense,Huesca,AP-68,205.7,vigente
+28,20,Ourense,Jaén,AP-6,70.2,vigente
+28,20,Ourense,Jaén,R-4,52.9,vigente
+28,22,Ourense,Lleida,AP-1B,55.7,liberada
+28,22,Ourense,Lleida,AP-68,205.7,vigente
+28,22,Ourense,Lleida,AP-2,123.2,liberada
+28,25,Ourense,Madrid,AP-6,70.2,vigente
+28,26,Ourense,Málaga,AP-46,25.9,vigente
+28,27,Ourense,Murcia,AP-6,70.2,vigente
+28,31,Ourense,Pamplona,AP-1B,83.0,liberada
+28,31,Ourense,Pamplona,AP-15,14.5,vigente
+28,34,Ourense,San Sebastián,AP-1B,83.0,liberada
+28,34,Ourense,San Sebastián,AP-1E,44.2,verificar
+28,34,Ourense,San Sebastián,AP-1/AP-8,41.9,verificar
+28,39,Ourense,Tarragona,AP-1B,55.7,liberada
+28,39,Ourense,Tarragona,AP-68,205.7,vigente
+28,39,Ourense,Tarragona,AP-2,176.2,liberada
+28,40,Ourense,Teruel,AP-6,70.2,vigente
+28,41,Ourense,Toledo,AP-6,70.2,vigente
+28,42,Ourense,Valencia,AP-6,70.2,vigente
+28,44,Ourense,Vitoria-Gasteiz,AP-1B,83.0,liberada
+28,46,Ourense,Zaragoza,AP-1B,55.7,liberada
+28,46,Ourense,Zaragoza,AP-68,205.7,vigente
+29,0,Oviedo,A Coruña,AP-9,13.7,vigente
+29,1,Oviedo,Albacete,AP-66,29.4,vigente
+29,1,Oviedo,Albacete,AP-6,70.2,vigente
+29,2,Oviedo,Alicante,AP-66,29.4,vigente
+29,2,Oviedo,Alicante,AP-6,70.2,vigente
+29,3,Oviedo,Almería,AP-66,29.4,vigente
+29,3,Oviedo,Almería,AP-6,70.2,vigente
+29,3,Oviedo,Almería,R-4,52.9,vigente
+29,4,Oviedo,Ávila,AP-66,29.4,vigente
+29,5,Oviedo,Badajoz,AP-66,29.4,vigente
+29,6,Oviedo,Barcelona,AP-8,17.7,verificar
+29,6,Oviedo,Barcelona,AP-68,290.7,vigente
+29,6,Oviedo,Barcelona,AP-2,216.3,liberada
+29,6,Oviedo,Barcelona,AP-7N,48.6,liberada
+29,7,Oviedo,Bilbao,AP-8,13.4,verificar
+29,8,Oviedo,Burgos,AP-66,29.4,vigente
+29,9,Oviedo,Cáceres,AP-66,29.4,vigente
+29,10,Oviedo,Cádiz,AP-66,29.4,vigente
+29,10,Oviedo,Cádiz,AP-4,92.5,liberada
+29,11,Oviedo,Castellón de la Plana,AP-66,29.4,vigente
+29,11,Oviedo,Castellón de la Plana,AP-6,70.2,vigente
+29,11,Oviedo,Castellón de la Plana,AP-7N,37.7,liberada
+29,12,Oviedo,Ciudad Real,AP-66,29.4,vigente
+29,12,Oviedo,Ciudad Real,AP-6,70.2,vigente
+29,13,Oviedo,Córdoba,AP-66,29.4,vigente
+29,13,Oviedo,Córdoba,AP-6,70.2,vigente
+29,13,Oviedo,Córdoba,R-4,52.9,vigente
+29,14,Oviedo,Cuenca,AP-66,29.4,vigente
+29,14,Oviedo,Cuenca,AP-6,70.2,vigente
+29,15,Oviedo,Girona,AP-8,17.7,verificar
+29,15,Oviedo,Girona,AP-68,290.7,vigente
+29,15,Oviedo,Girona,AP-2,123.2,liberada
+29,16,Oviedo,Granada,AP-66,29.4,vigente
+29,16,Oviedo,Granada,AP-6,70.2,vigente
+29,16,Oviedo,Granada,R-4,52.9,vigente
+29,17,Oviedo,Guadalajara,AP-66,29.4,vigente
+29,17,Oviedo,Guadalajara,AP-6,70.2,vigente
+29,18,Oviedo,Huelva,AP-66,29.4,vigente
+29,19,Oviedo,Huesca,AP-8,17.7,verificar
+29,19,Oviedo,Huesca,AP-68,33.1,vigente
+29,19,Oviedo,Huesca,AP-15,17.0,vigente
+29,20,Oviedo,Jaén,AP-66,29.4,vigente
+29,20,Oviedo,Jaén,AP-6,70.2,vigente
+29,20,Oviedo,Jaén,R-4,52.9,vigente
+29,21,Oviedo,León,AP-66,28.7,vigente
+29,22,Oviedo,Lleida,AP-8,17.7,verificar
+29,22,Oviedo,Lleida,AP-68,290.7,vigente
+29,22,Oviedo,Lleida,AP-2,123.2,liberada
+29,23,Oviedo,Logroño,AP-8,17.7,verificar
+29,23,Oviedo,Logroño,AP-68,124.4,vigente
+29,25,Oviedo,Madrid,AP-66,29.4,vigente
+29,25,Oviedo,Madrid,AP-6,70.2,vigente
+29,26,Oviedo,Málaga,AP-66,29.4,vigente
+29,26,Oviedo,Málaga,AP-6,70.2,vigente
+29,26,Oviedo,Málaga,R-4,52.9,vigente
+29,26,Oviedo,Málaga,AP-46,25.9,vigente
+29,27,Oviedo,Murcia,AP-66,29.4,vigente
+29,27,Oviedo,Murcia,AP-6,70.2,vigente
+29,30,Oviedo,Palencia,AP-66,29.4,vigente
+29,31,Oviedo,Pamplona,AP-8,17.7,verificar
+29,31,Oviedo,Pamplona,AP-68,33.1,vigente
+29,31,Oviedo,Pamplona,AP-15,14.5,vigente
+29,32,Oviedo,Pontevedra,AP-9,112.4,vigente
+29,33,Oviedo,Salamanca,AP-66,29.4,vigente
+29,34,Oviedo,San Sebastián,AP-8,61.4,verificar
+29,36,Oviedo,Segovia,AP-66,29.4,vigente
+29,37,Oviedo,Sevilla,AP-66,29.4,vigente
+29,38,Oviedo,Soria,AP-66,29.4,vigente
+29,39,Oviedo,Tarragona,AP-8,17.7,verificar
+29,39,Oviedo,Tarragona,AP-68,290.7,vigente
+29,39,Oviedo,Tarragona,AP-2,176.2,liberada
+29,40,Oviedo,Teruel,AP-66,29.4,vigente
+29,41,Oviedo,Toledo,AP-66,29.4,vigente
+29,41,Oviedo,Toledo,AP-6,70.2,vigente
+29,42,Oviedo,Valencia,AP-66,29.4,vigente
+29,42,Oviedo,Valencia,AP-6,70.2,vigente
+29,43,Oviedo,Valladolid,AP-66,29.4,vigente
+29,44,Oviedo,Vitoria-Gasteiz,AP-8,17.7,verificar
+29,44,Oviedo,Vitoria-Gasteiz,AP-68,33.1,vigente
+29,45,Oviedo,Zamora,AP-66,29.4,vigente
+29,46,Oviedo,Zaragoza,AP-8,17.7,verificar
+29,46,Oviedo,Zaragoza,AP-68,290.7,vigente
+30,0,Palencia,A Coruña,AP-71,36.4,vigente
+30,0,Palencia,A Coruña,AP-9,13.7,vigente
+30,1,Palencia,Albacete,R-3,20.7,vigente
+30,2,Palencia,Alicante,R-3,20.7,vigente
+30,3,Palencia,Almería,AP-6,70.2,vigente
+30,3,Palencia,Almería,R-4,52.9,vigente
+30,6,Palencia,Barcelona,AP-1B,55.7,liberada
+30,6,Palencia,Barcelona,AP-68,205.7,vigente
+30,6,Palencia,Barcelona,AP-2,216.3,liberada
+30,6,Palencia,Barcelona,AP-7N,48.6,liberada
+30,7,Palencia,Bilbao,AP-1B,76.1,liberada
+30,7,Palencia,Bilbao,AP-68,68.1,vigente
+30,10,Palencia,Cádiz,AP-4,92.5,liberada
+30,12,Palencia,Ciudad Real,AP-6,70.2,vigente
+30,13,Palencia,Córdoba,AP-6,70.2,vigente
+30,13,Palencia,Córdoba,R-4,52.9,vigente
+30,14,Palencia,Cuenca,R-3,20.7,vigente
+30,15,Palencia,Girona,AP-1B,55.7,liberada
+30,15,Palencia,Girona,AP-68,205.7,vigente
+30,15,Palencia,Girona,AP-2,123.2,liberada
+30,16,Palencia,Granada,AP-6,70.2,vigente
+30,16,Palencia,Granada,R-4,52.9,vigente
+30,17,Palencia,Guadalajara,R-2,28.4,vigente
+30,19,Palencia,Huesca,AP-1B,55.7,liberada
+30,19,Palencia,Huesca,AP-68,205.7,vigente
+30,20,Palencia,Jaén,AP-6,70.2,vigente
+30,20,Palencia,Jaén,R-4,52.9,vigente
+30,22,Palencia,Lleida,AP-1B,55.7,liberada
+30,22,Palencia,Lleida,AP-68,205.7,vigente
+30,22,Palencia,Lleida,AP-2,123.2,liberada
+30,23,Palencia,Logroño,AP-1B,55.7,liberada
+30,23,Palencia,Logroño,AP-68,39.5,vigente
+30,24,Palencia,Lugo,AP-71,36.4,vigente
+30,25,Palencia,Madrid,AP-6,70.2,vigente
+30,26,Palencia,Málaga,AP-6,70.2,vigente
+30,26,Palencia,Málaga,R-4,52.9,vigente
+30,26,Palencia,Málaga,AP-46,25.9,vigente
+30,27,Palencia,Murcia,R-3,20.7,vigente
+30,29,Palencia,Oviedo,AP-66,77.2,vigente
+30,31,Palencia,Pamplona,AP-1B,83.0,liberada
+30,31,Palencia,Pamplona,AP-15,14.5,vigente
+30,34,Palencia,San Sebastián,AP-1B,83.0,liberada
+30,34,Palencia,San Sebastián,AP-1E,44.2,verificar
+30,34,Palencia,San Sebastián,AP-1/AP-8,41.9,verificar
+30,39,Palencia,Tarragona,AP-1B,55.7,liberada
+30,39,Palencia,Tarragona,AP-68,205.7,vigente
+30,39,Palencia,Tarragona,AP-2,176.2,liberada
+30,41,Palencia,Toledo,AP-6,70.2,vigente
+30,42,Palencia,Valencia,R-3,20.7,vigente
+30,44,Palencia,Vitoria-Gasteiz,AP-1B,83.0,liberada
+30,46,Palencia,Zaragoza,AP-1B,55.7,liberada
+30,46,Palencia,Zaragoza,AP-68,205.7,vigente
+31,0,Pamplona,A Coruña,AP-15,14.5,vigente
+31,0,Pamplona,A Coruña,AP-1B,77.0,liberada
+31,0,Pamplona,A Coruña,AP-71,36.4,vigente
+31,0,Pamplona,A Coruña,AP-9,13.7,vigente
+31,1,Pamplona,Albacete,AP-15,83.0,vigente
+31,1,Pamplona,Albacete,AP-68,85.1,vigente
+31,2,Pamplona,Alicante,AP-15,83.0,vigente
+31,2,Pamplona,Alicante,AP-68,85.1,vigente
+31,3,Pamplona,Almería,AP-15,83.0,vigente
+31,3,Pamplona,Almería,AP-68,85.1,vigente
+31,4,Pamplona,Ávila,AP-15,14.5,vigente
+31,4,Pamplona,Ávila,AP-1B,90.3,liberada
+31,5,Pamplona,Badajoz,AP-15,14.5,vigente
+31,5,Pamplona,Badajoz,AP-1B,90.3,liberada
+31,6,Pamplona,Barcelona,AP-15,1.3,vigente
+31,7,Pamplona,Bilbao,AP-15,14.5,vigente
+31,7,Pamplona,Bilbao,AP-68,35.8,vigente
+31,8,Pamplona,Burgos,AP-15,14.5,vigente
+31,8,Pamplona,Burgos,AP-1B,87.6,liberada
+31,9,Pamplona,Cáceres,AP-15,14.5,vigente
+31,9,Pamplona,Cáceres,AP-1B,90.3,liberada
+31,10,Pamplona,Cádiz,AP-15,14.5,vigente
+31,10,Pamplona,Cádiz,AP-1B,90.3,liberada
+31,10,Pamplona,Cádiz,AP-4,92.5,liberada
+31,11,Pamplona,Castellón de la Plana,AP-15,83.0,vigente
+31,11,Pamplona,Castellón de la Plana,AP-68,85.1,vigente
+31,12,Pamplona,Ciudad Real,AP-15,70.0,vigente
+31,13,Pamplona,Córdoba,AP-15,70.0,vigente
+31,14,Pamplona,Cuenca,AP-15,83.0,vigente
+31,14,Pamplona,Cuenca,AP-68,85.1,vigente
+31,15,Pamplona,Girona,AP-15,1.3,vigente
+31,16,Pamplona,Granada,AP-15,70.0,vigente
+31,17,Pamplona,Guadalajara,AP-15,70.0,vigente
+31,18,Pamplona,Huelva,AP-15,14.5,vigente
+31,18,Pamplona,Huelva,AP-1B,90.3,liberada
+31,19,Pamplona,Huesca,AP-15,1.3,vigente
+31,20,Pamplona,Jaén,AP-15,70.0,vigente
+31,21,Pamplona,León,AP-15,14.5,vigente
+31,21,Pamplona,León,AP-1B,77.0,liberada
+31,22,Pamplona,Lleida,AP-15,1.3,vigente
+31,24,Pamplona,Lugo,AP-15,14.5,vigente
+31,24,Pamplona,Lugo,AP-1B,77.0,liberada
+31,24,Pamplona,Lugo,AP-71,36.4,vigente
+31,25,Pamplona,Madrid,AP-15,70.0,vigente
+31,26,Pamplona,Málaga,AP-15,70.0,vigente
+31,26,Pamplona,Málaga,AP-46,25.9,vigente
+31,27,Pamplona,Murcia,AP-15,83.0,vigente
+31,27,Pamplona,Murcia,AP-68,85.1,vigente
+31,28,Pamplona,Ourense,AP-15,14.5,vigente
+31,28,Pamplona,Ourense,AP-1B,77.0,liberada
+31,29,Pamplona,Oviedo,AP-15,14.5,vigente
+31,29,Pamplona,Oviedo,AP-68,33.6,vigente
+31,29,Pamplona,Oviedo,AP-8,14.2,verificar
+31,30,Pamplona,Palencia,AP-15,14.5,vigente
+31,30,Pamplona,Palencia,AP-1B,90.3,liberada
+31,32,Pamplona,Pontevedra,AP-15,14.5,vigente
+31,32,Pamplona,Pontevedra,AP-1B,77.0,liberada
+31,33,Pamplona,Salamanca,AP-15,14.5,vigente
+31,33,Pamplona,Salamanca,AP-1B,90.3,liberada
+31,34,Pamplona,San Sebastián,AP-15,14.5,vigente
+31,35,Pamplona,Santander,AP-15,14.5,vigente
+31,35,Pamplona,Santander,AP-68,33.6,vigente
+31,35,Pamplona,Santander,AP-8,14.2,verificar
+31,36,Pamplona,Segovia,AP-15,14.5,vigente
+31,36,Pamplona,Segovia,AP-1B,90.3,liberada
+31,37,Pamplona,Sevilla,AP-15,14.5,vigente
+31,37,Pamplona,Sevilla,AP-1B,90.3,liberada
+31,38,Pamplona,Soria,AP-15,70.0,vigente
+31,39,Pamplona,Tarragona,AP-15,83.0,vigente
+31,39,Pamplona,Tarragona,AP-68,84.8,vigente
+31,39,Pamplona,Tarragona,AP-2,176.2,liberada
+31,40,Pamplona,Teruel,AP-15,83.0,vigente
+31,40,Pamplona,Teruel,AP-68,85.1,vigente
+31,41,Pamplona,Toledo,AP-15,70.0,vigente
+31,42,Pamplona,Valencia,AP-15,83.0,vigente
+31,42,Pamplona,Valencia,AP-68,85.1,vigente
+31,43,Pamplona,Valladolid,AP-15,14.5,vigente
+31,43,Pamplona,Valladolid,AP-1B,90.3,liberada
+31,44,Pamplona,Vitoria-Gasteiz,AP-15,14.5,vigente
+31,45,Pamplona,Zamora,AP-15,14.5,vigente
+31,45,Pamplona,Zamora,AP-1B,90.3,liberada
+31,46,Pamplona,Zaragoza,AP-15,83.0,vigente
+31,46,Pamplona,Zaragoza,AP-68,84.8,vigente
+32,0,Pontevedra,A Coruña,AP-9,127.0,vigente
+32,1,Pontevedra,Albacete,AP-6,70.2,vigente
+32,2,Pontevedra,Alicante,AP-6,70.2,vigente
+32,3,Pontevedra,Almería,AP-6,70.2,vigente
+32,3,Pontevedra,Almería,R-4,52.9,vigente
+32,5,Pontevedra,Badajoz,AP-9,44.7,vigente
+32,6,Pontevedra,Barcelona,AP-1B,55.7,liberada
+32,6,Pontevedra,Barcelona,AP-68,205.7,vigente
+32,6,Pontevedra,Barcelona,AP-2,216.3,liberada
+32,6,Pontevedra,Barcelona,AP-7N,48.6,liberada
+32,7,Pontevedra,Bilbao,AP-9,112.6,vigente
+32,7,Pontevedra,Bilbao,AP-8,13.4,verificar
+32,9,Pontevedra,Cáceres,AP-9,44.7,vigente
+32,10,Pontevedra,Cádiz,AP-9,44.7,vigente
+32,10,Pontevedra,Cádiz,AP-4,92.5,liberada
+32,11,Pontevedra,Castellón de la Plana,AP-6,70.2,vigente
+32,11,Pontevedra,Castellón de la Plana,AP-7N,37.7,liberada
+32,12,Pontevedra,Ciudad Real,AP-6,70.2,vigente
+32,13,Pontevedra,Córdoba,AP-9,44.7,vigente
+32,14,Pontevedra,Cuenca,AP-6,70.2,vigente
+32,15,Pontevedra,Girona,AP-1B,55.7,liberada
+32,15,Pontevedra,Girona,AP-68,205.7,vigente
+32,15,Pontevedra,Girona,AP-2,123.2,liberada
+32,16,Pontevedra,Granada,AP-6,70.2,vigente
+32,16,Pontevedra,Granada,R-4,52.9,vigente
+32,17,Pontevedra,Guadalajara,AP-6,70.2,vigente
+32,18,Pontevedra,Huelva,AP-9,44.7,vigente
+32,19,Pontevedra,Huesca,AP-1B,55.7,liberada
+32,19,Pontevedra,Huesca,AP-68,205.7,vigente
+32,20,Pontevedra,Jaén,AP-6,70.2,vigente
+32,20,Pontevedra,Jaén,R-4,52.9,vigente
+32,21,Pontevedra,León,AP-9,61.0,vigente
+32,21,Pontevedra,León,AP-71,43.5,vigente
+32,22,Pontevedra,Lleida,AP-1B,55.7,liberada
+32,22,Pontevedra,Lleida,AP-68,205.7,vigente
+32,22,Pontevedra,Lleida,AP-2,123.2,liberada
+32,25,Pontevedra,Madrid,AP-6,70.2,vigente
+32,26,Pontevedra,Málaga,AP-9,44.7,vigente
+32,26,Pontevedra,Málaga,AP-46,25.9,vigente
+32,27,Pontevedra,Murcia,AP-6,70.2,vigente
+32,29,Pontevedra,Oviedo,AP-9,112.6,vigente
+32,31,Pontevedra,Pamplona,AP-1B,83.0,liberada
+32,31,Pontevedra,Pamplona,AP-15,14.5,vigente
+32,34,Pontevedra,San Sebastián,AP-9,112.6,vigente
+32,34,Pontevedra,San Sebastián,AP-8,61.4,verificar
+32,35,Pontevedra,Santander,AP-9,112.6,vigente
+32,37,Pontevedra,Sevilla,AP-9,44.7,vigente
+32,39,Pontevedra,Tarragona,AP-1B,55.7,liberada
+32,39,Pontevedra,Tarragona,AP-68,205.7,vigente
+32,39,Pontevedra,Tarragona,AP-2,176.2,liberada
+32,40,Pontevedra,Teruel,AP-6,70.2,vigente
+32,41,Pontevedra,Toledo,AP-6,70.2,vigente
+32,42,Pontevedra,Valencia,AP-6,70.2,vigente
+32,44,Pontevedra,Vitoria-Gasteiz,AP-1B,83.0,liberada
+32,46,Pontevedra,Zaragoza,AP-1B,55.7,liberada
+32,46,Pontevedra,Zaragoza,AP-68,205.7,vigente
+33,0,Salamanca,A Coruña,AP-9,13.7,vigente
+33,1,Salamanca,Albacete,AP-51,23.5,vigente
+33,1,Salamanca,Albacete,AP-6,41.4,vigente
+33,2,Salamanca,Alicante,AP-51,23.5,vigente
+33,2,Salamanca,Alicante,AP-6,41.4,vigente
+33,3,Salamanca,Almería,AP-51,23.5,vigente
+33,3,Salamanca,Almería,AP-6,41.4,vigente
+33,3,Salamanca,Almería,R-4,52.9,vigente
+33,6,Salamanca,Barcelona,AP-1B,55.7,liberada
+33,6,Salamanca,Barcelona,AP-68,205.7,vigente
+33,6,Salamanca,Barcelona,AP-2,216.3,liberada
+33,6,Salamanca,Barcelona,AP-7N,48.6,liberada
+33,7,Salamanca,Bilbao,AP-1B,76.1,liberada
+33,7,Salamanca,Bilbao,AP-68,68.1,vigente
+33,10,Salamanca,Cádiz,AP-4,92.5,liberada
+33,11,Salamanca,Castellón de la Plana,AP-51,23.5,vigente
+33,11,Salamanca,Castellón de la Plana,AP-6,41.4,vigente
+33,11,Salamanca,Castellón de la Plana,AP-7N,37.7,liberada
+33,14,Salamanca,Cuenca,AP-51,23.5,vigente
+33,14,Salamanca,Cuenca,AP-6,41.4,vigente
+33,15,Salamanca,Girona,AP-1B,55.7,liberada
+33,15,Salamanca,Girona,AP-68,205.7,vigente
+33,15,Salamanca,Girona,AP-2,123.2,liberada
+33,16,Salamanca,Granada,AP-51,23.5,vigente
+33,16,Salamanca,Granada,AP-6,41.4,vigente
+33,16,Salamanca,Granada,R-4,52.9,vigente
+33,17,Salamanca,Guadalajara,AP-51,23.5,vigente
+33,17,Salamanca,Guadalajara,AP-6,41.4,vigente
+33,19,Salamanca,Huesca,AP-1B,55.7,liberada
+33,19,Salamanca,Huesca,AP-68,205.7,vigente
+33,20,Salamanca,Jaén,AP-51,23.5,vigente
+33,20,Salamanca,Jaén,AP-6,41.4,vigente
+33,20,Salamanca,Jaén,R-4,52.9,vigente
+33,22,Salamanca,Lleida,AP-1B,55.7,liberada
+33,22,Salamanca,Lleida,AP-68,205.7,vigente
+33,22,Salamanca,Lleida,AP-2,123.2,liberada
+33,23,Salamanca,Logroño,AP-1B,55.7,liberada
+33,23,Salamanca,Logroño,AP-68,39.5,vigente
+33,25,Salamanca,Madrid,AP-51,23.5,vigente
+33,25,Salamanca,Madrid,AP-6,41.4,vigente
+33,26,Salamanca,Málaga,AP-46,25.9,vigente
+33,27,Salamanca,Murcia,AP-51,23.5,vigente
+33,27,Salamanca,Murcia,AP-6,41.4,vigente
+33,29,Salamanca,Oviedo,AP-66,77.2,vigente
+33,31,Salamanca,Pamplona,AP-1B,83.0,liberada
+33,31,Salamanca,Pamplona,AP-15,14.5,vigente
+33,34,Salamanca,San Sebastián,AP-1B,83.0,liberada
+33,34,Salamanca,San Sebastián,AP-1E,44.2,verificar
+33,34,Salamanca,San Sebastián,AP-1/AP-8,41.9,verificar
+33,39,Salamanca,Tarragona,AP-1B,55.7,liberada
+33,39,Salamanca,Tarragona,AP-68,205.7,vigente
+33,39,Salamanca,Tarragona,AP-2,176.2,liberada
+33,40,Salamanca,Teruel,AP-51,23.5,vigente
+33,40,Salamanca,Teruel,AP-6,41.4,vigente
+33,42,Salamanca,Valencia,AP-51,23.5,vigente
+33,42,Salamanca,Valencia,AP-6,41.4,vigente
+33,44,Salamanca,Vitoria-Gasteiz,AP-1B,83.0,liberada
+33,46,Salamanca,Zaragoza,AP-1B,55.7,liberada
+33,46,Salamanca,Zaragoza,AP-68,205.7,vigente
+34,0,San Sebastián,A Coruña,AP-8,28.4,verificar
+34,0,San Sebastián,A Coruña,AP-9,13.7,vigente
+34,1,San Sebastián,Albacete,AP-15,98.7,vigente
+34,1,San Sebastián,Albacete,AP-68,85.1,vigente
+34,2,San Sebastián,Alicante,AP-15,98.7,vigente
+34,2,San Sebastián,Alicante,AP-68,85.1,vigente
+34,3,San Sebastián,Almería,AP-15,98.7,vigente
+34,3,San Sebastián,Almería,AP-68,85.1,vigente
+34,4,San Sebastián,Ávila,AP-1E,39.4,verificar
+34,4,San Sebastián,Ávila,AP-1B,90.3,liberada
+34,5,San Sebastián,Badajoz,AP-1E,39.4,verificar
+34,5,San Sebastián,Badajoz,AP-1B,90.3,liberada
+34,6,San Sebastián,Barcelona,AP-15,17.0,vigente
+34,7,San Sebastián,Bilbao,AP-8,36.1,verificar
+34,8,San Sebastián,Burgos,AP-1E,39.4,verificar
+34,8,San Sebastián,Burgos,AP-1B,87.6,liberada
+34,9,San Sebastián,Cáceres,AP-1E,39.4,verificar
+34,9,San Sebastián,Cáceres,AP-1B,90.3,liberada
+34,10,San Sebastián,Cádiz,AP-1E,39.4,verificar
+34,10,San Sebastián,Cádiz,AP-1B,90.3,liberada
+34,10,San Sebastián,Cádiz,AP-4,92.5,liberada
+34,11,San Sebastián,Castellón de la Plana,AP-15,98.7,vigente
+34,11,San Sebastián,Castellón de la Plana,AP-68,85.1,vigente
+34,12,San Sebastián,Ciudad Real,AP-1E,39.4,verificar
+34,12,San Sebastián,Ciudad Real,AP-1B,90.3,liberada
+34,13,San Sebastián,Córdoba,AP-1E,39.4,verificar
+34,13,San Sebastián,Córdoba,AP-1B,90.3,liberada
+34,14,San Sebastián,Cuenca,AP-15,98.7,vigente
+34,14,San Sebastián,Cuenca,AP-68,85.1,vigente
+34,15,San Sebastián,Girona,AP-1/AP-8,12.5,verificar
+34,15,San Sebastián,Girona,AP-7N,59.5,liberada
+34,16,San Sebastián,Granada,AP-1E,39.4,verificar
+34,16,San Sebastián,Granada,AP-1B,90.3,liberada
+34,17,San Sebastián,Guadalajara,AP-15,85.7,vigente
+34,18,San Sebastián,Huelva,AP-1E,39.4,verificar
+34,18,San Sebastián,Huelva,AP-1B,90.3,liberada
+34,19,San Sebastián,Huesca,AP-15,17.0,vigente
+34,20,San Sebastián,Jaén,AP-1E,39.4,verificar
+34,20,San Sebastián,Jaén,AP-1B,90.3,liberada
+34,21,San Sebastián,León,AP-1E,39.4,verificar
+34,21,San Sebastián,León,AP-1B,77.0,liberada
+34,22,San Sebastián,Lleida,AP-15,17.0,vigente
+34,23,San Sebastián,Logroño,AP-15,15.7,vigente
+34,24,San Sebastián,Lugo,AP-1E,39.4,verificar
+34,24,San Sebastián,Lugo,AP-1B,77.0,liberada
+34,24,San Sebastián,Lugo,AP-71,36.4,vigente
+34,25,San Sebastián,Madrid,AP-1E,39.4,verificar
+34,25,San Sebastián,Madrid,AP-1B,90.3,liberada
+34,26,San Sebastián,Málaga,AP-1E,39.4,verificar
+34,26,San Sebastián,Málaga,AP-1B,90.3,liberada
+34,26,San Sebastián,Málaga,AP-46,25.9,vigente
+34,27,San Sebastián,Murcia,AP-15,98.7,vigente
+34,27,San Sebastián,Murcia,AP-68,85.1,vigente
+34,28,San Sebastián,Ourense,AP-1E,39.4,verificar
+34,28,San Sebastián,Ourense,AP-1B,77.0,liberada
+34,29,San Sebastián,Oviedo,AP-8,28.4,verificar
+34,30,San Sebastián,Palencia,AP-1E,39.4,verificar
+34,30,San Sebastián,Palencia,AP-1B,90.3,liberada
+34,31,San Sebastián,Pamplona,AP-15,14.5,vigente
+34,32,San Sebastián,Pontevedra,AP-8,28.4,verificar
+34,32,San Sebastián,Pontevedra,AP-9,112.4,vigente
+34,33,San Sebastián,Salamanca,AP-1E,39.4,verificar
+34,33,San Sebastián,Salamanca,AP-1B,90.3,liberada
+34,35,San Sebastián,Santander,AP-8,28.4,verificar
+34,36,San Sebastián,Segovia,AP-1E,39.4,verificar
+34,36,San Sebastián,Segovia,AP-1B,90.3,liberada
+34,37,San Sebastián,Sevilla,AP-1E,39.4,verificar
+34,37,San Sebastián,Sevilla,AP-1B,90.3,liberada
+34,38,San Sebastián,Soria,AP-15,85.7,vigente
+34,39,San Sebastián,Tarragona,AP-15,98.7,vigente
+34,39,San Sebastián,Tarragona,AP-68,84.8,vigente
+34,39,San Sebastián,Tarragona,AP-2,176.2,liberada
+34,40,San Sebastián,Teruel,AP-15,98.7,vigente
+34,40,San Sebastián,Teruel,AP-68,85.1,vigente
+34,41,San Sebastián,Toledo,AP-1E,39.4,verificar
+34,41,San Sebastián,Toledo,AP-1B,90.3,liberada
+34,42,San Sebastián,Valencia,AP-15,98.7,vigente
+34,42,San Sebastián,Valencia,AP-68,85.1,vigente
+34,43,San Sebastián,Valladolid,AP-1E,39.4,verificar
+34,43,San Sebastián,Valladolid,AP-1B,90.3,liberada
+34,44,San Sebastián,Vitoria-Gasteiz,AP-1E,39.4,verificar
+34,45,San Sebastián,Zamora,AP-1E,39.4,verificar
+34,45,San Sebastián,Zamora,AP-1B,90.3,liberada
+34,46,San Sebastián,Zaragoza,AP-15,98.7,vigente
+34,46,San Sebastián,Zaragoza,AP-68,84.8,vigente
+35,0,Santander,A Coruña,AP-9,13.7,vigente
+35,1,Santander,Albacete,R-3,20.7,vigente
+35,2,Santander,Alicante,R-3,20.7,vigente
+35,3,Santander,Almería,AP-6,70.2,vigente
+35,3,Santander,Almería,R-4,52.9,vigente
+35,6,Santander,Barcelona,AP-8,17.7,verificar
+35,6,Santander,Barcelona,AP-68,290.7,vigente
+35,6,Santander,Barcelona,AP-2,216.3,liberada
+35,6,Santander,Barcelona,AP-7N,48.6,liberada
+35,7,Santander,Bilbao,AP-8,13.4,verificar
+35,10,Santander,Cádiz,AP-4,92.5,liberada
+35,11,Santander,Castellón de la Plana,AP-8,17.7,verificar
+35,11,Santander,Castellón de la Plana,AP-68,291.0,vigente
+35,12,Santander,Ciudad Real,AP-6,70.2,vigente
+35,13,Santander,Córdoba,AP-6,70.2,vigente
+35,13,Santander,Córdoba,R-4,52.9,vigente
+35,14,Santander,Cuenca,R-3,20.7,vigente
+35,15,Santander,Girona,AP-8,17.7,verificar
+35,15,Santander,Girona,AP-68,290.7,vigente
+35,15,Santander,Girona,AP-2,123.2,liberada
+35,16,Santander,Granada,AP-6,70.2,vigente
+35,16,Santander,Granada,R-4,52.9,vigente
+35,17,Santander,Guadalajara,R-2,28.4,vigente
+35,19,Santander,Huesca,AP-8,17.7,verificar
+35,19,Santander,Huesca,AP-68,33.1,vigente
+35,19,Santander,Huesca,AP-15,17.0,vigente
+35,20,Santander,Jaén,AP-6,70.2,vigente
+35,20,Santander,Jaén,R-4,52.9,vigente
+35,22,Santander,Lleida,AP-8,17.7,verificar
+35,22,Santander,Lleida,AP-68,290.7,vigente
+35,22,Santander,Lleida,AP-2,123.2,liberada
+35,23,Santander,Logroño,AP-8,17.7,verificar
+35,23,Santander,Logroño,AP-68,124.4,vigente
+35,25,Santander,Madrid,AP-6,70.2,vigente
+35,26,Santander,Málaga,AP-6,70.2,vigente
+35,26,Santander,Málaga,R-4,52.9,vigente
+35,26,Santander,Málaga,AP-46,25.9,vigente
+35,27,Santander,Murcia,R-3,20.7,vigente
+35,31,Santander,Pamplona,AP-8,17.7,verificar
+35,31,Santander,Pamplona,AP-68,33.1,vigente
+35,31,Santander,Pamplona,AP-15,14.5,vigente
+35,32,Santander,Pontevedra,AP-9,112.4,vigente
+35,34,Santander,San Sebastián,AP-8,61.4,verificar
+35,38,Santander,Soria,AP-8,17.7,verificar
+35,38,Santander,Soria,AP-68,115.7,vigente
+35,39,Santander,Tarragona,AP-8,17.7,verificar
+35,39,Santander,Tarragona,AP-68,290.7,vigente
+35,39,Santander,Tarragona,AP-2,176.2,liberada
+35,40,Santander,Teruel,AP-8,17.7,verificar
+35,40,Santander,Teruel,AP-68,291.0,vigente
+35,41,Santander,Toledo,AP-6,70.2,vigente
+35,42,Santander,Valencia,AP-8,17.7,verificar
+35,42,Santander,Valencia,AP-68,291.0,vigente
+35,44,Santander,Vitoria-Gasteiz,AP-8,17.7,verificar
+35,44,Santander,Vitoria-Gasteiz,AP-68,33.1,vigente
+35,46,Santander,Zaragoza,AP-8,17.7,verificar
+35,46,Santander,Zaragoza,AP-68,290.7,vigente
+36,0,Segovia,A Coruña,AP-9,13.7,vigente
+36,1,Segovia,Albacete,AP-61,27.7,vigente
+36,1,Segovia,Albacete,AP-6,22.2,vigente
+36,2,Segovia,Alicante,AP-61,27.7,vigente
+36,2,Segovia,Alicante,AP-6,22.2,vigente
+36,3,Segovia,Almería,AP-61,27.7,vigente
+36,3,Segovia,Almería,AP-6,22.2,vigente
+36,3,Segovia,Almería,R-4,52.9,vigente
+36,4,Segovia,Ávila,AP-51,21.8,vigente
+36,5,Segovia,Badajoz,AP-51,21.8,vigente
+36,6,Segovia,Barcelona,AP-61,27.7,vigente
+36,6,Segovia,Barcelona,AP-6,22.2,vigente
+36,6,Segovia,Barcelona,AP-2,216.3,liberada
+36,6,Segovia,Barcelona,AP-7N,48.6,liberada
+36,7,Segovia,Bilbao,AP-1B,76.1,liberada
+36,7,Segovia,Bilbao,AP-68,68.1,vigente
+36,9,Segovia,Cáceres,AP-51,21.8,vigente
+36,10,Segovia,Cádiz,AP-61,27.7,vigente
+36,10,Segovia,Cádiz,AP-6,22.2,vigente
+36,10,Segovia,Cádiz,AP-4,92.5,liberada
+36,11,Segovia,Castellón de la Plana,AP-61,27.7,vigente
+36,11,Segovia,Castellón de la Plana,AP-6,22.2,vigente
+36,11,Segovia,Castellón de la Plana,AP-7N,37.7,liberada
+36,12,Segovia,Ciudad Real,AP-61,27.7,vigente
+36,12,Segovia,Ciudad Real,AP-6,22.2,vigente
+36,13,Segovia,Córdoba,AP-61,27.7,vigente
+36,13,Segovia,Córdoba,AP-6,22.2,vigente
+36,13,Segovia,Córdoba,R-4,52.9,vigente
+36,14,Segovia,Cuenca,AP-61,27.7,vigente
+36,14,Segovia,Cuenca,AP-6,22.2,vigente
+36,15,Segovia,Girona,AP-61,27.7,vigente
+36,15,Segovia,Girona,AP-6,22.2,vigente
+36,15,Segovia,Girona,AP-2,123.2,liberada
+36,16,Segovia,Granada,AP-61,27.7,vigente
+36,16,Segovia,Granada,AP-6,22.2,vigente
+36,16,Segovia,Granada,R-4,52.9,vigente
+36,17,Segovia,Guadalajara,AP-61,27.7,vigente
+36,17,Segovia,Guadalajara,AP-6,22.2,vigente
+36,18,Segovia,Huelva,AP-61,27.7,vigente
+36,18,Segovia,Huelva,AP-6,22.2,vigente
+36,19,Segovia,Huesca,AP-61,27.7,vigente
+36,19,Segovia,Huesca,AP-6,22.2,vigente
+36,20,Segovia,Jaén,AP-61,27.7,vigente
+36,20,Segovia,Jaén,AP-6,22.2,vigente
+36,20,Segovia,Jaén,R-4,52.9,vigente
+36,22,Segovia,Lleida,AP-61,27.7,vigente
+36,22,Segovia,Lleida,AP-6,22.2,vigente
+36,22,Segovia,Lleida,AP-2,123.2,liberada
+36,23,Segovia,Logroño,AP-1B,55.7,liberada
+36,23,Segovia,Logroño,AP-68,39.5,vigente
+36,25,Segovia,Madrid,AP-61,27.7,vigente
+36,25,Segovia,Madrid,AP-6,22.2,vigente
+36,26,Segovia,Málaga,AP-61,27.7,vigente
+36,26,Segovia,Málaga,AP-6,22.2,vigente
+36,26,Segovia,Málaga,R-4,52.9,vigente
+36,26,Segovia,Málaga,AP-46,25.9,vigente
+36,27,Segovia,Murcia,AP-61,27.7,vigente
+36,27,Segovia,Murcia,AP-6,22.2,vigente
+36,29,Segovia,Oviedo,AP-66,77.2,vigente
+36,31,Segovia,Pamplona,AP-1B,83.0,liberada
+36,31,Segovia,Pamplona,AP-15,14.5,vigente
+36,34,Segovia,San Sebastián,AP-1B,83.0,liberada
+36,34,Segovia,San Sebastián,AP-1E,44.2,verificar
+36,34,Segovia,San Sebastián,AP-1/AP-8,41.9,verificar
+36,37,Segovia,Sevilla,AP-61,27.7,vigente
+36,37,Segovia,Sevilla,AP-6,22.2,vigente
+36,39,Segovia,Tarragona,AP-61,27.7,vigente
+36,39,Segovia,Tarragona,AP-6,22.2,vigente
+36,39,Segovia,Tarragona,AP-2,176.2,liberada
+36,40,Segovia,Teruel,AP-61,27.7,vigente
+36,40,Segovia,Teruel,AP-6,22.2,vigente
+36,41,Segovia,Toledo,AP-61,27.7,vigente
+36,41,Segovia,Toledo,AP-6,22.2,vigente
+36,42,Segovia,Valencia,AP-61,27.7,vigente
+36,42,Segovia,Valencia,AP-6,22.2,vigente
+36,44,Segovia,Vitoria-Gasteiz,AP-1B,83.0,liberada
+36,46,Segovia,Zaragoza,AP-61,27.7,vigente
+36,46,Segovia,Zaragoza,AP-6,22.2,vigente
+37,0,Sevilla,A Coruña,AP-9,13.7,vigente
+37,6,Sevilla,Barcelona,AP-7N,249.7,liberada
+37,6,Sevilla,Barcelona,C-32,53.5,verificar
+37,7,Sevilla,Bilbao,AP-1B,76.1,liberada
+37,7,Sevilla,Bilbao,AP-68,68.1,vigente
+37,10,Sevilla,Cádiz,AP-4,92.5,liberada
+37,11,Sevilla,Castellón de la Plana,AP-7N,37.7,liberada
+37,15,Sevilla,Girona,AP-7N,406.5,liberada
+37,22,Sevilla,Lleida,AP-2,123.2,liberada
+37,23,Sevilla,Logroño,AP-1B,55.7,liberada
+37,23,Sevilla,Logroño,AP-68,39.5,vigente
+37,26,Sevilla,Málaga,AP-46,25.9,vigente
+37,29,Sevilla,Oviedo,AP-66,77.2,vigente
+37,31,Sevilla,Pamplona,AP-1B,83.0,liberada
+37,31,Sevilla,Pamplona,AP-15,14.5,vigente
+37,32,Sevilla,Pontevedra,AP-9,44.5,vigente
+37,34,Sevilla,San Sebastián,AP-1B,83.0,liberada
+37,34,Sevilla,San Sebastián,AP-1E,44.2,verificar
+37,34,Sevilla,San Sebastián,AP-1/AP-8,41.9,verificar
+37,36,Sevilla,Segovia,AP-6,21.8,vigente
+37,36,Sevilla,Segovia,AP-61,27.3,vigente
+37,39,Sevilla,Tarragona,AP-7N,223.7,liberada
+37,44,Sevilla,Vitoria-Gasteiz,AP-1B,83.0,liberada
+38,0,Soria,A Coruña,AP-71,36.4,vigente
+38,0,Soria,A Coruña,AP-9,13.7,vigente
+38,1,Soria,Albacete,R-3,16.8,vigente
+38,4,Soria,Ávila,AP-51,21.8,vigente
+38,6,Soria,Barcelona,AP-68,44.3,vigente
+38,6,Soria,Barcelona,AP-2,216.3,liberada
+38,6,Soria,Barcelona,AP-7N,48.6,liberada
+38,7,Soria,Bilbao,AP-68,118.4,vigente
+38,15,Soria,Girona,AP-68,44.3,vigente
+38,15,Soria,Girona,AP-2,123.2,liberada
+38,19,Soria,Huesca,AP-68,44.3,vigente
+38,22,Soria,Lleida,AP-68,44.3,vigente
+38,22,Soria,Lleida,AP-2,123.2,liberada
+38,24,Soria,Lugo,AP-71,36.4,vigente
+38,26,Soria,Málaga,AP-46,25.9,vigente
+38,27,Soria,Murcia,R-3,16.8,vigente
+38,29,Soria,Oviedo,AP-66,77.2,vigente
+38,31,Soria,Pamplona,AP-15,69.0,vigente
+38,34,Soria,San Sebastián,AP-15,84.6,vigente
+38,35,Soria,Santander,AP-68,116.1,vigente
+38,35,Soria,Santander,AP-8,14.2,verificar
+38,39,Soria,Tarragona,AP-68,44.3,vigente
+38,39,Soria,Tarragona,AP-2,176.2,liberada
+38,44,Soria,Vitoria-Gasteiz,AP-68,45.4,vigente
+38,46,Soria,Zaragoza,AP-68,44.3,vigente
+39,0,Tarragona,A Coruña,AP-2,175.1,liberada
+39,0,Tarragona,A Coruña,AP-68,205.5,vigente
+39,0,Tarragona,A Coruña,AP-1B,49.2,liberada
+39,0,Tarragona,A Coruña,AP-71,36.4,vigente
+39,0,Tarragona,A Coruña,AP-9,13.7,vigente
+39,1,Tarragona,Albacete,AP-7N,223.5,liberada
+39,2,Tarragona,Alicante,AP-7N,223.5,liberada
+39,3,Tarragona,Almería,AP-7N,223.5,liberada
+39,4,Tarragona,Ávila,AP-2,175.1,liberada
+39,4,Tarragona,Ávila,R-2,56.6,vigente
+39,4,Tarragona,Ávila,AP-6,41.6,vigente
+39,4,Tarragona,Ávila,AP-51,23.2,vigente
+39,5,Tarragona,Badajoz,AP-2,175.1,liberada
+39,6,Tarragona,Barcelona,AP-7N,10.2,liberada
+39,6,Tarragona,Barcelona,C-32,53.5,verificar
+39,7,Tarragona,Bilbao,AP-2,175.1,liberada
+39,7,Tarragona,Bilbao,AP-68,293.3,vigente
+39,8,Tarragona,Burgos,AP-2,175.1,liberada
+39,8,Tarragona,Burgos,AP-68,205.5,vigente
+39,8,Tarragona,Burgos,AP-1B,59.7,liberada
+39,9,Tarragona,Cáceres,AP-2,175.1,liberada
+39,10,Tarragona,Cádiz,AP-7N,223.5,liberada
+39,11,Tarragona,Castellón de la Plana,AP-7N,177.9,liberada
+39,12,Tarragona,Ciudad Real,AP-7N,223.5,liberada
+39,13,Tarragona,Córdoba,AP-7N,223.5,liberada
+39,14,Tarragona,Cuenca,AP-7N,223.5,liberada
+39,15,Tarragona,Girona,AP-7N,167.0,liberada
+39,16,Tarragona,Granada,AP-7N,223.5,liberada
+39,17,Tarragona,Guadalajara,AP-2,175.1,liberada
+39,18,Tarragona,Huelva,AP-7N,223.5,liberada
+39,19,Tarragona,Huesca,AP-2,54.4,liberada
+39,20,Tarragona,Jaén,AP-7N,223.5,liberada
+39,21,Tarragona,León,AP-2,175.1,liberada
+39,21,Tarragona,León,AP-68,205.5,vigente
+39,21,Tarragona,León,AP-1B,49.2,liberada
+39,22,Tarragona,Lleida,AP-2,54.4,liberada
+39,23,Tarragona,Logroño,AP-2,175.1,liberada
+39,23,Tarragona,Logroño,AP-68,154.8,vigente
+39,24,Tarragona,Lugo,AP-2,175.1,liberada
+39,24,Tarragona,Lugo,AP-68,205.5,vigente
+39,24,Tarragona,Lugo,AP-1B,49.2,liberada
+39,24,Tarragona,Lugo,AP-71,36.4,vigente
+39,25,Tarragona,Madrid,AP-2,175.1,liberada
+39,26,Tarragona,Málaga,AP-7N,223.5,liberada
+39,26,Tarragona,Málaga,AP-46,25.9,vigente
+39,27,Tarragona,Murcia,AP-7N,223.5,liberada
+39,28,Tarragona,Ourense,AP-2,175.1,liberada
+39,28,Tarragona,Ourense,AP-68,205.5,vigente
+39,28,Tarragona,Ourense,AP-1B,49.2,liberada
+39,29,Tarragona,Oviedo,AP-2,175.1,liberada
+39,29,Tarragona,Oviedo,AP-68,291.0,vigente
+39,29,Tarragona,Oviedo,AP-8,14.2,verificar
+39,30,Tarragona,Palencia,AP-2,175.1,liberada
+39,30,Tarragona,Palencia,AP-68,205.5,vigente
+39,30,Tarragona,Palencia,AP-1B,62.5,liberada
+39,31,Tarragona,Pamplona,AP-2,175.1,liberada
+39,31,Tarragona,Pamplona,AP-68,84.9,vigente
+39,31,Tarragona,Pamplona,AP-15,82.8,vigente
+39,32,Tarragona,Pontevedra,AP-2,175.1,liberada
+39,32,Tarragona,Pontevedra,AP-68,205.5,vigente
+39,32,Tarragona,Pontevedra,AP-1B,49.2,liberada
+39,33,Tarragona,Salamanca,AP-2,175.1,liberada
+39,33,Tarragona,Salamanca,AP-68,205.5,vigente
+39,33,Tarragona,Salamanca,AP-1B,62.5,liberada
+39,34,Tarragona,San Sebastián,AP-2,175.1,liberada
+39,34,Tarragona,San Sebastián,AP-68,84.9,vigente
+39,34,Tarragona,San Sebastián,AP-15,98.4,vigente
+39,35,Tarragona,Santander,AP-2,175.1,liberada
+39,35,Tarragona,Santander,AP-68,291.0,vigente
+39,35,Tarragona,Santander,AP-8,14.2,verificar
+39,36,Tarragona,Segovia,AP-2,175.1,liberada
+39,36,Tarragona,Segovia,R-2,56.6,vigente
+39,36,Tarragona,Segovia,AP-6,21.8,vigente
+39,36,Tarragona,Segovia,AP-61,27.3,vigente
+39,37,Tarragona,Sevilla,AP-7N,223.5,liberada
+39,38,Tarragona,Soria,AP-2,175.1,liberada
+39,38,Tarragona,Soria,AP-68,74.2,vigente
+39,40,Tarragona,Teruel,AP-7N,207.1,liberada
+39,41,Tarragona,Toledo,AP-2,175.1,liberada
+39,42,Tarragona,Valencia,AP-7N,223.5,liberada
+39,43,Tarragona,Valladolid,AP-2,175.1,liberada
+39,43,Tarragona,Valladolid,AP-68,205.5,vigente
+39,43,Tarragona,Valladolid,AP-1B,62.5,liberada
+39,44,Tarragona,Vitoria-Gasteiz,AP-2,175.1,liberada
+39,44,Tarragona,Vitoria-Gasteiz,AP-68,220.3,vigente
+39,45,Tarragona,Zamora,AP-2,175.1,liberada
+39,45,Tarragona,Zamora,AP-68,205.5,vigente
+39,45,Tarragona,Zamora,AP-1B,62.5,liberada
+39,46,Tarragona,Zaragoza,AP-2,175.1,liberada
+40,0,Teruel,A Coruña,AP-6,70.1,vigente
+40,0,Teruel,A Coruña,AP-9,13.7,vigente
+40,4,Teruel,Ávila,AP-6,41.6,vigente
+40,4,Teruel,Ávila,AP-51,23.2,vigente
+40,6,Teruel,Barcelona,AP-7N,232.8,liberada
+40,6,Teruel,Barcelona,C-32,53.5,verificar
+40,7,Teruel,Bilbao,AP-68,293.8,vigente
+40,15,Teruel,Girona,AP-7N,389.6,liberada
+40,22,Teruel,Lleida,AP-2,117.4,liberada
+40,23,Teruel,Logroño,AP-68,155.2,vigente
+40,24,Teruel,Lugo,AP-6,70.1,vigente
+40,26,Teruel,Málaga,AP-46,25.9,vigente
+40,28,Teruel,Ourense,AP-6,70.1,vigente
+40,29,Teruel,Oviedo,AP-66,77.2,vigente
+40,31,Teruel,Pamplona,AP-68,85.3,vigente
+40,31,Teruel,Pamplona,AP-15,82.8,vigente
+40,32,Teruel,Pontevedra,AP-6,70.1,vigente
+40,33,Teruel,Salamanca,AP-6,41.6,vigente
+40,33,Teruel,Salamanca,AP-51,23.2,vigente
+40,34,Teruel,San Sebastián,AP-68,85.3,vigente
+40,34,Teruel,San Sebastián,AP-15,98.4,vigente
+40,35,Teruel,Santander,AP-68,291.5,vigente
+40,35,Teruel,Santander,AP-8,14.2,verificar
+40,36,Teruel,Segovia,AP-6,21.8,vigente
+40,36,Teruel,Segovia,AP-61,27.3,vigente
+40,39,Teruel,Tarragona,AP-7N,206.8,liberada
+40,44,Teruel,Vitoria-Gasteiz,AP-68,220.8,vigente
+40,45,Teruel,Zamora,AP-6,70.1,vigente
+41,0,Toledo,A Coruña,AP-6,70.1,vigente
+41,0,Toledo,A Coruña,AP-9,13.7,vigente
+41,6,Toledo,Barcelona,AP-2,216.3,liberada
+41,6,Toledo,Barcelona,AP-7N,48.6,liberada
+41,7,Toledo,Bilbao,M-12,10.1,vigente
+41,7,Toledo,Bilbao,AP-1B,76.1,liberada
+41,7,Toledo,Bilbao,AP-68,68.1,vigente
+41,8,Toledo,Burgos,M-12,10.1,vigente
+41,11,Toledo,Castellón de la Plana,AP-7N,37.7,liberada
+41,15,Toledo,Girona,AP-2,123.2,liberada
+41,21,Toledo,León,AP-6,70.1,vigente
+41,22,Toledo,Lleida,AP-2,123.2,liberada
+41,24,Toledo,Lugo,AP-6,70.1,vigente
+41,26,Toledo,Málaga,AP-46,25.9,vigente
+41,28,Toledo,Ourense,AP-6,70.1,vigente
+41,29,Toledo,Oviedo,AP-6,70.1,vigente
+41,29,Toledo,Oviedo,AP-66,77.2,vigente
+41,30,Toledo,Palencia,AP-6,70.1,vigente
+41,31,Toledo,Pamplona,AP-15,69.0,vigente
+41,32,Toledo,Pontevedra,AP-6,70.1,vigente
+41,34,Toledo,San Sebastián,M-12,10.1,vigente
+41,34,Toledo,San Sebastián,AP-1B,83.0,liberada
+41,34,Toledo,San Sebastián,AP-1E,44.2,verificar
+41,34,Toledo,San Sebastián,AP-1/AP-8,41.9,verificar
+41,35,Toledo,Santander,AP-6,70.1,vigente
+41,36,Toledo,Segovia,AP-6,21.8,vigente
+41,36,Toledo,Segovia,AP-61,27.3,vigente
+41,39,Toledo,Tarragona,AP-2,176.2,liberada
+41,43,Toledo,Valladolid,AP-6,68.4,vigente
+41,44,Toledo,Vitoria-Gasteiz,M-12,10.1,vigente
+41,44,Toledo,Vitoria-Gasteiz,AP-1B,83.0,liberada
+41,45,Toledo,Zamora,AP-6,70.1,vigente
+42,0,Valencia,A Coruña,AP-6,70.1,vigente
+42,0,Valencia,A Coruña,AP-9,13.7,vigente
+42,4,Valencia,Ávila,AP-6,41.6,vigente
+42,4,Valencia,Ávila,AP-51,23.2,vigente
+42,6,Valencia,Barcelona,AP-7N,249.7,liberada
+42,6,Valencia,Barcelona,C-32,53.5,verificar
+42,7,Valencia,Bilbao,AP-68,293.8,vigente
+42,8,Valencia,Burgos,R-3,20.2,vigente
+42,11,Valencia,Castellón de la Plana,AP-7N,37.7,liberada
+42,15,Valencia,Girona,AP-7N,406.5,liberada
+42,17,Valencia,Guadalajara,R-3,16.4,vigente
+42,21,Valencia,León,AP-6,70.1,vigente
+42,22,Valencia,Lleida,AP-7N,223.7,liberada
+42,22,Valencia,Lleida,AP-2,54.4,liberada
+42,23,Valencia,Logroño,AP-68,155.2,vigente
+42,24,Valencia,Lugo,AP-6,70.1,vigente
+42,26,Valencia,Málaga,AP-46,25.9,vigente
+42,28,Valencia,Ourense,AP-6,70.1,vigente
+42,29,Valencia,Oviedo,AP-6,70.1,vigente
+42,29,Valencia,Oviedo,AP-66,77.2,vigente
+42,30,Valencia,Palencia,AP-6,70.1,vigente
+42,31,Valencia,Pamplona,AP-68,85.3,vigente
+42,31,Valencia,Pamplona,AP-15,82.8,vigente
+42,32,Valencia,Pontevedra,AP-6,70.1,vigente
+42,33,Valencia,Salamanca,AP-6,41.6,vigente
+42,33,Valencia,Salamanca,AP-51,23.2,vigente
+42,34,Valencia,San Sebastián,AP-68,85.3,vigente
+42,34,Valencia,San Sebastián,AP-15,98.4,vigente
+42,35,Valencia,Santander,AP-68,291.5,vigente
+42,35,Valencia,Santander,AP-8,14.2,verificar
+42,36,Valencia,Segovia,AP-6,21.8,vigente
+42,36,Valencia,Segovia,AP-61,27.3,vigente
+42,39,Valencia,Tarragona,AP-7N,223.7,liberada
+42,43,Valencia,Valladolid,AP-6,68.4,vigente
+42,44,Valencia,Vitoria-Gasteiz,AP-68,220.8,vigente
+42,45,Valencia,Zamora,AP-6,70.1,vigente
+43,0,Valladolid,A Coruña,AP-9,13.7,vigente
+43,1,Valladolid,Albacete,AP-6,68.3,vigente
+43,2,Valladolid,Alicante,AP-6,68.3,vigente
+43,3,Valladolid,Almería,AP-6,68.3,vigente
+43,3,Valladolid,Almería,R-4,52.9,vigente
+43,6,Valladolid,Barcelona,AP-1B,55.7,liberada
+43,6,Valladolid,Barcelona,AP-68,205.7,vigente
+43,6,Valladolid,Barcelona,AP-2,216.3,liberada
+43,6,Valladolid,Barcelona,AP-7N,48.6,liberada
+43,7,Valladolid,Bilbao,AP-1B,76.1,liberada
+43,7,Valladolid,Bilbao,AP-68,68.1,vigente
+43,10,Valladolid,Cádiz,AP-4,92.5,liberada
+43,11,Valladolid,Castellón de la Plana,AP-6,68.3,vigente
+43,11,Valladolid,Castellón de la Plana,AP-7N,37.7,liberada
+43,12,Valladolid,Ciudad Real,AP-6,68.3,vigente
+43,13,Valladolid,Córdoba,AP-6,68.3,vigente
+43,13,Valladolid,Córdoba,R-4,52.9,vigente
+43,14,Valladolid,Cuenca,AP-6,68.3,vigente
+43,15,Valladolid,Girona,AP-1B,55.7,liberada
+43,15,Valladolid,Girona,AP-68,205.7,vigente
+43,15,Valladolid,Girona,AP-2,123.2,liberada
+43,16,Valladolid,Granada,AP-6,68.3,vigente
+43,16,Valladolid,Granada,R-4,52.9,vigente
+43,17,Valladolid,Guadalajara,AP-6,68.3,vigente
+43,19,Valladolid,Huesca,AP-1B,55.7,liberada
+43,19,Valladolid,Huesca,AP-68,205.7,vigente
+43,20,Valladolid,Jaén,AP-6,68.3,vigente
+43,20,Valladolid,Jaén,R-4,52.9,vigente
+43,22,Valladolid,Lleida,AP-1B,55.7,liberada
+43,22,Valladolid,Lleida,AP-68,205.7,vigente
+43,22,Valladolid,Lleida,AP-2,123.2,liberada
+43,23,Valladolid,Logroño,AP-1B,55.7,liberada
+43,23,Valladolid,Logroño,AP-68,39.5,vigente
+43,25,Valladolid,Madrid,AP-6,68.3,vigente
+43,26,Valladolid,Málaga,AP-6,68.3,vigente
+43,26,Valladolid,Málaga,R-4,52.9,vigente
+43,26,Valladolid,Málaga,AP-46,25.9,vigente
+43,27,Valladolid,Murcia,AP-6,68.3,vigente
+43,29,Valladolid,Oviedo,AP-66,77.2,vigente
+43,31,Valladolid,Pamplona,AP-1B,83.0,liberada
+43,31,Valladolid,Pamplona,AP-15,14.5,vigente
+43,34,Valladolid,San Sebastián,AP-1B,83.0,liberada
+43,34,Valladolid,San Sebastián,AP-1E,44.2,verificar
+43,34,Valladolid,San Sebastián,AP-1/AP-8,41.9,verificar
+43,39,Valladolid,Tarragona,AP-1B,55.7,liberada
+43,39,Valladolid,Tarragona,AP-68,205.7,vigente
+43,39,Valladolid,Tarragona,AP-2,176.2,liberada
+43,41,Valladolid,Toledo,AP-6,68.3,vigente
+43,42,Valladolid,Valencia,AP-6,68.3,vigente
+43,44,Valladolid,Vitoria-Gasteiz,AP-1B,83.0,liberada
+43,46,Valladolid,Zaragoza,AP-1B,55.7,liberada
+43,46,Valladolid,Zaragoza,AP-68,205.7,vigente
+44,0,Vitoria-Gasteiz,A Coruña,AP-1B,77.0,liberada
+44,0,Vitoria-Gasteiz,A Coruña,AP-71,36.4,vigente
+44,0,Vitoria-Gasteiz,A Coruña,AP-9,13.7,vigente
+44,1,Vitoria-Gasteiz,Albacete,AP-1B,90.3,liberada
+44,1,Vitoria-Gasteiz,Albacete,R-3,20.7,vigente
+44,2,Vitoria-Gasteiz,Alicante,AP-68,220.9,vigente
+44,3,Vitoria-Gasteiz,Almería,AP-1B,90.3,liberada
+44,4,Vitoria-Gasteiz,Ávila,AP-1B,90.3,liberada
+44,5,Vitoria-Gasteiz,Badajoz,AP-1B,90.3,liberada
+44,6,Vitoria-Gasteiz,Barcelona,AP-68,220.6,vigente
+44,6,Vitoria-Gasteiz,Barcelona,AP-2,216.3,liberada
+44,6,Vitoria-Gasteiz,Barcelona,AP-7N,48.6,liberada
+44,7,Vitoria-Gasteiz,Bilbao,AP-68,35.8,vigente
+44,8,Vitoria-Gasteiz,Burgos,AP-1B,87.6,liberada
+44,9,Vitoria-Gasteiz,Cáceres,AP-1B,90.3,liberada
+44,10,Vitoria-Gasteiz,Cádiz,AP-1B,90.3,liberada
+44,10,Vitoria-Gasteiz,Cádiz,AP-4,92.5,liberada
+44,11,Vitoria-Gasteiz,Castellón de la Plana,AP-68,220.9,vigente
+44,12,Vitoria-Gasteiz,Ciudad Real,AP-1B,90.3,liberada
+44,13,Vitoria-Gasteiz,Córdoba,AP-1B,90.3,liberada
+44,14,Vitoria-Gasteiz,Cuenca,AP-1B,90.3,liberada
+44,14,Vitoria-Gasteiz,Cuenca,R-3,20.7,vigente
+44,15,Vitoria-Gasteiz,Girona,AP-68,220.6,vigente
+44,15,Vitoria-Gasteiz,Girona,AP-2,123.2,liberada
+44,16,Vitoria-Gasteiz,Granada,AP-1B,90.3,liberada
+44,17,Vitoria-Gasteiz,Guadalajara,AP-1B,90.3,liberada
+44,17,Vitoria-Gasteiz,Guadalajara,R-2,28.4,vigente
+44,18,Vitoria-Gasteiz,Huelva,AP-1B,90.3,liberada
+44,19,Vitoria-Gasteiz,Huesca,AP-15,17.0,vigente
+44,20,Vitoria-Gasteiz,Jaén,AP-1B,90.3,liberada
+44,21,Vitoria-Gasteiz,León,AP-1B,77.0,liberada
+44,22,Vitoria-Gasteiz,Lleida,AP-68,220.6,vigente
+44,22,Vitoria-Gasteiz,Lleida,AP-2,123.2,liberada
+44,24,Vitoria-Gasteiz,Lugo,AP-1B,77.0,liberada
+44,24,Vitoria-Gasteiz,Lugo,AP-71,36.4,vigente
+44,25,Vitoria-Gasteiz,Madrid,AP-1B,90.3,liberada
+44,26,Vitoria-Gasteiz,Málaga,AP-1B,90.3,liberada
+44,26,Vitoria-Gasteiz,Málaga,AP-46,25.9,vigente
+44,27,Vitoria-Gasteiz,Murcia,AP-1B,90.3,liberada
+44,27,Vitoria-Gasteiz,Murcia,R-3,20.7,vigente
+44,28,Vitoria-Gasteiz,Ourense,AP-1B,77.0,liberada
+44,29,Vitoria-Gasteiz,Oviedo,AP-68,33.6,vigente
+44,29,Vitoria-Gasteiz,Oviedo,AP-8,14.2,verificar
+44,30,Vitoria-Gasteiz,Palencia,AP-1B,90.3,liberada
+44,31,Vitoria-Gasteiz,Pamplona,AP-15,14.5,vigente
+44,32,Vitoria-Gasteiz,Pontevedra,AP-1B,77.0,liberada
+44,33,Vitoria-Gasteiz,Salamanca,AP-1B,90.3,liberada
+44,34,Vitoria-Gasteiz,San Sebastián,AP-1E,39.1,verificar
+44,34,Vitoria-Gasteiz,San Sebastián,AP-1/AP-8,41.9,verificar
+44,35,Vitoria-Gasteiz,Santander,AP-68,33.6,vigente
+44,35,Vitoria-Gasteiz,Santander,AP-8,14.2,verificar
+44,36,Vitoria-Gasteiz,Segovia,AP-1B,90.3,liberada
+44,37,Vitoria-Gasteiz,Sevilla,AP-1B,90.3,liberada
+44,38,Vitoria-Gasteiz,Soria,AP-68,45.6,vigente
+44,39,Vitoria-Gasteiz,Tarragona,AP-68,220.6,vigente
+44,39,Vitoria-Gasteiz,Tarragona,AP-2,176.2,liberada
+44,40,Vitoria-Gasteiz,Teruel,AP-68,220.9,vigente
+44,41,Vitoria-Gasteiz,Toledo,AP-1B,90.3,liberada
+44,42,Vitoria-Gasteiz,Valencia,AP-68,220.9,vigente
+44,43,Vitoria-Gasteiz,Valladolid,AP-1B,90.3,liberada
+44,45,Vitoria-Gasteiz,Zamora,AP-1B,90.3,liberada
+44,46,Vitoria-Gasteiz,Zaragoza,AP-68,220.6,vigente
+45,0,Zamora,A Coruña,AP-9,13.7,vigente
+45,1,Zamora,Albacete,AP-6,70.2,vigente
+45,2,Zamora,Alicante,AP-6,70.2,vigente
+45,3,Zamora,Almería,AP-6,70.2,vigente
+45,3,Zamora,Almería,R-4,52.9,vigente
+45,6,Zamora,Barcelona,AP-1B,55.7,liberada
+45,6,Zamora,Barcelona,AP-68,205.7,vigente
+45,6,Zamora,Barcelona,AP-2,216.3,liberada
+45,6,Zamora,Barcelona,AP-7N,48.6,liberada
+45,7,Zamora,Bilbao,AP-1B,76.1,liberada
+45,7,Zamora,Bilbao,AP-68,68.1,vigente
+45,10,Zamora,Cádiz,AP-4,92.5,liberada
+45,11,Zamora,Castellón de la Plana,AP-6,70.2,vigente
+45,11,Zamora,Castellón de la Plana,AP-7N,37.7,liberada
+45,12,Zamora,Ciudad Real,AP-6,70.2,vigente
+45,14,Zamora,Cuenca,AP-6,70.2,vigente
+45,15,Zamora,Girona,AP-1B,55.7,liberada
+45,15,Zamora,Girona,AP-68,205.7,vigente
+45,15,Zamora,Girona,AP-2,123.2,liberada
+45,16,Zamora,Granada,AP-6,70.2,vigente
+45,16,Zamora,Granada,R-4,52.9,vigente
+45,17,Zamora,Guadalajara,AP-6,70.2,vigente
+45,19,Zamora,Huesca,AP-1B,55.7,liberada
+45,19,Zamora,Huesca,AP-68,205.7,vigente
+45,20,Zamora,Jaén,AP-6,70.2,vigente
+45,20,Zamora,Jaén,R-4,52.9,vigente
+45,22,Zamora,Lleida,AP-1B,55.7,liberada
+45,22,Zamora,Lleida,AP-68,205.7,vigente
+45,22,Zamora,Lleida,AP-2,123.2,liberada
+45,23,Zamora,Logroño,AP-1B,55.7,liberada
+45,23,Zamora,Logroño,AP-68,39.5,vigente
+45,25,Zamora,Madrid,AP-6,70.2,vigente
+45,26,Zamora,Málaga,AP-46,25.9,vigente
+45,27,Zamora,Murcia,AP-6,70.2,vigente
+45,29,Zamora,Oviedo,AP-66,77.2,vigente
+45,31,Zamora,Pamplona,AP-1B,83.0,liberada
+45,31,Zamora,Pamplona,AP-15,14.5,vigente
+45,34,Zamora,San Sebastián,AP-1B,83.0,liberada
+45,34,Zamora,San Sebastián,AP-1E,44.2,verificar
+45,34,Zamora,San Sebastián,AP-1/AP-8,41.9,verificar
+45,39,Zamora,Tarragona,AP-1B,55.7,liberada
+45,39,Zamora,Tarragona,AP-68,205.7,vigente
+45,39,Zamora,Tarragona,AP-2,176.2,liberada
+45,40,Zamora,Teruel,AP-6,70.2,vigente
+45,41,Zamora,Toledo,AP-6,70.2,vigente
+45,42,Zamora,Valencia,AP-6,70.2,vigente
+45,44,Zamora,Vitoria-Gasteiz,AP-1B,83.0,liberada
+45,46,Zamora,Zaragoza,AP-1B,55.7,liberada
+45,46,Zamora,Zaragoza,AP-68,205.7,vigente
+46,0,Zaragoza,A Coruña,AP-68,205.5,vigente
+46,0,Zaragoza,A Coruña,AP-1B,49.2,liberada
+46,0,Zaragoza,A Coruña,AP-71,36.4,vigente
+46,0,Zaragoza,A Coruña,AP-9,13.7,vigente
+46,4,Zaragoza,Ávila,R-2,56.6,vigente
+46,4,Zaragoza,Ávila,AP-6,41.6,vigente
+46,4,Zaragoza,Ávila,AP-51,23.2,vigente
+46,6,Zaragoza,Barcelona,AP-2,216.3,liberada
+46,6,Zaragoza,Barcelona,AP-7N,48.6,liberada
+46,7,Zaragoza,Bilbao,AP-68,293.3,vigente
+46,8,Zaragoza,Burgos,AP-68,205.5,vigente
+46,8,Zaragoza,Burgos,AP-1B,59.7,liberada
+46,15,Zaragoza,Girona,AP-2,123.2,liberada
+46,21,Zaragoza,León,AP-68,205.5,vigente
+46,21,Zaragoza,León,AP-1B,49.2,liberada
+46,22,Zaragoza,Lleida,AP-2,123.2,liberada
+46,23,Zaragoza,Logroño,AP-68,154.8,vigente
+46,24,Zaragoza,Lugo,AP-68,205.5,vigente
+46,24,Zaragoza,Lugo,AP-1B,49.2,liberada
+46,24,Zaragoza,Lugo,AP-71,36.4,vigente
+46,26,Zaragoza,Málaga,AP-46,25.9,vigente
+46,28,Zaragoza,Ourense,AP-68,205.5,vigente
+46,28,Zaragoza,Ourense,AP-1B,49.2,liberada
+46,29,Zaragoza,Oviedo,AP-68,291.0,vigente
+46,29,Zaragoza,Oviedo,AP-8,14.2,verificar
+46,30,Zaragoza,Palencia,AP-68,205.5,vigente
+46,30,Zaragoza,Palencia,AP-1B,62.5,liberada
+46,31,Zaragoza,Pamplona,AP-68,84.9,vigente
+46,31,Zaragoza,Pamplona,AP-15,82.8,vigente
+46,32,Zaragoza,Pontevedra,AP-68,205.5,vigente
+46,32,Zaragoza,Pontevedra,AP-1B,49.2,liberada
+46,33,Zaragoza,Salamanca,AP-68,205.5,vigente
+46,33,Zaragoza,Salamanca,AP-1B,62.5,liberada
+46,34,Zaragoza,San Sebastián,AP-68,84.9,vigente
+46,34,Zaragoza,San Sebastián,AP-15,98.4,vigente
+46,35,Zaragoza,Santander,AP-68,291.0,vigente
+46,35,Zaragoza,Santander,AP-8,14.2,verificar
+46,36,Zaragoza,Segovia,R-2,56.6,vigente
+46,36,Zaragoza,Segovia,AP-6,21.8,vigente
+46,36,Zaragoza,Segovia,AP-61,27.3,vigente
+46,38,Zaragoza,Soria,AP-68,74.2,vigente
+46,39,Zaragoza,Tarragona,AP-2,176.2,liberada
+46,43,Zaragoza,Valladolid,AP-68,205.5,vigente
+46,43,Zaragoza,Valladolid,AP-1B,62.5,liberada
+46,44,Zaragoza,Vitoria-Gasteiz,AP-68,220.3,vigente
+46,45,Zaragoza,Zamora,AP-68,205.5,vigente
+46,45,Zaragoza,Zamora,AP-1B,62.5,liberada

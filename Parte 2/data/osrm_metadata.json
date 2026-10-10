@@ -1,0 +1,343 @@
+{
+ "fuente": "OSRM demo server (router.project-osrm.org), servicio table v1, perfil driving (ruta más rápida, sin tráfico)",
+ "datos_mapa": "© OpenStreetMap contributors (ODbL)",
+ "fecha_consulta_utc": "2026-10-10T06:07:00Z",
+ "url": "https://router.project-osrm.org/table/v1/driving/-8.396,43.37135;-1.85643,38.99424;-0.48149,38.34517;-2.45974,36.83814;-4.69951,40.65724;-6.97061,38.87789;2.15899,41.38879;-2.92528,43.26271;-3.70184,42.34106;-6.37224,39.47649;-6.2891,36.52672;-0.04935,39.98567;-3.92907,38.98626;-4.77275,37.89155;-2.13333,40.06667;2.82493,41.98311;-3.60667,37.18817;-3.16185,40.62862;-6.94004,37.26638;-0.4087,42.13615;-3.79028,37.76922;-5.57032,42.60003;0.62218,41.61674;-2.45115,42.46615;-7.55602,43.00992;-3.70256,40.4165;-4.42034,36.72016;-1.13004,37.98704;-7.86407,42.33669;-5.84476,43.36029;-4.52406,42.00955;-1.64323,42.81687;-8.64435,42.431;-5.66388,40.96882;-1.97499,43.31283;-3.80493,43.46589;-4.11839,40.94808;-5.97317,37.38283;-2.46883,41.76401;1.24544,41.11905;-1.10646,40.3456;-4.02263,39.8581;-0.37966,39.47391;-4.72353,41.65541;-2.67268,42.84998;-5.74456,41.50633;-0.87734,41.65606?annotations=duration,distance&generate_hints=false",
+ "metodo": "Consulta ejecutada desde el navegador; transcripción verificada con sumas por fila, por columna y hash ponderado por posición (coincidencia exacta).",
+ "verificacion_adicional": "2.162 rutas individuales (servicio route, continue_straight=false) reproducen la tabla: diferencia máxima 1 m y 0 s.",
+ "unidades": {
+  "distancia": "m (redondeado al metro)",
+  "tiempo": "s (redondeado al segundo)"
+ },
+ "puntos_ajustados": [
+  {
+   "id": 0,
+   "calle": "Praza do Marqués de San Martín",
+   "dist_ajuste_m": 51.7,
+   "lon": -8.396332,
+   "lat": 43.371747
+  },
+  {
+   "id": 1,
+   "calle": "Calle Carnicerías",
+   "dist_ajuste_m": 56.6,
+   "lon": -1.857016,
+   "lat": 38.994015
+  },
+  {
+   "id": 2,
+   "calle": "Carrer de Rafael Altamira / Carrer de María Josefa Ágreda y Muñoz",
+   "dist_ajuste_m": 36.4,
+   "lon": -0.481663,
+   "lat": 38.344872
+  },
+  {
+   "id": 3,
+   "calle": "Avenida de la Estación",
+   "dist_ajuste_m": 16.9,
+   "lon": -2.459831,
+   "lat": 36.838006
+  },
+  {
+   "id": 4,
+   "calle": "Calle López Núñez",
+   "dist_ajuste_m": 12.4,
+   "lon": -4.699508,
+   "lat": 40.657352
+  },
+  {
+   "id": 5,
+   "calle": "Calle Obispo San Juan de Ribera",
+   "dist_ajuste_m": 18.9,
+   "lon": -6.970797,
+   "lat": 38.877978
+  },
+  {
+   "id": 6,
+   "calle": "Carrer d'Aribau",
+   "dist_ajuste_m": 9.8,
+   "lon": 2.158906,
+   "lat": 41.388728
+  },
+  {
+   "id": 7,
+   "calle": "Ibañez de Bilbao kalea",
+   "dist_ajuste_m": 20.4,
+   "lon": -2.925331,
+   "lat": 43.26289
+  },
+  {
+   "id": 8,
+   "calle": "Calle Laín Calvo / Calle Cardenal Segura",
+   "dist_ajuste_m": 85.2,
+   "lon": -3.70264,
+   "lat": 42.341546
+  },
+  {
+   "id": 9,
+   "calle": "Calle Valdés",
+   "dist_ajuste_m": 1.6,
+   "lon": -6.372233,
+   "lat": 39.476503
+  },
+  {
+   "id": 10,
+   "calle": "Avenida Cuesta de las Calesas",
+   "dist_ajuste_m": 1.3,
+   "lon": -6.289114,
+   "lat": 36.526723
+  },
+  {
+   "id": 11,
+   "calle": "",
+   "dist_ajuste_m": 1.3,
+   "lon": -0.049355,
+   "lat": 39.985659
+  },
+  {
+   "id": 12,
+   "calle": "Paseo del Prado / Calle del Camarín",
+   "dist_ajuste_m": 154.4,
+   "lon": -3.930673,
+   "lat": 38.986868
+  },
+  {
+   "id": 13,
+   "calle": "Calle Muro de la Misericordia",
+   "dist_ajuste_m": 7.7,
+   "lon": -4.7727,
+   "lat": 37.891493
+  },
+  {
+   "id": 14,
+   "calle": "",
+   "dist_ajuste_m": 19.2,
+   "lon": -2.133351,
+   "lat": 40.066498
+  },
+  {
+   "id": 15,
+   "calle": "Plaça del Vi / Carrer dels Ciutadans",
+   "dist_ajuste_m": 19.7,
+   "lon": 2.824808,
+   "lat": 41.983262
+  },
+  {
+   "id": 16,
+   "calle": "Calle Doctor Guirao Gea",
+   "dist_ajuste_m": 37.8,
+   "lon": -3.607093,
+   "lat": 37.188133
+  },
+  {
+   "id": 17,
+   "calle": "Calle de Francisco Medina",
+   "dist_ajuste_m": 1.9,
+   "lon": -3.161841,
+   "lat": 40.628604
+  },
+  {
+   "id": 18,
+   "calle": "Plaza de Toledo",
+   "dist_ajuste_m": 16.4,
+   "lon": -6.939859,
+   "lat": 37.266348
+  },
+  {
+   "id": 19,
+   "calle": "",
+   "dist_ajuste_m": 19.4,
+   "lon": -0.408741,
+   "lat": 42.135978
+  },
+  {
+   "id": 20,
+   "calle": "Plaza de los Jardinillos",
+   "dist_ajuste_m": 6.4,
+   "lon": -3.790223,
+   "lat": 37.769256
+  },
+  {
+   "id": 21,
+   "calle": "Avenida de Ramón y Cajal",
+   "dist_ajuste_m": 102.1,
+   "lon": -5.571563,
+   "lat": 42.60008
+  },
+  {
+   "id": 22,
+   "calle": "Carrer de Sant Carles",
+   "dist_ajuste_m": 6.7,
+   "lon": 0.62214,
+   "lat": 41.616688
+  },
+  {
+   "id": 23,
+   "calle": "Plaza Fuente Murrieta",
+   "dist_ajuste_m": 15.6,
+   "lon": -2.451085,
+   "lat": 42.466018
+  },
+  {
+   "id": 24,
+   "calle": "Rúa Alcalde Anxo López Pérez",
+   "dist_ajuste_m": 171.3,
+   "lon": -7.554471,
+   "lat": 43.008878
+  },
+  {
+   "id": 25,
+   "calle": "Calle de la Cruz",
+   "dist_ajuste_m": 121.4,
+   "lon": -3.701611,
+   "lat": 40.415682
+  },
+  {
+   "id": 26,
+   "calle": "",
+   "dist_ajuste_m": 126.3,
+   "lon": -4.419035,
+   "lat": 36.719723
+  },
+  {
+   "id": 27,
+   "calle": "Calle Echegaray / Plaza de Julián Romea",
+   "dist_ajuste_m": 19,
+   "lon": -1.130256,
+   "lat": 37.987045
+  },
+  {
+   "id": 28,
+   "calle": "Rúa Irmáns Villar",
+   "dist_ajuste_m": 5.5,
+   "lon": -7.864128,
+   "lat": 42.336714
+  },
+  {
+   "id": 29,
+   "calle": "Calle Postigo Alto",
+   "dist_ajuste_m": 105.7,
+   "lon": -5.843461,
+   "lat": 43.360378
+  },
+  {
+   "id": 30,
+   "calle": "",
+   "dist_ajuste_m": 15.7,
+   "lon": -4.524195,
+   "lat": 42.009451
+  },
+  {
+   "id": 31,
+   "calle": "Gazteluko plaza",
+   "dist_ajuste_m": 17.1,
+   "lon": -1.64343,
+   "lat": 42.816825
+  },
+  {
+   "id": 32,
+   "calle": "Rúa de García Camba",
+   "dist_ajuste_m": 126.2,
+   "lon": -8.644721,
+   "lat": 42.429898
+  },
+  {
+   "id": 33,
+   "calle": "Calle Reyes Católicos",
+   "dist_ajuste_m": 39.7,
+   "lon": -5.663972,
+   "lat": 40.968469
+  },
+  {
+   "id": 34,
+   "calle": "Loiolako Erribera pasealekua",
+   "dist_ajuste_m": 113.2,
+   "lon": -1.973594,
+   "lat": 43.312815
+  },
+  {
+   "id": 35,
+   "calle": "Calle del Río de la Pila",
+   "dist_ajuste_m": 1.1,
+   "lon": -3.804916,
+   "lat": 43.46589
+  },
+  {
+   "id": 36,
+   "calle": "Avenida del Acueducto",
+   "dist_ajuste_m": 40.7,
+   "lon": -4.118298,
+   "lat": 40.94772
+  },
+  {
+   "id": 37,
+   "calle": "Glorieta Edward Johnston",
+   "dist_ajuste_m": 9.6,
+   "lon": -5.973066,
+   "lat": 37.382805
+  },
+  {
+   "id": 38,
+   "calle": "Plaza Mariano Granados",
+   "dist_ajuste_m": 12.5,
+   "lon": -2.468841,
+   "lat": 41.763898
+  },
+  {
+   "id": 39,
+   "calle": "Plaça de la Imperial Tarraco",
+   "dist_ajuste_m": 38,
+   "lon": 1.245861,
+   "lat": 41.118925
+  },
+  {
+   "id": 40,
+   "calle": "",
+   "dist_ajuste_m": 1.7,
+   "lon": -1.106451,
+   "lat": 40.345614
+  },
+  {
+   "id": 41,
+   "calle": "Calle de las Tornerías",
+   "dist_ajuste_m": 4.1,
+   "lon": -4.022678,
+   "lat": 39.858103
+  },
+  {
+   "id": 42,
+   "calle": "Plaça de la Ciutat de Bruges",
+   "dist_ajuste_m": 7.7,
+   "lon": -0.379571,
+   "lat": 39.47391
+  },
+  {
+   "id": 43,
+   "calle": "Calle de San Martín",
+   "dist_ajuste_m": 0.7,
+   "lon": -4.723535,
+   "lat": 41.655415
+  },
+  {
+   "id": 44,
+   "calle": "Santa Maria kalea",
+   "dist_ajuste_m": 6.7,
+   "lon": -2.672599,
+   "lat": 42.849988
+  },
+  {
+   "id": 45,
+   "calle": "Calle del Doctor Carracido",
+   "dist_ajuste_m": 3.5,
+   "lon": -5.744602,
+   "lat": 41.506331
+  },
+  {
+   "id": 46,
+   "calle": "Paseo de Echegaray y Caballero",
+   "dist_ajuste_m": 59.6,
+   "lon": -0.876943,
+   "lat": 41.656506
+  }
+ ]
+}

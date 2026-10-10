@@ -1,0 +1,2163 @@
+i,j,origen,destino,dist_m,tiempo_s,peaje_eur,metodo_peaje,avisos
+0,1,A Coruña,Albacete,856424,26376,38.3,summary.tolls.total,tollTransponder
+0,2,A Coruña,Alicante,1020626,31350,38.3,summary.tolls.total,tollTransponder
+0,3,A Coruña,Almería,1138783,35805,24.15,summary.tolls.total,tollTransponder
+0,4,A Coruña,Ávila,521497,16848,2.45,summary.tolls.total,
+0,5,A Coruña,Badajoz,655852,23257,44.45,summary.tolls.total,tollTransponder
+0,6,A Coruña,Barcelona,1084659,34254,30.05,summary.tolls.total,
+0,7,A Coruña,Bilbao,548631,17874,2.45,summary.tolls.total,
+0,8,A Coruña,Burgos,484573,15432,4.95,summary.tolls.total,
+0,9,A Coruña,Cáceres,666454,21076,2.45,summary.tolls.total,
+0,10,A Coruña,Cádiz,1042401,32343,2.45,summary.tolls.total,
+0,11,A Coruña,Castellón de la Plana,1016810,32185,18.15,summary.tolls.total,
+0,12,A Coruña,Ciudad Real,782393,25097,24.1,summary.tolls.total,tollTransponder
+0,13,A Coruña,Córdoba,953885,30596,2.45,summary.tolls.total,
+0,14,A Coruña,Cuenca,764270,24351,18.15,summary.tolls.total,
+0,15,A Coruña,Girona,1154538,36646,30.05,summary.tolls.total,
+0,16,A Coruña,Granada,1008866,31576,24.15,summary.tolls.total,tollTransponder
+0,17,A Coruña,Guadalajara,654355,20775,22.55,summary.tolls.total,
+0,18,A Coruña,Huelva,954110,29309,84.15,summary.tolls.total,tollTransponder
+0,19,A Coruña,Huesca,850989,26692,30.05,summary.tolls.total,
+0,20,A Coruña,Jaén,925952,29060,24.15,summary.tolls.total,tollTransponder
+0,21,A Coruña,León,317818,10597,4.95,summary.tolls.total,
+0,22,A Coruña,Lleida,929746,29105,30.05,summary.tolls.total,
+0,23,A Coruña,Logroño,615851,19653,9.8,summary.tolls.total,
+0,24,A Coruña,Lugo,100686,3624,2.45,summary.tolls.total,
+0,25,A Coruña,Madrid,594558,19262,18.15,summary.tolls.total,
+0,26,A Coruña,Málaga,1130353,35719,28.45,summary.tolls.total,tollTransponder
+0,27,A Coruña,Murcia,997274,30700,38.3,summary.tolls.total,tollTransponder
+0,28,A Coruña,Ourense,174905,5784,16.05,summary.tolls.total,tollTransponder
+0,29,A Coruña,Oviedo,290682,9435,2.45,summary.tolls.total,
+0,30,A Coruña,Palencia,435637,14440,4.95,summary.tolls.total,
+0,31,A Coruña,Pamplona,694576,22172,7.6,summary.tolls.total,
+0,32,A Coruña,Pontevedra,134198,4664,16.35,summary.tolls.total,
+0,33,A Coruña,Salamanca,462658,14659,2.45,summary.tolls.total,
+0,34,A Coruña,San Sebastián,646333,21375,16.26,summary.tolls.total,
+0,35,A Coruña,Santander,457315,14886,2.45,summary.tolls.total,
+0,36,A Coruña,Segovia,528874,17024,2.45,summary.tolls.total,
+0,37,A Coruña,Sevilla,928278,28859,2.45,summary.tolls.total,
+0,38,A Coruña,Soria,624867,20319,4.95,summary.tolls.total,
+0,39,A Coruña,Tarragona,1010182,31535,30.05,summary.tolls.total,
+0,40,A Coruña,Teruel,859605,28423,4.95,summary.tolls.total,
+0,41,A Coruña,Toledo,669146,21062,24.1,summary.tolls.total,tollTransponder
+0,42,A Coruña,Valencia,951956,30309,18.15,summary.tolls.total,
+0,43,A Coruña,Valladolid,441314,14268,2.45,summary.tolls.total,
+0,44,A Coruña,Vitoria-Gasteiz,602394,19171,4.95,summary.tolls.total,
+0,45,A Coruña,Zamora,397534,12855,2.45,summary.tolls.total,
+0,46,A Coruña,Zaragoza,784515,24561,30.05,summary.tolls.total,
+1,0,Albacete,A Coruña,852105,26429,38.45,summary.tolls.total,tollTransponder
+1,2,Albacete,Alicante,168467,5738,0.0,summary.tolls.total,
+1,3,Albacete,Almería,348400,11259,0.0,summary.tolls.total,
+1,4,Albacete,Ávila,369896,11766,31.45,summary.tolls.total,tollTransponder
+1,5,Albacete,Badajoz,502976,18040,0.0,summary.tolls.total,
+1,6,Albacete,Barcelona,509944,17892,13.45,summary.tolls.total,
+1,7,Albacete,Bilbao,639033,20165,14.85,summary.tolls.total,
+1,8,Albacete,Burgos,485977,15234,2.45,summary.tolls.total,
+1,9,Albacete,Cáceres,506286,15785,15.95,summary.tolls.total,
+1,10,Albacete,Cádiz,602144,20425,0.0,summary.tolls.total,
+1,11,Albacete,Castellón de la Plana,234545,8735,0.0,summary.tolls.total,
+1,12,Albacete,Ciudad Real,199933,7108,0.0,summary.tolls.total,
+1,13,Albacete,Córdoba,349023,12457,0.0,summary.tolls.total,
+1,14,Albacete,Cuenca,161067,5834,0.0,summary.tolls.total,
+1,15,Albacete,Girona,604729,20644,0.0,summary.tolls.total,
+1,16,Albacete,Granada,346549,12415,0.0,summary.tolls.total,
+1,17,Albacete,Guadalajara,281330,9292,2.45,summary.tolls.total,
+1,18,Albacete,Huelva,576896,19962,0.0,summary.tolls.total,
+1,19,Albacete,Huesca,456698,16815,0.0,summary.tolls.total,
+1,20,Albacete,Jaén,263244,9826,0.0,summary.tolls.total,
+1,21,Albacete,León,596787,18559,36.0,summary.tolls.total,tollTransponder
+1,22,Albacete,Lleida,473355,17213,0.0,summary.tolls.total,
+1,23,Albacete,Logroño,513624,18549,0.0,summary.tolls.total,
+1,24,Albacete,Lugo,760314,23642,36.0,summary.tolls.total,tollTransponder
+1,25,Albacete,Madrid,255385,8515,3.4,summary.tolls.total,
+1,26,Albacete,Málaga,468036,16558,4.3,summary.tolls.total,
+1,27,Albacete,Murcia,143447,5046,0.0,summary.tolls.total,
+1,28,Albacete,Ourense,763996,23994,36.0,summary.tolls.total,tollTransponder
+1,29,Albacete,Oviedo,706487,22125,52.2,summary.tolls.total,tollTransponder
+1,30,Albacete,Palencia,488099,15890,2.45,summary.tolls.total,
+1,31,Albacete,Pamplona,532889,20116,17.1,summary.tolls.total,
+1,32,Albacete,Pontevedra,877016,27786,41.05,summary.tolls.total,tollTransponder
+1,33,Albacete,Salamanca,474210,14731,31.45,summary.tolls.total,tollTransponder
+1,34,Albacete,San Sebastián,695885,22453,19.32,summary.tolls.total,
+1,35,Albacete,Santander,665459,21638,2.45,summary.tolls.total,
+1,36,Albacete,Segovia,351193,11122,27.9,summary.tolls.total,tollTransponder
+1,37,Albacete,Sevilla,483859,16901,0.0,summary.tolls.total,
+1,38,Albacete,Soria,413739,14375,0.0,summary.tolls.total,
+1,39,Albacete,Tarragona,417971,14470,0.0,summary.tolls.total,
+1,40,Albacete,Teruel,209764,9174,0.0,summary.tolls.total,
+1,41,Albacete,Toledo,247557,8308,15.95,summary.tolls.total,
+1,42,Albacete,Valencia,187570,6638,0.0,summary.tolls.total,
+1,43,Albacete,Valladolid,450211,14702,36.0,summary.tolls.total,tollTransponder
+1,44,Albacete,Vitoria-Gasteiz,599889,19034,2.45,summary.tolls.total,
+1,45,Albacete,Zamora,512476,16083,36.0,summary.tolls.total,tollTransponder
+1,46,Albacete,Zaragoza,391845,14867,0.0,summary.tolls.total,
+2,0,Alicante,A Coruña,1018819,31255,38.45,summary.tolls.total,tollTransponder
+2,1,Alicante,Albacete,168453,5611,0.0,summary.tolls.total,
+2,3,Alicante,Almería,292008,9749,0.0,summary.tolls.total,
+2,4,Alicante,Ávila,536610,16592,31.45,summary.tolls.total,tollTransponder
+2,5,Alicante,Badajoz,690435,23210,0.0,summary.tolls.total,
+2,6,Alicante,Barcelona,527828,17681,13.45,summary.tolls.total,
+2,7,Alicante,Bilbao,766252,24959,33.95,summary.tolls.total,
+2,8,Alicante,Burgos,652691,20060,2.45,summary.tolls.total,
+2,9,Alicante,Cáceres,673000,20611,15.95,summary.tolls.total,
+2,10,Alicante,Cádiz,641033,21971,0.0,summary.tolls.total,
+2,11,Alicante,Castellón de la Plana,252429,8524,0.0,summary.tolls.total,
+2,12,Alicante,Ciudad Real,387392,12278,0.0,summary.tolls.total,
+2,13,Alicante,Córdoba,496198,17420,0.0,summary.tolls.total,
+2,14,Alicante,Cuenca,327781,10660,0.0,summary.tolls.total,
+2,15,Alicante,Girona,622613,20433,0.0,summary.tolls.total,
+2,16,Alicante,Granada,350128,11642,0.0,summary.tolls.total,
+2,17,Alicante,Guadalajara,448044,14118,2.45,summary.tolls.total,
+2,18,Alicante,Huelva,694465,22519,0.0,summary.tolls.total,
+2,19,Alicante,Huesca,565343,18061,0.0,summary.tolls.total,
+2,20,Alicante,Jaén,408685,13736,0.0,summary.tolls.total,
+2,21,Alicante,León,763501,23385,36.0,summary.tolls.total,tollTransponder
+2,22,Alicante,Lleida,491239,17002,0.0,summary.tolls.total,
+2,23,Alicante,Logroño,635815,20974,13.45,summary.tolls.total,
+2,24,Alicante,Lugo,927028,28468,36.0,summary.tolls.total,tollTransponder
+2,25,Alicante,Madrid,422099,13341,3.4,summary.tolls.total,
+2,26,Alicante,Málaga,480838,16004,4.3,summary.tolls.total,
+2,27,Alicante,Murcia,83092,3229,0.0,summary.tolls.total,
+2,28,Alicante,Ourense,930710,28820,36.0,summary.tolls.total,tollTransponder
+2,29,Alicante,Oviedo,873201,26951,52.2,summary.tolls.total,tollTransponder
+2,30,Alicante,Palencia,654813,20716,2.45,summary.tolls.total,
+2,31,Alicante,Pamplona,641534,21362,17.1,summary.tolls.total,
+2,32,Alicante,Pontevedra,1043730,32612,41.05,summary.tolls.total,tollTransponder
+2,33,Alicante,Salamanca,640924,19557,31.45,summary.tolls.total,tollTransponder
+2,34,Alicante,San Sebastián,728058,24578,19.75,summary.tolls.total,
+2,35,Alicante,Santander,832173,26464,2.45,summary.tolls.total,
+2,36,Alicante,Segovia,517907,15948,27.9,summary.tolls.total,tollTransponder
+2,37,Alicante,Sevilla,596307,19318,0.0,summary.tolls.total,
+2,38,Alicante,Soria,550603,18645,0.0,summary.tolls.total,
+2,39,Alicante,Tarragona,435855,14259,0.0,summary.tolls.total,
+2,40,Alicante,Teruel,323894,10718,0.0,summary.tolls.total,
+2,41,Alicante,Toledo,414271,13134,15.95,summary.tolls.total,
+2,42,Alicante,Valencia,170951,6277,0.0,summary.tolls.total,
+2,43,Alicante,Valladolid,616925,19528,36.0,summary.tolls.total,tollTransponder
+2,44,Alicante,Vitoria-Gasteiz,688388,23643,10.5,summary.tolls.total,
+2,45,Alicante,Zamora,679190,20909,36.0,summary.tolls.total,tollTransponder
+2,46,Alicante,Zaragoza,500490,16113,0.0,summary.tolls.total,
+3,0,Almería,A Coruña,1133568,35460,24.3,summary.tolls.total,tollTransponder
+3,1,Almería,Albacete,351471,11121,0.0,summary.tolls.total,
+3,2,Almería,Alicante,292464,9641,0.0,summary.tolls.total,
+3,4,Almería,Ávila,651359,20797,17.3,summary.tolls.total,tollTransponder
+3,5,Almería,Badajoz,613263,20484,0.0,summary.tolls.total,
+3,6,Almería,Barcelona,778491,25164,13.45,summary.tolls.total,
+3,7,Almería,Bilbao,947736,29740,18.55,summary.tolls.total,
+3,8,Almería,Burgos,794680,24809,6.15,summary.tolls.total,
+3,9,Almería,Cáceres,575268,21216,0.0,summary.tolls.total,
+3,10,Almería,Cádiz,438159,15150,12.0,summary.tolls.total,tollTransponder
+3,11,Almería,Castellón de la Plana,503092,16007,0.0,summary.tolls.total,
+3,12,Almería,Ciudad Real,381932,12903,0.0,summary.tolls.total,
+3,13,Almería,Córdoba,315203,11246,0.0,summary.tolls.total,
+3,14,Almería,Cuenca,510799,16170,0.0,summary.tolls.total,
+3,15,Almería,Girona,873276,27916,0.0,summary.tolls.total,
+3,16,Almería,Granada,158303,5343,0.0,summary.tolls.total,
+3,17,Almería,Guadalajara,596377,18843,6.15,summary.tolls.total,
+3,18,Almería,Huelva,502640,16220,0.0,summary.tolls.total,
+3,19,Almería,Huesca,816006,25544,0.0,summary.tolls.total,
+3,20,Almería,Jaén,216860,7437,0.0,summary.tolls.total,
+3,21,Almería,León,878250,27590,21.85,summary.tolls.total,tollTransponder
+3,22,Almería,Lleida,741902,24485,0.0,summary.tolls.total,
+3,23,Almería,Logroño,864195,28116,6.15,summary.tolls.total,
+3,24,Almería,Lugo,1041777,32673,21.85,summary.tolls.total,tollTransponder
+3,25,Almería,Madrid,541499,17792,0.0,summary.tolls.total,
+3,26,Almería,Málaga,203194,7372,0.0,summary.tolls.total,
+3,27,Almería,Murcia,220323,7393,0.0,summary.tolls.total,
+3,28,Almería,Ourense,1045459,33025,21.85,summary.tolls.total,tollTransponder
+3,29,Almería,Oviedo,987950,31156,38.05,summary.tolls.total,tollTransponder
+3,30,Almería,Palencia,795627,25032,13.75,summary.tolls.total,tollTransponder
+3,31,Almería,Pamplona,892197,28845,17.1,summary.tolls.total,
+3,32,Almería,Pontevedra,1158479,36817,26.9,summary.tolls.total,tollTransponder
+3,33,Almería,Salamanca,755673,23762,17.3,summary.tolls.total,tollTransponder
+3,34,Almería,San Sebastián,978721,32061,19.75,summary.tolls.total,
+3,35,Almería,Santander,992761,31110,13.75,summary.tolls.total,tollTransponder
+3,36,Almería,Segovia,632656,20153,13.75,summary.tolls.total,tollTransponder
+3,37,Almería,Sevilla,404482,13019,0.0,summary.tolls.total,
+3,38,Almería,Soria,764310,23942,6.15,summary.tolls.total,
+3,39,Almería,Tarragona,686518,21742,0.0,summary.tolls.total,
+3,40,Almería,Teruel,574557,18201,0.0,summary.tolls.total,
+3,41,Almería,Toledo,491630,15855,0.0,summary.tolls.total,
+3,42,Almería,Valencia,421614,13760,0.0,summary.tolls.total,
+3,43,Almería,Valladolid,731674,23733,21.85,summary.tolls.total,tollTransponder
+3,44,Almería,Vitoria-Gasteiz,908592,28609,6.15,summary.tolls.total,
+3,45,Almería,Zamora,793939,25114,21.85,summary.tolls.total,tollTransponder
+3,46,Almería,Zaragoza,751153,23596,0.0,summary.tolls.total,
+4,0,Ávila,A Coruña,519980,16737,2.45,summary.tolls.total,
+4,1,Ávila,Albacete,375648,11574,31.3,summary.tolls.total,tollTransponder
+4,2,Ávila,Alicante,539850,16548,31.3,summary.tolls.total,tollTransponder
+4,3,Ávila,Almería,658007,21003,17.15,summary.tolls.total,tollTransponder
+4,5,Ávila,Badajoz,324440,11660,0.0,summary.tolls.total,
+4,6,Ávila,Barcelona,732458,23548,17.55,summary.tolls.total,
+4,7,Ávila,Bilbao,398609,13877,12.4,summary.tolls.total,
+4,8,Ávila,Burgos,245755,8959,0.0,summary.tolls.total,
+4,9,Ávila,Cáceres,234853,8537,0.0,summary.tolls.total,
+4,10,Ávila,Cádiz,610800,19804,0.0,summary.tolls.total,
+4,11,Ávila,Castellón de la Plana,536034,17383,11.15,summary.tolls.total,
+4,12,Ávila,Ciudad Real,251423,9958,0.0,summary.tolls.total,
+4,13,Ávila,Córdoba,505607,16201,17.15,summary.tolls.total,tollTransponder
+4,14,Ávila,Cuenca,283494,9549,11.15,summary.tolls.total,
+4,15,Ávila,Girona,802337,25940,17.55,summary.tolls.total,
+4,16,Ávila,Granada,528090,16774,17.15,summary.tolls.total,tollTransponder
+4,17,Ávila,Guadalajara,173579,5973,15.55,summary.tolls.total,
+4,18,Ávila,Huelva,574459,18479,0.0,summary.tolls.total,
+4,19,Ávila,Huesca,498788,15986,17.55,summary.tolls.total,
+4,20,Ávila,Jaén,445176,14258,17.15,summary.tolls.total,tollTransponder
+4,21,Ávila,León,264662,8867,0.0,summary.tolls.total,
+4,22,Ávila,Lleida,577545,18399,17.55,summary.tolls.total,
+4,23,Ávila,Logroño,372922,13228,4.85,summary.tolls.total,
+4,24,Ávila,Lugo,428189,13950,0.0,summary.tolls.total,
+4,25,Ávila,Madrid,113782,4460,11.15,summary.tolls.total,
+4,26,Ávila,Málaga,649577,20917,21.45,summary.tolls.total,tollTransponder
+4,27,Ávila,Murcia,516498,15898,31.3,summary.tolls.total,tollTransponder
+4,28,Ávila,Ourense,431871,14302,0.0,summary.tolls.total,
+4,29,Ávila,Oviedo,374362,12433,16.2,summary.tolls.total,tollTransponder
+4,30,Ávila,Palencia,167143,6486,0.0,summary.tolls.total,
+4,31,Ávila,Pamplona,451647,15747,2.65,summary.tolls.total,
+4,32,Ávila,Pontevedra,544891,18094,5.05,summary.tolls.total,
+4,33,Ávila,Salamanca,105607,3668,0.0,summary.tolls.total,
+4,34,Ávila,San Sebastián,455461,16165,16.87,summary.tolls.total,
+4,35,Ávila,Santander,364277,12564,0.0,summary.tolls.total,
+4,36,Ávila,Segovia,69207,2894,1.1,summary.tolls.total,
+4,37,Ávila,Sevilla,496677,16320,0.0,summary.tolls.total,
+4,38,Ávila,Soria,259342,9852,1.1,summary.tolls.total,
+4,39,Ávila,Tarragona,657981,20829,17.55,summary.tolls.total,
+4,40,Ávila,Teruel,418256,13983,17.55,summary.tolls.total,
+4,41,Ávila,Toledo,133143,5960,0.0,summary.tolls.total,
+4,42,Ávila,Valencia,471180,15507,11.15,summary.tolls.total,
+4,43,Ávila,Valladolid,120179,5074,0.0,summary.tolls.total,
+4,44,Ávila,Vitoria-Gasteiz,359465,12746,0.0,summary.tolls.total,
+4,45,Ávila,Zamora,154954,5844,0.0,summary.tolls.total,
+4,46,Ávila,Zaragoza,432314,13855,17.55,summary.tolls.total,
+5,0,Badajoz,A Coruña,653665,23127,44.45,summary.tolls.total,tollTransponder
+5,1,Badajoz,Albacete,503679,18196,0.0,summary.tolls.total,
+5,2,Badajoz,Alicante,682302,23239,0.0,summary.tolls.total,
+5,3,Badajoz,Almería,617199,20750,0.0,summary.tolls.total,
+5,4,Badajoz,Ávila,339906,12035,0.0,summary.tolls.total,
+5,6,Badajoz,Barcelona,1016508,32150,3.65,summary.tolls.total,
+5,7,Badajoz,Bilbao,707530,23153,12.4,summary.tolls.total,
+5,8,Badajoz,Burgos,554676,18235,0.0,summary.tolls.total,
+5,9,Badajoz,Cáceres,108554,4709,0.0,summary.tolls.total,
+5,10,Badajoz,Cádiz,327116,11336,0.0,summary.tolls.total,
+5,11,Badajoz,Castellón de la Plana,722537,24574,0.0,summary.tolls.total,
+5,12,Badajoz,Ciudad Real,303860,11463,0.0,summary.tolls.total,
+5,13,Badajoz,Córdoba,264906,9849,0.0,summary.tolls.total,
+5,14,Badajoz,Cuenca,546368,17041,2.7,summary.tolls.total,tollTransponder
+5,15,Badajoz,Girona,1086387,34542,3.65,summary.tolls.total,
+5,16,Badajoz,Granada,457330,16015,0.0,summary.tolls.total,
+5,17,Badajoz,Guadalajara,459147,14466,3.65,summary.tolls.total,
+5,18,Badajoz,Huelva,233334,9540,0.0,summary.tolls.total,
+5,19,Badajoz,Huesca,782838,24588,3.65,summary.tolls.total,
+5,20,Badajoz,Jaén,367664,13892,0.0,summary.tolls.total,
+5,21,Badajoz,León,514157,16510,0.0,summary.tolls.total,
+5,22,Badajoz,Lleida,861595,27001,3.65,summary.tolls.total,
+5,23,Badajoz,Logroño,681843,22504,4.85,summary.tolls.total,
+5,24,Badajoz,Lugo,677684,21593,0.0,summary.tolls.total,
+5,25,Badajoz,Madrid,399913,13061,0.0,summary.tolls.total,
+5,26,Badajoz,Málaga,422285,15145,4.3,summary.tolls.total,
+5,27,Badajoz,Murcia,627979,22167,0.0,summary.tolls.total,
+5,28,Badajoz,Ourense,636932,21149,0.0,summary.tolls.total,
+5,29,Badajoz,Oviedo,623857,20076,16.2,summary.tolls.total,tollTransponder
+5,30,Badajoz,Palencia,476064,15762,0.0,summary.tolls.total,
+5,31,Badajoz,Pamplona,760568,25023,2.65,summary.tolls.total,
+5,32,Badajoz,Pontevedra,523830,19280,28.1,summary.tolls.total,tollTransponder
+5,33,Badajoz,Salamanca,308051,10468,0.0,summary.tolls.total,
+5,34,Badajoz,San Sebastián,764382,25441,16.87,summary.tolls.total,
+5,35,Badajoz,Santander,673198,21840,0.0,summary.tolls.total,
+5,36,Badajoz,Segovia,405512,14319,1.1,summary.tolls.total,
+5,37,Badajoz,Sevilla,212993,7852,0.0,summary.tolls.total,
+5,38,Badajoz,Soria,627080,19565,3.65,summary.tolls.total,
+5,39,Badajoz,Tarragona,942031,29431,3.65,summary.tolls.total,
+5,40,Badajoz,Teruel,702306,22585,3.65,summary.tolls.total,
+5,41,Badajoz,Toledo,363452,11633,0.0,summary.tolls.total,
+5,42,Badajoz,Valencia,657683,22698,0.0,summary.tolls.total,
+5,43,Badajoz,Valladolid,430223,14343,0.0,summary.tolls.total,
+5,44,Badajoz,Vitoria-Gasteiz,668386,22022,0.0,summary.tolls.total,
+5,45,Badajoz,Zamora,374645,12373,0.0,summary.tolls.total,
+5,46,Badajoz,Zaragoza,716364,22457,3.65,summary.tolls.total,
+6,0,Barcelona,A Coruña,1078271,34163,30.05,summary.tolls.total,tollTransponder
+6,1,Barcelona,Albacete,510075,17808,13.45,summary.tolls.total,
+6,2,Barcelona,Alicante,536256,17703,13.45,summary.tolls.total,
+6,3,Barcelona,Almería,777513,25278,13.45,summary.tolls.total,
+6,4,Barcelona,Ávila,728010,23702,17.55,summary.tolls.total,tollTransponder
+6,5,Barcelona,Badajoz,1016441,32326,3.65,summary.tolls.total,
+6,7,Barcelona,Bilbao,604228,19295,39.9,summary.tolls.total,
+6,8,Barcelona,Burgos,600760,19474,25.1,summary.tolls.total,
+6,9,Barcelona,Cáceres,913903,29163,3.65,summary.tolls.total,
+6,10,Barcelona,Cádiz,1114624,36057,13.45,summary.tolls.total,
+6,11,Barcelona,Castellón de la Plana,278671,9821,13.45,summary.tolls.total,
+6,12,Barcelona,Ciudad Real,694575,22670,13.45,summary.tolls.total,
+6,13,Barcelona,Córdoba,861503,28089,13.45,summary.tolls.total,
+6,14,Barcelona,Cuenca,538620,18256,13.45,summary.tolls.total,
+6,15,Barcelona,Girona,103040,4183,0.0,summary.tolls.total,
+6,16,Barcelona,Granada,835633,27171,13.45,summary.tolls.total,
+6,17,Barcelona,Guadalajara,558659,18098,0.0,summary.tolls.total,
+6,18,Barcelona,Huelva,1089376,35594,13.45,summary.tolls.total,
+6,19,Barcelona,Huesca,265526,9334,0.0,summary.tolls.total,
+6,20,Barcelona,Jaén,801072,26146,13.45,summary.tolls.total,
+6,21,Barcelona,León,769909,24584,25.1,summary.tolls.total,
+6,22,Barcelona,Lleida,156595,6071,0.0,summary.tolls.total,
+6,23,Barcelona,Logroño,473791,15310,19.35,summary.tolls.total,
+6,24,Barcelona,Lugo,986480,31376,27.6,summary.tolls.total,tollTransponder
+6,25,Barcelona,Madrid,615658,20411,0.0,summary.tolls.total,
+6,26,Barcelona,Málaga,966343,31533,17.75,summary.tolls.total,
+6,27,Barcelona,Murcia,572560,19065,13.45,summary.tolls.total,
+6,28,Barcelona,Ourense,1028128,33364,25.1,summary.tolls.total,
+6,29,Barcelona,Oviedo,884916,28316,41.95,summary.tolls.total,
+6,30,Barcelona,Palencia,685274,22233,25.1,summary.tolls.total,
+6,31,Barcelona,Pamplona,425016,15442,0.0,summary.tolls.total,
+6,32,Barcelona,Pontevedra,1140722,36654,35.15,summary.tolls.total,tollTransponder
+6,33,Barcelona,Salamanca,832324,26667,17.55,summary.tolls.total,tollTransponder
+6,34,Barcelona,San Sebastián,511540,18658,2.65,summary.tolls.total,
+6,35,Barcelona,Santander,702408,22762,41.95,summary.tolls.total,
+6,36,Barcelona,Segovia,658308,22913,0.0,summary.tolls.total,
+6,37,Barcelona,Sevilla,996339,32533,13.45,summary.tolls.total,
+6,38,Barcelona,Soria,472770,15928,0.0,summary.tolls.total,
+6,39,Barcelona,Tarragona,98064,3882,13.45,summary.tolls.total,
+6,40,Barcelona,Teruel,375786,14438,13.45,summary.tolls.total,
+6,41,Barcelona,Toledo,692311,22576,5.2,summary.tolls.total,
+6,42,Barcelona,Valencia,354983,12442,13.45,summary.tolls.total,
+6,43,Barcelona,Valladolid,682699,23438,0.0,summary.tolls.total,
+6,44,Barcelona,Vitoria-Gasteiz,526364,17979,16.45,summary.tolls.total,
+6,45,Barcelona,Zamora,818623,26540,25.1,summary.tolls.total,
+6,46,Barcelona,Zaragoza,305391,10210,0.0,summary.tolls.total,
+7,0,Bilbao,A Coruña,548575,17820,4.0,summary.tolls.total,
+7,1,Bilbao,Albacete,642467,20416,14.85,summary.tolls.total,
+7,2,Bilbao,Alicante,799400,24905,39.9,summary.tolls.total,
+7,3,Bilbao,Almería,943311,30361,18.4,summary.tolls.total,tollTransponder
+7,4,Bilbao,Ávila,399362,14009,12.4,summary.tolls.total,
+7,5,Bilbao,Badajoz,692975,22864,12.4,summary.tolls.total,
+7,6,Bilbao,Barcelona,605363,19315,39.9,summary.tolls.total,
+7,8,Bilbao,Burgos,159116,5555,12.4,summary.tolls.total,
+7,9,Bilbao,Cáceres,603388,19741,12.4,summary.tolls.total,
+7,10,Bilbao,Cádiz,979335,31008,12.4,summary.tolls.total,
+7,11,Bilbao,Castellón de la Plana,612173,19420,39.9,summary.tolls.total,
+7,12,Bilbao,Ciudad Real,583842,19884,12.4,summary.tolls.total,
+7,13,Bilbao,Córdoba,790911,25559,18.4,summary.tolls.total,tollTransponder
+7,14,Bilbao,Cuenca,554035,17798,14.85,summary.tolls.total,
+7,15,Bilbao,Girona,675242,21707,39.9,summary.tolls.total,
+7,16,Bilbao,Granada,813394,26132,18.4,summary.tolls.total,tollTransponder
+7,17,Bilbao,Guadalajara,391421,13805,18.5,summary.tolls.total,
+7,18,Bilbao,Huelva,942994,29683,12.4,summary.tolls.total,
+7,19,Bilbao,Huesca,371693,11753,39.9,summary.tolls.total,
+7,20,Bilbao,Jaén,730480,23616,18.4,summary.tolls.total,tollTransponder
+7,21,Bilbao,León,328265,10665,12.4,summary.tolls.total,
+7,22,Bilbao,Lleida,450450,14166,39.9,summary.tolls.total,
+7,23,Bilbao,Logroño,136555,4714,19.6,summary.tolls.total,
+7,24,Bilbao,Lugo,488307,16453,1.55,summary.tolls.total,
+7,25,Bilbao,Madrid,396748,13380,12.4,summary.tolls.total,
+7,26,Bilbao,Málaga,934881,30275,22.7,summary.tolls.total,tollTransponder
+7,27,Bilbao,Murcia,783317,24740,14.85,summary.tolls.total,
+7,28,Bilbao,Ourense,586484,19445,12.4,summary.tolls.total,
+7,29,Bilbao,Oviedo,286398,9662,1.55,summary.tolls.total,
+7,30,Bilbao,Palencia,243630,8314,12.4,summary.tolls.total,
+7,31,Bilbao,Pamplona,157231,5797,9.5,summary.tolls.total,
+7,32,Bilbao,Pontevedra,645339,20765,17.0,summary.tolls.total,
+7,33,Bilbao,Salamanca,397546,13253,12.4,summary.tolls.total,
+7,34,Bilbao,San Sebastián,104018,4169,15.36,summary.tolls.total,
+7,35,Bilbao,Santander,103890,4108,1.55,summary.tolls.total,
+7,36,Bilbao,Segovia,343478,12117,12.4,summary.tolls.total,
+7,37,Bilbao,Sevilla,865212,27524,12.4,summary.tolls.total,
+7,38,Bilbao,Soria,222881,8653,18.5,summary.tolls.total,
+7,39,Bilbao,Tarragona,530886,16596,39.9,summary.tolls.total,
+7,40,Bilbao,Teruel,473700,14724,39.9,summary.tolls.total,
+7,41,Bilbao,Toledo,471014,15917,12.4,summary.tolls.total,
+7,42,Bilbao,Valencia,618127,19644,39.9,summary.tolls.total,
+7,43,Bilbao,Valladolid,280883,9567,12.4,summary.tolls.total,
+7,44,Bilbao,Vitoria-Gasteiz,64706,2734,6.85,summary.tolls.total,
+7,45,Bilbao,Zamora,376979,12621,12.4,summary.tolls.total,
+7,46,Bilbao,Zaragoza,305219,9622,39.9,summary.tolls.total,
+8,0,Burgos,A Coruña,487917,15363,4.95,summary.tolls.total,tollTransponder
+8,1,Burgos,Albacete,489646,15433,2.45,summary.tolls.total,
+8,2,Burgos,Alicante,653848,20407,2.45,summary.tolls.total,
+8,3,Burgos,Almería,790490,25378,6.0,summary.tolls.total,tollTransponder
+8,4,Burgos,Ávila,246415,9017,0.0,summary.tolls.total,
+8,5,Burgos,Badajoz,540028,17872,0.0,summary.tolls.total,
+8,6,Burgos,Barcelona,602873,19481,25.1,summary.tolls.total,
+8,7,Burgos,Bilbao,159752,5529,12.4,summary.tolls.total,
+8,9,Burgos,Cáceres,450441,14749,0.0,summary.tolls.total,
+8,10,Burgos,Cádiz,826388,26016,0.0,summary.tolls.total,
+8,11,Burgos,Castellón de la Plana,517237,18370,0.0,summary.tolls.total,
+8,12,Burgos,Ciudad Real,431021,14901,0.0,summary.tolls.total,
+8,13,Burgos,Córdoba,638090,20576,6.0,summary.tolls.total,tollTransponder
+8,14,Burgos,Cuenca,401214,12815,2.45,summary.tolls.total,
+8,15,Burgos,Girona,672752,21873,25.1,summary.tolls.total,
+8,16,Burgos,Granada,660573,21149,6.0,summary.tolls.total,tollTransponder
+8,17,Burgos,Guadalajara,241503,8838,0.0,summary.tolls.total,
+8,18,Burgos,Huelva,790047,24691,0.0,summary.tolls.total,
+8,19,Burgos,Huesca,369203,11919,25.1,summary.tolls.total,
+8,20,Burgos,Jaén,577659,18633,6.0,summary.tolls.total,tollTransponder
+8,21,Burgos,León,179555,5784,0.0,summary.tolls.total,
+8,22,Burgos,Lleida,447960,14332,25.1,summary.tolls.total,
+8,23,Burgos,Logroño,113859,5051,0.0,summary.tolls.total,
+8,24,Burgos,Lugo,396126,12576,2.5,summary.tolls.total,tollTransponder
+8,25,Burgos,Madrid,243927,8397,0.0,summary.tolls.total,
+8,26,Burgos,Málaga,782060,25292,10.3,summary.tolls.total,tollTransponder
+8,27,Burgos,Murcia,630496,19757,2.45,summary.tolls.total,
+8,28,Burgos,Ourense,437774,14564,0.0,summary.tolls.total,
+8,29,Burgos,Oviedo,296989,9715,16.2,summary.tolls.total,tollTransponder
+8,30,Burgos,Palencia,90683,3322,0.0,summary.tolls.total,
+8,31,Burgos,Pamplona,212790,7399,2.65,summary.tolls.total,
+8,32,Burgos,Pontevedra,550368,17854,10.05,summary.tolls.total,tollTransponder
+8,33,Burgos,Salamanca,244599,8261,0.0,summary.tolls.total,
+8,34,Burgos,San Sebastián,216604,7817,16.87,summary.tolls.total,
+8,35,Burgos,Santander,181155,6645,0.0,summary.tolls.total,
+8,36,Burgos,Segovia,190657,7134,0.0,summary.tolls.total,
+8,37,Burgos,Sevilla,712265,22532,0.0,summary.tolls.total,
+8,38,Burgos,Soria,144026,5570,0.0,summary.tolls.total,
+8,39,Burgos,Tarragona,528396,16762,25.1,summary.tolls.total,
+8,40,Burgos,Teruel,378764,13674,0.0,summary.tolls.total,
+8,41,Burgos,Toledo,318193,10934,0.0,summary.tolls.total,
+8,42,Burgos,Valencia,523191,18594,0.0,summary.tolls.total,
+8,43,Burgos,Valladolid,127936,4575,0.0,summary.tolls.total,
+8,44,Burgos,Vitoria-Gasteiz,120608,4398,0.0,summary.tolls.total,
+8,45,Burgos,Zamora,224032,7629,0.0,summary.tolls.total,
+8,46,Burgos,Zaragoza,302729,9788,25.1,summary.tolls.total,
+9,0,Cáceres,A Coruña,662879,20531,2.45,summary.tolls.total,
+9,1,Cáceres,Albacete,512111,15700,16.85,summary.tolls.total,tollTransponder
+9,2,Cáceres,Alicante,676313,20674,16.85,summary.tolls.total,tollTransponder
+9,3,Cáceres,Almería,589605,21519,0.0,summary.tolls.total,
+9,4,Cáceres,Ávila,233310,8186,0.0,summary.tolls.total,
+9,5,Cáceres,Badajoz,93298,4203,0.0,summary.tolls.total,
+9,6,Cáceres,Barcelona,914694,28975,3.65,summary.tolls.total,
+9,7,Cáceres,Bilbao,600934,19304,12.4,summary.tolls.total,
+9,8,Cáceres,Burgos,448080,14386,0.0,summary.tolls.total,
+9,10,Cáceres,Cádiz,382032,12344,0.0,summary.tolls.total,
+9,11,Cáceres,Castellón de la Plana,697094,21700,2.7,summary.tolls.total,tollTransponder
+9,12,Cáceres,Ciudad Real,270443,10513,0.0,summary.tolls.total,
+9,13,Cáceres,Córdoba,265134,10387,0.0,summary.tolls.total,
+9,14,Cáceres,Cuenca,444554,13866,2.7,summary.tolls.total,tollTransponder
+9,15,Cáceres,Girona,984573,31367,3.65,summary.tolls.total,
+9,16,Cáceres,Granada,465308,16859,0.0,summary.tolls.total,
+9,17,Cáceres,Guadalajara,357333,11291,3.65,summary.tolls.total,
+9,18,Cáceres,Huelva,345691,11019,0.0,summary.tolls.total,
+9,19,Cáceres,Huesca,681024,21413,3.65,summary.tolls.total,
+9,20,Cáceres,Jaén,367892,14430,0.0,summary.tolls.total,
+9,21,Cáceres,León,407561,12661,0.0,summary.tolls.total,
+9,22,Cáceres,Lleida,759781,23826,3.65,summary.tolls.total,
+9,23,Cáceres,Logroño,575247,18655,4.85,summary.tolls.total,
+9,24,Cáceres,Lugo,571088,17744,0.0,summary.tolls.total,
+9,25,Cáceres,Madrid,298099,9886,0.0,summary.tolls.total,
+9,26,Cáceres,Málaga,429949,15937,4.3,summary.tolls.total,
+9,27,Cáceres,Murcia,652961,20024,16.85,summary.tolls.total,tollTransponder
+9,28,Cáceres,Ourense,530336,17300,0.0,summary.tolls.total,
+9,29,Cáceres,Oviedo,517261,16227,16.2,summary.tolls.total,tollTransponder
+9,30,Cáceres,Palencia,369468,11913,0.0,summary.tolls.total,
+9,31,Cáceres,Pamplona,653972,21174,2.65,summary.tolls.total,
+9,32,Cáceres,Pontevedra,576150,20511,22.85,summary.tolls.total,tollTransponder
+9,33,Cáceres,Salamanca,201455,6619,0.0,summary.tolls.total,
+9,34,Cáceres,San Sebastián,657786,21592,16.87,summary.tolls.total,
+9,35,Cáceres,Santander,566602,17991,0.0,summary.tolls.total,
+9,36,Cáceres,Segovia,298916,10470,1.1,summary.tolls.total,
+9,37,Cáceres,Sevilla,267909,8860,0.0,summary.tolls.total,
+9,38,Cáceres,Soria,525266,16390,3.65,summary.tolls.total,
+9,39,Cáceres,Tarragona,840217,26256,3.65,summary.tolls.total,
+9,40,Cáceres,Teruel,600492,19410,3.65,summary.tolls.total,
+9,41,Cáceres,Toledo,261638,8458,0.0,summary.tolls.total,
+9,42,Cáceres,Valencia,632240,19824,2.7,summary.tolls.total,tollTransponder
+9,43,Cáceres,Valladolid,323627,10494,0.0,summary.tolls.total,
+9,44,Cáceres,Vitoria-Gasteiz,561790,18173,0.0,summary.tolls.total,
+9,45,Cáceres,Zamora,268049,8524,0.0,summary.tolls.total,
+9,46,Cáceres,Zaragoza,614550,19282,3.65,summary.tolls.total,
+10,0,Cádiz,A Coruña,1041537,32101,2.45,summary.tolls.total,
+10,1,Cádiz,Albacete,597817,20394,0.0,summary.tolls.total,
+10,2,Cádiz,Alicante,640548,21916,0.0,summary.tolls.total,
+10,3,Cádiz,Almería,437216,14974,12.0,summary.tolls.total,
+10,4,Cádiz,Ávila,611968,19756,0.0,summary.tolls.total,
+10,5,Cádiz,Badajoz,327954,11456,0.0,summary.tolls.total,
+10,6,Cádiz,Barcelona,1113316,36034,13.45,summary.tolls.total,
+10,7,Cádiz,Bilbao,979592,30874,12.4,summary.tolls.total,
+10,8,Cádiz,Burgos,826738,25956,0.0,summary.tolls.total,
+10,9,Cádiz,Cáceres,381179,12484,0.0,summary.tolls.total,
+10,11,Cádiz,Castellón de la Plana,837917,26877,0.0,summary.tolls.total,
+10,12,Cádiz,Ciudad Real,437382,15107,0.0,summary.tolls.total,
+10,13,Cádiz,Córdoba,261278,8665,0.0,summary.tolls.total,
+10,14,Cádiz,Cuenca,683717,22363,0.0,summary.tolls.total,
+10,15,Cádiz,Girona,1208101,38786,0.0,summary.tolls.total,
+10,16,Cádiz,Granada,291737,11154,0.0,summary.tolls.total,
+10,17,Cádiz,Guadalajara,708929,22038,3.65,summary.tolls.total,
+10,18,Cádiz,Huelva,209917,7032,0.0,summary.tolls.total,
+10,19,Cádiz,Huesca,1032620,32160,3.65,summary.tolls.total,
+10,20,Cádiz,Jaén,329904,12345,0.0,summary.tolls.total,
+10,21,Cádiz,León,786219,24231,0.0,summary.tolls.total,
+10,22,Cádiz,Lleida,1111377,34573,3.65,summary.tolls.total,
+10,23,Cádiz,Logroño,953905,30225,4.85,summary.tolls.total,
+10,24,Cádiz,Lugo,949746,29314,0.0,summary.tolls.total,
+10,25,Cádiz,Madrid,649695,20633,0.0,summary.tolls.total,
+10,26,Cádiz,Málaga,235604,8814,12.0,summary.tolls.total,
+10,27,Cádiz,Murcia,568407,19668,0.0,summary.tolls.total,
+10,28,Cádiz,Ourense,908994,28870,0.0,summary.tolls.total,
+10,29,Cádiz,Oviedo,895919,27797,16.2,summary.tolls.total,tollTransponder
+10,30,Cádiz,Palencia,748126,23483,0.0,summary.tolls.total,
+10,31,Cádiz,Pamplona,1032630,32744,2.65,summary.tolls.total,
+10,32,Cádiz,Pontevedra,862182,30000,28.1,summary.tolls.total,tollTransponder
+10,33,Cádiz,Salamanca,580113,18189,0.0,summary.tolls.total,
+10,34,Cádiz,San Sebastián,1036444,33162,16.87,summary.tolls.total,
+10,35,Cádiz,Santander,945260,29561,0.0,summary.tolls.total,
+10,36,Cádiz,Segovia,677574,22040,1.1,summary.tolls.total,
+10,37,Cádiz,Sevilla,122513,4310,0.0,summary.tolls.total,
+10,38,Cádiz,Soria,876862,27137,3.65,summary.tolls.total,
+10,39,Cádiz,Tarragona,1021343,32612,0.0,summary.tolls.total,
+10,40,Cádiz,Teruel,783840,26725,0.0,summary.tolls.total,
+10,41,Cádiz,Toledo,613234,19205,0.0,summary.tolls.total,
+10,42,Cádiz,Valencia,773063,25001,0.0,summary.tolls.total,
+10,43,Cádiz,Valladolid,702285,22064,0.0,summary.tolls.total,
+10,44,Cádiz,Vitoria-Gasteiz,940448,29743,0.0,summary.tolls.total,
+10,45,Cádiz,Zamora,646707,20094,0.0,summary.tolls.total,
+10,46,Cádiz,Zaragoza,966146,30029,3.65,summary.tolls.total,
+11,0,Castellón de la Plana,A Coruña,1014910,32138,18.15,summary.tolls.total,violatedCarpool|tollTransponder
+11,1,Castellón de la Plana,Albacete,234622,8689,0.0,summary.tolls.total,
+11,2,Castellón de la Plana,Alicante,260803,8584,0.0,summary.tolls.total,
+11,3,Castellón de la Plana,Almería,502060,16159,0.0,summary.tolls.total,
+11,4,Castellón de la Plana,Ávila,532701,17475,11.15,summary.tolls.total,violatedCarpool|tollTransponder
+11,5,Castellón de la Plana,Badajoz,722165,24483,0.0,summary.tolls.total,
+11,6,Castellón de la Plana,Barcelona,278600,9810,13.45,summary.tolls.total,
+11,7,Castellón de la Plana,Bilbao,586974,19515,33.95,summary.tolls.total,
+11,8,Castellón de la Plana,Burgos,516073,18349,0.0,summary.tolls.total,
+11,9,Castellón de la Plana,Cáceres,693262,21749,1.8,summary.tolls.total,
+11,10,Castellón de la Plana,Cádiz,839171,26938,0.0,summary.tolls.total,
+11,12,Castellón de la Plana,Ciudad Real,419122,13551,0.0,summary.tolls.total,
+11,13,Castellón de la Plana,Córdoba,586050,18970,0.0,summary.tolls.total,
+11,14,Castellón de la Plana,Cuenca,263167,9137,0.0,summary.tolls.total,
+11,15,Castellón de la Plana,Girona,373385,12562,0.0,summary.tolls.total,
+11,16,Castellón de la Plana,Granada,560180,18052,0.0,summary.tolls.total,
+11,17,Castellón de la Plana,Guadalajara,384257,13280,0.0,summary.tolls.total,
+11,18,Castellón de la Plana,Huelva,813923,26475,0.0,summary.tolls.total,
+11,19,Castellón de la Plana,Huesca,304870,11872,0.0,summary.tolls.total,
+11,20,Castellón de la Plana,Jaén,525619,17027,0.0,summary.tolls.total,
+11,21,Castellón de la Plana,León,685917,23485,0.0,summary.tolls.total,
+11,22,Castellón de la Plana,Lleida,242011,9131,0.0,summary.tolls.total,
+11,23,Castellón de la Plana,Logroño,456537,15530,13.45,summary.tolls.total,
+11,24,Castellón de la Plana,Lugo,923119,29351,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+11,25,Castellón de la Plana,Madrid,421598,13655,3.4,summary.tolls.total,
+11,26,Castellón de la Plana,Málaga,690890,22414,4.3,summary.tolls.total,
+11,27,Castellón de la Plana,Murcia,297107,9946,0.0,summary.tolls.total,
+11,28,Castellón de la Plana,Ourense,926801,29703,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+11,29,Castellón de la Plana,Oviedo,803351,27416,16.2,summary.tolls.total,tollTransponder
+11,30,Castellón de la Plana,Palencia,555973,19634,0.0,summary.tolls.total,
+11,31,Castellón de la Plana,Pamplona,462256,15918,17.1,summary.tolls.total,
+11,32,Castellón de la Plana,Pontevedra,1039821,33495,20.75,summary.tolls.total,violatedCarpool|tollTransponder
+11,33,Castellón de la Plana,Salamanca,637015,20440,11.15,summary.tolls.total,violatedCarpool|tollTransponder
+11,34,Castellón de la Plana,San Sebastián,548780,19134,19.75,summary.tolls.total,
+11,35,Castellón de la Plana,Santander,685154,22982,36.0,summary.tolls.total,
+11,36,Castellón de la Plana,Segovia,513998,16831,7.6,summary.tolls.total,violatedCarpool|tollTransponder
+11,37,Castellón de la Plana,Sevilla,720886,23414,0.0,summary.tolls.total,
+11,38,Castellón de la Plana,Soria,371325,13201,0.0,summary.tolls.total,
+11,39,Castellón de la Plana,Tarragona,186627,6388,0.0,summary.tolls.total,
+11,40,Castellón de la Plana,Teruel,144616,5274,0.0,summary.tolls.total,
+11,41,Castellón de la Plana,Toledo,434533,14272,1.8,summary.tolls.total,
+11,42,Castellón de la Plana,Valencia,79530,3323,0.0,summary.tolls.total,
+11,43,Castellón de la Plana,Valladolid,566803,20178,0.0,summary.tolls.total,
+11,44,Castellón de la Plana,Vitoria-Gasteiz,509110,18199,10.5,summary.tolls.total,
+11,45,Castellón de la Plana,Zamora,675281,21792,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+11,46,Castellón de la Plana,Zaragoza,273926,10501,0.0,summary.tolls.total,
+12,0,Ciudad Real,A Coruña,779863,25040,24.1,summary.tolls.total,tollTransponder
+12,1,Ciudad Real,Albacete,200477,7117,0.0,summary.tolls.total,
+12,2,Ciudad Real,Alicante,379100,12160,0.0,summary.tolls.total,
+12,3,Ciudad Real,Almería,384394,13206,0.0,summary.tolls.total,
+12,4,Ciudad Real,Ávila,247582,9934,0.0,summary.tolls.total,
+12,5,Ciudad Real,Badajoz,304556,11410,0.0,summary.tolls.total,
+12,6,Ciudad Real,Barcelona,694734,22652,13.45,summary.tolls.total,
+12,7,Ciudad Real,Bilbao,582557,19607,12.4,summary.tolls.total,
+12,8,Ciudad Real,Burgos,429501,14676,0.0,summary.tolls.total,
+12,9,Ciudad Real,Cáceres,270596,10513,0.0,summary.tolls.total,
+12,10,Ciudad Real,Cádiz,437628,15019,0.0,summary.tolls.total,
+12,11,Ciudad Real,Castellón de la Plana,419335,13495,0.0,summary.tolls.total,
+12,13,Ciudad Real,Córdoba,184507,7051,0.0,summary.tolls.total,
+12,14,Ciudad Real,Cuenca,265135,8981,0.0,summary.tolls.total,
+12,15,Ciudad Real,Girona,789519,25404,0.0,summary.tolls.total,
+12,16,Ciudad Real,Granada,254477,8977,0.0,summary.tolls.total,
+12,17,Ciudad Real,Guadalajara,241269,8686,0.0,summary.tolls.total,
+12,18,Ciudad Real,Huelva,412380,14556,0.0,summary.tolls.total,
+12,19,Ciudad Real,Huesca,564960,18808,0.0,summary.tolls.total,
+12,20,Ciudad Real,Jaén,171563,6461,0.0,summary.tolls.total,
+12,21,Ciudad Real,León,524545,17170,21.65,summary.tolls.total,tollTransponder
+12,22,Ciudad Real,Lleida,643717,21221,0.0,summary.tolls.total,
+12,23,Ciudad Real,Logroño,509087,17959,0.0,summary.tolls.total,
+12,24,Ciudad Real,Lugo,688072,22253,21.65,summary.tolls.total,tollTransponder
+12,25,Ciudad Real,Madrid,186924,7455,0.0,summary.tolls.total,
+12,26,Ciudad Real,Málaga,345179,12407,4.3,summary.tolls.total,
+12,27,Ciudad Real,Murcia,324777,11088,0.0,summary.tolls.total,
+12,28,Ciudad Real,Ourense,691754,22605,21.65,summary.tolls.total,tollTransponder
+12,29,Ciudad Real,Oviedo,634245,20736,37.85,summary.tolls.total,tollTransponder
+12,30,Ciudad Real,Palencia,441922,14612,13.55,summary.tolls.total,tollTransponder
+12,31,Ciudad Real,Pamplona,571756,19834,11.4,summary.tolls.total,
+12,32,Ciudad Real,Pontevedra,804774,26397,26.7,summary.tolls.total,tollTransponder
+12,33,Ciudad Real,Salamanca,351135,13192,0.0,summary.tolls.total,
+12,34,Ciudad Real,San Sebastián,639409,21895,16.87,summary.tolls.total,
+12,35,Ciudad Real,Santander,639056,20690,13.55,summary.tolls.total,tollTransponder
+12,36,Ciudad Real,Segovia,278951,9733,13.55,summary.tolls.total,tollTransponder
+12,37,Ciudad Real,Sevilla,319343,11495,0.0,summary.tolls.total,
+12,38,Ciudad Real,Soria,409202,13785,0.0,summary.tolls.total,
+12,39,Ciudad Real,Tarragona,602761,19230,0.0,summary.tolls.total,
+12,40,Ciudad Real,Teruel,365258,13343,0.0,summary.tolls.total,
+12,41,Ciudad Real,Toledo,117927,4847,0.0,summary.tolls.total,
+12,42,Ciudad Real,Valencia,354481,11619,0.0,summary.tolls.total,
+12,43,Ciudad Real,Valladolid,377969,13313,21.65,summary.tolls.total,tollTransponder
+12,44,Ciudad Real,Vitoria-Gasteiz,543413,18476,0.0,summary.tolls.total,
+12,45,Ciudad Real,Zamora,440234,14694,21.65,summary.tolls.total,tollTransponder
+12,46,Ciudad Real,Zaragoza,498486,16677,0.0,summary.tolls.total,
+13,0,Córdoba,A Coruña,952853,30334,2.45,summary.tolls.total,
+13,1,Córdoba,Albacete,346730,12448,0.0,summary.tolls.total,
+13,2,Córdoba,Alicante,512545,17369,0.0,summary.tolls.total,
+13,3,Córdoba,Almería,361320,11645,0.0,summary.tolls.total,
+13,4,Córdoba,Ávila,503697,16369,17.3,summary.tolls.total,tollTransponder
+13,5,Córdoba,Badajoz,262273,10027,0.0,summary.tolls.total,
+13,6,Córdoba,Barcelona,862229,28088,13.45,summary.tolls.total,
+13,7,Córdoba,Bilbao,800074,25312,18.55,summary.tolls.total,
+13,8,Córdoba,Burgos,647018,20381,6.15,summary.tolls.total,
+13,9,Córdoba,Cáceres,265828,10496,0.0,summary.tolls.total,
+13,10,Córdoba,Cádiz,258541,8600,0.0,summary.tolls.total,
+13,11,Córdoba,Castellón de la Plana,586830,18931,0.0,summary.tolls.total,
+13,12,Córdoba,Ciudad Real,186295,7161,0.0,summary.tolls.total,
+13,14,Córdoba,Cuenca,432630,14417,0.0,summary.tolls.total,
+13,15,Córdoba,Girona,957014,30840,0.0,summary.tolls.total,
+13,16,Córdoba,Granada,201451,6910,0.0,summary.tolls.total,
+13,17,Córdoba,Guadalajara,448715,14415,6.15,summary.tolls.total,
+13,18,Córdoba,Huelva,233293,8137,0.0,summary.tolls.total,
+13,19,Córdoba,Huesca,772406,24537,6.15,summary.tolls.total,
+13,20,Córdoba,Jaén,107735,4527,0.0,summary.tolls.total,
+13,21,Córdoba,León,697535,22464,0.0,summary.tolls.total,
+13,22,Córdoba,Lleida,851163,26950,6.15,summary.tolls.total,
+13,23,Córdoba,Logroño,716533,23688,6.15,summary.tolls.total,
+13,24,Córdoba,Lugo,861062,27547,0.0,summary.tolls.total,
+13,25,Córdoba,Madrid,393837,13364,0.0,summary.tolls.total,
+13,26,Córdoba,Málaga,166092,5988,4.3,summary.tolls.total,
+13,27,Córdoba,Murcia,478121,15424,0.0,summary.tolls.total,
+13,28,Córdoba,Ourense,820310,27103,0.0,summary.tolls.total,
+13,29,Córdoba,Oviedo,807235,26030,16.2,summary.tolls.total,tollTransponder
+13,30,Córdoba,Palencia,647965,20604,13.75,summary.tolls.total,tollTransponder
+13,31,Córdoba,Pamplona,779202,25563,17.55,summary.tolls.total,
+13,32,Córdoba,Pontevedra,787979,28422,28.1,summary.tolls.total,tollTransponder
+13,33,Córdoba,Salamanca,491429,16422,0.0,summary.tolls.total,
+13,34,Córdoba,San Sebastián,856926,27600,23.02,summary.tolls.total,
+13,35,Córdoba,Santander,845099,26682,13.75,summary.tolls.total,tollTransponder
+13,36,Córdoba,Segovia,484994,15725,13.75,summary.tolls.total,tollTransponder
+13,37,Córdoba,Sevilla,140256,5076,0.0,summary.tolls.total,
+13,38,Córdoba,Soria,616648,19514,6.15,summary.tolls.total,
+13,39,Córdoba,Tarragona,770256,24666,0.0,summary.tolls.total,
+13,40,Córdoba,Teruel,532753,18779,0.0,summary.tolls.total,
+13,41,Córdoba,Toledo,343968,11427,0.0,summary.tolls.total,
+13,42,Córdoba,Valencia,521976,17055,0.0,summary.tolls.total,
+13,43,Córdoba,Valladolid,584012,19305,21.85,summary.tolls.total,tollTransponder
+13,44,Córdoba,Vitoria-Gasteiz,760930,24181,6.15,summary.tolls.total,
+13,45,Córdoba,Zamora,558023,18327,0.0,summary.tolls.total,
+13,46,Córdoba,Zaragoza,705932,22406,6.15,summary.tolls.total,
+14,0,Cuenca,A Coruña,762005,24181,18.15,summary.tolls.total,violatedCarpool|tollTransponder
+14,1,Cuenca,Albacete,163848,5827,0.0,summary.tolls.total,
+14,2,Cuenca,Alicante,328050,10801,0.0,summary.tolls.total,
+14,3,Cuenca,Almería,509651,16364,0.0,summary.tolls.total,
+14,4,Cuenca,Ávila,279796,9518,11.15,summary.tolls.total,violatedCarpool|tollTransponder
+14,5,Cuenca,Badajoz,542895,16955,1.8,summary.tolls.total,
+14,6,Cuenca,Barcelona,539191,18305,13.45,summary.tolls.total,
+14,7,Cuenca,Bilbao,552341,17348,14.85,summary.tolls.total,
+14,8,Cuenca,Burgos,399285,12417,2.45,summary.tolls.total,
+14,9,Cuenca,Cáceres,440357,13792,1.8,summary.tolls.total,
+14,10,Cuenca,Cádiz,684472,22457,0.0,summary.tolls.total,
+14,11,Cuenca,Castellón de la Plana,263792,9148,0.0,summary.tolls.total,
+14,12,Cuenca,Ciudad Real,268574,8800,0.0,summary.tolls.total,
+14,13,Cuenca,Córdoba,431351,14489,0.0,summary.tolls.total,
+14,15,Cuenca,Girona,633976,21057,0.0,summary.tolls.total,
+14,16,Cuenca,Granada,453834,15062,0.0,summary.tolls.total,
+14,17,Cuenca,Guadalajara,135281,5269,0.0,summary.tolls.total,
+14,18,Cuenca,Huelva,659224,21994,0.0,summary.tolls.total,
+14,19,Cuenca,Huesca,367298,13511,0.0,summary.tolls.total,
+14,20,Cuenca,Jaén,370920,12546,0.0,summary.tolls.total,
+14,21,Cuenca,León,506687,16311,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+14,22,Cuenca,Lleida,442397,15924,0.0,summary.tolls.total,
+14,23,Cuenca,Logroño,370246,13962,0.0,summary.tolls.total,
+14,24,Cuenca,Lugo,670214,21394,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+14,25,Cuenca,Madrid,168693,5698,3.4,summary.tolls.total,
+14,26,Cuenca,Málaga,575321,19205,4.3,summary.tolls.total,
+14,27,Cuenca,Murcia,304698,10151,0.0,summary.tolls.total,
+14,28,Cuenca,Ourense,673896,21746,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+14,29,Cuenca,Oviedo,616387,19877,31.9,summary.tolls.total,violatedCarpool|tollTransponder
+14,30,Cuenca,Palencia,401407,13073,2.45,summary.tolls.total,
+14,31,Cuenca,Pamplona,432915,15837,11.4,summary.tolls.total,
+14,32,Cuenca,Pontevedra,786916,25538,20.75,summary.tolls.total,violatedCarpool|tollTransponder
+14,33,Cuenca,Salamanca,384110,12483,11.15,summary.tolls.total,violatedCarpool|tollTransponder
+14,34,Cuenca,San Sebastián,519439,19053,14.05,summary.tolls.total,
+14,35,Cuenca,Santander,578767,18821,2.45,summary.tolls.total,
+14,36,Cuenca,Segovia,261093,8874,7.6,summary.tolls.total,violatedCarpool|tollTransponder
+14,37,Cuenca,Sevilla,566187,18933,0.0,summary.tolls.total,
+14,38,Cuenca,Soria,270361,9788,0.0,summary.tolls.total,
+14,39,Cuenca,Tarragona,447218,14883,0.0,summary.tolls.total,
+14,40,Cuenca,Teruel,147756,6538,0.0,summary.tolls.total,
+14,41,Cuenca,Toledo,181628,6315,1.8,summary.tolls.total,
+14,42,Cuenca,Valencia,198938,7272,0.0,summary.tolls.total,
+14,43,Cuenca,Valladolid,360111,12454,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+14,44,Cuenca,Vitoria-Gasteiz,513197,16217,2.45,summary.tolls.total,
+14,45,Cuenca,Zamora,422376,13835,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+14,46,Cuenca,Zaragoza,302445,11563,0.0,summary.tolls.total,
+15,0,Girona,A Coruña,1146395,36680,30.05,summary.tolls.total,tollTransponder
+15,1,Girona,Albacete,604370,20704,0.0,summary.tolls.total,
+15,2,Girona,Alicante,630551,20599,0.0,summary.tolls.total,
+15,3,Girona,Almería,871808,28174,0.0,summary.tolls.total,
+15,4,Girona,Ávila,796134,26219,17.55,summary.tolls.total,tollTransponder
+15,5,Girona,Badajoz,1084565,34843,3.65,summary.tolls.total,
+15,6,Girona,Barcelona,102514,4227,0.0,summary.tolls.total,
+15,7,Girona,Bilbao,672352,21812,39.9,summary.tolls.total,
+15,8,Girona,Burgos,668884,21991,25.1,summary.tolls.total,
+15,9,Girona,Cáceres,982027,31680,3.65,summary.tolls.total,
+15,10,Girona,Cádiz,1208919,38953,0.0,summary.tolls.total,
+15,11,Girona,Castellón de la Plana,372966,12717,0.0,summary.tolls.total,
+15,12,Girona,Ciudad Real,788870,25566,0.0,summary.tolls.total,
+15,13,Girona,Córdoba,955798,30985,0.0,summary.tolls.total,
+15,14,Girona,Cuenca,632915,21152,0.0,summary.tolls.total,
+15,16,Girona,Granada,929928,30067,0.0,summary.tolls.total,
+15,17,Girona,Guadalajara,626783,20615,0.0,summary.tolls.total,
+15,18,Girona,Huelva,1183671,38490,0.0,summary.tolls.total,
+15,19,Girona,Huesca,339202,11516,0.0,summary.tolls.total,
+15,20,Girona,Jaén,895367,29042,0.0,summary.tolls.total,
+15,21,Girona,León,838033,27101,25.1,summary.tolls.total,
+15,22,Girona,Lleida,230271,8253,0.0,summary.tolls.total,
+15,23,Girona,Logroño,541915,17827,19.35,summary.tolls.total,
+15,24,Girona,Lugo,1054604,33893,27.6,summary.tolls.total,tollTransponder
+15,25,Girona,Madrid,683782,22928,0.0,summary.tolls.total,
+15,26,Girona,Málaga,1060638,34429,4.3,summary.tolls.total,
+15,27,Girona,Murcia,666855,21961,0.0,summary.tolls.total,
+15,28,Girona,Ourense,1096252,35881,25.1,summary.tolls.total,
+15,29,Girona,Oviedo,953040,30833,41.95,summary.tolls.total,
+15,30,Girona,Palencia,753398,24750,25.1,summary.tolls.total,
+15,31,Girona,Pamplona,498692,17624,0.0,summary.tolls.total,
+15,32,Girona,Pontevedra,1208846,39171,35.15,summary.tolls.total,tollTransponder
+15,33,Girona,Salamanca,900448,29184,17.55,summary.tolls.total,tollTransponder
+15,34,Girona,San Sebastián,639032,20406,59.45,summary.tolls.total,
+15,35,Girona,Santander,770532,25279,41.95,summary.tolls.total,
+15,36,Girona,Segovia,726432,25430,0.0,summary.tolls.total,
+15,37,Girona,Sevilla,1090634,35429,0.0,summary.tolls.total,
+15,38,Girona,Soria,540894,18445,0.0,summary.tolls.total,
+15,39,Girona,Tarragona,192359,6778,0.0,summary.tolls.total,
+15,40,Girona,Teruel,470081,17334,0.0,summary.tolls.total,
+15,41,Girona,Toledo,760435,25093,5.2,summary.tolls.total,
+15,42,Girona,Valencia,449278,15338,0.0,summary.tolls.total,
+15,43,Girona,Valladolid,750823,25955,0.0,summary.tolls.total,
+15,44,Girona,Vitoria-Gasteiz,594488,20496,16.45,summary.tolls.total,
+15,45,Girona,Zamora,886747,29057,25.1,summary.tolls.total,
+15,46,Girona,Zaragoza,373515,12727,0.0,summary.tolls.total,
+16,0,Granada,A Coruña,1007732,31682,24.3,summary.tolls.total,tollTransponder
+16,1,Granada,Albacete,339532,12352,0.0,summary.tolls.total,
+16,2,Granada,Alicante,350311,11654,0.0,summary.tolls.total,
+16,3,Granada,Almería,161369,5627,0.0,summary.tolls.total,
+16,4,Granada,Ávila,525523,17019,17.3,summary.tolls.total,tollTransponder
+16,5,Granada,Badajoz,456992,16061,0.0,summary.tolls.total,
+16,6,Granada,Barcelona,836338,27177,13.45,summary.tolls.total,
+16,7,Granada,Bilbao,821900,25962,18.55,summary.tolls.total,
+16,8,Granada,Burgos,668844,21031,6.15,summary.tolls.total,
+16,9,Granada,Cáceres,465128,16975,0.0,summary.tolls.total,
+16,10,Granada,Cádiz,292937,11249,0.0,summary.tolls.total,
+16,11,Granada,Castellón de la Plana,560939,18020,0.0,summary.tolls.total,
+16,12,Granada,Ciudad Real,256096,9125,0.0,summary.tolls.total,
+16,13,Granada,Córdoba,205063,7005,0.0,summary.tolls.total,
+16,14,Granada,Cuenca,454456,15067,0.0,summary.tolls.total,
+16,15,Granada,Girona,931123,29929,0.0,summary.tolls.total,
+16,17,Granada,Guadalajara,470541,15065,6.15,summary.tolls.total,
+16,18,Granada,Huelva,346369,11797,0.0,summary.tolls.total,
+16,19,Granada,Huesca,794232,25187,6.15,summary.tolls.total,
+16,20,Granada,Jaén,91024,3659,0.0,summary.tolls.total,
+16,21,Granada,León,752414,23812,21.85,summary.tolls.total,tollTransponder
+16,22,Granada,Lleida,799749,26498,0.0,summary.tolls.total,
+16,23,Granada,Logroño,738359,24338,6.15,summary.tolls.total,
+16,24,Granada,Lugo,915941,28895,21.85,summary.tolls.total,tollTransponder
+16,25,Granada,Madrid,415663,14014,0.0,summary.tolls.total,
+16,26,Granada,Málaga,132742,5282,4.3,summary.tolls.total,
+16,27,Granada,Murcia,278170,9406,0.0,summary.tolls.total,
+16,28,Granada,Ourense,919623,29247,21.85,summary.tolls.total,tollTransponder
+16,29,Granada,Oviedo,862114,27378,38.05,summary.tolls.total,tollTransponder
+16,30,Granada,Palencia,669791,21254,13.75,summary.tolls.total,tollTransponder
+16,31,Granada,Pamplona,801028,26213,17.55,summary.tolls.total,
+16,32,Granada,Pontevedra,1032643,33039,26.9,summary.tolls.total,tollTransponder
+16,33,Granada,Salamanca,629837,19984,17.3,summary.tolls.total,tollTransponder
+16,34,Granada,San Sebastián,878752,28250,23.02,summary.tolls.total,
+16,35,Granada,Santander,866925,27332,13.75,summary.tolls.total,tollTransponder
+16,36,Granada,Segovia,506820,16375,13.75,summary.tolls.total,tollTransponder
+16,37,Granada,Sevilla,248211,8596,0.0,summary.tolls.total,
+16,38,Granada,Soria,638474,20164,6.15,summary.tolls.total,
+16,39,Granada,Tarragona,744365,23755,0.0,summary.tolls.total,
+16,40,Granada,Teruel,554579,19429,0.0,summary.tolls.total,
+16,41,Granada,Toledo,365794,12077,0.0,summary.tolls.total,
+16,42,Granada,Valencia,479461,15773,0.0,summary.tolls.total,
+16,43,Granada,Valladolid,605838,19955,21.85,summary.tolls.total,tollTransponder
+16,44,Granada,Vitoria-Gasteiz,782756,24831,6.15,summary.tolls.total,
+16,45,Granada,Zamora,668103,21336,21.85,summary.tolls.total,tollTransponder
+16,46,Granada,Zaragoza,727758,23056,6.15,summary.tolls.total,
+17,0,Guadalajara,A Coruña,651706,20740,21.35,summary.tolls.total,tollTransponder
+17,1,Guadalajara,Albacete,292257,9300,2.45,summary.tolls.total,
+17,2,Guadalajara,Alicante,456459,14274,2.45,summary.tolls.total,
+17,3,Guadalajara,Almería,601667,19256,6.0,summary.tolls.total,tollTransponder
+17,4,Guadalajara,Ávila,169497,6077,14.35,summary.tolls.total,tollTransponder
+17,5,Guadalajara,Badajoz,459577,14559,3.65,summary.tolls.total,
+17,6,Guadalajara,Barcelona,559381,18042,0.0,summary.tolls.total,
+17,7,Guadalajara,Bilbao,420355,13538,14.4,summary.tolls.total,
+17,8,Guadalajara,Burgos,267299,8607,2.0,summary.tolls.total,
+17,9,Guadalajara,Cáceres,357039,11396,3.65,summary.tolls.total,
+17,10,Guadalajara,Cádiz,708574,21999,3.65,summary.tolls.total,
+17,11,Guadalajara,Castellón de la Plana,383652,13173,0.0,summary.tolls.total,
+17,12,Guadalajara,Ciudad Real,261488,8755,6.0,summary.tolls.total,tollTransponder
+17,13,Guadalajara,Córdoba,449267,14454,6.0,summary.tolls.total,tollTransponder
+17,14,Guadalajara,Cuenca,136157,5268,0.0,summary.tolls.total,
+17,15,Guadalajara,Girona,629260,20434,0.0,summary.tolls.total,
+17,16,Guadalajara,Granada,471750,15027,6.0,summary.tolls.total,tollTransponder
+17,18,Guadalajara,Huelva,672233,20674,3.65,summary.tolls.total,
+17,19,Guadalajara,Huesca,325711,10480,0.0,summary.tolls.total,
+17,20,Guadalajara,Jaén,388836,12511,6.0,summary.tolls.total,tollTransponder
+17,21,Guadalajara,León,396388,12870,18.9,summary.tolls.total,tollTransponder
+17,22,Guadalajara,Lleida,404468,12893,0.0,summary.tolls.total,
+17,23,Guadalajara,Logroño,269838,9631,0.0,summary.tolls.total,
+17,24,Guadalajara,Lugo,559915,17953,18.9,summary.tolls.total,tollTransponder
+17,25,Guadalajara,Madrid,58794,2644,0.0,summary.tolls.total,
+17,26,Guadalajara,Málaga,593237,19170,10.3,summary.tolls.total,tollTransponder
+17,27,Guadalajara,Murcia,433107,13624,2.45,summary.tolls.total,
+17,28,Guadalajara,Ourense,563597,18305,18.9,summary.tolls.total,tollTransponder
+17,29,Guadalajara,Oviedo,506088,16436,35.1,summary.tolls.total,tollTransponder
+17,30,Guadalajara,Palencia,269421,9263,2.0,summary.tolls.total,
+17,31,Guadalajara,Pamplona,332507,11506,11.4,summary.tolls.total,
+17,32,Guadalajara,Pontevedra,676617,22097,23.95,summary.tolls.total,tollTransponder
+17,33,Guadalajara,Salamanca,273811,9042,14.35,summary.tolls.total,tollTransponder
+17,34,Guadalajara,San Sebastián,419031,14722,14.05,summary.tolls.total,
+17,35,Guadalajara,Santander,446781,15011,2.0,summary.tolls.total,
+17,36,Guadalajara,Segovia,150794,5433,10.8,summary.tolls.total,tollTransponder
+17,37,Guadalajara,Sevilla,594451,18515,3.65,summary.tolls.total,
+17,38,Guadalajara,Soria,169953,5457,0.0,summary.tolls.total,
+17,39,Guadalajara,Tarragona,484904,15323,0.0,summary.tolls.total,
+17,40,Guadalajara,Teruel,245179,8477,0.0,summary.tolls.total,
+17,41,Guadalajara,Toledo,130955,4826,0.0,summary.tolls.total,
+17,42,Guadalajara,Valencia,332994,12088,0.0,summary.tolls.total,
+17,43,Guadalajara,Valladolid,250198,8851,2.0,summary.tolls.total,
+17,44,Guadalajara,Vitoria-Gasteiz,381211,12407,2.0,summary.tolls.total,
+17,45,Guadalajara,Zamora,312077,10394,18.9,summary.tolls.total,tollTransponder
+17,46,Guadalajara,Zaragoza,259237,8349,0.0,summary.tolls.total,
+18,0,Huelva,A Coruña,944293,29208,84.15,summary.tolls.total,tollTransponder
+18,1,Huelva,Albacete,574726,20040,0.0,summary.tolls.total,
+18,2,Huelva,Alicante,693875,22473,0.0,summary.tolls.total,
+18,3,Huelva,Almería,504933,16446,0.0,summary.tolls.total,
+18,4,Huelva,Ávila,575642,18452,0.0,summary.tolls.total,
+18,5,Huelva,Badajoz,234210,9601,0.0,summary.tolls.total,
+18,6,Huelva,Barcelona,1090225,35680,13.45,summary.tolls.total,
+18,7,Huelva,Bilbao,943266,29570,12.4,summary.tolls.total,
+18,8,Huelva,Burgos,790412,24652,0.0,summary.tolls.total,
+18,9,Huelva,Cáceres,344853,11180,0.0,summary.tolls.total,
+18,10,Huelva,Cádiz,208758,6992,0.0,summary.tolls.total,
+18,11,Huelva,Castellón de la Plana,814826,26523,0.0,summary.tolls.total,
+18,12,Huelva,Ciudad Real,414291,14753,0.0,summary.tolls.total,
+18,13,Huelva,Córdoba,238187,8311,0.0,summary.tolls.total,
+18,14,Huelva,Cuenca,660626,22009,0.0,summary.tolls.total,
+18,15,Huelva,Girona,1185010,38432,0.0,summary.tolls.total,
+18,16,Huelva,Granada,345064,11711,0.0,summary.tolls.total,
+18,17,Huelva,Guadalajara,672603,20734,3.65,summary.tolls.total,
+18,19,Huelva,Huesca,996294,30856,3.65,summary.tolls.total,
+18,20,Huelva,Jaén,335731,12119,0.0,summary.tolls.total,
+18,21,Huelva,León,749893,22927,0.0,summary.tolls.total,
+18,22,Huelva,Lleida,1075051,33269,3.65,summary.tolls.total,
+18,23,Huelva,Logroño,917579,28921,4.85,summary.tolls.total,
+18,24,Huelva,Lugo,913420,28010,0.0,summary.tolls.total,
+18,25,Huelva,Madrid,613369,19329,0.0,summary.tolls.total,
+18,26,Huelva,Málaga,310019,10841,4.3,summary.tolls.total,
+18,27,Huelva,Murcia,621734,20225,0.0,summary.tolls.total,
+18,28,Huelva,Ourense,855981,26535,59.2,summary.tolls.total,tollTransponder
+18,29,Huelva,Oviedo,859593,26493,16.2,summary.tolls.total,tollTransponder
+18,30,Huelva,Palencia,711800,22179,0.0,summary.tolls.total,
+18,31,Huelva,Pamplona,996304,31440,2.65,summary.tolls.total,
+18,32,Huelva,Pontevedra,814458,25361,67.8,summary.tolls.total,tollTransponder
+18,33,Huelva,Salamanca,543787,16885,0.0,summary.tolls.total,
+18,34,Huelva,San Sebastián,1000118,31858,16.87,summary.tolls.total,
+18,35,Huelva,Santander,908934,28257,0.0,summary.tolls.total,
+18,36,Huelva,Segovia,641248,20736,1.1,summary.tolls.total,
+18,37,Huelva,Sevilla,94635,3508,0.0,summary.tolls.total,
+18,38,Huelva,Soria,840536,25833,3.65,summary.tolls.total,
+18,39,Huelva,Tarragona,998252,32258,0.0,summary.tolls.total,
+18,40,Huelva,Teruel,760749,26371,0.0,summary.tolls.total,
+18,41,Huelva,Toledo,576908,17901,0.0,summary.tolls.total,
+18,42,Huelva,Valencia,749972,24647,0.0,summary.tolls.total,
+18,43,Huelva,Valladolid,665959,20760,0.0,summary.tolls.total,
+18,44,Huelva,Vitoria-Gasteiz,904122,28439,0.0,summary.tolls.total,
+18,45,Huelva,Zamora,610381,18790,0.0,summary.tolls.total,
+18,46,Huelva,Zaragoza,929820,28725,3.65,summary.tolls.total,
+19,0,Huesca,A Coruña,847659,26739,30.05,summary.tolls.total,tollTransponder
+19,1,Huesca,Albacete,460454,16660,0.0,summary.tolls.total,
+19,2,Huesca,Alicante,576682,18213,0.0,summary.tolls.total,
+19,3,Huesca,Almería,817939,25788,0.0,summary.tolls.total,
+19,4,Huesca,Ávila,497398,16278,17.55,summary.tolls.total,tollTransponder
+19,5,Huesca,Badajoz,785829,24902,3.65,summary.tolls.total,
+19,6,Huesca,Barcelona,265318,9438,0.0,summary.tolls.total,
+19,7,Huesca,Bilbao,318143,11752,9.5,summary.tolls.total,
+19,8,Huesca,Burgos,370148,12050,25.1,summary.tolls.total,
+19,9,Huesca,Cáceres,683291,21739,3.65,summary.tolls.total,
+19,10,Huesca,Cádiz,1034826,32342,3.65,summary.tolls.total,
+19,11,Huesca,Castellón de la Plana,305185,12078,0.0,summary.tolls.total,
+19,12,Huesca,Ciudad Real,592232,19081,11.2,summary.tolls.total,tollTransponder
+19,13,Huesca,Córdoba,780011,24780,11.2,summary.tolls.total,tollTransponder
+19,14,Huesca,Cuenca,371123,13758,0.0,summary.tolls.total,
+19,15,Huesca,Girona,340593,11478,0.0,summary.tolls.total,
+19,16,Huesca,Granada,802494,25353,11.2,summary.tolls.total,tollTransponder
+19,17,Huesca,Guadalajara,328047,10674,0.0,summary.tolls.total,
+19,18,Huesca,Huelva,998485,31017,3.65,summary.tolls.total,
+19,20,Huesca,Jaén,719580,22837,11.2,summary.tolls.total,tollTransponder
+19,21,Huesca,León,539297,17160,25.1,summary.tolls.total,
+19,22,Huesca,Lleida,112113,4032,0.0,summary.tolls.total,
+19,23,Huesca,Logroño,243179,7886,19.35,summary.tolls.total,
+19,24,Huesca,Lugo,755868,23952,27.6,summary.tolls.total,tollTransponder
+19,25,Huesca,Madrid,385046,12987,0.0,summary.tolls.total,
+19,26,Huesca,Málaga,923981,29496,15.5,summary.tolls.total,tollTransponder
+19,27,Huesca,Murcia,612986,19575,0.0,summary.tolls.total,
+19,28,Huesca,Ourense,797516,25940,25.1,summary.tolls.total,
+19,29,Huesca,Oviedo,598831,20773,11.55,summary.tolls.total,
+19,30,Huesca,Palencia,454662,14809,25.1,summary.tolls.total,
+19,31,Huesca,Pamplona,160381,6695,0.0,summary.tolls.total,
+19,32,Huesca,Pontevedra,910110,29230,35.15,summary.tolls.total,tollTransponder
+19,33,Huesca,Salamanca,601712,19243,17.55,summary.tolls.total,tollTransponder
+19,34,Huesca,San Sebastián,246905,9911,2.65,summary.tolls.total,
+19,35,Huesca,Santander,416323,15219,11.55,summary.tolls.total,
+19,36,Huesca,Segovia,427696,15489,0.0,summary.tolls.total,
+19,37,Huesca,Sevilla,920703,28858,3.65,summary.tolls.total,
+19,38,Huesca,Soria,242158,8504,0.0,summary.tolls.total,
+19,39,Huesca,Tarragona,209019,7318,0.0,summary.tolls.total,
+19,40,Huesca,Teruel,250982,8032,0.0,summary.tolls.total,
+19,41,Huesca,Toledo,461699,15152,5.2,summary.tolls.total,
+19,42,Huesca,Valencia,395409,12952,0.0,summary.tolls.total,
+19,43,Huesca,Valladolid,452087,16014,0.0,summary.tolls.total,
+19,44,Huesca,Vitoria-Gasteiz,260345,9984,2.65,summary.tolls.total,
+19,45,Huesca,Zamora,588011,19116,25.1,summary.tolls.total,
+19,46,Huesca,Zaragoza,74650,2739,0.0,summary.tolls.total,
+20,0,Jaén,A Coruña,924954,29163,24.3,summary.tolls.total,tollTransponder
+20,1,Jaén,Albacete,260141,9831,0.0,summary.tolls.total,
+20,2,Jaén,Alicante,409048,13769,0.0,summary.tolls.total,
+20,3,Jaén,Almería,220106,7742,0.0,summary.tolls.total,
+20,4,Jaén,Ávila,442745,14500,17.3,summary.tolls.total,tollTransponder
+20,5,Jaén,Badajoz,362904,13960,0.0,summary.tolls.total,
+20,6,Jaén,Barcelona,801277,26219,13.45,summary.tolls.total,
+20,7,Jaén,Bilbao,739122,23443,18.55,summary.tolls.total,
+20,8,Jaén,Burgos,586066,18512,6.15,summary.tolls.total,
+20,9,Jaén,Cáceres,366459,14429,0.0,summary.tolls.total,
+20,10,Jaén,Cádiz,325655,12199,0.0,summary.tolls.total,
+20,11,Jaén,Castellón de la Plana,525878,17062,0.0,summary.tolls.total,
+20,12,Jaén,Ciudad Real,173318,6606,0.0,summary.tolls.total,
+20,13,Jaén,Córdoba,106394,4459,0.0,summary.tolls.total,
+20,14,Jaén,Cuenca,371678,12548,0.0,summary.tolls.total,
+20,15,Jaén,Girona,896062,28971,0.0,summary.tolls.total,
+20,16,Jaén,Granada,90189,3513,0.0,summary.tolls.total,
+20,17,Jaén,Guadalajara,387763,12546,6.15,summary.tolls.total,
+20,18,Jaén,Huelva,334267,11964,0.0,summary.tolls.total,
+20,19,Jaén,Huesca,711454,22668,6.15,summary.tolls.total,
+20,21,Jaén,León,669636,21293,21.85,summary.tolls.total,tollTransponder
+20,22,Jaén,Lleida,790211,25081,6.15,summary.tolls.total,
+20,23,Jaén,Logroño,655581,21819,6.15,summary.tolls.total,
+20,24,Jaén,Lugo,833163,26376,21.85,summary.tolls.total,tollTransponder
+20,25,Jaén,Madrid,332885,11495,0.0,summary.tolls.total,
+20,26,Jaén,Málaga,193031,7564,4.3,summary.tolls.total,
+20,27,Jaén,Murcia,336907,11521,0.0,summary.tolls.total,
+20,28,Jaén,Ourense,836845,26728,21.85,summary.tolls.total,tollTransponder
+20,29,Jaén,Oviedo,779336,24859,38.05,summary.tolls.total,tollTransponder
+20,30,Jaén,Palencia,587013,18735,13.75,summary.tolls.total,tollTransponder
+20,31,Jaén,Pamplona,718250,23694,17.55,summary.tolls.total,
+20,32,Jaén,Pontevedra,949865,30520,26.9,summary.tolls.total,tollTransponder
+20,33,Jaén,Salamanca,547059,17465,17.3,summary.tolls.total,tollTransponder
+20,34,Jaén,San Sebastián,795974,25731,23.02,summary.tolls.total,
+20,35,Jaén,Santander,784147,24813,13.75,summary.tolls.total,tollTransponder
+20,36,Jaén,Segovia,424042,13856,13.75,summary.tolls.total,tollTransponder
+20,37,Jaén,Sevilla,241230,8903,0.0,summary.tolls.total,
+20,38,Jaén,Soria,555696,17645,6.15,summary.tolls.total,
+20,39,Jaén,Tarragona,709304,22797,0.0,summary.tolls.total,
+20,40,Jaén,Teruel,471801,16910,0.0,summary.tolls.total,
+20,41,Jaén,Toledo,283016,9558,0.0,summary.tolls.total,
+20,42,Jaén,Valencia,461024,15186,0.0,summary.tolls.total,
+20,43,Jaén,Valladolid,523060,17436,21.85,summary.tolls.total,tollTransponder
+20,44,Jaén,Vitoria-Gasteiz,699978,22312,6.15,summary.tolls.total,
+20,45,Jaén,Zamora,585325,18817,21.85,summary.tolls.total,tollTransponder
+20,46,Jaén,Zaragoza,644980,20537,6.15,summary.tolls.total,
+21,0,León,A Coruña,316218,10542,4.95,summary.tolls.total,tollTransponder
+21,1,León,Albacete,600694,18563,35.85,summary.tolls.total,tollTransponder
+21,2,León,Alicante,764896,23537,35.85,summary.tolls.total,tollTransponder
+21,3,León,Almería,883053,27992,21.7,summary.tolls.total,tollTransponder
+21,4,León,Ávila,265767,9035,0.0,summary.tolls.total,
+21,5,León,Badajoz,500311,16386,0.0,summary.tolls.total,
+21,6,León,Barcelona,773981,24671,25.1,summary.tolls.total,
+21,7,León,Bilbao,330860,10719,12.4,summary.tolls.total,
+21,8,León,Burgos,173895,5849,0.0,summary.tolls.total,
+21,9,León,Cáceres,410724,13263,0.0,summary.tolls.total,
+21,10,León,Cádiz,786671,24530,0.0,summary.tolls.total,
+21,11,León,Castellón de la Plana,687400,23536,0.0,summary.tolls.total,
+21,12,León,Ciudad Real,526663,17284,21.65,summary.tolls.total,tollTransponder
+21,13,León,Córdoba,698155,22783,0.0,summary.tolls.total,
+21,14,León,Cuenca,508540,16538,15.7,summary.tolls.total,
+21,15,León,Girona,843860,27063,25.1,summary.tolls.total,
+21,16,León,Granada,753136,23763,21.7,summary.tolls.total,tollTransponder
+21,17,León,Guadalajara,398625,12962,20.1,summary.tolls.total,
+21,18,León,Huelva,750330,23205,0.0,summary.tolls.total,
+21,19,León,Huesca,540311,17109,25.1,summary.tolls.total,
+21,20,León,Jaén,670222,21247,21.7,summary.tolls.total,tollTransponder
+21,22,León,Lleida,619068,19522,25.1,summary.tolls.total,
+21,23,León,Logroño,305173,10070,4.85,summary.tolls.total,
+21,24,León,Lugo,224427,7755,2.5,summary.tolls.total,tollTransponder
+21,25,León,Madrid,338828,11449,15.7,summary.tolls.total,
+21,26,León,Málaga,874623,27906,26.0,summary.tolls.total,tollTransponder
+21,27,León,Murcia,741544,22887,35.85,summary.tolls.total,tollTransponder
+21,28,León,Ourense,301248,10262,0.0,summary.tolls.total,
+21,29,León,Oviedo,125663,4969,16.2,summary.tolls.total,tollTransponder
+21,30,León,Palencia,124959,4857,0.0,summary.tolls.total,
+21,31,León,Pamplona,383898,12589,2.65,summary.tolls.total,
+21,32,León,Pontevedra,378669,13033,10.05,summary.tolls.total,tollTransponder
+21,33,León,Salamanca,206928,6846,0.0,summary.tolls.total,
+21,34,León,San Sebastián,387712,13007,16.87,summary.tolls.total,
+21,35,León,Santander,266313,8737,0.0,summary.tolls.total,
+21,36,León,Segovia,273144,9211,0.0,summary.tolls.total,
+21,37,León,Sevilla,672548,21046,0.0,summary.tolls.total,
+21,38,León,Soria,314189,10736,0.0,summary.tolls.total,
+21,39,León,Tarragona,699504,21952,25.1,summary.tolls.total,
+21,40,León,Teruel,548927,18840,0.0,summary.tolls.total,
+21,41,León,Toledo,413416,13249,21.65,summary.tolls.total,tollTransponder
+21,42,León,Valencia,696226,22496,15.7,summary.tolls.total,
+21,43,León,Valladolid,140692,5650,0.0,summary.tolls.total,
+21,44,León,Vitoria-Gasteiz,291716,9588,0.0,summary.tolls.total,
+21,45,León,Zamora,141804,5042,0.0,summary.tolls.total,
+21,46,León,Zaragoza,473837,14978,25.1,summary.tolls.total,
+22,0,Lleida,A Coruña,923338,29119,30.05,summary.tolls.total,tollTransponder
+22,1,Lleida,Albacete,474203,17338,0.0,summary.tolls.total,
+22,2,Lleida,Alicante,500384,17233,0.0,summary.tolls.total,
+22,3,Lleida,Almería,741641,24808,0.0,summary.tolls.total,
+22,4,Lleida,Ávila,573077,18658,17.55,summary.tolls.total,tollTransponder
+22,5,Lleida,Badajoz,861508,27282,3.65,summary.tolls.total,
+22,6,Lleida,Barcelona,156787,6191,0.0,summary.tolls.total,
+22,7,Lleida,Bilbao,449295,14251,39.9,summary.tolls.total,
+22,8,Lleida,Burgos,445827,14430,25.1,summary.tolls.total,
+22,9,Lleida,Cáceres,758970,24119,3.65,summary.tolls.total,
+22,10,Lleida,Cádiz,1110505,34722,3.65,summary.tolls.total,
+22,11,Lleida,Castellón de la Plana,242799,9351,0.0,summary.tolls.total,
+22,12,Lleida,Ciudad Real,667911,21461,11.2,summary.tolls.total,tollTransponder
+22,13,Lleida,Córdoba,855690,27160,11.2,summary.tolls.total,tollTransponder
+22,14,Lleida,Cuenca,443089,16122,0.0,summary.tolls.total,
+22,15,Lleida,Girona,232062,8231,0.0,summary.tolls.total,
+22,16,Lleida,Granada,799761,26701,0.0,summary.tolls.total,
+22,17,Lleida,Guadalajara,403726,13054,0.0,summary.tolls.total,
+22,18,Lleida,Huelva,1074164,33397,3.65,summary.tolls.total,
+22,19,Lleida,Huesca,112664,4000,0.0,summary.tolls.total,
+22,20,Lleida,Jaén,795259,25217,11.2,summary.tolls.total,tollTransponder
+22,21,Lleida,León,614976,19540,25.1,summary.tolls.total,
+22,23,Lleida,Logroño,318858,10266,19.35,summary.tolls.total,
+22,24,Lleida,Lugo,831547,26332,27.6,summary.tolls.total,tollTransponder
+22,25,Lleida,Madrid,460725,15367,0.0,summary.tolls.total,
+22,26,Lleida,Málaga,930471,31063,4.3,summary.tolls.total,
+22,27,Lleida,Murcia,536688,18595,0.0,summary.tolls.total,
+22,28,Lleida,Ourense,873195,28320,25.1,summary.tolls.total,
+22,29,Lleida,Oviedo,729983,23272,41.95,summary.tolls.total,
+22,30,Lleida,Palencia,530341,17189,25.1,summary.tolls.total,
+22,31,Lleida,Pamplona,272154,10108,0.0,summary.tolls.total,
+22,32,Lleida,Pontevedra,985789,31610,35.15,summary.tolls.total,tollTransponder
+22,33,Lleida,Salamanca,677391,21623,17.55,summary.tolls.total,tollTransponder
+22,34,Lleida,San Sebastián,358678,13324,2.65,summary.tolls.total,
+22,35,Lleida,Santander,547475,17718,41.95,summary.tolls.total,
+22,36,Lleida,Segovia,503375,17869,0.0,summary.tolls.total,
+22,37,Lleida,Sevilla,996382,31238,3.65,summary.tolls.total,
+22,38,Lleida,Soria,317837,10884,0.0,summary.tolls.total,
+22,39,Lleida,Tarragona,97877,3570,0.0,summary.tolls.total,
+22,40,Lleida,Teruel,261329,10195,0.0,summary.tolls.total,
+22,41,Lleida,Toledo,537378,17532,5.2,summary.tolls.total,
+22,42,Lleida,Valencia,319111,11972,0.0,summary.tolls.total,
+22,43,Lleida,Valladolid,527766,18394,0.0,summary.tolls.total,
+22,44,Lleida,Vitoria-Gasteiz,371431,12935,16.45,summary.tolls.total,
+22,45,Lleida,Zamora,663690,21496,25.1,summary.tolls.total,
+22,46,Lleida,Zaragoza,150458,5166,0.0,summary.tolls.total,
+23,0,Logroño,A Coruña,609993,19547,9.8,summary.tolls.total,tollTransponder
+23,1,Logroño,Albacete,517298,18605,0.0,summary.tolls.total,
+23,2,Logroño,Alicante,668724,20947,19.35,summary.tolls.total,
+23,3,Logroño,Almería,909981,28522,19.35,summary.tolls.total,
+23,4,Logroño,Ávila,372728,13312,4.85,summary.tolls.total,
+23,5,Logroño,Badajoz,666341,22167,4.85,summary.tolls.total,
+23,6,Logroño,Barcelona,474687,15357,19.35,summary.tolls.total,
+23,7,Logroño,Bilbao,135950,4679,19.6,summary.tolls.total,
+23,8,Logroño,Burgos,113421,4895,0.0,summary.tolls.total,
+23,9,Logroño,Cáceres,576754,19044,4.85,summary.tolls.total,
+23,10,Logroño,Cádiz,952701,30311,4.85,summary.tolls.total,
+23,11,Logroño,Castellón de la Plana,481497,15462,19.35,summary.tolls.total,
+23,12,Logroño,Ciudad Real,533811,18188,11.2,summary.tolls.total,tollTransponder
+23,13,Logroño,Córdoba,721590,23887,11.2,summary.tolls.total,tollTransponder
+23,14,Logroño,Cuenca,372134,14192,0.0,summary.tolls.total,
+23,15,Logroño,Girona,544566,17749,19.35,summary.tolls.total,
+23,16,Logroño,Granada,744073,24460,11.2,summary.tolls.total,tollTransponder
+23,17,Logroño,Guadalajara,269626,9781,0.0,summary.tolls.total,
+23,18,Logroño,Huelva,916360,28986,4.85,summary.tolls.total,
+23,19,Logroño,Huesca,241017,7795,19.35,summary.tolls.total,
+23,20,Logroño,Jaén,661159,21944,11.2,summary.tolls.total,tollTransponder
+23,21,Logroño,León,301631,9968,4.85,summary.tolls.total,
+23,22,Logroño,Lleida,319774,10208,19.35,summary.tolls.total,
+23,24,Logroño,Lugo,518202,16760,7.35,summary.tolls.total,tollTransponder
+23,25,Logroño,Madrid,326625,12094,0.0,summary.tolls.total,
+23,26,Logroño,Málaga,865560,28603,15.5,summary.tolls.total,tollTransponder
+23,27,Logroño,Murcia,705028,22309,19.35,summary.tolls.total,
+23,28,Logroño,Ourense,559850,18748,4.85,summary.tolls.total,
+23,29,Logroño,Oviedo,416638,13700,21.65,summary.tolls.total,
+23,30,Logroño,Palencia,216996,7617,4.85,summary.tolls.total,
+23,31,Logroño,Pamplona,86081,3268,0.0,summary.tolls.total,
+23,32,Logroño,Pontevedra,672444,22038,14.9,summary.tolls.total,tollTransponder
+23,33,Logroño,Salamanca,370912,12556,4.85,summary.tolls.total,
+23,34,Logroño,San Sebastián,167615,6292,2.65,summary.tolls.total,
+23,35,Logroño,Santander,234130,8146,21.65,summary.tolls.total,
+23,36,Logroño,Segovia,316844,11420,4.85,summary.tolls.total,
+23,37,Logroño,Sevilla,838578,26827,4.85,summary.tolls.total,
+23,38,Logroño,Soria,101086,4629,0.0,summary.tolls.total,
+23,39,Logroño,Tarragona,400210,12638,19.35,summary.tolls.total,
+23,40,Logroño,Teruel,343024,10766,19.35,summary.tolls.total,
+23,41,Logroño,Toledo,403278,14259,5.2,summary.tolls.total,
+23,42,Logroño,Valencia,487451,15686,19.35,summary.tolls.total,
+23,43,Logroño,Valladolid,254249,8870,4.85,summary.tolls.total,
+23,44,Logroño,Vitoria-Gasteiz,62545,3397,0.0,summary.tolls.total,
+23,45,Logroño,Zamora,350345,11924,4.85,summary.tolls.total,
+23,46,Logroño,Zaragoza,174543,5664,19.35,summary.tolls.total,
+24,0,Lugo,A Coruña,98210,3651,2.45,summary.tolls.total,
+24,1,Lugo,Albacete,764032,23630,35.85,summary.tolls.total,tollTransponder
+24,2,Lugo,Alicante,928234,28604,35.85,summary.tolls.total,tollTransponder
+24,3,Lugo,Almería,1046391,33059,21.7,summary.tolls.total,tollTransponder
+24,4,Lugo,Ávila,429105,14102,0.0,summary.tolls.total,
+24,5,Lugo,Badajoz,663649,21453,0.0,summary.tolls.total,
+24,6,Lugo,Barcelona,992267,31508,27.6,summary.tolls.total,
+24,7,Lugo,Bilbao,487997,16501,0.0,summary.tolls.total,
+24,8,Lugo,Burgos,392181,12686,2.5,summary.tolls.total,
+24,9,Lugo,Cáceres,574062,18330,0.0,summary.tolls.total,
+24,10,Lugo,Cádiz,950009,29597,0.0,summary.tolls.total,
+24,11,Lugo,Castellón de la Plana,924418,29439,15.7,summary.tolls.total,
+24,12,Lugo,Ciudad Real,690001,22351,21.65,summary.tolls.total,tollTransponder
+24,13,Lugo,Córdoba,861493,27850,0.0,summary.tolls.total,
+24,14,Lugo,Cuenca,671878,21605,15.7,summary.tolls.total,
+24,15,Lugo,Girona,1062146,33900,27.6,summary.tolls.total,
+24,16,Lugo,Granada,916474,28830,21.7,summary.tolls.total,tollTransponder
+24,17,Lugo,Guadalajara,561963,18029,20.1,summary.tolls.total,
+24,18,Lugo,Huelva,913668,28272,0.0,summary.tolls.total,
+24,19,Lugo,Huesca,758597,23946,27.6,summary.tolls.total,
+24,20,Lugo,Jaén,833560,26314,21.7,summary.tolls.total,tollTransponder
+24,21,Lugo,León,225426,7851,2.5,summary.tolls.total,
+24,22,Lugo,Lleida,837354,26359,27.6,summary.tolls.total,
+24,23,Lugo,Logroño,523459,16907,7.35,summary.tolls.total,
+24,25,Lugo,Madrid,502166,16516,15.7,summary.tolls.total,
+24,26,Lugo,Málaga,1037961,32973,26.0,summary.tolls.total,tollTransponder
+24,27,Lugo,Murcia,904882,27954,35.85,summary.tolls.total,tollTransponder
+24,28,Lugo,Ourense,94574,4579,0.0,summary.tolls.total,
+24,29,Lugo,Oviedo,230048,8062,0.0,summary.tolls.total,
+24,30,Lugo,Palencia,343245,11694,2.5,summary.tolls.total,
+24,31,Lugo,Pamplona,602184,19426,5.15,summary.tolls.total,
+24,32,Lugo,Pontevedra,163558,6215,7.55,summary.tolls.total,
+24,33,Lugo,Salamanca,370266,11913,0.0,summary.tolls.total,
+24,34,Lugo,San Sebastián,605998,19844,19.37,summary.tolls.total,
+24,35,Lugo,Santander,396681,13513,0.0,summary.tolls.total,
+24,36,Lugo,Segovia,436482,14278,0.0,summary.tolls.total,
+24,37,Lugo,Sevilla,835886,26113,0.0,summary.tolls.total,
+24,38,Lugo,Soria,532475,17573,2.5,summary.tolls.total,
+24,39,Lugo,Tarragona,917790,28789,27.6,summary.tolls.total,
+24,40,Lugo,Teruel,767213,25677,2.5,summary.tolls.total,
+24,41,Lugo,Toledo,576754,18316,21.65,summary.tolls.total,tollTransponder
+24,42,Lugo,Valencia,859564,27563,15.7,summary.tolls.total,
+24,43,Lugo,Valladolid,348922,11522,0.0,summary.tolls.total,
+24,44,Lugo,Vitoria-Gasteiz,510002,16425,2.5,summary.tolls.total,
+24,45,Lugo,Zamora,305142,10109,0.0,summary.tolls.total,
+24,46,Lugo,Zaragoza,692123,21815,27.6,summary.tolls.total,
+25,0,Madrid,A Coruña,598234,19261,18.15,summary.tolls.total,violatedCarpool|tollTransponder
+25,1,Madrid,Albacete,258348,8429,3.4,summary.tolls.total,
+25,2,Madrid,Alicante,422550,13403,3.4,summary.tolls.total,
+25,3,Madrid,Almería,548471,17931,6.0,summary.tolls.total,tollTransponder
+25,4,Madrid,Ávila,116025,4598,11.15,summary.tolls.total,violatedCarpool|tollTransponder
+25,5,Madrid,Badajoz,403091,12819,3.65,summary.tolls.total,
+25,6,Madrid,Barcelona,616708,20262,0.0,summary.tolls.total,
+25,7,Madrid,Bilbao,397880,13135,12.4,summary.tolls.total,
+25,8,Madrid,Burgos,244824,8204,0.0,summary.tolls.total,
+25,9,Madrid,Cáceres,300553,9656,3.65,summary.tolls.total,
+25,10,Madrid,Cádiz,652088,20259,3.65,summary.tolls.total,
+25,11,Madrid,Castellón de la Plana,422456,13645,3.4,summary.tolls.total,
+25,12,Madrid,Ciudad Real,186679,7234,0.0,summary.tolls.total,
+25,13,Madrid,Córdoba,396071,13129,6.0,summary.tolls.total,tollTransponder
+25,14,Madrid,Cuenca,169916,5811,3.4,summary.tolls.total,
+25,15,Madrid,Girona,686587,22654,0.0,summary.tolls.total,
+25,16,Madrid,Granada,418554,13702,6.0,summary.tolls.total,tollTransponder
+25,17,Madrid,Guadalajara,59347,2578,0.0,summary.tolls.total,
+25,18,Madrid,Huelva,615747,18934,3.65,summary.tolls.total,
+25,19,Madrid,Huesca,383038,12700,0.0,summary.tolls.total,
+25,20,Madrid,Jaén,335640,11186,6.0,summary.tolls.total,tollTransponder
+25,21,Madrid,León,342916,11391,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+25,22,Madrid,Lleida,461795,15113,0.0,summary.tolls.total,
+25,23,Madrid,Logroño,327165,11851,0.0,summary.tolls.total,
+25,24,Madrid,Lugo,506443,16474,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+25,26,Madrid,Málaga,540041,17845,10.3,summary.tolls.total,tollTransponder
+25,27,Madrid,Murcia,399198,12753,3.4,summary.tolls.total,
+25,28,Madrid,Ourense,510125,16826,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+25,29,Madrid,Oviedo,452616,14957,31.9,summary.tolls.total,violatedCarpool|tollTransponder
+25,30,Madrid,Palencia,246946,8860,0.0,summary.tolls.total,
+25,31,Madrid,Pamplona,389834,13726,11.4,summary.tolls.total,
+25,32,Madrid,Pontevedra,623145,20618,20.75,summary.tolls.total,violatedCarpool|tollTransponder
+25,33,Madrid,Salamanca,220339,7563,11.15,summary.tolls.total,violatedCarpool|tollTransponder
+25,34,Madrid,San Sebastián,454732,15423,16.87,summary.tolls.total,
+25,35,Madrid,Santander,424306,14608,0.0,summary.tolls.total,
+25,36,Madrid,Segovia,97322,3954,7.6,summary.tolls.total,violatedCarpool|tollTransponder
+25,37,Madrid,Sevilla,537965,16775,3.65,summary.tolls.total,
+25,38,Madrid,Soria,227280,7677,0.0,summary.tolls.total,
+25,39,Madrid,Tarragona,542231,17543,0.0,summary.tolls.total,
+25,40,Madrid,Teruel,302506,10697,0.0,summary.tolls.total,
+25,41,Madrid,Toledo,73851,3267,0.0,summary.tolls.total,
+25,42,Madrid,Valencia,357602,11769,3.4,summary.tolls.total,
+25,43,Madrid,Valladolid,196340,7534,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+25,44,Madrid,Vitoria-Gasteiz,358736,12004,0.0,summary.tolls.total,
+25,45,Madrid,Zamora,258605,8915,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+25,46,Madrid,Zaragoza,316564,10569,0.0,summary.tolls.total,
+26,0,Málaga,A Coruña,1126816,35331,28.6,summary.tolls.total,tollTransponder
+26,1,Málaga,Albacete,458616,16001,4.3,summary.tolls.total,
+26,2,Málaga,Alicante,478731,15550,4.3,summary.tolls.total,
+26,3,Málaga,Almería,202847,7111,0.0,summary.tolls.total,
+26,4,Málaga,Ávila,644607,20668,21.6,summary.tolls.total,tollTransponder
+26,5,Málaga,Badajoz,419619,14679,4.3,summary.tolls.total,
+26,6,Málaga,Barcelona,964758,31073,17.75,summary.tolls.total,
+26,7,Málaga,Bilbao,940984,29611,22.85,summary.tolls.total,
+26,8,Málaga,Burgos,787928,24680,10.45,summary.tolls.total,
+26,9,Málaga,Cáceres,427549,15567,4.3,summary.tolls.total,
+26,10,Málaga,Cádiz,234763,8525,12.0,summary.tolls.total,tollTransponder
+26,11,Málaga,Castellón de la Plana,689359,21916,4.3,summary.tolls.total,
+26,12,Málaga,Ciudad Real,343588,12039,4.3,summary.tolls.total,
+26,13,Málaga,Córdoba,167484,5597,4.3,summary.tolls.total,
+26,14,Málaga,Cuenca,573540,18716,4.3,summary.tolls.total,
+26,15,Málaga,Girona,1059543,33825,4.3,summary.tolls.total,
+26,16,Málaga,Granada,129920,4788,4.3,summary.tolls.total,
+26,17,Málaga,Guadalajara,589625,18714,10.45,summary.tolls.total,
+26,18,Málaga,Huelva,308996,10415,4.3,summary.tolls.total,
+26,19,Málaga,Huesca,913316,28836,10.45,summary.tolls.total,
+26,20,Málaga,Jaén,191296,7201,4.3,summary.tolls.total,
+26,21,Málaga,León,871498,27461,26.15,summary.tolls.total,tollTransponder
+26,22,Málaga,Lleida,928169,30394,4.3,summary.tolls.total,
+26,23,Málaga,Logroño,857443,27987,10.45,summary.tolls.total,
+26,24,Málaga,Lugo,1035025,32544,26.15,summary.tolls.total,tollTransponder
+26,25,Málaga,Madrid,534747,17663,4.3,summary.tolls.total,
+26,27,Málaga,Murcia,406590,13302,4.3,summary.tolls.total,
+26,28,Málaga,Ourense,1000659,32093,4.3,summary.tolls.total,
+26,29,Málaga,Oviedo,981198,31027,42.35,summary.tolls.total,tollTransponder
+26,30,Málaga,Palencia,788875,24903,18.05,summary.tolls.total,tollTransponder
+26,31,Málaga,Pamplona,920112,29862,21.85,summary.tolls.total,
+26,32,Málaga,Pontevedra,953847,33223,32.4,summary.tolls.total,tollTransponder
+26,33,Málaga,Salamanca,671778,21412,4.3,summary.tolls.total,
+26,34,Málaga,San Sebastián,997836,31899,27.32,summary.tolls.total,
+26,35,Málaga,Santander,986009,30981,18.05,summary.tolls.total,tollTransponder
+26,36,Málaga,Segovia,625904,20024,18.05,summary.tolls.total,tollTransponder
+26,37,Málaga,Sevilla,210838,7214,4.3,summary.tolls.total,
+26,38,Málaga,Soria,757558,23813,10.45,summary.tolls.total,
+26,39,Málaga,Tarragona,872785,27651,4.3,summary.tolls.total,
+26,40,Málaga,Teruel,673663,23078,4.3,summary.tolls.total,
+26,41,Málaga,Toledo,484878,15726,4.3,summary.tolls.total,
+26,42,Málaga,Valencia,607881,19669,4.3,summary.tolls.total,
+26,43,Málaga,Valladolid,724922,23604,26.15,summary.tolls.total,tollTransponder
+26,44,Málaga,Vitoria-Gasteiz,901840,28480,10.45,summary.tolls.total,
+26,45,Málaga,Zamora,738372,23317,4.3,summary.tolls.total,
+26,46,Málaga,Zaragoza,846842,26705,10.45,summary.tolls.total,
+27,0,Murcia,A Coruña,997933,30535,38.45,summary.tolls.total,tollTransponder
+27,1,Murcia,Albacete,147567,4891,0.0,summary.tolls.total,
+27,2,Murcia,Alicante,82556,3110,0.0,summary.tolls.total,
+27,3,Murcia,Almería,220325,7420,0.0,summary.tolls.total,
+27,4,Murcia,Ávila,515724,15872,31.45,summary.tolls.total,tollTransponder
+27,5,Murcia,Badajoz,630911,22029,0.0,summary.tolls.total,
+27,6,Murcia,Barcelona,574587,18934,13.45,summary.tolls.total,
+27,7,Murcia,Bilbao,784861,24271,14.85,summary.tolls.total,
+27,8,Murcia,Burgos,631805,19340,2.45,summary.tolls.total,
+27,9,Murcia,Cáceres,652114,19891,15.95,summary.tolls.total,
+27,10,Murcia,Cádiz,569350,19642,0.0,summary.tolls.total,
+27,11,Murcia,Castellón de la Plana,299188,9777,0.0,summary.tolls.total,
+27,12,Murcia,Ciudad Real,327868,11097,0.0,summary.tolls.total,
+27,13,Murcia,Córdoba,435345,15216,0.0,summary.tolls.total,
+27,14,Murcia,Cuenca,306895,9940,0.0,summary.tolls.total,
+27,15,Murcia,Girona,669372,21686,0.0,summary.tolls.total,
+27,16,Murcia,Granada,278445,9313,0.0,summary.tolls.total,
+27,17,Murcia,Guadalajara,427158,13398,2.45,summary.tolls.total,
+27,18,Murcia,Huelva,622782,20190,0.0,summary.tolls.total,
+27,19,Murcia,Huesca,612102,19314,0.0,summary.tolls.total,
+27,20,Murcia,Jaén,337002,11407,0.0,summary.tolls.total,
+27,21,Murcia,León,742615,22665,36.0,summary.tolls.total,tollTransponder
+27,22,Murcia,Lleida,537998,18255,0.0,summary.tolls.total,
+27,23,Murcia,Logroño,682574,22227,13.45,summary.tolls.total,
+27,24,Murcia,Lugo,906142,27748,36.0,summary.tolls.total,tollTransponder
+27,25,Murcia,Madrid,401213,12621,3.4,summary.tolls.total,
+27,26,Murcia,Málaga,409155,13675,4.3,summary.tolls.total,
+27,28,Murcia,Ourense,909824,28100,36.0,summary.tolls.total,tollTransponder
+27,29,Murcia,Oviedo,852315,26231,52.2,summary.tolls.total,tollTransponder
+27,30,Murcia,Palencia,633927,19996,2.45,summary.tolls.total,
+27,31,Murcia,Pamplona,688293,22615,17.1,summary.tolls.total,
+27,32,Murcia,Pontevedra,1022844,31892,41.05,summary.tolls.total,tollTransponder
+27,33,Murcia,Salamanca,620038,18837,31.45,summary.tolls.total,tollTransponder
+27,34,Murcia,San Sebastián,774817,25831,19.75,summary.tolls.total,
+27,35,Murcia,Santander,811287,25744,2.45,summary.tolls.total,
+27,36,Murcia,Segovia,497021,15228,27.9,summary.tolls.total,tollTransponder
+27,37,Murcia,Sevilla,524624,16989,0.0,summary.tolls.total,
+27,38,Murcia,Soria,559567,18481,0.0,summary.tolls.total,
+27,39,Murcia,Tarragona,482614,15512,0.0,summary.tolls.total,
+27,40,Murcia,Teruel,370653,11971,0.0,summary.tolls.total,
+27,41,Murcia,Toledo,393385,12414,15.95,summary.tolls.total,
+27,42,Murcia,Valencia,217710,7530,0.0,summary.tolls.total,
+27,43,Murcia,Valladolid,596039,18808,36.0,summary.tolls.total,tollTransponder
+27,44,Murcia,Vitoria-Gasteiz,745717,23140,2.45,summary.tolls.total,
+27,45,Murcia,Zamora,658304,20189,36.0,summary.tolls.total,tollTransponder
+27,46,Murcia,Zaragoza,547249,17366,0.0,summary.tolls.total,
+28,0,Ourense,A Coruña,174920,5879,16.05,summary.tolls.total,tollTransponder
+28,1,Ourense,Albacete,762137,23211,35.85,summary.tolls.total,tollTransponder
+28,2,Ourense,Alicante,926316,28186,35.85,summary.tolls.total,tollTransponder
+28,3,Ourense,Almería,1044473,32641,21.7,summary.tolls.total,tollTransponder
+28,4,Ourense,Ávila,427187,13684,0.0,summary.tolls.total,
+28,5,Ourense,Badajoz,618080,20233,0.0,summary.tolls.total,
+28,6,Ourense,Barcelona,1027306,32682,25.1,summary.tolls.total,
+28,7,Ourense,Bilbao,584185,18730,12.4,summary.tolls.total,
+28,8,Ourense,Burgos,427220,13860,0.0,summary.tolls.total,
+28,9,Ourense,Cáceres,528493,17110,0.0,summary.tolls.total,
+28,10,Ourense,Cádiz,904440,28377,0.0,summary.tolls.total,
+28,11,Ourense,Castellón de la Plana,922500,29021,15.7,summary.tolls.total,
+28,12,Ourense,Ciudad Real,688083,21933,21.65,summary.tolls.total,tollTransponder
+28,13,Ourense,Córdoba,815924,26630,0.0,summary.tolls.total,
+28,14,Ourense,Cuenca,669960,21187,15.7,summary.tolls.total,
+28,15,Ourense,Girona,1097185,35074,25.1,summary.tolls.total,
+28,16,Ourense,Granada,914556,28412,21.7,summary.tolls.total,tollTransponder
+28,17,Ourense,Guadalajara,560045,17611,20.1,summary.tolls.total,
+28,18,Ourense,Huelva,866790,26812,59.2,summary.tolls.total,tollTransponder
+28,19,Ourense,Huesca,793636,25120,25.1,summary.tolls.total,
+28,20,Ourense,Jaén,831665,25895,21.7,summary.tolls.total,tollTransponder
+28,21,Ourense,León,297296,9541,0.0,summary.tolls.total,
+28,22,Ourense,Lleida,872416,27532,25.1,summary.tolls.total,
+28,23,Ourense,Logroño,558498,18081,4.85,summary.tolls.total,
+28,24,Ourense,Lugo,95169,4802,0.0,summary.tolls.total,
+28,25,Ourense,Madrid,500271,16097,15.7,summary.tolls.total,
+28,26,Ourense,Málaga,999632,32185,4.3,summary.tolls.total,
+28,27,Ourense,Murcia,902964,27536,35.85,summary.tolls.total,tollTransponder
+28,29,Ourense,Oviedo,338485,12087,0.0,summary.tolls.total,
+28,30,Ourense,Palencia,345661,11580,0.0,summary.tolls.total,
+28,31,Ourense,Pamplona,637223,20600,2.65,summary.tolls.total,
+28,32,Ourense,Pontevedra,118949,4672,5.05,summary.tolls.total,
+28,33,Ourense,Salamanca,324697,10693,0.0,summary.tolls.total,
+28,34,Ourense,San Sebastián,641037,21018,16.87,summary.tolls.total,
+28,35,Ourense,Santander,519661,16747,0.0,summary.tolls.total,
+28,36,Ourense,Segovia,434564,13860,0.0,summary.tolls.total,
+28,37,Ourense,Sevilla,790317,24893,0.0,summary.tolls.total,
+28,38,Ourense,Soria,549528,18631,0.0,summary.tolls.total,
+28,39,Ourense,Tarragona,952829,29963,25.1,summary.tolls.total,
+28,40,Ourense,Teruel,804722,25621,22.1,summary.tolls.total,
+28,41,Ourense,Toledo,574836,17898,21.65,summary.tolls.total,tollTransponder
+28,42,Ourense,Valencia,857646,27145,15.7,summary.tolls.total,
+28,43,Ourense,Valladolid,347004,11104,0.0,summary.tolls.total,
+28,44,Ourense,Vitoria-Gasteiz,545041,17599,0.0,summary.tolls.total,
+28,45,Ourense,Zamora,259573,8889,0.0,summary.tolls.total,
+28,46,Ourense,Zaragoza,727162,22989,25.1,summary.tolls.total,
+29,0,Oviedo,A Coruña,289978,9400,2.45,summary.tolls.total,
+29,1,Oviedo,Albacete,709050,21805,52.05,summary.tolls.total,tollTransponder
+29,2,Oviedo,Alicante,873252,26779,52.05,summary.tolls.total,tollTransponder
+29,3,Oviedo,Almería,991409,31234,37.9,summary.tolls.total,tollTransponder
+29,4,Oviedo,Ávila,374123,12277,16.2,summary.tolls.total,tollTransponder
+29,5,Oviedo,Badajoz,608667,19628,16.2,summary.tolls.total,tollTransponder
+29,6,Oviedo,Barcelona,886631,28126,41.95,summary.tolls.total,tollTransponder
+29,7,Oviedo,Bilbao,286886,9607,0.0,summary.tolls.total,
+29,8,Oviedo,Burgos,289801,9456,16.2,summary.tolls.total,tollTransponder
+29,9,Oviedo,Cáceres,519080,16505,16.2,summary.tolls.total,tollTransponder
+29,10,Oviedo,Cádiz,895027,27772,16.2,summary.tolls.total,tollTransponder
+29,11,Oviedo,Castellón de la Plana,803306,27143,16.2,summary.tolls.total,tollTransponder
+29,12,Oviedo,Ciudad Real,635019,20526,37.85,summary.tolls.total,tollTransponder
+29,13,Oviedo,Córdoba,806511,26025,16.2,summary.tolls.total,tollTransponder
+29,14,Oviedo,Cuenca,616896,19780,31.9,summary.tolls.total,tollTransponder
+29,15,Oviedo,Girona,956510,30518,41.95,summary.tolls.total,tollTransponder
+29,16,Oviedo,Granada,861492,27005,37.9,summary.tolls.total,tollTransponder
+29,17,Oviedo,Guadalajara,506981,16204,36.3,summary.tolls.total,tollTransponder
+29,18,Oviedo,Huelva,858686,26447,16.2,summary.tolls.total,tollTransponder
+29,19,Oviedo,Huesca,652961,20564,41.95,summary.tolls.total,tollTransponder
+29,20,Oviedo,Jaén,778578,24489,37.9,summary.tolls.total,tollTransponder
+29,21,Oviedo,León,115519,4686,10.2,summary.tolls.total,tollTransponder
+29,22,Oviedo,Lleida,731718,22977,41.95,summary.tolls.total,tollTransponder
+29,23,Oviedo,Logroño,417823,13525,21.65,summary.tolls.total,tollTransponder
+29,24,Oviedo,Lugo,229710,8033,0.0,summary.tolls.total,
+29,25,Oviedo,Madrid,447184,14691,31.9,summary.tolls.total,tollTransponder
+29,26,Oviedo,Málaga,982979,31148,42.2,summary.tolls.total,tollTransponder
+29,27,Oviedo,Murcia,849900,26129,52.05,summary.tolls.total,tollTransponder
+29,28,Oviedo,Ourense,338028,11953,0.0,summary.tolls.total,
+29,30,Oviedo,Palencia,240865,8464,16.2,summary.tolls.total,tollTransponder
+29,31,Oviedo,Pamplona,438499,14608,11.55,summary.tolls.total,tollTransponder
+29,32,Oviedo,Pontevedra,386742,12345,15.45,summary.tolls.total,
+29,33,Oviedo,Salamanca,315284,10088,16.2,summary.tolls.total,tollTransponder
+29,34,Oviedo,San Sebastián,384588,13108,13.81,summary.tolls.total,
+29,35,Oviedo,Santander,195570,6619,0.0,summary.tolls.total,
+29,36,Oviedo,Segovia,381500,12453,16.2,summary.tolls.total,tollTransponder
+29,37,Oviedo,Sevilla,780904,24288,16.2,summary.tolls.total,tollTransponder
+29,38,Oviedo,Soria,430095,14343,16.2,summary.tolls.total,tollTransponder
+29,39,Oviedo,Tarragona,812154,25407,41.95,summary.tolls.total,tollTransponder
+29,40,Oviedo,Teruel,664833,22447,16.2,summary.tolls.total,tollTransponder
+29,41,Oviedo,Toledo,521772,16491,37.85,summary.tolls.total,tollTransponder
+29,42,Oviedo,Valencia,804582,25738,31.9,summary.tolls.total,tollTransponder
+29,43,Oviedo,Valladolid,256725,9286,16.2,summary.tolls.total,tollTransponder
+29,44,Oviedo,Vitoria-Gasteiz,345974,11545,8.9,summary.tolls.total,tollTransponder
+29,45,Oviedo,Zamora,250160,8284,16.2,summary.tolls.total,tollTransponder
+29,46,Oviedo,Zaragoza,586487,18433,41.95,summary.tolls.total,tollTransponder
+30,0,Palencia,A Coruña,431868,14269,4.95,summary.tolls.total,tollTransponder
+30,1,Palencia,Albacete,502670,16019,35.85,summary.tolls.total,tollTransponder
+30,2,Palencia,Alicante,666872,20993,35.85,summary.tolls.total,tollTransponder
+30,3,Palencia,Almería,785029,25448,21.7,summary.tolls.total,tollTransponder
+30,4,Palencia,Ávila,169938,6536,0.0,summary.tolls.total,
+30,5,Palencia,Badajoz,463551,15391,0.0,summary.tolls.total,
+30,6,Palencia,Barcelona,687394,22275,25.1,summary.tolls.total,
+30,7,Palencia,Bilbao,244273,8323,12.4,summary.tolls.total,
+30,8,Palencia,Burgos,91419,3405,0.0,summary.tolls.total,
+30,9,Palencia,Cáceres,373964,12268,0.0,summary.tolls.total,
+30,10,Palencia,Cádiz,749911,23535,0.0,summary.tolls.total,
+30,11,Palencia,Castellón de la Plana,556059,19923,0.0,summary.tolls.total,
+30,12,Palencia,Ciudad Real,428639,14740,21.65,summary.tolls.total,tollTransponder
+30,13,Palencia,Córdoba,632629,20646,21.7,summary.tolls.total,tollTransponder
+30,14,Palencia,Cuenca,402905,13496,2.45,summary.tolls.total,
+30,15,Palencia,Girona,757273,24667,25.1,summary.tolls.total,
+30,16,Palencia,Granada,655112,21219,21.7,summary.tolls.total,tollTransponder
+30,17,Palencia,Guadalajara,243194,9519,0.0,summary.tolls.total,
+30,18,Palencia,Huelva,713570,22210,0.0,summary.tolls.total,
+30,19,Palencia,Huesca,453724,14713,25.1,summary.tolls.total,
+30,20,Palencia,Jaén,572198,18703,21.7,summary.tolls.total,tollTransponder
+30,21,Palencia,León,123506,4690,0.0,summary.tolls.total,
+30,22,Palencia,Lleida,532481,17126,25.1,summary.tolls.total,
+30,23,Palencia,Logroño,218586,7674,4.85,summary.tolls.total,
+30,24,Palencia,Lugo,340077,11482,2.5,summary.tolls.total,tollTransponder
+30,25,Palencia,Madrid,240804,8905,15.7,summary.tolls.total,
+30,26,Palencia,Málaga,776599,25362,26.0,summary.tolls.total,tollTransponder
+30,27,Palencia,Murcia,643520,20343,35.85,summary.tolls.total,tollTransponder
+30,28,Palencia,Ourense,349322,12200,0.0,summary.tolls.total,
+30,29,Palencia,Oviedo,240940,8621,16.2,summary.tolls.total,tollTransponder
+30,31,Palencia,Pamplona,297311,10193,2.65,summary.tolls.total,
+30,32,Palencia,Pontevedra,462342,15992,5.05,summary.tolls.total,
+30,33,Palencia,Salamanca,168122,5780,0.0,summary.tolls.total,
+30,34,Palencia,San Sebastián,301125,10611,16.87,summary.tolls.total,
+30,35,Palencia,Santander,200183,6663,0.0,summary.tolls.total,
+30,36,Palencia,Segovia,163840,5548,0.0,summary.tolls.total,
+30,37,Palencia,Sevilla,635788,20051,0.0,summary.tolls.total,
+30,38,Palencia,Soria,204690,7896,0.0,summary.tolls.total,
+30,39,Palencia,Tarragona,612917,19556,25.1,summary.tolls.total,
+30,40,Palencia,Teruel,417586,15227,0.0,summary.tolls.total,
+30,41,Palencia,Toledo,315392,10705,21.65,summary.tolls.total,tollTransponder
+30,42,Palencia,Valencia,590591,19454,2.45,summary.tolls.total,
+30,43,Palencia,Valladolid,51459,2094,0.0,summary.tolls.total,
+30,44,Palencia,Vitoria-Gasteiz,205129,7192,0.0,summary.tolls.total,
+30,45,Palencia,Zamora,147555,5148,0.0,summary.tolls.total,
+30,46,Palencia,Zaragoza,387250,12582,25.1,summary.tolls.total,
+31,0,Pamplona,A Coruña,690290,22113,7.6,summary.tolls.total,tollTransponder
+31,1,Pamplona,Albacete,558785,19915,23.0,summary.tolls.total,
+31,2,Pamplona,Alicante,675013,21468,23.0,summary.tolls.total,
+31,3,Pamplona,Almería,916270,29043,23.0,summary.tolls.total,
+31,4,Pamplona,Ávila,453025,15878,2.65,summary.tolls.total,
+31,5,Pamplona,Badajoz,746638,24733,2.65,summary.tolls.total,
+31,6,Pamplona,Barcelona,426513,15641,0.0,summary.tolls.total,
+31,7,Pamplona,Bilbao,156429,5706,9.5,summary.tolls.total,
+31,8,Pamplona,Burgos,212779,7424,2.65,summary.tolls.total,
+31,9,Pamplona,Cáceres,657051,21610,2.65,summary.tolls.total,
+31,10,Pamplona,Cádiz,1032998,32877,2.65,summary.tolls.total,
+31,11,Pamplona,Castellón de la Plana,487786,15983,23.0,summary.tolls.total,
+31,12,Pamplona,Ciudad Real,597520,20402,22.6,summary.tolls.total,tollTransponder
+31,13,Pamplona,Córdoba,785299,26101,22.6,summary.tolls.total,tollTransponder
+31,14,Pamplona,Cuenca,435843,16406,11.4,summary.tolls.total,
+31,15,Pamplona,Girona,501788,17681,0.0,summary.tolls.total,
+31,16,Pamplona,Granada,807782,26674,22.6,summary.tolls.total,tollTransponder
+31,17,Pamplona,Guadalajara,333335,11995,11.4,summary.tolls.total,
+31,18,Pamplona,Huelva,996657,31552,2.65,summary.tolls.total,
+31,19,Pamplona,Huesca,161831,6826,0.0,summary.tolls.total,
+31,20,Pamplona,Jaén,724868,24158,22.6,summary.tolls.total,tollTransponder
+31,21,Pamplona,León,381928,12534,2.65,summary.tolls.total,
+31,22,Pamplona,Lleida,273308,10235,0.0,summary.tolls.total,
+31,23,Pamplona,Logroño,88555,3381,0.0,summary.tolls.total,
+31,24,Pamplona,Lugo,598499,19326,5.15,summary.tolls.total,tollTransponder
+31,25,Pamplona,Madrid,390334,14308,11.4,summary.tolls.total,
+31,26,Pamplona,Málaga,929269,30817,26.9,summary.tolls.total,tollTransponder
+31,27,Pamplona,Murcia,711317,22830,23.0,summary.tolls.total,
+31,28,Pamplona,Ourense,640147,21314,2.65,summary.tolls.total,
+31,29,Pamplona,Oviedo,437117,14727,11.55,summary.tolls.total,
+31,30,Pamplona,Palencia,297293,10183,2.65,summary.tolls.total,
+31,32,Pamplona,Pontevedra,752741,24604,12.7,summary.tolls.total,tollTransponder
+31,33,Pamplona,Salamanca,451209,15122,2.65,summary.tolls.total,
+31,34,Pamplona,San Sebastián,85191,3865,2.65,summary.tolls.total,
+31,35,Pamplona,Santander,254609,9173,11.55,summary.tolls.total,
+31,36,Pamplona,Segovia,397141,13986,2.65,summary.tolls.total,
+31,37,Pamplona,Sevilla,918875,29393,2.65,summary.tolls.total,
+31,38,Pamplona,Soria,173784,6981,11.4,summary.tolls.total,
+31,39,Pamplona,Tarragona,406499,13159,23.0,summary.tolls.total,
+31,40,Pamplona,Teruel,349313,11287,23.0,summary.tolls.total,
+31,41,Pamplona,Toledo,466987,16473,16.6,summary.tolls.total,
+31,42,Pamplona,Valencia,493740,16207,23.0,summary.tolls.total,
+31,43,Pamplona,Valladolid,334546,11436,2.65,summary.tolls.total,
+31,44,Pamplona,Vitoria-Gasteiz,98631,3938,2.65,summary.tolls.total,
+31,45,Pamplona,Zamora,430642,14490,2.65,summary.tolls.total,
+31,46,Pamplona,Zaragoza,180832,6185,23.0,summary.tolls.total,
+32,0,Pontevedra,A Coruña,134252,4588,16.35,summary.tolls.total,
+32,1,Pontevedra,Albacete,877643,26882,40.9,summary.tolls.total,tollTransponder
+32,2,Pontevedra,Alicante,1041845,31856,40.9,summary.tolls.total,tollTransponder
+32,3,Pontevedra,Almería,1160002,36311,26.75,summary.tolls.total,tollTransponder
+32,4,Pontevedra,Ávila,542621,17354,5.05,summary.tolls.total,
+32,5,Pontevedra,Badajoz,525545,19303,28.1,summary.tolls.total,tollTransponder
+32,6,Pontevedra,Barcelona,1145498,36631,35.15,summary.tolls.total,
+32,7,Pontevedra,Bilbao,643570,20674,15.45,summary.tolls.total,
+32,8,Pontevedra,Burgos,545412,17809,10.05,summary.tolls.total,
+32,9,Pontevedra,Cáceres,578197,20556,22.85,summary.tolls.total,tollTransponder
+32,10,Pontevedra,Cádiz,860965,29730,28.1,summary.tolls.total,tollTransponder
+32,11,Pontevedra,Castellón de la Plana,1038029,32691,20.75,summary.tolls.total,
+32,12,Pontevedra,Ciudad Real,803612,25603,26.7,summary.tolls.total,tollTransponder
+32,13,Pontevedra,Córdoba,787895,28249,28.1,summary.tolls.total,tollTransponder
+32,14,Pontevedra,Cuenca,785489,24857,20.75,summary.tolls.total,
+32,15,Pontevedra,Girona,1215377,39023,35.15,summary.tolls.total,
+32,16,Pontevedra,Granada,1030085,32082,26.75,summary.tolls.total,tollTransponder
+32,17,Pontevedra,Guadalajara,675479,21281,25.15,summary.tolls.total,
+32,18,Pontevedra,Huelva,823708,25355,67.8,summary.tolls.total,tollTransponder
+32,19,Pontevedra,Huesca,911828,29069,35.15,summary.tolls.total,
+32,20,Pontevedra,Jaén,947171,29566,26.75,summary.tolls.total,tollTransponder
+32,21,Pontevedra,León,378657,12974,10.05,summary.tolls.total,
+32,22,Pontevedra,Lleida,990585,31482,35.15,summary.tolls.total,
+32,23,Pontevedra,Logroño,676690,22030,14.9,summary.tolls.total,
+32,24,Pontevedra,Lugo,166800,6276,7.55,summary.tolls.total,
+32,25,Pontevedra,Madrid,615777,19768,20.75,summary.tolls.total,
+32,26,Pontevedra,Málaga,956039,33539,32.4,summary.tolls.total,tollTransponder
+32,27,Pontevedra,Murcia,1018493,31206,40.9,summary.tolls.total,tollTransponder
+32,28,Pontevedra,Ourense,119304,4460,5.05,summary.tolls.total,
+32,29,Pontevedra,Oviedo,385621,12235,15.45,summary.tolls.total,
+32,30,Pontevedra,Palencia,461167,15251,5.05,summary.tolls.total,
+32,31,Pontevedra,Pamplona,755415,24549,12.7,summary.tolls.total,
+32,33,Pontevedra,Salamanca,440131,14363,5.05,summary.tolls.total,
+32,34,Pontevedra,San Sebastián,741177,24175,29.26,summary.tolls.total,
+32,35,Pontevedra,Santander,552159,17686,15.45,summary.tolls.total,
+32,36,Pontevedra,Segovia,549998,17530,5.05,summary.tolls.total,
+32,37,Pontevedra,Sevilla,746842,26246,28.1,summary.tolls.total,tollTransponder
+32,38,Pontevedra,Soria,665034,22302,5.05,summary.tolls.total,
+32,39,Pontevedra,Tarragona,1071021,33912,35.15,summary.tolls.total,
+32,40,Pontevedra,Teruel,920251,29291,27.15,summary.tolls.total,
+32,41,Pontevedra,Toledo,690270,21568,26.7,summary.tolls.total,tollTransponder
+32,42,Pontevedra,Valencia,973080,30815,20.75,summary.tolls.total,
+32,43,Pontevedra,Valladolid,462533,14774,5.05,summary.tolls.total,
+32,44,Pontevedra,Vitoria-Gasteiz,663233,21548,10.05,summary.tolls.total,
+32,45,Pontevedra,Zamora,375007,12559,5.05,summary.tolls.total,
+32,46,Pontevedra,Zaragoza,845354,26938,35.15,summary.tolls.total,
+33,0,Salamanca,A Coruña,461393,14615,2.45,summary.tolls.total,
+33,1,Salamanca,Albacete,477053,14661,31.3,summary.tolls.total,tollTransponder
+33,2,Salamanca,Alicante,641255,19635,31.3,summary.tolls.total,tollTransponder
+33,3,Salamanca,Almería,759412,24090,17.15,summary.tolls.total,tollTransponder
+33,4,Salamanca,Ávila,106779,3760,0.0,summary.tolls.total,
+33,5,Salamanca,Badajoz,292978,10187,0.0,summary.tolls.total,
+33,6,Salamanca,Barcelona,833863,26635,17.55,summary.tolls.total,
+33,7,Salamanca,Bilbao,398187,13332,12.4,summary.tolls.total,
+33,8,Salamanca,Burgos,245333,8414,0.0,summary.tolls.total,
+33,9,Salamanca,Cáceres,203391,7064,0.0,summary.tolls.total,
+33,10,Salamanca,Cádiz,579338,18331,0.0,summary.tolls.total,
+33,11,Salamanca,Castellón de la Plana,637439,20470,11.15,summary.tolls.total,
+33,12,Salamanca,Ciudad Real,357004,13267,0.0,summary.tolls.total,
+33,13,Salamanca,Córdoba,490822,16584,0.0,summary.tolls.total,
+33,14,Salamanca,Cuenca,384899,12636,11.15,summary.tolls.total,
+33,15,Salamanca,Girona,903742,29027,17.55,summary.tolls.total,
+33,16,Salamanca,Granada,629495,19861,17.15,summary.tolls.total,tollTransponder
+33,17,Salamanca,Guadalajara,274984,9060,15.55,summary.tolls.total,
+33,18,Salamanca,Huelva,542997,17006,0.0,summary.tolls.total,
+33,19,Salamanca,Huesca,600193,19073,17.55,summary.tolls.total,
+33,20,Salamanca,Jaén,546581,17345,17.15,summary.tolls.total,tollTransponder
+33,21,Salamanca,León,206075,6745,0.0,summary.tolls.total,
+33,22,Salamanca,Lleida,678950,21486,17.55,summary.tolls.total,
+33,23,Salamanca,Logroño,372500,12683,4.85,summary.tolls.total,
+33,24,Salamanca,Lugo,369602,11828,0.0,summary.tolls.total,
+33,25,Salamanca,Madrid,215187,7547,11.15,summary.tolls.total,
+33,26,Salamanca,Málaga,674507,22140,4.3,summary.tolls.total,
+33,27,Salamanca,Murcia,617903,18985,31.3,summary.tolls.total,tollTransponder
+33,28,Salamanca,Ourense,328850,11384,0.0,summary.tolls.total,
+33,29,Salamanca,Oviedo,315775,10311,16.2,summary.tolls.total,tollTransponder
+33,30,Salamanca,Palencia,166721,5941,0.0,summary.tolls.total,
+33,31,Salamanca,Pamplona,451225,15202,2.65,summary.tolls.total,
+33,32,Salamanca,Pontevedra,441870,15176,5.05,summary.tolls.total,
+33,34,Salamanca,San Sebastián,455039,15620,16.87,summary.tolls.total,
+33,35,Salamanca,Santander,363855,12019,0.0,summary.tolls.total,
+33,36,Salamanca,Segovia,155684,5804,0.0,summary.tolls.total,
+33,37,Salamanca,Sevilla,465215,14847,0.0,summary.tolls.total,
+33,38,Salamanca,Soria,323381,12050,0.0,summary.tolls.total,
+33,39,Salamanca,Tarragona,759386,23916,17.55,summary.tolls.total,
+33,40,Salamanca,Teruel,519661,17070,17.55,summary.tolls.total,
+33,41,Salamanca,Toledo,238724,9269,0.0,summary.tolls.total,
+33,42,Salamanca,Valencia,572585,18594,11.15,summary.tolls.total,
+33,43,Salamanca,Valladolid,120880,4522,0.0,summary.tolls.total,
+33,44,Salamanca,Vitoria-Gasteiz,359043,12201,0.0,summary.tolls.total,
+33,45,Salamanca,Zamora,66563,2608,0.0,summary.tolls.total,
+33,46,Salamanca,Zaragoza,533719,16942,17.55,summary.tolls.total,
+34,0,San Sebastián,A Coruña,645825,21154,16.26,summary.tolls.total,
+34,1,San Sebastián,Albacete,699722,22469,19.32,summary.tolls.total,
+34,2,San Sebastián,Alicante,759331,24287,25.65,summary.tolls.total,
+34,3,San Sebastián,Almería,1000588,31862,25.65,summary.tolls.total,
+34,4,San Sebastián,Ávila,456617,16062,16.87,summary.tolls.total,
+34,5,San Sebastián,Badajoz,750230,24917,16.87,summary.tolls.total,
+34,6,San Sebastián,Barcelona,510831,18460,2.65,summary.tolls.total,
+34,7,San Sebastián,Bilbao,101007,3947,13.81,summary.tolls.total,
+34,8,San Sebastián,Burgos,216371,7608,16.87,summary.tolls.total,
+34,9,San Sebastián,Cáceres,660643,21794,16.87,summary.tolls.total,
+34,10,San Sebastián,Cádiz,1036590,33061,16.87,summary.tolls.total,
+34,11,San Sebastián,Castellón de la Plana,572104,18802,25.65,summary.tolls.total,
+34,12,San Sebastián,Ciudad Real,641097,21937,16.87,summary.tolls.total,
+34,13,San Sebastián,Córdoba,848166,27612,22.87,summary.tolls.total,tollTransponder
+34,14,San Sebastián,Cuenca,520161,19225,14.05,summary.tolls.total,
+34,15,San Sebastián,Girona,638128,20292,59.45,summary.tolls.total,
+34,16,San Sebastián,Granada,870649,28185,22.87,summary.tolls.total,tollTransponder
+34,17,San Sebastián,Guadalajara,417653,14814,14.05,summary.tolls.total,
+34,18,San Sebastián,Huelva,1000249,31736,16.87,summary.tolls.total,
+34,19,San Sebastián,Huesca,246149,9645,2.65,summary.tolls.total,
+34,20,San Sebastián,Jaén,787735,25669,22.87,summary.tolls.total,tollTransponder
+34,21,San Sebastián,León,385520,12718,16.87,summary.tolls.total,
+34,22,San Sebastián,Lleida,357626,13054,2.65,summary.tolls.total,
+34,23,San Sebastián,Logroño,167912,5984,2.65,summary.tolls.total,
+34,24,San Sebastián,Lugo,602091,19510,19.37,summary.tolls.total,tollTransponder
+34,25,San Sebastián,Madrid,454003,15433,16.87,summary.tolls.total,
+34,26,San Sebastián,Málaga,992136,32328,27.17,summary.tolls.total,tollTransponder
+34,27,San Sebastián,Murcia,795635,25649,25.65,summary.tolls.total,
+34,28,San Sebastián,Ourense,643739,21498,16.87,summary.tolls.total,
+34,29,San Sebastián,Oviedo,383648,12996,13.81,summary.tolls.total,
+34,30,San Sebastián,Palencia,300885,10367,16.87,summary.tolls.total,
+34,31,San Sebastián,Pamplona,83519,3577,2.65,summary.tolls.total,
+34,32,San Sebastián,Pontevedra,742589,24099,29.26,summary.tolls.total,
+34,33,San Sebastián,Salamanca,454801,15306,16.87,summary.tolls.total,
+34,35,San Sebastián,Santander,201140,7442,13.81,summary.tolls.total,
+34,36,San Sebastián,Segovia,400733,14170,16.87,summary.tolls.total,
+34,37,San Sebastián,Sevilla,922467,29577,16.87,summary.tolls.total,
+34,38,San Sebastián,Soria,258102,9800,14.05,summary.tolls.total,
+34,39,San Sebastián,Tarragona,490817,15978,25.65,summary.tolls.total,
+34,40,San Sebastián,Teruel,433631,14106,25.65,summary.tolls.total,
+34,41,San Sebastián,Toledo,528269,17970,16.87,summary.tolls.total,
+34,42,San Sebastián,Valencia,578058,19026,25.65,summary.tolls.total,
+34,43,San Sebastián,Valladolid,338138,11620,16.87,summary.tolls.total,
+34,44,San Sebastián,Vitoria-Gasteiz,102009,4087,15.62,summary.tolls.total,
+34,45,San Sebastián,Zamora,434234,14674,16.87,summary.tolls.total,
+34,46,San Sebastián,Zaragoza,265150,9004,25.65,summary.tolls.total,
+35,0,Santander,A Coruña,456721,14925,2.45,summary.tolls.total,
+35,1,Santander,Albacete,677179,21825,2.45,summary.tolls.total,
+35,2,Santander,Alicante,841381,26799,2.45,summary.tolls.total,
+35,3,Santander,Almería,980587,31456,21.7,summary.tolls.total,tollTransponder
+35,4,Santander,Ávila,365496,12544,0.0,summary.tolls.total,
+35,5,Santander,Badajoz,659109,21399,0.0,summary.tolls.total,
+35,6,Santander,Barcelona,703555,22711,41.95,summary.tolls.total,tollTransponder
+35,7,Santander,Bilbao,103810,4192,0.0,summary.tolls.total,
+35,8,Santander,Burgos,182440,6754,0.0,summary.tolls.total,
+35,9,Santander,Cáceres,569522,18276,0.0,summary.tolls.total,
+35,10,Santander,Cádiz,945469,29543,0.0,summary.tolls.total,
+35,11,Santander,Castellón de la Plana,710365,22816,41.95,summary.tolls.total,tollTransponder
+35,12,Santander,Ciudad Real,624197,20748,21.65,summary.tolls.total,tollTransponder
+35,13,Santander,Córdoba,828187,26654,21.7,summary.tolls.total,tollTransponder
+35,14,Santander,Cuenca,588747,19207,2.45,summary.tolls.total,
+35,15,Santander,Girona,773434,25103,41.95,summary.tolls.total,tollTransponder
+35,16,Santander,Granada,850670,27227,21.7,summary.tolls.total,tollTransponder
+35,17,Santander,Guadalajara,429036,15230,0.0,summary.tolls.total,
+35,18,Santander,Huelva,909128,28218,0.0,summary.tolls.total,
+35,19,Santander,Huesca,469885,15149,41.95,summary.tolls.total,tollTransponder
+35,20,Santander,Jaén,767756,24711,21.7,summary.tolls.total,tollTransponder
+35,21,Santander,León,264983,8621,0.0,summary.tolls.total,
+35,22,Santander,Lleida,548642,17562,41.95,summary.tolls.total,tollTransponder
+35,23,Santander,Logroño,234747,8110,21.65,summary.tolls.total,tollTransponder
+35,24,Santander,Lugo,396453,13558,0.0,summary.tolls.total,
+35,25,Santander,Madrid,431460,14789,0.0,summary.tolls.total,
+35,26,Santander,Málaga,972157,31370,26.0,summary.tolls.total,tollTransponder
+35,27,Santander,Murcia,818029,26149,2.45,summary.tolls.total,
+35,28,Santander,Ourense,523202,17401,0.0,summary.tolls.total,
+35,29,Santander,Oviedo,194544,6767,0.0,summary.tolls.total,
+35,30,Santander,Palencia,201007,6635,0.0,summary.tolls.total,
+35,31,Santander,Pamplona,255423,9193,11.55,summary.tolls.total,tollTransponder
+35,32,Santander,Pontevedra,553485,17870,15.45,summary.tolls.total,
+35,33,Santander,Salamanca,363680,11788,0.0,summary.tolls.total,
+35,34,Santander,San Sebastián,201512,7693,13.81,summary.tolls.total,
+35,36,Santander,Segovia,359398,11556,0.0,summary.tolls.total,
+35,37,Santander,Sevilla,831346,26059,0.0,summary.tolls.total,
+35,38,Santander,Soria,331559,11962,0.0,summary.tolls.total,
+35,39,Santander,Tarragona,629078,19992,41.95,summary.tolls.total,tollTransponder
+35,40,Santander,Teruel,571892,18120,41.95,summary.tolls.total,tollTransponder
+35,41,Santander,Toledo,510950,16713,21.65,summary.tolls.total,tollTransponder
+35,42,Santander,Valencia,716319,23040,41.95,summary.tolls.total,tollTransponder
+35,43,Santander,Valladolid,247017,8102,0.0,summary.tolls.total,
+35,44,Santander,Vitoria-Gasteiz,162898,6130,8.9,summary.tolls.total,tollTransponder
+35,45,Santander,Zamora,343113,11156,0.0,summary.tolls.total,
+35,46,Santander,Zaragoza,403411,13018,41.95,summary.tolls.total,tollTransponder
+36,0,Segovia,A Coruña,526567,16830,2.45,summary.tolls.total,
+36,1,Segovia,Albacete,354323,11050,27.75,summary.tolls.total,tollTransponder
+36,2,Segovia,Alicante,518525,16024,27.75,summary.tolls.total,tollTransponder
+36,3,Segovia,Almería,636682,20479,13.6,summary.tolls.total,tollTransponder
+36,4,Segovia,Ávila,65086,2939,1.1,summary.tolls.total,
+36,5,Segovia,Badajoz,390007,13944,1.1,summary.tolls.total,
+36,6,Segovia,Barcelona,657149,22793,0.0,summary.tolls.total,
+36,7,Segovia,Bilbao,352948,11890,12.4,summary.tolls.total,
+36,8,Segovia,Burgos,199892,6959,0.0,summary.tolls.total,
+36,9,Segovia,Cáceres,300420,10821,1.1,summary.tolls.total,
+36,10,Segovia,Cádiz,676367,22088,1.1,summary.tolls.total,
+36,11,Segovia,Castellón de la Plana,514709,16859,7.6,summary.tolls.total,
+36,12,Segovia,Ciudad Real,280292,9771,13.55,summary.tolls.total,tollTransponder
+36,13,Segovia,Córdoba,484282,15677,13.6,summary.tolls.total,tollTransponder
+36,14,Segovia,Cuenca,262169,9025,7.6,summary.tolls.total,
+36,15,Segovia,Girona,727028,25185,0.0,summary.tolls.total,
+36,16,Segovia,Granada,506765,16250,13.6,summary.tolls.total,tollTransponder
+36,17,Segovia,Guadalajara,152254,5449,12.0,summary.tolls.total,
+36,18,Segovia,Huelva,640026,20763,1.1,summary.tolls.total,
+36,19,Segovia,Huesca,423479,15231,0.0,summary.tolls.total,
+36,20,Segovia,Jaén,423851,13734,13.6,summary.tolls.total,tollTransponder
+36,21,Segovia,León,271249,8960,0.0,summary.tolls.total,
+36,22,Segovia,Lleida,502236,17644,0.0,summary.tolls.total,
+36,23,Segovia,Logroño,327261,11241,4.85,summary.tolls.total,
+36,24,Segovia,Lugo,434776,14043,0.0,summary.tolls.total,
+36,25,Segovia,Madrid,92457,3936,7.6,summary.tolls.total,
+36,26,Segovia,Málaga,628252,20393,17.9,summary.tolls.total,tollTransponder
+36,27,Segovia,Murcia,495173,15374,27.75,summary.tolls.total,tollTransponder
+36,28,Segovia,Ourense,438458,14395,0.0,summary.tolls.total,
+36,29,Segovia,Oviedo,380949,12526,16.2,summary.tolls.total,tollTransponder
+36,30,Segovia,Palencia,161400,5421,0.0,summary.tolls.total,
+36,31,Segovia,Pamplona,364146,13841,11.4,summary.tolls.total,
+36,32,Segovia,Pontevedra,551478,18187,5.05,summary.tolls.total,
+36,33,Segovia,Salamanca,154764,5654,0.0,summary.tolls.total,
+36,34,Segovia,San Sebastián,409800,14178,16.87,summary.tolls.total,
+36,35,Segovia,Santander,358534,11499,0.0,summary.tolls.total,
+36,37,Segovia,Sevilla,562244,18604,1.1,summary.tolls.total,
+36,38,Segovia,Soria,189444,7526,0.0,summary.tolls.total,
+36,39,Segovia,Tarragona,582672,20074,0.0,summary.tolls.total,
+36,40,Segovia,Teruel,396931,13459,14.0,summary.tolls.total,
+36,41,Segovia,Toledo,167045,5736,13.55,summary.tolls.total,tollTransponder
+36,42,Segovia,Valencia,449855,14983,7.6,summary.tolls.total,
+36,43,Segovia,Valladolid,115106,4099,0.0,summary.tolls.total,
+36,44,Segovia,Vitoria-Gasteiz,313804,10759,0.0,summary.tolls.total,
+36,45,Segovia,Zamora,186938,6484,0.0,summary.tolls.total,
+36,46,Segovia,Zaragoza,357005,13100,0.0,summary.tolls.total,
+37,0,Sevilla,A Coruña,926671,28516,2.45,summary.tolls.total,
+37,1,Sevilla,Albacete,480541,16865,0.0,summary.tolls.total,
+37,2,Sevilla,Alicante,596276,19215,0.0,summary.tolls.total,
+37,3,Sevilla,Almería,407334,13188,0.0,summary.tolls.total,
+37,4,Sevilla,Ávila,497102,16171,0.0,summary.tolls.total,
+37,5,Sevilla,Badajoz,213088,7871,0.0,summary.tolls.total,
+37,6,Sevilla,Barcelona,993774,32353,13.45,summary.tolls.total,
+37,7,Sevilla,Bilbao,864726,27289,12.4,summary.tolls.total,
+37,8,Sevilla,Burgos,711872,22371,0.0,summary.tolls.total,
+37,9,Sevilla,Cáceres,266313,8899,0.0,summary.tolls.total,
+37,10,Sevilla,Cádiz,121817,4246,0.0,summary.tolls.total,
+37,11,Sevilla,Castellón de la Plana,718375,23196,0.0,summary.tolls.total,
+37,12,Sevilla,Ciudad Real,320106,11578,0.0,summary.tolls.total,
+37,13,Sevilla,Córdoba,144002,5136,0.0,summary.tolls.total,
+37,14,Sevilla,Cuenca,564175,18682,0.0,summary.tolls.total,
+37,15,Sevilla,Girona,1088559,35105,0.0,summary.tolls.total,
+37,16,Sevilla,Granada,247465,8453,0.0,summary.tolls.total,
+37,17,Sevilla,Guadalajara,594063,18453,3.65,summary.tolls.total,
+37,18,Sevilla,Huelva,95051,3447,0.0,summary.tolls.total,
+37,19,Sevilla,Huesca,917754,28575,3.65,summary.tolls.total,
+37,20,Sevilla,Jaén,241546,8944,0.0,summary.tolls.total,
+37,21,Sevilla,León,671353,20646,0.0,summary.tolls.total,
+37,22,Sevilla,Lleida,996511,30988,3.65,summary.tolls.total,
+37,23,Sevilla,Logroño,839039,26640,4.85,summary.tolls.total,
+37,24,Sevilla,Lugo,834880,25729,0.0,summary.tolls.total,
+37,25,Sevilla,Madrid,534829,17048,0.0,summary.tolls.total,
+37,26,Sevilla,Málaga,212420,7583,4.3,summary.tolls.total,
+37,27,Sevilla,Murcia,524135,16967,0.0,summary.tolls.total,
+37,28,Sevilla,Ourense,794128,25285,0.0,summary.tolls.total,
+37,29,Sevilla,Oviedo,781053,24212,16.2,summary.tolls.total,tollTransponder
+37,30,Sevilla,Palencia,633260,19898,0.0,summary.tolls.total,
+37,31,Sevilla,Pamplona,917764,29159,2.65,summary.tolls.total,
+37,32,Sevilla,Pontevedra,747316,26415,28.1,summary.tolls.total,tollTransponder
+37,33,Sevilla,Salamanca,465247,14604,0.0,summary.tolls.total,
+37,34,Sevilla,San Sebastián,921578,29577,16.87,summary.tolls.total,
+37,35,Sevilla,Santander,830394,25976,0.0,summary.tolls.total,
+37,36,Sevilla,Segovia,562708,18455,1.1,summary.tolls.total,
+37,38,Sevilla,Soria,761996,23552,3.65,summary.tolls.total,
+37,39,Sevilla,Tarragona,901801,28931,0.0,summary.tolls.total,
+37,40,Sevilla,Teruel,664298,23044,0.0,summary.tolls.total,
+37,41,Sevilla,Toledo,498368,15620,0.0,summary.tolls.total,
+37,42,Sevilla,Valencia,653521,21320,0.0,summary.tolls.total,
+37,43,Sevilla,Valladolid,587419,18479,0.0,summary.tolls.total,
+37,44,Sevilla,Vitoria-Gasteiz,825582,26158,0.0,summary.tolls.total,
+37,45,Sevilla,Zamora,531841,16509,0.0,summary.tolls.total,
+37,46,Sevilla,Zaragoza,851280,26444,3.65,summary.tolls.total,
+38,0,Soria,A Coruña,621910,20243,4.95,summary.tolls.total,tollTransponder
+38,1,Soria,Albacete,417875,14499,0.0,summary.tolls.total,
+38,2,Soria,Alicante,558938,18646,0.0,summary.tolls.total,
+38,3,Soria,Almería,774567,24583,11.2,summary.tolls.total,tollTransponder
+38,4,Soria,Ávila,255824,9858,1.1,summary.tolls.total,
+38,5,Soria,Badajoz,627985,19903,3.65,summary.tolls.total,
+38,6,Soria,Barcelona,455597,15834,6.15,summary.tolls.total,
+38,7,Soria,Bilbao,222969,8591,18.5,summary.tolls.total,
+38,8,Soria,Burgos,143704,5528,0.0,summary.tolls.total,
+38,9,Soria,Cáceres,525447,16740,3.65,summary.tolls.total,
+38,10,Soria,Cádiz,876982,27343,3.65,summary.tolls.total,
+38,11,Soria,Castellón de la Plana,371711,13161,0.0,summary.tolls.total,
+38,12,Soria,Ciudad Real,434388,14082,11.2,summary.tolls.total,tollTransponder
+38,13,Soria,Córdoba,622167,19781,11.2,summary.tolls.total,tollTransponder
+38,14,Soria,Cuenca,272711,10086,0.0,summary.tolls.total,
+38,15,Soria,Girona,525476,18226,6.15,summary.tolls.total,
+38,16,Soria,Granada,644650,20354,11.2,summary.tolls.total,tollTransponder
+38,17,Soria,Guadalajara,170203,5675,0.0,summary.tolls.total,
+38,18,Soria,Huelva,840641,26018,3.65,summary.tolls.total,
+38,19,Soria,Huesca,221927,8272,6.15,summary.tolls.total,
+38,20,Soria,Jaén,561736,17838,11.2,summary.tolls.total,tollTransponder
+38,21,Soria,León,313548,10664,0.0,summary.tolls.total,
+38,22,Soria,Lleida,300684,10685,6.15,summary.tolls.total,
+38,23,Soria,Logroño,100888,4595,0.0,summary.tolls.total,
+38,24,Soria,Lugo,530119,17456,2.5,summary.tolls.total,tollTransponder
+38,25,Soria,Madrid,227202,7988,0.0,summary.tolls.total,
+38,26,Soria,Málaga,766137,24497,15.5,summary.tolls.total,tollTransponder
+38,27,Soria,Murcia,558725,18823,0.0,summary.tolls.total,
+38,28,Soria,Ourense,567279,19329,0.0,summary.tolls.total,
+38,29,Soria,Oviedo,430982,14595,16.2,summary.tolls.total,tollTransponder
+38,30,Soria,Palencia,204344,7621,0.0,summary.tolls.total,
+38,31,Soria,Pamplona,173202,6676,11.4,summary.tolls.total,
+38,32,Soria,Pontevedra,680299,23121,5.05,summary.tolls.total,
+38,33,Soria,Salamanca,336326,12050,0.0,summary.tolls.total,
+38,34,Soria,San Sebastián,259726,9892,14.05,summary.tolls.total,
+38,35,Soria,Santander,323186,11932,0.0,summary.tolls.total,
+38,36,Soria,Segovia,190783,7640,0.0,summary.tolls.total,
+38,37,Soria,Sevilla,762859,23859,3.65,summary.tolls.total,
+38,39,Soria,Tarragona,381120,13115,6.15,summary.tolls.total,
+38,40,Soria,Teruel,233238,8465,0.0,summary.tolls.total,
+38,41,Soria,Toledo,303855,10153,5.2,summary.tolls.total,
+38,42,Soria,Valencia,377665,13385,0.0,summary.tolls.total,
+38,43,Soria,Valladolid,215174,8165,0.0,summary.tolls.total,
+38,44,Soria,Vitoria-Gasteiz,182836,7533,5.4,summary.tolls.total,
+38,45,Soria,Zamora,315759,11418,0.0,summary.tolls.total,
+38,46,Soria,Zaragoza,155453,6141,6.15,summary.tolls.total,
+39,0,Tarragona,A Coruña,1004520,31571,30.05,summary.tolls.total,tollTransponder
+39,1,Tarragona,Albacete,419622,14534,0.0,summary.tolls.total,
+39,2,Tarragona,Alicante,445803,14429,0.0,summary.tolls.total,
+39,3,Tarragona,Almería,687060,22004,0.0,summary.tolls.total,
+39,4,Tarragona,Ávila,654259,21110,17.55,summary.tolls.total,tollTransponder
+39,5,Tarragona,Badajoz,942690,29734,3.65,summary.tolls.total,
+39,6,Tarragona,Barcelona,95585,3931,13.45,summary.tolls.total,
+39,7,Tarragona,Bilbao,530477,16703,39.9,summary.tolls.total,
+39,8,Tarragona,Burgos,527009,16882,25.1,summary.tolls.total,
+39,9,Tarragona,Cáceres,840152,26571,3.65,summary.tolls.total,
+39,10,Tarragona,Cádiz,1021913,32630,0.0,summary.tolls.total,
+39,11,Tarragona,Castellón de la Plana,188218,6547,0.0,summary.tolls.total,
+39,12,Tarragona,Ciudad Real,601864,19243,0.0,summary.tolls.total,
+39,13,Tarragona,Córdoba,768792,24662,0.0,summary.tolls.total,
+39,14,Tarragona,Cuenca,448167,14982,0.0,summary.tolls.total,
+39,15,Tarragona,Girona,190370,6683,0.0,summary.tolls.total,
+39,16,Tarragona,Granada,745180,23897,0.0,summary.tolls.total,
+39,17,Tarragona,Guadalajara,484908,15506,0.0,summary.tolls.total,
+39,18,Tarragona,Huelva,996665,32167,0.0,summary.tolls.total,
+39,19,Tarragona,Huesca,209704,7298,0.0,summary.tolls.total,
+39,20,Tarragona,Jaén,708361,22719,0.0,summary.tolls.total,
+39,21,Tarragona,León,696158,21992,25.1,summary.tolls.total,
+39,22,Tarragona,Lleida,97610,3545,0.0,summary.tolls.total,
+39,23,Tarragona,Logroño,400040,12718,19.35,summary.tolls.total,
+39,24,Tarragona,Lugo,912729,28784,27.6,summary.tolls.total,tollTransponder
+39,25,Tarragona,Madrid,541907,17819,0.0,summary.tolls.total,
+39,26,Tarragona,Málaga,875890,28259,4.3,summary.tolls.total,
+39,27,Tarragona,Murcia,482107,15791,0.0,summary.tolls.total,
+39,28,Tarragona,Ourense,954377,30772,25.1,summary.tolls.total,
+39,29,Tarragona,Oviedo,811165,25724,41.95,summary.tolls.total,
+39,30,Tarragona,Palencia,611523,19641,25.1,summary.tolls.total,
+39,31,Tarragona,Pamplona,405759,13106,23.0,summary.tolls.total,
+39,32,Tarragona,Pontevedra,1066971,34062,35.15,summary.tolls.total,tollTransponder
+39,33,Tarragona,Salamanca,758573,24075,17.55,summary.tolls.total,tollTransponder
+39,34,Tarragona,San Sebastián,492283,16322,25.65,summary.tolls.total,
+39,35,Tarragona,Santander,628657,20170,41.95,summary.tolls.total,
+39,36,Tarragona,Segovia,584557,20321,0.0,summary.tolls.total,
+39,37,Tarragona,Sevilla,903628,29106,0.0,summary.tolls.total,
+39,38,Tarragona,Soria,399019,13336,0.0,summary.tolls.total,
+39,40,Tarragona,Teruel,283158,11113,0.0,summary.tolls.total,
+39,41,Tarragona,Toledo,618560,19984,5.2,summary.tolls.total,
+39,42,Tarragona,Valencia,264530,9168,0.0,summary.tolls.total,
+39,43,Tarragona,Valladolid,608948,20846,0.0,summary.tolls.total,
+39,44,Tarragona,Vitoria-Gasteiz,452613,15387,16.45,summary.tolls.total,
+39,45,Tarragona,Zamora,744872,23948,25.1,summary.tolls.total,
+39,46,Tarragona,Zaragoza,231640,7618,0.0,summary.tolls.total,
+40,0,Teruel,A Coruña,856212,28341,4.95,summary.tolls.total,tollTransponder
+40,1,Teruel,Albacete,210500,8900,0.0,summary.tolls.total,
+40,2,Teruel,Alicante,331848,10711,0.0,summary.tolls.total,
+40,3,Teruel,Almería,573105,18286,0.0,summary.tolls.total,
+40,4,Teruel,Ávila,415541,14161,17.55,summary.tolls.total,tollTransponder
+40,5,Teruel,Badajoz,703972,22785,3.65,summary.tolls.total,
+40,6,Teruel,Barcelona,427570,14518,13.45,summary.tolls.total,
+40,7,Teruel,Bilbao,448907,14792,33.95,summary.tolls.total,
+40,8,Teruel,Burgos,378006,13626,0.0,summary.tolls.total,
+40,9,Teruel,Cáceres,601434,19622,3.65,summary.tolls.total,
+40,10,Teruel,Cádiz,783093,26352,0.0,summary.tolls.total,
+40,11,Teruel,Castellón de la Plana,144621,5226,0.0,summary.tolls.total,
+40,12,Teruel,Ciudad Real,363044,12965,0.0,summary.tolls.total,
+40,13,Teruel,Córdoba,529972,18384,0.0,summary.tolls.total,
+40,14,Teruel,Cuenca,147887,6298,0.0,summary.tolls.total,
+40,15,Teruel,Girona,522355,17270,0.0,summary.tolls.total,
+40,16,Teruel,Granada,552455,18957,0.0,summary.tolls.total,
+40,17,Teruel,Guadalajara,246190,8557,0.0,summary.tolls.total,
+40,18,Teruel,Huelva,757845,25889,0.0,summary.tolls.total,
+40,19,Teruel,Huesca,247998,7894,0.0,summary.tolls.total,
+40,20,Teruel,Jaén,469541,16441,0.0,summary.tolls.total,
+40,21,Teruel,León,547850,18762,0.0,summary.tolls.total,
+40,22,Teruel,Lleida,291617,10202,0.0,summary.tolls.total,
+40,23,Teruel,Logroño,318470,10807,13.45,summary.tolls.total,
+40,24,Teruel,Lugo,764421,25554,2.5,summary.tolls.total,tollTransponder
+40,25,Teruel,Madrid,303189,10870,0.0,summary.tolls.total,
+40,26,Teruel,Málaga,673942,23100,4.3,summary.tolls.total,
+40,27,Teruel,Murcia,368152,12073,0.0,summary.tolls.total,
+40,28,Teruel,Ourense,809641,26389,22.1,summary.tolls.total,tollTransponder
+40,29,Teruel,Oviedo,665284,22693,16.2,summary.tolls.total,tollTransponder
+40,30,Teruel,Palencia,417906,14911,0.0,summary.tolls.total,
+40,31,Teruel,Pamplona,324189,11195,17.1,summary.tolls.total,
+40,32,Teruel,Pontevedra,922661,30181,27.15,summary.tolls.total,tollTransponder
+40,33,Teruel,Salamanca,519855,17126,17.55,summary.tolls.total,tollTransponder
+40,34,Teruel,San Sebastián,410713,14411,19.75,summary.tolls.total,
+40,35,Teruel,Santander,547087,18259,36.0,summary.tolls.total,
+40,36,Teruel,Segovia,396838,13517,14.0,summary.tolls.total,tollTransponder
+40,37,Teruel,Sevilla,664808,22828,0.0,summary.tolls.total,
+40,38,Teruel,Soria,233258,8478,0.0,summary.tolls.total,
+40,39,Teruel,Tarragona,282700,11122,0.0,summary.tolls.total,
+40,41,Teruel,Toledo,327887,12270,1.8,summary.tolls.total,
+40,42,Teruel,Valencia,150575,5450,0.0,summary.tolls.total,
+40,43,Teruel,Valladolid,428736,15455,0.0,summary.tolls.total,
+40,44,Teruel,Vitoria-Gasteiz,371043,13476,10.5,summary.tolls.total,
+40,45,Teruel,Zamora,558121,18478,22.1,summary.tolls.total,tollTransponder
+40,46,Teruel,Zaragoza,183145,5946,0.0,summary.tolls.total,
+41,0,Toledo,A Coruña,667919,21108,24.1,summary.tolls.total,tollTransponder
+41,1,Toledo,Albacete,250084,8300,15.95,summary.tolls.total,
+41,2,Toledo,Alicante,414286,13274,15.95,summary.tolls.total,
+41,3,Toledo,Almería,493939,16222,0.0,summary.tolls.total,
+41,4,Toledo,Ávila,133180,6004,0.0,summary.tolls.total,
+41,5,Toledo,Badajoz,364002,11717,0.0,summary.tolls.total,
+41,6,Toledo,Barcelona,686315,22474,0.0,summary.tolls.total,
+41,7,Toledo,Bilbao,470242,15711,12.4,summary.tolls.total,
+41,8,Toledo,Burgos,317186,10780,0.0,summary.tolls.total,
+41,9,Toledo,Cáceres,261464,8554,0.0,summary.tolls.total,
+41,10,Toledo,Cádiz,612999,19157,0.0,summary.tolls.total,
+41,11,Toledo,Castellón de la Plana,435067,14300,1.8,summary.tolls.total,
+41,12,Toledo,Ciudad Real,118061,4887,0.0,summary.tolls.total,
+41,13,Toledo,Córdoba,341539,11420,0.0,summary.tolls.total,
+41,14,Toledo,Cuenca,182527,6466,1.8,summary.tolls.total,
+41,15,Toledo,Girona,756194,24866,0.0,summary.tolls.total,
+41,16,Toledo,Granada,364022,11993,0.0,summary.tolls.total,
+41,17,Toledo,Guadalajara,128954,4790,0.0,summary.tolls.total,
+41,18,Toledo,Huelva,576658,17832,0.0,summary.tolls.total,
+41,19,Toledo,Huesca,452645,14912,0.0,summary.tolls.total,
+41,20,Toledo,Jaén,281108,9477,0.0,summary.tolls.total,
+41,21,Toledo,León,412601,13238,21.65,summary.tolls.total,tollTransponder
+41,22,Toledo,Lleida,531402,17325,0.0,summary.tolls.total,
+41,23,Toledo,Logroño,396772,14063,0.0,summary.tolls.total,
+41,24,Toledo,Lugo,576128,18321,21.65,summary.tolls.total,tollTransponder
+41,25,Toledo,Madrid,74609,3559,0.0,summary.tolls.total,
+41,26,Toledo,Málaga,485509,16136,4.3,summary.tolls.total,
+41,27,Toledo,Murcia,363261,12468,0.0,summary.tolls.total,
+41,28,Toledo,Ourense,579810,18673,21.65,summary.tolls.total,tollTransponder
+41,29,Toledo,Oviedo,522301,16804,37.85,summary.tolls.total,tollTransponder
+41,30,Toledo,Palencia,329978,10680,13.55,summary.tolls.total,tollTransponder
+41,31,Toledo,Pamplona,459441,15938,11.4,summary.tolls.total,
+41,32,Toledo,Pontevedra,692830,22465,26.7,summary.tolls.total,tollTransponder
+41,33,Toledo,Salamanca,236733,9262,0.0,summary.tolls.total,
+41,34,Toledo,San Sebastián,527094,17999,16.87,summary.tolls.total,
+41,35,Toledo,Santander,527112,16758,13.55,summary.tolls.total,tollTransponder
+41,36,Toledo,Segovia,167007,5801,13.55,summary.tolls.total,tollTransponder
+41,37,Toledo,Sevilla,498876,15673,0.0,summary.tolls.total,
+41,38,Toledo,Soria,296887,9889,0.0,summary.tolls.total,
+41,39,Toledo,Tarragona,611838,19755,0.0,summary.tolls.total,
+41,40,Toledo,Teruel,328345,12587,1.8,summary.tolls.total,
+41,42,Toledo,Valencia,370213,12424,1.8,summary.tolls.total,
+41,43,Toledo,Valladolid,266025,9381,21.65,summary.tolls.total,tollTransponder
+41,44,Toledo,Vitoria-Gasteiz,431098,14580,0.0,summary.tolls.total,
+41,45,Toledo,Zamora,328290,10762,21.65,summary.tolls.total,tollTransponder
+41,46,Toledo,Zaragoza,386171,12781,0.0,summary.tolls.total,
+42,0,Valencia,A Coruña,950266,30120,18.15,summary.tolls.total,violatedCarpool|tollTransponder
+42,1,Valencia,Albacete,186630,6480,0.0,summary.tolls.total,
+42,2,Valencia,Alicante,178772,6179,0.0,summary.tolls.total,
+42,3,Valencia,Almería,420009,13749,0.0,summary.tolls.total,
+42,4,Valencia,Ávila,468057,15457,11.15,summary.tolls.total,violatedCarpool|tollTransponder
+42,5,Valencia,Badajoz,655263,22312,0.0,summary.tolls.total,
+42,6,Valencia,Barcelona,354302,12297,13.45,summary.tolls.total,
+42,7,Valencia,Bilbao,592726,19575,33.95,summary.tolls.total,
+42,8,Valencia,Burgos,587546,18356,2.45,summary.tolls.total,
+42,9,Valencia,Cáceres,628618,19731,1.8,summary.tolls.total,
+42,10,Valencia,Cádiz,772269,24767,0.0,summary.tolls.total,
+42,11,Valencia,Castellón de la Plana,78903,3140,0.0,summary.tolls.total,
+42,12,Valencia,Ciudad Real,352220,11380,0.0,summary.tolls.total,
+42,13,Valencia,Córdoba,519148,16799,0.0,summary.tolls.total,
+42,14,Valencia,Cuenca,198523,7119,0.0,summary.tolls.total,
+42,15,Valencia,Girona,449087,15049,0.0,summary.tolls.total,
+42,16,Valencia,Granada,478129,15642,0.0,summary.tolls.total,
+42,17,Valencia,Guadalajara,332591,12040,0.0,summary.tolls.total,
+42,18,Valencia,Huelva,747021,24304,0.0,summary.tolls.total,
+42,19,Valencia,Huesca,391817,12677,0.0,summary.tolls.total,
+42,20,Valencia,Jaén,458717,14856,0.0,summary.tolls.total,
+42,21,Valencia,León,694948,22250,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+42,22,Valencia,Lleida,317713,11618,0.0,summary.tolls.total,
+42,23,Valencia,Logroño,462289,15590,13.45,summary.tolls.total,
+42,24,Valencia,Lugo,858475,27333,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+42,25,Valencia,Madrid,356954,11637,3.4,summary.tolls.total,
+42,26,Valencia,Málaga,608839,20004,4.3,summary.tolls.total,
+42,27,Valencia,Murcia,215056,7536,0.0,summary.tolls.total,
+42,28,Valencia,Ourense,862157,27685,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+42,29,Valencia,Oviedo,804648,25816,31.9,summary.tolls.total,violatedCarpool|tollTransponder
+42,30,Valencia,Palencia,589668,19012,2.45,summary.tolls.total,
+42,31,Valencia,Pamplona,468008,15978,17.1,summary.tolls.total,
+42,32,Valencia,Pontevedra,975177,31477,20.75,summary.tolls.total,violatedCarpool|tollTransponder
+42,33,Valencia,Salamanca,572371,18422,11.15,summary.tolls.total,violatedCarpool|tollTransponder
+42,34,Valencia,San Sebastián,554532,19194,19.75,summary.tolls.total,
+42,35,Valencia,Santander,690906,23042,36.0,summary.tolls.total,
+42,36,Valencia,Segovia,449354,14813,7.6,summary.tolls.total,violatedCarpool|tollTransponder
+42,37,Valencia,Sevilla,653984,21243,0.0,summary.tolls.total,
+42,38,Valencia,Soria,377077,13261,0.0,summary.tolls.total,
+42,39,Valencia,Tarragona,262329,8875,0.0,summary.tolls.total,
+42,40,Valencia,Teruel,150368,5334,0.0,summary.tolls.total,
+42,41,Valencia,Toledo,369889,12254,1.8,summary.tolls.total,
+42,43,Valencia,Valladolid,548372,18393,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+42,44,Valencia,Vitoria-Gasteiz,514862,18259,10.5,summary.tolls.total,
+42,45,Valencia,Zamora,610637,19774,15.7,summary.tolls.total,violatedCarpool|tollTransponder
+42,46,Valencia,Zaragoza,326964,10729,0.0,summary.tolls.total,
+43,0,Valladolid,A Coruña,440354,14205,2.45,summary.tolls.total,
+43,1,Valladolid,Albacete,453187,14640,35.85,summary.tolls.total,tollTransponder
+43,2,Valladolid,Alicante,617389,19614,35.85,summary.tolls.total,tollTransponder
+43,3,Valladolid,Almería,735546,24069,21.7,summary.tolls.total,tollTransponder
+43,4,Valladolid,Ávila,120455,5157,0.0,summary.tolls.total,
+43,5,Valladolid,Badajoz,416721,14102,0.0,summary.tolls.total,
+43,6,Valladolid,Barcelona,674340,23562,0.0,summary.tolls.total,
+43,7,Valladolid,Bilbao,279888,9535,12.4,summary.tolls.total,
+43,8,Valladolid,Burgos,127034,4617,0.0,summary.tolls.total,
+43,9,Valladolid,Cáceres,327134,10979,0.0,summary.tolls.total,
+43,10,Valladolid,Cádiz,703081,22246,0.0,summary.tolls.total,
+43,11,Valladolid,Castellón de la Plana,558004,20322,0.0,summary.tolls.total,
+43,12,Valladolid,Ciudad Real,379156,13361,21.65,summary.tolls.total,tollTransponder
+43,13,Valladolid,Córdoba,583146,19267,21.7,summary.tolls.total,tollTransponder
+43,14,Valladolid,Cuenca,361033,12615,15.7,summary.tolls.total,
+43,15,Valladolid,Girona,744219,25954,0.0,summary.tolls.total,
+43,16,Valladolid,Granada,605629,19840,21.7,summary.tolls.total,tollTransponder
+43,17,Valladolid,Guadalajara,224327,8983,0.0,summary.tolls.total,
+43,18,Valladolid,Huelva,666740,20921,0.0,summary.tolls.total,
+43,19,Valladolid,Huesca,440670,16000,0.0,summary.tolls.total,
+43,20,Valladolid,Jaén,522715,17324,21.7,summary.tolls.total,tollTransponder
+43,21,Valladolid,León,139088,5522,0.0,summary.tolls.total,
+43,22,Valladolid,Lleida,519427,18413,0.0,summary.tolls.total,
+43,23,Valladolid,Logroño,254201,8886,4.85,summary.tolls.total,
+43,24,Valladolid,Lugo,348563,11418,0.0,summary.tolls.total,
+43,25,Valladolid,Madrid,191321,7526,15.7,summary.tolls.total,
+43,26,Valladolid,Málaga,727116,23983,26.0,summary.tolls.total,tollTransponder
+43,27,Valladolid,Murcia,594037,18964,35.85,summary.tolls.total,tollTransponder
+43,28,Valladolid,Ourense,352245,11770,0.0,summary.tolls.total,
+43,29,Valladolid,Oviedo,256152,9415,16.2,summary.tolls.total,tollTransponder
+43,30,Valladolid,Palencia,48422,2144,0.0,summary.tolls.total,
+43,31,Valladolid,Pamplona,332926,11405,2.65,summary.tolls.total,
+43,32,Valladolid,Pontevedra,465265,15562,5.05,summary.tolls.total,
+43,33,Valladolid,Salamanca,121292,4491,0.0,summary.tolls.total,
+43,34,Valladolid,San Sebastián,336740,11823,16.87,summary.tolls.total,
+43,35,Valladolid,Santander,245556,8222,0.0,summary.tolls.total,
+43,36,Valladolid,Segovia,115605,4218,0.0,summary.tolls.total,
+43,37,Valladolid,Sevilla,588958,18762,0.0,summary.tolls.total,
+43,38,Valladolid,Soria,206635,8295,0.0,summary.tolls.total,
+43,39,Valladolid,Tarragona,599863,20843,0.0,summary.tolls.total,
+43,40,Valladolid,Teruel,419531,15626,0.0,summary.tolls.total,
+43,41,Valladolid,Toledo,265909,9326,21.65,summary.tolls.total,tollTransponder
+43,42,Valladolid,Valencia,548719,18573,15.7,summary.tolls.total,
+43,44,Valladolid,Vitoria-Gasteiz,240744,8404,0.0,summary.tolls.total,
+43,45,Valladolid,Zamora,100725,3859,0.0,summary.tolls.total,
+43,46,Valladolid,Zaragoza,374196,13869,0.0,summary.tolls.total,
+44,0,Vitoria-Gasteiz,A Coruña,593262,19094,4.95,summary.tolls.total,tollTransponder
+44,1,Vitoria-Gasteiz,Albacete,599102,19266,2.45,summary.tolls.total,
+44,2,Vitoria-Gasteiz,Alicante,721815,23552,16.45,summary.tolls.total,
+44,3,Vitoria-Gasteiz,Almería,899946,29211,6.0,summary.tolls.total,tollTransponder
+44,4,Vitoria-Gasteiz,Ávila,355997,12859,0.0,summary.tolls.total,
+44,5,Vitoria-Gasteiz,Badajoz,649610,21714,0.0,summary.tolls.total,
+44,6,Vitoria-Gasteiz,Barcelona,527778,17962,16.45,summary.tolls.total,
+44,7,Vitoria-Gasteiz,Bilbao,63534,2663,6.85,summary.tolls.total,
+44,8,Vitoria-Gasteiz,Burgos,115751,4405,0.0,summary.tolls.total,
+44,9,Vitoria-Gasteiz,Cáceres,560023,18591,0.0,summary.tolls.total,
+44,10,Vitoria-Gasteiz,Cádiz,935970,29858,0.0,summary.tolls.total,
+44,11,Vitoria-Gasteiz,Castellón de la Plana,534588,18067,16.45,summary.tolls.total,
+44,12,Vitoria-Gasteiz,Ciudad Real,540477,18734,0.0,summary.tolls.total,
+44,13,Vitoria-Gasteiz,Córdoba,747546,24409,6.0,summary.tolls.total,tollTransponder
+44,14,Vitoria-Gasteiz,Cuenca,510670,16648,2.45,summary.tolls.total,
+44,15,Vitoria-Gasteiz,Girona,597657,20354,16.45,summary.tolls.total,
+44,16,Vitoria-Gasteiz,Granada,770029,24982,6.0,summary.tolls.total,tollTransponder
+44,17,Vitoria-Gasteiz,Guadalajara,350959,12671,0.0,summary.tolls.total,
+44,18,Vitoria-Gasteiz,Huelva,899629,28533,0.0,summary.tolls.total,
+44,19,Vitoria-Gasteiz,Huesca,260990,10011,2.65,summary.tolls.total,
+44,20,Vitoria-Gasteiz,Jaén,687115,22466,6.0,summary.tolls.total,tollTransponder
+44,21,Vitoria-Gasteiz,León,284900,9515,0.0,summary.tolls.total,
+44,22,Vitoria-Gasteiz,Lleida,372865,12813,16.45,summary.tolls.total,
+44,23,Vitoria-Gasteiz,Logroño,62081,3389,0.0,summary.tolls.total,
+44,24,Vitoria-Gasteiz,Lugo,501471,16307,2.5,summary.tolls.total,tollTransponder
+44,25,Vitoria-Gasteiz,Madrid,353383,12230,0.0,summary.tolls.total,
+44,26,Vitoria-Gasteiz,Málaga,891516,29125,10.3,summary.tolls.total,tollTransponder
+44,27,Vitoria-Gasteiz,Murcia,739952,23590,2.45,summary.tolls.total,
+44,28,Vitoria-Gasteiz,Ourense,543119,18295,0.0,summary.tolls.total,
+44,29,Vitoria-Gasteiz,Oviedo,344222,11684,8.9,summary.tolls.total,
+44,30,Vitoria-Gasteiz,Palencia,200265,7164,0.0,summary.tolls.total,
+44,31,Vitoria-Gasteiz,Pamplona,98360,3943,2.65,summary.tolls.total,
+44,32,Vitoria-Gasteiz,Pontevedra,655713,21585,10.05,summary.tolls.total,tollTransponder
+44,33,Vitoria-Gasteiz,Salamanca,354181,12103,0.0,summary.tolls.total,
+44,34,Vitoria-Gasteiz,San Sebastián,104497,4319,16.87,summary.tolls.total,
+44,35,Vitoria-Gasteiz,Santander,161714,6130,8.9,summary.tolls.total,
+44,36,Vitoria-Gasteiz,Segovia,300113,10967,0.0,summary.tolls.total,
+44,37,Vitoria-Gasteiz,Sevilla,821847,26374,0.0,summary.tolls.total,
+44,38,Vitoria-Gasteiz,Soria,178349,7559,5.4,summary.tolls.total,
+44,39,Vitoria-Gasteiz,Tarragona,453301,15243,16.45,summary.tolls.total,
+44,40,Vitoria-Gasteiz,Teruel,396115,13371,16.45,summary.tolls.total,
+44,41,Vitoria-Gasteiz,Toledo,427649,14767,0.0,summary.tolls.total,
+44,42,Vitoria-Gasteiz,Valencia,540542,18291,16.45,summary.tolls.total,
+44,43,Vitoria-Gasteiz,Valladolid,237518,8417,0.0,summary.tolls.total,
+44,45,Vitoria-Gasteiz,Zamora,333614,11471,0.0,summary.tolls.total,
+44,46,Vitoria-Gasteiz,Zaragoza,227634,8269,16.45,summary.tolls.total,
+45,0,Zamora,A Coruña,395563,12679,2.45,summary.tolls.total,
+45,1,Zamora,Albacete,515911,15825,35.85,summary.tolls.total,tollTransponder
+45,2,Zamora,Alicante,680113,20799,35.85,summary.tolls.total,tollTransponder
+45,3,Zamora,Almería,798270,25254,21.7,summary.tolls.total,tollTransponder
+45,4,Zamora,Ávila,154584,5763,0.0,summary.tolls.total,
+45,5,Zamora,Badajoz,359201,11987,0.0,summary.tolls.total,
+45,6,Zamora,Barcelona,771007,26512,0.0,summary.tolls.total,
+45,7,Zamora,Bilbao,378108,12527,12.4,summary.tolls.total,
+45,8,Zamora,Burgos,225254,7609,0.0,summary.tolls.total,
+45,9,Zamora,Cáceres,269614,8864,0.0,summary.tolls.total,
+45,10,Zamora,Cádiz,645561,20131,0.0,summary.tolls.total,
+45,11,Zamora,Castellón de la Plana,676297,21634,15.7,summary.tolls.total,
+45,12,Zamora,Ciudad Real,441880,14546,21.65,summary.tolls.total,tollTransponder
+45,13,Zamora,Córdoba,557045,18384,0.0,summary.tolls.total,
+45,14,Zamora,Cuenca,423757,13800,15.7,summary.tolls.total,
+45,15,Zamora,Girona,840886,28904,0.0,summary.tolls.total,
+45,16,Zamora,Granada,668353,21025,21.7,summary.tolls.total,tollTransponder
+45,17,Zamora,Guadalajara,313842,10224,20.1,summary.tolls.total,
+45,18,Zamora,Huelva,609220,18806,0.0,summary.tolls.total,
+45,19,Zamora,Huesca,537337,18950,0.0,summary.tolls.total,
+45,20,Zamora,Jaén,585439,18509,21.7,summary.tolls.total,tollTransponder
+45,21,Zamora,León,140245,4809,0.0,summary.tolls.total,
+45,22,Zamora,Lleida,616094,21363,0.0,summary.tolls.total,
+45,23,Zamora,Logroño,352421,11878,4.85,summary.tolls.total,
+45,24,Zamora,Lugo,303772,9892,0.0,summary.tolls.total,
+45,25,Zamora,Madrid,254045,8711,15.7,summary.tolls.total,
+45,26,Zamora,Málaga,740730,23940,4.3,summary.tolls.total,
+45,27,Zamora,Murcia,656761,20149,35.85,summary.tolls.total,tollTransponder
+45,28,Zamora,Ourense,263020,9448,0.0,summary.tolls.total,
+45,29,Zamora,Oviedo,249945,8375,16.2,summary.tolls.total,tollTransponder
+45,30,Zamora,Palencia,146642,5136,0.0,summary.tolls.total,
+45,31,Zamora,Pamplona,431146,14397,2.65,summary.tolls.total,
+45,32,Zamora,Pontevedra,376040,13240,5.05,summary.tolls.total,
+45,33,Zamora,Salamanca,65818,2447,0.0,summary.tolls.total,
+45,34,Zamora,San Sebastián,434960,14815,16.87,summary.tolls.total,
+45,35,Zamora,Santander,343776,11214,0.0,summary.tolls.total,
+45,36,Zamora,Segovia,188361,6473,0.0,summary.tolls.total,
+45,37,Zamora,Sevilla,531438,16647,0.0,summary.tolls.total,
+45,38,Zamora,Soria,303302,11245,0.0,summary.tolls.total,
+45,39,Zamora,Tarragona,696530,23793,0.0,summary.tolls.total,
+45,40,Zamora,Teruel,558519,18234,22.1,summary.tolls.total,
+45,41,Zamora,Toledo,328633,10511,21.65,summary.tolls.total,tollTransponder
+45,42,Zamora,Valencia,611443,19758,15.7,summary.tolls.total,
+45,43,Zamora,Valladolid,100801,3717,0.0,summary.tolls.total,
+45,44,Zamora,Vitoria-Gasteiz,338964,11396,0.0,summary.tolls.total,
+45,46,Zamora,Zaragoza,470863,16819,0.0,summary.tolls.total,
+46,0,Zaragoza,A Coruña,779385,24548,30.05,summary.tolls.total,tollTransponder
+46,1,Zaragoza,Albacete,386410,14533,0.0,summary.tolls.total,
+46,2,Zaragoza,Alicante,502638,16086,0.0,summary.tolls.total,
+46,3,Zaragoza,Almería,743895,23661,0.0,summary.tolls.total,
+46,4,Zaragoza,Ávila,429124,14087,17.55,summary.tolls.total,tollTransponder
+46,5,Zaragoza,Badajoz,717555,22711,3.65,summary.tolls.total,
+46,6,Zaragoza,Barcelona,305578,10239,0.0,summary.tolls.total,
+46,7,Zaragoza,Bilbao,305342,9680,39.9,summary.tolls.total,
+46,8,Zaragoza,Burgos,301874,9859,25.1,summary.tolls.total,
+46,9,Zaragoza,Cáceres,615017,19548,3.65,summary.tolls.total,
+46,10,Zaragoza,Cádiz,966552,30151,3.65,summary.tolls.total,
+46,11,Zaragoza,Castellón de la Plana,263412,10532,0.0,summary.tolls.total,
+46,12,Zaragoza,Ciudad Real,523958,16890,11.2,summary.tolls.total,tollTransponder
+46,13,Zaragoza,Córdoba,711737,22589,11.2,summary.tolls.total,tollTransponder
+46,14,Zaragoza,Cuenca,297079,11631,0.0,summary.tolls.total,
+46,15,Zaragoza,Girona,375457,12631,0.0,summary.tolls.total,
+46,16,Zaragoza,Granada,734220,23162,11.2,summary.tolls.total,tollTransponder
+46,17,Zaragoza,Guadalajara,259773,8483,0.0,summary.tolls.total,
+46,18,Zaragoza,Huelva,930211,28826,3.65,summary.tolls.total,
+46,19,Zaragoza,Huesca,71565,2615,0.0,summary.tolls.total,
+46,20,Zaragoza,Jaén,651306,20646,11.2,summary.tolls.total,tollTransponder
+46,21,Zaragoza,León,471023,14969,25.1,summary.tolls.total,
+46,22,Zaragoza,Lleida,150665,5090,0.0,summary.tolls.total,
+46,23,Zaragoza,Logroño,174905,5695,19.35,summary.tolls.total,
+46,24,Zaragoza,Lugo,687594,21761,27.6,summary.tolls.total,tollTransponder
+46,25,Zaragoza,Madrid,316772,10796,0.0,summary.tolls.total,
+46,26,Zaragoza,Málaga,855707,27305,15.5,summary.tolls.total,tollTransponder
+46,27,Zaragoza,Murcia,538942,17448,0.0,summary.tolls.total,
+46,28,Zaragoza,Ourense,729242,23749,25.1,summary.tolls.total,
+46,29,Zaragoza,Oviedo,586030,18701,41.95,summary.tolls.total,
+46,30,Zaragoza,Palencia,386388,12618,25.1,summary.tolls.total,
+46,31,Zaragoza,Pamplona,180624,6083,23.0,summary.tolls.total,
+46,32,Zaragoza,Pontevedra,841836,27039,35.15,summary.tolls.total,tollTransponder
+46,33,Zaragoza,Salamanca,533438,17052,17.55,summary.tolls.total,tollTransponder
+46,34,Zaragoza,San Sebastián,267148,9299,25.65,summary.tolls.total,
+46,35,Zaragoza,Santander,403522,13147,41.95,summary.tolls.total,
+46,36,Zaragoza,Segovia,359422,13298,0.0,summary.tolls.total,
+46,37,Zaragoza,Sevilla,852429,26667,3.65,summary.tolls.total,
+46,38,Zaragoza,Soria,173884,6313,0.0,summary.tolls.total,
+46,39,Zaragoza,Tarragona,231101,7520,0.0,summary.tolls.total,
+46,40,Zaragoza,Teruel,176938,5905,0.0,summary.tolls.total,
+46,41,Zaragoza,Toledo,393425,12961,5.2,summary.tolls.total,
+46,42,Zaragoza,Valencia,321365,10825,0.0,summary.tolls.total,
+46,43,Zaragoza,Valladolid,383813,13823,0.0,summary.tolls.total,
+46,44,Zaragoza,Vitoria-Gasteiz,227478,8364,16.45,summary.tolls.total,
+46,45,Zaragoza,Zamora,519737,16925,25.1,summary.tolls.total,

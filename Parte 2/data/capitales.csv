@@ -1,0 +1,48 @@
+id,capital,nombre_oficial_INE,cod_municipio_INE,cod_provincia_INE,geonameid,lat,lon,osrm_calle_ajuste,osrm_dist_ajuste_m
+0,A Coruña,"Coruña, A",15030,15,3119841,43.37135,-8.396,Praza do Marqués de San Martín,51.7
+1,Albacete,Albacete,02003,02,2522258,38.99424,-1.85643,Calle Carnicerías,56.6
+2,Alicante,Alacant/Alicante,03014,03,2521978,38.34517,-0.48149,Carrer de Rafael Altamira / Carrer de María Josefa Ágreda y Muñoz,36.4
+3,Almería,Almería,04013,04,2521886,36.83814,-2.45974,Avenida de la Estación,16.9
+4,Ávila,Ávila,05019,05,3129136,40.65724,-4.69951,Calle López Núñez,12.4
+5,Badajoz,Badajoz,06015,06,2521420,38.87789,-6.97061,Calle Obispo San Juan de Ribera,18.9
+6,Barcelona,Barcelona,08019,08,3128760,41.38879,2.15899,Carrer d'Aribau,9.8
+7,Bilbao,Bilbao,48020,48,3128026,43.26271,-2.92528,Ibañez de Bilbao kalea,20.4
+8,Burgos,Burgos,09059,09,3127461,42.34106,-3.70184,Calle Laín Calvo / Calle Cardenal Segura,85.2
+9,Cáceres,Cáceres,10037,10,2520611,39.47649,-6.37224,Calle Valdés,1.6
+10,Cádiz,Cádiz,11012,11,2520600,36.52672,-6.2891,Avenida Cuesta de las Calesas,1.3
+11,Castellón de la Plana,Castelló de la Plana/Castellón de la Plana,12040,12,2519752,39.98567,-0.04935,,1.3
+12,Ciudad Real,Ciudad Real,13034,13,2519402,38.98626,-3.92907,Paseo del Prado / Calle del Camarín,154.4
+13,Córdoba,Córdoba,14021,14,2519240,37.89155,-4.77275,Calle Muro de la Misericordia,7.7
+14,Cuenca,Cuenca,16078,16,3124132,40.06667,-2.13333,,19.2
+15,Girona,Girona,17079,17,3121456,41.98311,2.82493,Plaça del Vi / Carrer dels Ciutadans,19.7
+16,Granada,Granada,18087,18,2517117,37.18817,-3.60667,Calle Doctor Guirao Gea,37.8
+17,Guadalajara,Guadalajara,19130,19,3121070,40.62862,-3.16185,Calle de Francisco Medina,1.9
+18,Huelva,Huelva,21041,21,2516548,37.26638,-6.94004,Plaza de Toledo,16.4
+19,Huesca,Huesca,22125,22,3120514,42.13615,-0.4087,,19.4
+20,Jaén,Jaén,23050,23,2516395,37.76922,-3.79028,Plaza de los Jardinillos,6.4
+21,León,León,24089,24,3118532,42.60003,-5.57032,Avenida de Ramón y Cajal,102.1
+22,Lleida,Lleida,25120,25,3118514,41.61674,0.62218,Carrer de Sant Carles,6.7
+23,Logroño,Logroño,26089,26,3118150,42.46615,-2.45115,Plaza Fuente Murrieta,15.6
+24,Lugo,Lugo,27028,27,3117814,43.00992,-7.55602,Rúa Alcalde Anxo López Pérez,171.3
+25,Madrid,Madrid,28079,28,3117735,40.4165,-3.70256,Calle de la Cruz,121.4
+26,Málaga,Málaga,29067,29,2514256,36.72016,-4.42034,,126.3
+27,Murcia,Murcia,30030,30,2513416,37.98704,-1.13004,Calle Echegaray / Plaza de Julián Romea,19
+28,Ourense,Ourense,32054,32,3114965,42.33669,-7.86407,Rúa Irmáns Villar,5.5
+29,Oviedo,Oviedo,33044,33,3114711,43.36029,-5.84476,Calle Postigo Alto,105.7
+30,Palencia,Palencia,34120,34,3114531,42.00955,-4.52406,,15.7
+31,Pamplona,Pamplona/Iruña,31201,31,3114472,42.81687,-1.64323,Gazteluko plaza,17.1
+32,Pontevedra,Pontevedra,36038,36,3113209,42.431,-8.64435,Rúa de García Camba,126.2
+33,Salamanca,Salamanca,37274,37,3111108,40.96882,-5.66388,Calle Reyes Católicos,39.7
+34,San Sebastián,Donostia/San Sebastián,20069,20,3110044,43.31283,-1.97499,Loiolako Erribera pasealekua,113.2
+35,Santander,Santander,39075,39,3109718,43.46589,-3.80493,Calle del Río de la Pila,1.1
+36,Segovia,Segovia,40194,40,3109256,40.94808,-4.11839,Avenida del Acueducto,40.7
+37,Sevilla,Sevilla,41091,41,2510911,37.38283,-5.97317,Glorieta Edward Johnston,9.6
+38,Soria,Soria,42173,42,3108681,41.76401,-2.46883,Plaza Mariano Granados,12.5
+39,Tarragona,Tarragona,43148,43,3108288,41.11905,1.24544,Plaça de la Imperial Tarraco,38
+40,Teruel,Teruel,44216,44,3108126,40.3456,-1.10646,,1.7
+41,Toledo,Toledo,45168,45,2510409,39.8581,-4.02263,Calle de las Tornerías,4.1
+42,Valencia,València,46250,46,2509954,39.47391,-0.37966,Plaça de la Ciutat de Bruges,7.7
+43,Valladolid,Valladolid,47186,47,3106672,41.65541,-4.72353,Calle de San Martín,0.7
+44,Vitoria-Gasteiz,Vitoria-Gasteiz,01059,01,3104499,42.84998,-2.67268,Santa Maria kalea,6.7
+45,Zamora,Zamora,49275,49,3104342,41.50633,-5.74456,Calle del Doctor Carracido,3.5
+46,Zaragoza,Zaragoza,50297,50,3104324,41.65606,-0.87734,Paseo de Echegaray y Caballero,59.6

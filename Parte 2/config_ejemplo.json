@@ -1,0 +1,7 @@
+{
+ "valor_hora_eur": 15,
+ "consumo_l_100km": 5.5,
+ "precio_eur_l": 1.849,
+ "vehiculo": "POR DEFINIR (marca, modelo, version, combustible, ficha IDAE y fecha)",
+ "_nota": "valor_hora y consumo son valores de EJEMPLO, no datos. precio_eur_l = gasolina 95, Weekly Oil Bulletin, datos al 2026-10-05."
+}
