@@ -160,3 +160,4 @@ def grad_desc_num(x0, f_obj, max_iter=50, learning_rate=0.01, tolerancia=0.00001
         if cambio < tolerancia:
             break
     return x
+
