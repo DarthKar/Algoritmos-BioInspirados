@@ -122,6 +122,10 @@ def crear_animacion(
             f"Mejor costo: {costo:,.2f} euros"
         )
 
+        if indice == (len(rutas)//intervalo)*intervalo+len(rutas)%intervalo-1:
+                direccion_png = "outputs/Recorrido_ACO_" + version+".png"
+                plt.savefig(direccion_png)
+
         return linea, info
 
     animacion = FuncAnimation(
@@ -165,42 +169,6 @@ def crear_animacion(
 
     plt.close(fig)
 
-def exportar_animacion(espana, ubicaciones, optimizer, best):
-    fig, ax = plt.subplots(figsize=(11, 9))
-
-    espana.plot(
-    ax=ax,
-    color="#e8efe3",
-    edgecolor="#52665b"
-    )
-
-    ax.scatter(
-    ubicaciones[:, 0],
-    ubicaciones[:, 1],
-    color="#173d68",
-    s=22,
-    zorder=5
-    )
-
-    ruta_final = ubicaciones[optimizer.best_path]
-
-    ax.plot(
-    ruta_final[:, 0],
-    ruta_final[:, 1],
-    color="red",
-    linewidth=1.6
-)
-
-    ax.set_xlim(-10, 4.5)
-    ax.set_ylim(35.5, 44.5)
-    ax.set_aspect("equal")
-
-    ax.set_title(
-    f"Mejor recorrido encontrado - {best:.2f} euros"
-    )
-
-    ax.grid(alpha=0.15)
-
 def main():
     mpl.rcParams["animation.ffmpeg_path"] = (
         imageio_ffmpeg.get_ffmpeg_exe()
@@ -223,7 +191,7 @@ def main():
 )
 
     optimizer = AntColonyOptimizer(
-    ants=40,
+    ants=100,
     evaporation_rate=0.05,
     intensification=2,
     alpha=2,
@@ -263,13 +231,6 @@ def main():
         a.version,
         intervalo=5,
         fps=5
-    )
-
-    exportar_animacion(
-        espana,
-        ubicaciones,
-        optimizer,
-        best
     )
 
 if __name__ == "__main__":
