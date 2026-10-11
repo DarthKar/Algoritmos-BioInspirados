@@ -1,3 +1,15 @@
+"""Ejecuta el algoritmo de Colonia de Hormigas dadas la cantidad de agentes (hormigas) del algoritmo
+   y el precio del valor de la hora del conductor, los cuales se deben ingresar al programa como argumentos.
+   También el consumo homologado del vehículo y el precio del litro de gasolina se pueden ingresar
+   aunque tienen valores asignados por defecto.
+   El programa creará un archivo json en la carpeta outputs con el recorrido óptimo encontrado,
+   su costo y el valor de la hora utilizado, además de una imagen de dicho mejor recorrido y un
+   gif y video mp4 mostrando la evolución del recorrido. Dichos archivos se nombrarán con un sufijo
+   ingresado al programe mediante un argumento llamado version.
+
+Ejemplo:
+    python Parte_2/scripts/colonia_de_hormigas.py --valor-hora 15 --consumo 5.5 --precio 1.849 --hormigas 100 --version 0001
+"""
 
 import os
 import argparse
@@ -13,6 +25,7 @@ from costos import matriz_costos, leer_peajes, leer_capitales
 import imageio_ffmpeg
 import matplotlib as mpl
 
+import json
 
 # =====================================
 # CREAR ANIMACIÓN
@@ -122,6 +135,10 @@ def crear_animacion(
             f"Mejor costo: {costo:,.2f} euros"
         )
 
+        if indice == (len(rutas)//intervalo)*intervalo+len(rutas)%intervalo-1:
+                direccion_png = "outputs/Recorrido_ACO_" + version+".png"
+                plt.savefig(direccion_png)
+
         return linea, info
 
     animacion = FuncAnimation(
@@ -165,42 +182,6 @@ def crear_animacion(
 
     plt.close(fig)
 
-def exportar_animacion(espana, ubicaciones, optimizer, best):
-    fig, ax = plt.subplots(figsize=(11, 9))
-
-    espana.plot(
-    ax=ax,
-    color="#e8efe3",
-    edgecolor="#52665b"
-    )
-
-    ax.scatter(
-    ubicaciones[:, 0],
-    ubicaciones[:, 1],
-    color="#173d68",
-    s=22,
-    zorder=5
-    )
-
-    ruta_final = ubicaciones[optimizer.best_path]
-
-    ax.plot(
-    ruta_final[:, 0],
-    ruta_final[:, 1],
-    color="red",
-    linewidth=1.6
-)
-
-    ax.set_xlim(-10, 4.5)
-    ax.set_ylim(35.5, 44.5)
-    ax.set_aspect("equal")
-
-    ax.set_title(
-    f"Mejor recorrido encontrado - {best:.2f} euros"
-    )
-
-    ax.grid(alpha=0.15)
-
 def main():
     mpl.rcParams["animation.ffmpeg_path"] = (
         imageio_ffmpeg.get_ffmpeg_exe()
@@ -209,9 +190,10 @@ def main():
     ap = argparse.ArgumentParser()
 
     ap.add_argument("--valor-hora", type=float, required=True, help="EUR por hora del vendedor")
-    ap.add_argument("--consumo", type=float, required=True, help="L/100 km (WLTP del vehículo elegido)")
-    ap.add_argument("--precio", type=float, required=True, help="EUR por litro del combustible")
-    ap.add_argument("--version", type=str, required=False)
+    ap.add_argument("--consumo", type=float, default=5.5, help="L/100 km (WLTP del vehículo elegido)")
+    ap.add_argument("--precio", type=float, default=1.849, help="EUR por litro del combustible")
+    ap.add_argument("--hormigas", type=int, default=40, help="Cantidad de hormigas")
+    ap.add_argument("--version", type=str, required=True, help="Iteración del algoritmo")
 
     a = ap.parse_args()
 
@@ -223,7 +205,7 @@ def main():
 )
 
     optimizer = AntColonyOptimizer(
-    ants=40,
+    ants=a.hormigas,
     evaporation_rate=0.05,
     intensification=2,
     alpha=2,
@@ -241,9 +223,20 @@ def main():
     iterations=500
     )
 
-    print(f"Mejor costo encontrado: {best:.2f} euros")
+    print(f"Mejor costo encontrado: {best:.2f} euros\n")
 
+    mejor_ruta = ", ".join(list(map(lambda x: nombres[x], optimizer.historial_rutas[-1])))
 
+    resultados = {
+         "Mejor costo": best,
+         "Valor de la hora": a.valor_hora,
+         "Mejor ruta": mejor_ruta
+    }
+
+    direccion_json="outputs/resultados_"+a.version+".json"
+
+    with open(direccion_json, "w", encoding="utf-8") as archivo:
+        json.dump(resultados, archivo, indent=4, ensure_ascii=False)
 
 #Cargar mapa de España
 
@@ -263,13 +256,6 @@ def main():
         a.version,
         intervalo=5,
         fps=5
-    )
-
-    exportar_animacion(
-        espana,
-        ubicaciones,
-        optimizer,
-        best
     )
 
 if __name__ == "__main__":
