@@ -276,3 +276,355 @@ def historial_fitness(puntos, f=rastrigin):
     return np.array([f(p) for p in puntos])
 
 
+# ---------------------------------------------------------------
+# 3. Algoritmo evolutivo
+# ---------------------------------------------------------------
+
+def pob_inicial(N=30, d=5, LB=None, UB=None):
+    """Genera una población inicial aleatoria dentro de los límites dados.
+
+    X_ij = r_ij * (UB_j - LB_j) + LB_j, con r_ij en [0, 1).
+
+    Crea N individuos con d variables escalando números uniformes a los
+    límites. No evalúa la calidad de los individuos.
+
+    Parámetros
+    ----------
+    N : int
+        Número de individuos.
+    d : int
+        Número de variables por individuo.
+    LB : array_like o None, forma (d,) o escalar
+        Límite inferior. Si es None, se usa -1.
+    UB : array_like o None, forma (d,) o escalar
+        Límite superior. Si es None, se usa 1.
+
+    Retorna
+    -------
+    numpy.ndarray, forma (N, d)
+        Población inicial; cada fila es un individuo.
+
+    Notas
+    -----
+    Requiere numpy como np. Usa el generador global np.random. No se valida
+    que LB sea menor que UB.
+    """
+    if LB is None:
+        LB = -np.ones(d)
+    if UB is None:
+        UB = np.ones(d)
+
+    return np.random.rand(N, d) * (UB - LB) + LB
+
+
+def pob_eval(Pob, f_obj):
+    """Evalúa y ordena una población de menor a mayor valor de f_obj.
+
+    Parámetros
+    ----------
+    Pob : numpy.ndarray, forma (m, n)
+        Población de m individuos con n variables.
+    f_obj : callable
+        Recibe un individuo de forma (n,) y devuelve un escalar.
+
+    Retorna
+    -------
+    tuple de (numpy.ndarray, numpy.ndarray)
+        Población ordenada, forma (m, n), y fitness ordenado, forma (m,).
+        El menor fitness es mejor.
+
+    Notas
+    -----
+    Requiere numpy como np. No modifica la población recibida. f_obj se
+    llama fila por fila.
+    """
+    Pob = Pob.copy()
+    fitness_val = np.zeros(Pob.shape[0])
+
+    for i in range(Pob.shape[0]):
+        fitness_val[i] = f_obj(Pob[i, :])
+
+    ranking = np.argsort(fitness_val)
+    return Pob[ranking], fitness_val[ranking]
+
+
+def calcular_conteos(N, fr_elitismo, fr_mutacion):
+    """Calcula cuántos individuos produce cada operador por generación.
+
+    n_mutacion = floor(N*fr_mutacion)
+    n_cruce    = 2*floor(N*(1 - fr_elitismo - fr_mutacion)/2)
+    n_elite    = N - n_mutacion - n_cruce
+
+    El conteo de cruce es siempre par, porque los individuos se cruzan por
+    pares. Los élites absorben el resto, de modo que la suma siempre es N.
+
+    Parámetros
+    ----------
+    N : int
+        Tamaño de la población.
+    fr_elitismo : float
+        Fracción nominal de élites.
+    fr_mutacion : float
+        Fracción de mutantes.
+
+    Retorna
+    -------
+    tuple de (int, int, int)
+        (n_elite, n_cruce, n_mutacion).
+
+    Notas
+    -----
+    Requiere numpy como np. Si fr_elitismo + fr_mutacion > 1, n_cruce es
+    negativo y las funciones posteriores fallan. No se validan las fracciones.
+    """
+    n_mutacion = int(np.floor(N * fr_mutacion))
+    n_cruce = int(2 * np.floor(N * (1 - fr_elitismo - fr_mutacion) / 2))
+    n_elite = N - n_mutacion - n_cruce
+    return n_elite, n_cruce, n_mutacion
+
+
+def elitismo(Pob, n_elite):
+    """Conserva como élite las primeras filas de la población.
+
+    Parámetros
+    ----------
+    Pob : numpy.ndarray, forma (N, d)
+        Población ordenada de mejor a peor.
+    n_elite : int
+        Número de individuos a conservar.
+
+    Retorna
+    -------
+    numpy.ndarray, forma (n_elite, d)
+        Copia de las primeras n_elite filas.
+
+    Notas
+    -----
+    No ordena la población: se espera que ya venga ordenada por fitness.
+    Con n_elite = 0 retorna un arreglo de forma (0, d).
+    """
+    return Pob[:n_elite, :].copy()
+
+
+def cruzamiento(Pob_cruce):
+    """Genera descendientes por cruce en un punto entre pares de individuos.
+
+    La fila i se cruza con la fila i + n//2. Con un punto de corte pt:
+    hijo1 = padre_i[:pt] + padre_j[pt:], hijo2 = padre_j[:pt] + padre_i[pt:].
+
+    Parámetros
+    ----------
+    Pob_cruce : numpy.ndarray, forma (n, d)
+        Individuos seleccionados para cruce (n debería ser par).
+
+    Retorna
+    -------
+    numpy.ndarray, forma (n, d)
+        Descendientes. Si n es impar, la última fila queda en ceros.
+
+    Notas
+    -----
+    Requiere numpy como np. El punto de corte se sortea entre 1 y d-1, por lo
+    que ningún hijo es copia exacta de un padre. Con d = 1 el corte es 0 y
+    solo se intercambian los padres. Con n = 0 retorna forma (0, d).
+    """
+    Pob_cruce = Pob_cruce.copy()
+    n_row, n_col = Pob_cruce.shape
+    Pob_hijos = np.zeros_like(Pob_cruce)
+    mitad = n_row // 2
+
+    for i in range(mitad):
+        pt = np.random.randint(1, n_col) if n_col > 1 else 0
+
+        Pob_hijos[i, :] = np.concatenate(
+            (Pob_cruce[i, :pt], Pob_cruce[i + mitad, pt:])
+        )
+        Pob_hijos[i + mitad, :] = np.concatenate(
+            (Pob_cruce[i + mitad, :pt], Pob_cruce[i, pt:])
+        )
+
+    return Pob_hijos
+
+
+def mutacion(Pob, id_mutantes=None, coord_mut=None, LB=None, UB=None):
+    """Reemplaza una coordenada de cada individuo seleccionado por un valor uniforme.
+
+    Parámetros
+    ----------
+    Pob : numpy.ndarray, forma (n, d)
+        Población de n individuos con d variables.
+    id_mutantes : array_like de int, forma (k,), opcional
+        Índices de las filas a mutar. Por defecto, todas.
+    coord_mut : array_like de int, forma (n,), opcional
+        Coordenada a mutar por cada fila de Pob. Por defecto, aleatoria.
+    LB : array_like, forma (d,)
+        Límites inferiores.
+    UB : array_like, forma (d,)
+        Límites superiores.
+
+    Retorna
+    -------
+    numpy.ndarray, forma (k, d)
+        Copia de las filas indicadas con una coordenada mutada.
+
+    Notas
+    -----
+    Requiere numpy como np. LB y UB son obligatorios aunque tengan None por
+    defecto. No modifica Pob. Si hay índices repetidos en id_mutantes,
+    cada repetición comparte la misma coordenada mutada.
+    """
+    Pob = Pob.copy()
+    n_row, n_col = Pob.shape
+
+    if id_mutantes is None:
+        id_mutantes = np.arange(n_row)
+    if coord_mut is None:
+        coord_mut = np.random.randint(0, n_col, size=n_row)
+
+    for i in id_mutantes:
+        c = coord_mut[i]
+        Pob[i, c] = np.random.rand() * (UB[c] - LB[c]) + LB[c]
+
+    return Pob[id_mutantes, :]
+
+
+def next_gen(Pob, fr_elitismo=0.2, fr_mutacion=0.1, LB=None, UB=None):
+    """Construye la siguiente generación con élites, cruces y mutantes.
+
+    Parámetros
+    ----------
+    Pob : numpy.ndarray, forma (N, d)
+        Población ordenada de mejor a peor.
+    fr_elitismo : float
+        Fracción nominal de élites.
+    fr_mutacion : float
+        Fracción de mutantes.
+    LB : array_like, forma (d,)
+        Límites inferiores, requeridos por mutacion.
+    UB : array_like, forma (d,)
+        Límites superiores, requeridos por mutacion.
+
+    Retorna
+    -------
+    numpy.ndarray, forma (N, d)
+        Nueva población (sin evaluar): élites, descendientes y mutantes.
+
+    Notas
+    -----
+    Requiere numpy como np y las funciones calcular_conteos, elitismo,
+    cruzamiento y mutacion. Los padres se eligen sin reemplazo de toda la
+    población. Los mutantes se eligen con reemplazo entre las N filas. Si
+    n_cruce > N o es negativo (fracciones inválidas), falla.
+    """
+    N = Pob.shape[0]
+    n_elite, n_cruce, n_mutacion = calcular_conteos(N, fr_elitismo, fr_mutacion)
+
+    # Élites
+    Pob_elite = elitismo(Pob, n_elite)
+
+    # Descendientes
+    idx_cruce = np.random.choice(N, size=n_cruce, replace=False)
+    Pob_cruce = cruzamiento(Pob[idx_cruce, :])
+
+    # Mutantes (índices de FILA)
+    id_mutantes = np.random.randint(0, N, size=n_mutacion)
+    Pob_mutante = mutacion(Pob, id_mutantes=id_mutantes, LB=LB, UB=UB)
+
+    return np.concatenate((Pob_elite, Pob_cruce, Pob_mutante), axis=0)
+
+
+def actualizar_mejor(Pob, fitness, best_sol, best_fit):
+    """Actualiza el mejor individuo registrado si el actual lo supera.
+
+    Parámetros
+    ----------
+    Pob : numpy.ndarray, forma (N, d)
+        Población ordenada de mejor a peor.
+    fitness : numpy.ndarray, forma (N,)
+        Fitness ordenado de menor a mayor.
+    best_sol : numpy.ndarray, forma (d,)
+        Mejor individuo registrado hasta ahora.
+    best_fit : float
+        Fitness de best_sol (menor es mejor).
+
+    Retorna
+    -------
+    tuple de (numpy.ndarray, float)
+        Mejor individuo (forma (d,)) y su fitness tras la comparación.
+
+    Notas
+    -----
+    Solo compara fitness[0], por lo que exige que la población ya esté
+    ordenada (como la devuelve pob_eval). Guarda una copia de Pob[0].
+    """
+    if fitness[0] < best_fit:
+        return Pob[0].copy(), fitness[0]
+    return best_sol, best_fit
+
+
+def mi_algoritmo_evolutivo(f_obj, d, LB=-5.12, UB=5.12, N=50, max_gen=200,
+                           fr_elitismo=0.1, fr_mutacion=0.2):
+    """Minimiza una función objetivo con un algoritmo evolutivo de codificación real.
+
+    Por generación: next_gen -> pob_eval -> actualizar_mejor.
+
+    Genera una población inicial uniforme en [LB, UB], la evalúa y en cada
+    generación crea la siguiente con élites, cruce en un punto y mutación.
+    Todas las poblaciones creadas se evalúan, incluida la última. Sirve como
+    línea base de un algoritmo genético en benchmarks como Rastrigin.
+
+    Parámetros
+    ----------
+    f_obj : callable
+        Recibe un individuo de forma (d,) y devuelve un escalar (menor es
+        mejor). Se llama fila por fila.
+    d : int
+        Número de variables por individuo.
+    LB : float o array_like, forma (d,)
+        Límite inferior (por defecto -5.12).
+    UB : float o array_like, forma (d,)
+        Límite superior (por defecto 5.12).
+    N : int
+        Tamaño de la población (por defecto 50).
+    max_gen : int
+        Número de generaciones (por defecto 200).
+    fr_elitismo : float
+        Fracción nominal de élites (por defecto 0.1).
+    fr_mutacion : float
+        Fracción de mutantes (por defecto 0.2). El resto se genera por cruce.
+
+    Retorna
+    -------
+    best_sol : numpy.ndarray, forma (d,)
+        Mejor individuo encontrado.
+    best_fit : float
+        Valor de f_obj en best_sol (menor es mejor).
+    historial : numpy.ndarray, forma (max_gen + 1,)
+        Mejor fitness tras la población inicial y tras cada generación.
+        Es monótono no creciente.
+
+    Notas
+    -----
+    Requiere numpy como np y las funciones pob_inicial, pob_eval, next_gen y
+    actualizar_mejor. Usa np.random global (reproducible con np.random.seed).
+    LB y UB se convierten a arreglos de forma (d,). f_obj se evalúa
+    N*(max_gen + 1) veces. No se validan las fracciones. Con max_gen = 0
+    devuelve el mejor de la población inicial.
+    """
+    LB = np.broadcast_to(np.asarray(LB, dtype=float), (d,)).copy()
+    UB = np.broadcast_to(np.asarray(UB, dtype=float), (d,)).copy()
+
+    Pob = pob_inicial(N, d, LB, UB)
+    Pob, fitness = pob_eval(Pob, f_obj)
+
+    best_sol, best_fit = Pob[0].copy(), fitness[0]
+    historial = np.zeros(max_gen + 1)
+    historial[0] = best_fit
+
+    for gen in range(max_gen):
+        Pob = next_gen(Pob, fr_elitismo, fr_mutacion, LB, UB)
+        Pob, fitness = pob_eval(Pob, f_obj)
+        best_sol, best_fit = actualizar_mejor(Pob, fitness, best_sol, best_fit)
+        historial[gen + 1] = best_fit
+
+    return best_sol, best_fit, historial
