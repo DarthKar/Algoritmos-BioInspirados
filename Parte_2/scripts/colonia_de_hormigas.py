@@ -37,6 +37,10 @@ import matplotlib as mpl
 
 import json
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # =====================================
 # CREAR ANIMACIÓN
 # =====================================
@@ -193,6 +197,13 @@ def crear_animacion(
     plt.close(fig)
 
 def main():
+
+    random_seed = os.environ.get("ACO_RANDOM_SEED")
+    if not random_seed:
+        sys.exit("Falta la variable de entorno ACO_RANDOM_SEED")
+
+    np.random.seed(int(random_seed))
+
     mpl.rcParams["animation.ffmpeg_path"] = (
         imageio_ffmpeg.get_ffmpeg_exe()
     )
