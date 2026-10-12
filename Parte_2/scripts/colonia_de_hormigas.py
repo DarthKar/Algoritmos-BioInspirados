@@ -17,7 +17,8 @@
    gif y video mp4 mostrando la evolución del recorrido. Dichos archivos se nombrarán con un sufijo
    ingresado al programe mediante un argumento llamado version.
 
-Ejemplo:
+Ejemplos:
+    python Parte_2/scripts/colonia_de_hormigas.py --valor-hora 25 --version 0030
     python Parte_2/scripts/colonia_de_hormigas.py --valor-hora 25 --consumo 5.5 --precio 1.849 --hormigas 100 --intensificacion 1.9 --alfa 2.1 --beta 0.9 --beta-evaporacion 0 --p-mejor 0.09 --version 0030
 """
 
