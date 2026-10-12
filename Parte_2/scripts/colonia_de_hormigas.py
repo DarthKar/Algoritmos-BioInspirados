@@ -193,6 +193,12 @@ def main():
     ap.add_argument("--consumo", type=float, default=5.5, help="L/100 km (WLTP del vehículo elegido)")
     ap.add_argument("--precio", type=float, default=1.849, help="EUR por litro del combustible")
     ap.add_argument("--hormigas", type=int, default=40, help="Cantidad de hormigas")
+    ap.add_argument("--evaporacion", type=float, default=0.05, help="Tasa de evaporación de feromonas")
+    ap.add_argument("--intensificacion", type=float, default=2, help="Intensificación de feromonas")
+    ap.add_argument("--alfa", type=float, default=2, help="Importancia de las feromonas")
+    ap.add_argument("--beta", type=float, default=1, help="Importancia de la heurística")
+    ap.add_argument("--beta-evaporacion", type=float, default=0, help="Tasa de evaporación beta")
+    ap.add_argument("--p-mejor", type=float, default=0.1, help="Probabilidad de que una hormiga elija el camino de mayor peso")
     ap.add_argument("--version", type=str, required=True, help="Iteración del algoritmo")
 
     a = ap.parse_args()
@@ -206,12 +212,12 @@ def main():
 
     optimizer = AntColonyOptimizer(
     ants=a.hormigas,
-    evaporation_rate=0.05,
-    intensification=2,
-    alpha=2,
-    beta=1,
-    beta_evaporation_rate=0,
-    choose_best=0.1
+    evaporation_rate=a.evaporacion,
+    intensification=a.intensificacion,
+    alpha=a.alfa,
+    beta=a.beta,
+    beta_evaporation_rate=a.beta_evaporacion,
+    choose_best=a.p_mejor
     )
 
     os.makedirs("outputs", exist_ok=True)
