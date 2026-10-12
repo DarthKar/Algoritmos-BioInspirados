@@ -357,6 +357,7 @@ El modelo de costos aplicado al problema de las 47 capitales peninsulares, la in
 | `estado_vias_peaje_2026.csv` | Estado 2026 de cada vía (vigente, liberada, verificar) con fuente | Ver columna fuente | 2026-10-10 |
 | `combustible.csv` | Precio medio en España con impuestos | Comisión Europea, Weekly Oil Bulletin (datos al 2026-10-05) | 2026-10-10 |
 | `here_peaje.csv` | Información de peajes por arco dirigido de una pareja de ciudades | Obtenido de la API HERE mediante el módulo obtener_peajes_here | 2026-10-10 |
+| `espana.geojson` | Contorno de España (lon, lat) para dibujar el mapa sin conexión a internet | Natural Earth, Admin 0 Countries 1:50m (dominio público), entidad `ADMIN = Spain` de https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson, coordenadas redondeadas a 5 decimales | 2026-10-12 |
 Fila = origen, columna = destino. `[i, j]` puede ser distinto de `[j, i]`.
 
 ## En caso de querer actualizar los datos de peaje
@@ -383,4 +384,30 @@ python Parte_2/scripts/costos.py --valor-hora 15 --consumo 5.5 --precio 1.849   
 python Parte_2/scripts/obtener_osrm.py --comparar                                # vuelve a consultar OSRM y compara
 python Parte_2/scripts/obtener_peajes_here.py --modo peaje --limite 3            # prueba con 3 arcos
 python Parte_2/scripts/colonia_de_hormigas.py --valor-hora 25 --hormigas 100 --intensificacion 1.9 --alfa 2.1 --beta 0.9 --beta-evaporacion 0 --p-mejor 0.09 --version 0030--version 0001
+python Parte_2/scripts/algoritmo_genetico.py --valor-hora 15 --version 0001        # algoritmo genético con los valores por defecto
+```
+
+## Algoritmo genético
+
+`algoritmo_genetico.py` guarda en `outputs/` los archivos `resultados_GA_<version>.json`, `Recorrido_GA_<version>.png` y `Evolucion_GA_<version>.gif`. Con la misma semilla y los mismos parámetros el resultado se repite.
+
+| Argumento | Por defecto | Significado |
+|---|---|---|
+| `--valor-hora` | obligatorio | EUR por hora del vendedor |
+| `--consumo` | 5.5 | L/100 km del vehículo |
+| `--precio` | 1.849 | EUR por litro de combustible |
+| `--poblacion` | 100 | Tamaño de la población |
+| `--generaciones` | 1500 | Número de generaciones |
+| `--padres` | 50 | Padres seleccionados por generación (torneo) |
+| `--elite` | 2 | Mejores individuos que pasan sin cambios |
+| `--k-torneo` | 3 | Tamaño del torneo |
+| `--cruce` | ox | `ox` o `pmx` |
+| `--mutacion` | inversion | `inversion`, `insercion` o `swap` |
+| `--p-mutacion` | 0.3 | Probabilidad de que un hijo mute |
+| `--semilla` | 0 | Semilla aleatoria |
+| `--sin-gif` | | No genera el GIF (solo JSON y PNG) |
+| `--version` | obligatorio | Sufijo de los archivos de salida |
+
+```bash
+python Parte_2/scripts/algoritmo_genetico.py --valor-hora 25 --poblacion 200 --generaciones 800 --cruce pmx --mutacion insercion --p-mutacion 0.5 --semilla 7 --version 0002
 ```
