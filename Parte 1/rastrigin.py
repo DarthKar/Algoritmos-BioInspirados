@@ -1,14 +1,28 @@
+"""
+Optimización de la función de Rastrigin con cuatro métodos:
+
+    1. Descenso por gradiente (gradiente analítico)
+    2. Descenso por gradiente (gradiente numérico)
+    3. Algoritmo evolutivo
+    4. Optimización por Enjambre de Partículas (PSO)
+
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 
-# --- Configuración del problema (función de Rastrigin) ---
-LB, UB = -5.12, 5.12  # Límites inferior y superior del dominio de búsqueda por variable
-A = 10                # Constante de Rastrigin: controla la profundidad de los mínimos locales
+
+# =====================================================================
+# 0. CONFIGURACIÓN DEL PROBLEMA
+# =====================================================================
+
+LB, UB = -5.12, 5.12  # Límites inferior y superior del dominio por variable
+A = 10                # Constante de Rastrigin: profundidad de los mínimos locales
 
 
-# ---------------------------------------------------------------
-# Función objetivo y su gradiente
-# ---------------------------------------------------------------
+# =====================================================================
+# 1. FUNCIÓN OBJETIVO Y SU GRADIENTE
+# =====================================================================
 
 def rastrigin(X):
     """
@@ -69,9 +83,13 @@ def rastrigin_grad(x):
     return 2 * x + 2 * np.pi * A * np.sin(2 * np.pi * x)
 
 
-# ---------------------------------------------------------------
-# 1. Descenso por gradiente con gradiente analítico
-# ---------------------------------------------------------------
+# =====================================================================
+# 2. DESCENSO POR GRADIENTE
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# 2.1 Con gradiente analítico
+# ---------------------------------------------------------------------
 
 def grad_desc(x0, grad_func, max_iter=250, learning_rate=0.002, tolerancia=1e-5,
               limites=None):
@@ -127,9 +145,9 @@ def grad_desc(x0, grad_func, max_iter=250, learning_rate=0.002, tolerancia=1e-5,
     return iteraciones
 
 
-# ---------------------------------------------------------------
-# 2. Descenso por gradiente con gradiente numérico
-# ---------------------------------------------------------------
+# ---------------------------------------------------------------------
+# 2.2 Con gradiente numérico
+# ---------------------------------------------------------------------
 
 def dif_marginal(x, f, i=0, h=0.001):
     """
@@ -252,9 +270,9 @@ def grad_desc_num(x0, f_obj, max_iter=250, learning_rate=0.002, tolerancia=1e-5,
     return x
 
 
-# ---------------------------------------------------------------
-# Utilidad: historial de la función objetivo a lo largo del recorrido
-# ---------------------------------------------------------------
+# ---------------------------------------------------------------------
+# 2.3 Utilidad: historial de la función objetivo en un recorrido
+# ---------------------------------------------------------------------
 
 def historial_fitness(puntos, f=rastrigin):
     """
@@ -276,9 +294,9 @@ def historial_fitness(puntos, f=rastrigin):
     return np.array([f(p) for p in puntos])
 
 
-# ---------------------------------------------------------------
-# 3. Algoritmo evolutivo
-# ---------------------------------------------------------------
+# =====================================================================
+# 3. ALGORITMO EVOLUTIVO
+# =====================================================================
 
 def pob_inicial(N=30, d=5, LB=None, UB=None):
     """Genera una población inicial aleatoria dentro de los límites dados.
@@ -286,12 +304,13 @@ def pob_inicial(N=30, d=5, LB=None, UB=None):
     X_ij = r_ij * (UB_j - LB_j) + LB_j, con r_ij en [0, 1).
 
     Crea N individuos con d variables escalando números uniformes a los
-    límites. No evalúa la calidad de los individuos.
+    límites. No evalúa la calidad de los individuos. También se usa en PSO
+    para generar las posiciones iniciales de las partículas.
 
     Parámetros
     ----------
     N : int
-        Número de individuos.
+        Número de individuos (o partículas).
     d : int
         Número de variables por individuo.
     LB : array_like o None, forma (d,) o escalar
@@ -628,3 +647,298 @@ def mi_algoritmo_evolutivo(f_obj, d, LB=-5.12, UB=5.12, N=50, max_gen=200,
         historial[gen + 1] = best_fit
 
     return best_sol, best_fit, historial
+
+
+# =====================================================================
+# 4. OPTIMIZACIÓN POR ENJAMBRE DE PARTÍCULAS (PSO)
+# =====================================================================
+
+def vel_inicial(N, d, v_max):
+    """Genera velocidades iniciales aleatorias dentro de [-v_max, v_max].
+
+    Parámetros
+    ----------
+    N : int
+        Número de partículas.
+    d : int
+        Número de variables por partícula.
+    v_max : array_like, forma (d,)
+        Velocidad máxima permitida en cada coordenada.
+
+    Retorna
+    -------
+    numpy.ndarray, forma (N, d)
+        Velocidades iniciales; cada fila corresponde a una partícula.
+
+    Notas
+    -----
+    Requiere numpy como np. Usa el generador global np.random.
+    """
+    return (2 * np.random.rand(N, d) - 1) * v_max
+
+
+def evaluar_enjambre(Pob, f_obj):
+    """Evalúa un enjambre sin reordenarlo.
+
+    A diferencia de pob_eval (algoritmo evolutivo), aquí el orden de las
+    filas importa: la fila i es siempre la partícula i y su pbest vive en
+    la misma fila, por eso no se ordena.
+
+    Parámetros
+    ----------
+    Pob : numpy.ndarray, forma (N, d)
+        Posiciones de N partículas con d variables.
+    f_obj : callable
+        Recibe una partícula de forma (d,) y devuelve un escalar.
+
+    Retorna
+    -------
+    numpy.ndarray, forma (N,)
+        Fitness de cada partícula. El menor fitness es mejor.
+
+    Notas
+    -----
+    Requiere numpy como np. No modifica la población recibida. f_obj se
+    llama fila por fila.
+    """
+    fitness_val = np.zeros(Pob.shape[0])
+
+    for i in range(Pob.shape[0]):
+        fitness_val[i] = f_obj(Pob[i, :])
+
+    return fitness_val
+
+
+def actualizar_velocidad(vel, pos, pbest_pos, gbest_pos, w, c1, c2, v_max):
+    """Calcula la nueva velocidad de cada partícula.
+
+    V = w*V + c1*r1*(pbest - X) + c2*r2*(gbest - X), con r1, r2 en [0, 1).
+
+    Los tres términos son inercia, componente cognitivo (hacia el mejor
+    punto propio) y componente social (hacia el mejor punto del enjambre).
+    Al final se acota la velocidad a [-v_max, v_max].
+
+    Parámetros
+    ----------
+    vel : numpy.ndarray, forma (N, d)
+        Velocidades actuales.
+    pos : numpy.ndarray, forma (N, d)
+        Posiciones actuales.
+    pbest_pos : numpy.ndarray, forma (N, d)
+        Mejor posición histórica de cada partícula.
+    gbest_pos : numpy.ndarray, forma (d,)
+        Mejor posición histórica del enjambre.
+    w : float
+        Coeficiente de inercia.
+    c1 : float
+        Coeficiente cognitivo.
+    c2 : float
+        Coeficiente social.
+    v_max : array_like, forma (d,)
+        Velocidad máxima permitida en cada coordenada.
+
+    Retorna
+    -------
+    numpy.ndarray, forma (N, d)
+        Nuevas velocidades.
+
+    Notas
+    -----
+    Requiere numpy como np. Usa el generador global np.random. No modifica
+    los arreglos recibidos. r1 y r2 se sortean por partícula y coordenada.
+    """
+    N, d = pos.shape
+    r1 = np.random.rand(N, d)
+    r2 = np.random.rand(N, d)
+
+    vel_nueva = (w * vel
+                 + c1 * r1 * (pbest_pos - pos)
+                 + c2 * r2 * (gbest_pos - pos))
+
+    return np.clip(vel_nueva, -v_max, v_max)
+
+
+def actualizar_posicion(pos, vel, LB, UB):
+    """Mueve las partículas y las mantiene dentro de los límites.
+
+    X = clip(X + V, LB, UB)
+
+    Parámetros
+    ----------
+    pos : numpy.ndarray, forma (N, d)
+        Posiciones actuales.
+    vel : numpy.ndarray, forma (N, d)
+        Velocidades ya calculadas.
+    LB : array_like, forma (d,)
+        Límites inferiores.
+    UB : array_like, forma (d,)
+        Límites superiores.
+
+    Retorna
+    -------
+    numpy.ndarray, forma (N, d)
+        Nuevas posiciones, dentro de [LB, UB].
+
+    Notas
+    -----
+    Requiere numpy como np. No modifica los arreglos recibidos. Las
+    partículas que chocan con la frontera se quedan en ella; su velocidad
+    no se reinicia.
+    """
+    return np.clip(pos + vel, LB, UB)
+
+
+def actualizar_pbest(pos, fitness, pbest_pos, pbest_fit):
+    """Actualiza la mejor posición histórica de cada partícula.
+
+    Una partícula reemplaza su pbest solo si su fitness actual es
+    estrictamente menor que el registrado.
+
+    Parámetros
+    ----------
+    pos : numpy.ndarray, forma (N, d)
+        Posiciones actuales.
+    fitness : numpy.ndarray, forma (N,)
+        Fitness de las posiciones actuales.
+    pbest_pos : numpy.ndarray, forma (N, d)
+        Mejores posiciones registradas hasta ahora.
+    pbest_fit : numpy.ndarray, forma (N,)
+        Fitness de pbest_pos.
+
+    Retorna
+    -------
+    tuple de (numpy.ndarray, numpy.ndarray)
+        pbest_pos de forma (N, d) y pbest_fit de forma (N,) actualizados.
+
+    Notas
+    -----
+    No modifica los arreglos recibidos: trabaja sobre copias. Las filas de
+    pos y de pbest_pos deben corresponder a la misma partícula.
+    """
+    pbest_pos = pbest_pos.copy()
+    pbest_fit = pbest_fit.copy()
+
+    mejora = fitness < pbest_fit
+    pbest_pos[mejora] = pos[mejora]
+    pbest_fit[mejora] = fitness[mejora]
+
+    return pbest_pos, pbest_fit
+
+
+def actualizar_gbest(pbest_pos, pbest_fit, gbest_pos, gbest_fit):
+    """Actualiza el mejor individuo global del enjambre.
+
+    Parámetros
+    ----------
+    pbest_pos : numpy.ndarray, forma (N, d)
+        Mejores posiciones individuales.
+    pbest_fit : numpy.ndarray, forma (N,)
+        Fitness de pbest_pos.
+    gbest_pos : numpy.ndarray, forma (d,)
+        Mejor posición global registrada hasta ahora.
+    gbest_fit : float
+        Fitness de gbest_pos (menor es mejor).
+
+    Retorna
+    -------
+    tuple de (numpy.ndarray, float)
+        Mejor posición global (forma (d,)) y su fitness tras la comparación.
+
+    Notas
+    -----
+    Requiere numpy como np. Guarda una copia de la fila ganadora. Solo
+    reemplaza si la mejora es estricta.
+    """
+    idx = np.argmin(pbest_fit)
+
+    if pbest_fit[idx] < gbest_fit:
+        return pbest_pos[idx].copy(), pbest_fit[idx]
+    return gbest_pos, gbest_fit
+
+
+def mi_pso(f_obj, d, LB=-5.12, UB=5.12, N=40, max_iter=200,
+           w=0.7, c1=1.5, c2=1.5, frac_vmax=0.2):
+    """Minimiza una función objetivo con Optimización por Enjambre de Partículas.
+
+    Por iteración: actualizar_velocidad -> actualizar_posicion ->
+    evaluar_enjambre -> actualizar_pbest -> actualizar_gbest.
+
+    Genera un enjambre uniforme en [LB, UB], lo evalúa y en cada iteración
+    mueve las partículas según inercia, memoria propia e información del
+    grupo. Sirve como contraparte de mi_algoritmo_evolutivo en benchmarks
+    como Rastrigin.
+
+    Parámetros
+    ----------
+    f_obj : callable
+        Recibe una partícula de forma (d,) y devuelve un escalar (menor es
+        mejor). Se llama fila por fila.
+    d : int
+        Número de variables por partícula.
+    LB : float o array_like, forma (d,)
+        Límite inferior (por defecto -5.12).
+    UB : float o array_like, forma (d,)
+        Límite superior (por defecto 5.12).
+    N : int
+        Tamaño del enjambre (por defecto 40).
+    max_iter : int
+        Número de iteraciones (por defecto 200).
+    w : float
+        Coeficiente de inercia (por defecto 0.7).
+    c1 : float
+        Coeficiente cognitivo (por defecto 1.5).
+    c2 : float
+        Coeficiente social (por defecto 1.5).
+    frac_vmax : float
+        Fracción del rango (UB - LB) usada como velocidad máxima
+        (por defecto 0.2).
+
+    Retorna
+    -------
+    gbest_pos : numpy.ndarray, forma (d,)
+        Mejor posición encontrada.
+    gbest_fit : float
+        Valor de f_obj en gbest_pos (menor es mejor).
+    historial : numpy.ndarray, forma (max_iter + 1,)
+        Mejor fitness tras el enjambre inicial y tras cada iteración.
+        Es monótono no creciente.
+
+    Notas
+    -----
+    Requiere numpy como np y las funciones pob_inicial, vel_inicial,
+    evaluar_enjambre, actualizar_velocidad, actualizar_posicion,
+    actualizar_pbest y actualizar_gbest. Usa np.random global (reproducible
+    con np.random.seed). LB y UB se convierten a arreglos de forma (d,).
+    f_obj se evalúa N*(max_iter + 1) veces. Con max_iter = 0 devuelve la
+    mejor partícula del enjambre inicial.
+    """
+    LB = np.broadcast_to(np.asarray(LB, dtype=float), (d,)).copy()
+    UB = np.broadcast_to(np.asarray(UB, dtype=float), (d,)).copy()
+    v_max = frac_vmax * (UB - LB)
+
+    # Enjambre inicial
+    pos = pob_inicial(N, d, LB, UB)
+    vel = vel_inicial(N, d, v_max)
+    fitness = evaluar_enjambre(pos, f_obj)
+
+    # Memoria individual y global
+    pbest_pos, pbest_fit = pos.copy(), fitness.copy()
+    idx = np.argmin(pbest_fit)
+    gbest_pos, gbest_fit = pbest_pos[idx].copy(), pbest_fit[idx]
+
+    historial = np.zeros(max_iter + 1)
+    historial[0] = gbest_fit
+
+    for t in range(max_iter):
+        vel = actualizar_velocidad(vel, pos, pbest_pos, gbest_pos,
+                                   w, c1, c2, v_max)
+        pos = actualizar_posicion(pos, vel, LB, UB)
+        fitness = evaluar_enjambre(pos, f_obj)
+
+        pbest_pos, pbest_fit = actualizar_pbest(pos, fitness,
+                                                pbest_pos, pbest_fit)
+        gbest_pos, gbest_fit = actualizar_gbest(pbest_pos, pbest_fit,
+                                                gbest_pos, gbest_fit)
+        historial[t + 1] = gbest_fit
+
+    return gbest_pos, gbest_fit, historial
