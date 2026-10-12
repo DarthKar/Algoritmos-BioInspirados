@@ -32,13 +32,10 @@ def leer_matriz(nombre):
 
 
 def leer_peajes(n, archivo="here_peaje.csv"):
-    """Matriz de peajes en EUR. Si todavía no existe el archivo de HERE, devuelve None."""
-    ruta = DATA / archivo
-    if not ruta.exists():
-        return None
+    """Matriz de peajes en EUR (HERE Routing, peaje_eur[i, j] del arco i -> j)."""
     P = np.full((n, n), np.nan)
     np.fill_diagonal(P, 0.0)
-    with open(ruta, encoding="utf-8") as f:
+    with open(DATA / archivo, encoding="utf-8") as f:
         for r in csv.DictReader(f):
             if r["peaje_eur"] not in ("", "None"):
                 P[int(r["i"]), int(r["j"])] = float(r["peaje_eur"])
@@ -47,12 +44,9 @@ def leer_peajes(n, archivo="here_peaje.csv"):
     return P
 
 
-def matriz_costos(valor_hora, consumo_l_100km, precio_eur_l, peajes=None):
+def matriz_costos(valor_hora, consumo_l_100km, precio_eur_l, peajes):
     km = leer_matriz("osrm_distancia_m.csv") / 1000.0
     horas = leer_matriz("osrm_tiempo_s.csv") / 3600.0
-    n = km.shape[0]
-    if peajes is None:
-        peajes = np.zeros((n, n))   # SOLO para desarrollo: sin peajes reales el costo está subestimado
     combustible = km / 100.0 * consumo_l_100km * precio_eur_l
     C = valor_hora * horas + peajes + combustible
     np.fill_diagonal(C, 0.0)
@@ -74,7 +68,7 @@ if __name__ == "__main__":
     nombres, _ = leer_capitales()
     P = leer_peajes(len(nombres))
     C, partes = matriz_costos(a.valor_hora, a.consumo, a.precio, P)
-    print("Peajes:", "HERE" if P is not None else "NO CARGADOS (0 EUR, solo desarrollo)")
+    print("Peajes HERE (EUR): total", round(float(P.sum()), 2), "| arcos con peaje:", int((P > 0).sum()), "de", P.size - len(nombres))
     print("Matriz de costos", C.shape, "| asimetría máx (EUR):", round(float(np.abs(C - C.T).max()), 2))
     print("Tour 0,1,...,46 en orden de id:", round(costo_tour(C, range(len(nombres))), 2), "EUR")
 
