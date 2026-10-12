@@ -1,95 +1,29 @@
 """
-Optimización de la función de Rastrigin con cuatro métodos:
+Algoritmos de optimización numérica y metaheurística (versión canónica):
 
     1. Descenso por gradiente (gradiente analítico)
     2. Descenso por gradiente (gradiente numérico)
-    3. Algoritmo evolutivo
+    3. Algoritmo evolutivo (mutación uniforme o gaussiana)
     4. Optimización por Enjambre de Partículas (PSO)
     5. Evolución diferencial (DE)
+    6. Visualización: mapa de contorno y GIF animado de la búsqueda
 
+Las funciones objetivo (Rastrigin, Schwefel, ...), sus gradientes y sus
+dominios se definen fuera de este módulo: aquí se reciben como argumentos
+(f_obj, grad_func, LB, UB).
 """
 
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt                        # dibuja los cuadros de la animación
+from matplotlib.animation import FuncAnimation, PillowWriter  # arma la animación y la guarda como GIF
 
 
 # =====================================================================
-# 0. CONFIGURACIÓN DEL PROBLEMA
-# =====================================================================
-
-LB, UB = -5.12, 5.12  # Límites inferior y superior del dominio por variable
-A = 10                # Constante de Rastrigin: profundidad de los mínimos locales
-
-
-# =====================================================================
-# 1. FUNCIÓN OBJETIVO Y SU GRADIENTE
-# =====================================================================
-
-def rastrigin(X):
-    """
-    Evalúa la función de Rastrigin, usada como benchmark de optimización.
-
-    Fórmula:
-        f(x) = A*n + sum(x_i**2 - A*cos(2*pi*x_i))
-
-    Es una función multimodal con muchos mínimos locales y un único
-    mínimo global en x = (0, ..., 0), donde f(x) = 0. El dominio de
-    búsqueda habitual es [-5.12, 5.12] en cada variable.
-
-    Parámetros
-    ----------
-    X : array_like, forma (n,) o (m, n)
-        Un individuo con n variables, o una población de m individuos.
-
-    Retorna
-    -------
-    float o numpy.ndarray de forma (m,)
-        Valor de la función para cada individuo (menor es mejor).
-        Devuelve un escalar si se evalúa un solo individuo.
-
-    Notas
-    -----
-    Usa la constante global A (normalmente A = 10), que debe estar
-    definida antes de llamar a la función.
-    """
-    X = np.atleast_2d(X)  # Transforma X en un arreglo de al menos 2 dimensiones
-
-    f = A * X.shape[1] + np.sum(X**2 - A * np.cos(2 * np.pi * X), axis=1)
-
-    return f if f.size > 1 else f[0]
-
-
-def rastrigin_grad(x):
-    """
-    Gradiente analítico de la función de Rastrigin.
-
-    Fórmula (componente i):
-        df/dx_i = 2*x_i + 2*pi*A*sin(2*pi*x_i)
-
-    Parámetros
-    ----------
-    x : array_like, forma (n,)
-        Punto en el que se evalúa el gradiente.
-
-    Retorna
-    -------
-    numpy.ndarray, forma (n,)
-        Gradiente de Rastrigin en x.
-
-    Notas
-    -----
-    Usa la constante global A. Requiere `import numpy as np`.
-    """
-    x = np.asarray(x, dtype=float)
-    return 2 * x + 2 * np.pi * A * np.sin(2 * np.pi * x)
-
-
-# =====================================================================
-# 2. DESCENSO POR GRADIENTE
+# 1. DESCENSO POR GRADIENTE
 # =====================================================================
 
 # ---------------------------------------------------------------------
-# 2.1 Con gradiente analítico
+# 1.1 Con gradiente analítico
 # ---------------------------------------------------------------------
 
 def grad_desc(x0, grad_func, max_iter=250, learning_rate=0.002, tolerancia=1e-5,
@@ -147,7 +81,7 @@ def grad_desc(x0, grad_func, max_iter=250, learning_rate=0.002, tolerancia=1e-5,
 
 
 # ---------------------------------------------------------------------
-# 2.2 Con gradiente numérico
+# 1.2 Con gradiente numérico
 # ---------------------------------------------------------------------
 
 def dif_marginal(x, f, i=0, h=0.001):
@@ -272,10 +206,10 @@ def grad_desc_num(x0, f_obj, max_iter=250, learning_rate=0.002, tolerancia=1e-5,
 
 
 # ---------------------------------------------------------------------
-# 2.3 Utilidad: historial de la función objetivo en un recorrido
+# 1.3 Utilidad: historial de la función objetivo en un recorrido
 # ---------------------------------------------------------------------
 
-def historial_fitness(puntos, f=rastrigin):
+def historial_fitness(puntos, f):
     """
     Evalúa f en cada punto visitado por un descenso.
 
@@ -283,8 +217,8 @@ def historial_fitness(puntos, f=rastrigin):
     ----------
     puntos : list de numpy.ndarray, cada uno de forma (n,)
         Puntos devueltos por grad_desc o grad_desc_num.
-    f : callable, opcional
-        Función objetivo. Por defecto rastrigin.
+    f : callable
+        Función objetivo.
 
     Retorna
     -------
@@ -296,7 +230,7 @@ def historial_fitness(puntos, f=rastrigin):
 
 
 # =====================================================================
-# 3. ALGORITMO EVOLUTIVO
+# 2. ALGORITMO EVOLUTIVO
 # =====================================================================
 
 def pob_inicial(N=30, d=5, LB=None, UB=None):
@@ -508,7 +442,87 @@ def mutacion(Pob, id_mutantes=None, coord_mut=None, LB=None, UB=None):
     return Pob[id_mutantes, :]
 
 
-def next_gen(Pob, fr_elitismo=0.2, fr_mutacion=0.1, LB=None, UB=None):
+def mutacion_gaussiana(Poblacion, frac_m, lim_inf, lim_sup):
+    """
+    Aplica mutación gaussiana a una coordenada de cada individuo seleccionado.
+
+    x'_ij = clip(x_ij + z*sigma_j, lim_inf[j], lim_sup[j]), z ~ N(0, 1)
+
+    Operador estocástico de variación para poblaciones en optimización. Cada
+    individuo seleccionado recibe una perturbación en una sola coordenada; su
+    desviación estándar es la desviación de esa coordenada en la población.
+
+    Parámetros
+    ----------
+    Poblacion : numpy.ndarray, forma (n, m)
+        Población de n individuos con m coordenadas.
+    frac_m : float
+        Fracción de individuos que se seleccionará para mutación.
+    lim_inf : array_like, forma (m,)
+        Límites inferiores por coordenada.
+    lim_sup : array_like, forma (m,)
+        Límites superiores por coordenada.
+
+    Retorna
+    -------
+    numpy.ndarray, forma (n_mutantes, m)
+        Copia de los individuos seleccionados con una coordenada mutada y
+        recortada a sus límites; no incluye los individuos no seleccionados.
+
+    Notas
+    -----
+    Requiere NumPy importado como np. n_mutantes = int(n * frac_m); debe estar
+    entre 0 y n para que la selección sin reemplazo sea válida. Si n_mutantes
+    es 0, retorna un arreglo vacío de forma (0, m). Las desviaciones estándar
+    se calculan sobre Poblacion con ddof=0. Los límites deben poder indexarse
+    por coordenada.
+    """
+    Poblacion_mutada = Poblacion.copy()
+
+    n, m = Poblacion.shape
+
+    n_mutantes = int(n * frac_m)
+
+    indices_mutantes = np.random.choice(
+        n,
+        n_mutantes,
+        replace=False
+    )
+
+    posicion_coordenada = np.random.choice(
+        m,
+        n_mutantes,
+        replace=True
+    )
+
+    desv_est = Poblacion.std(axis=0)
+
+    desviaciones = desv_est[posicion_coordenada]
+
+    desviacion_a_sumar = (
+        np.random.standard_normal(n_mutantes)
+        * desviaciones
+    )
+
+    nuevos_valores = (
+        Poblacion[indices_mutantes, posicion_coordenada]
+        + desviacion_a_sumar
+    )
+
+    Poblacion_mutada[
+        indices_mutantes,
+        posicion_coordenada
+    ] = np.clip(
+        nuevos_valores,
+        lim_inf[posicion_coordenada],
+        lim_sup[posicion_coordenada]
+    )
+
+    return Poblacion_mutada[indices_mutantes, :]
+
+
+def next_gen(Pob, fr_elitismo=0.2, fr_mutacion=0.1, LB=None, UB=None,
+             tipo_mutacion="uniforme"):
     """Construye la siguiente generación con élites, cruces y mutantes.
 
     Parámetros
@@ -523,6 +537,8 @@ def next_gen(Pob, fr_elitismo=0.2, fr_mutacion=0.1, LB=None, UB=None):
         Límites inferiores, requeridos por mutacion.
     UB : array_like, forma (d,)
         Límites superiores, requeridos por mutacion.
+    tipo_mutacion : str
+        "uniforme" (usa mutacion) o "gaussiana" (usa mutacion_gaussiana).
 
     Retorna
     -------
@@ -532,10 +548,14 @@ def next_gen(Pob, fr_elitismo=0.2, fr_mutacion=0.1, LB=None, UB=None):
     Notas
     -----
     Requiere numpy como np y las funciones calcular_conteos, elitismo,
-    cruzamiento y mutacion. Los padres se eligen sin reemplazo de toda la
-    población. Los mutantes se eligen con reemplazo entre las N filas. Si
-    n_cruce > N o es negativo (fracciones inválidas), falla.
+    cruzamiento, mutacion y mutacion_gaussiana. Los padres se eligen sin
+    reemplazo de toda la población. Con mutación uniforme los mutantes se
+    eligen con reemplazo entre las N filas; con la gaussiana, sin reemplazo.
+    Si n_cruce > N o es negativo (fracciones inválidas), falla.
     """
+    if tipo_mutacion not in ("uniforme", "gaussiana"):
+        raise ValueError("tipo_mutacion debe ser 'uniforme' o 'gaussiana'.")
+
     N = Pob.shape[0]
     n_elite, n_cruce, n_mutacion = calcular_conteos(N, fr_elitismo, fr_mutacion)
 
@@ -546,9 +566,13 @@ def next_gen(Pob, fr_elitismo=0.2, fr_mutacion=0.1, LB=None, UB=None):
     idx_cruce = np.random.choice(N, size=n_cruce, replace=False)
     Pob_cruce = cruzamiento(Pob[idx_cruce, :])
 
-    # Mutantes (índices de FILA)
-    id_mutantes = np.random.randint(0, N, size=n_mutacion)
-    Pob_mutante = mutacion(Pob, id_mutantes=id_mutantes, LB=LB, UB=UB)
+    # Mutantes
+    if tipo_mutacion == "uniforme":
+        # Índices de FILA
+        id_mutantes = np.random.randint(0, N, size=n_mutacion)
+        Pob_mutante = mutacion(Pob, id_mutantes=id_mutantes, LB=LB, UB=UB)
+    else:
+        Pob_mutante = mutacion_gaussiana(Pob, fr_mutacion, LB, UB)
 
     return np.concatenate((Pob_elite, Pob_cruce, Pob_mutante), axis=0)
 
@@ -582,8 +606,10 @@ def actualizar_mejor(Pob, fitness, best_sol, best_fit):
     return best_sol, best_fit
 
 
-def mi_algoritmo_evolutivo(f_obj, d, LB=-5.12, UB=5.12, N=50, max_gen=200,
-                           fr_elitismo=0.1, fr_mutacion=0.2):
+def mi_algoritmo_evolutivo(f_obj, d, LB, UB, N=50, max_gen=200,
+                           fr_elitismo=0.1, fr_mutacion=0.2,
+                           tipo_mutacion="uniforme", semilla=None,
+                           guardar_poblaciones=False):
     """Minimiza una función objetivo con un algoritmo evolutivo de codificación real.
 
     Por generación: next_gen -> pob_eval -> actualizar_mejor.
@@ -601,9 +627,9 @@ def mi_algoritmo_evolutivo(f_obj, d, LB=-5.12, UB=5.12, N=50, max_gen=200,
     d : int
         Número de variables por individuo.
     LB : float o array_like, forma (d,)
-        Límite inferior (por defecto -5.12).
+        Límite inferior.
     UB : float o array_like, forma (d,)
-        Límite superior (por defecto 5.12).
+        Límite superior.
     N : int
         Tamaño de la población (por defecto 50).
     max_gen : int
@@ -612,6 +638,13 @@ def mi_algoritmo_evolutivo(f_obj, d, LB=-5.12, UB=5.12, N=50, max_gen=200,
         Fracción nominal de élites (por defecto 0.1).
     fr_mutacion : float
         Fracción de mutantes (por defecto 0.2). El resto se genera por cruce.
+    tipo_mutacion : str
+        "uniforme" (por defecto) o "gaussiana"; ver next_gen.
+    semilla : int o None
+        Si no es None, se fija con np.random.seed antes de iniciar.
+    guardar_poblaciones : bool
+        Si es True, retorna además las poblaciones de cada generación
+        (por ejemplo, para animaciones). Por defecto False.
 
     Retorna
     -------
@@ -622,15 +655,21 @@ def mi_algoritmo_evolutivo(f_obj, d, LB=-5.12, UB=5.12, N=50, max_gen=200,
     historial : numpy.ndarray, forma (max_gen + 1,)
         Mejor fitness tras la población inicial y tras cada generación.
         Es monótono no creciente.
+    poblaciones : list de numpy.ndarray, cada uno de forma (N, d)
+        Solo si guardar_poblaciones es True. Población ordenada inicial y
+        de cada generación (max_gen + 1 arreglos).
 
     Notas
     -----
     Requiere numpy como np y las funciones pob_inicial, pob_eval, next_gen y
-    actualizar_mejor. Usa np.random global (reproducible con np.random.seed).
-    LB y UB se convierten a arreglos de forma (d,). f_obj se evalúa
-    N*(max_gen + 1) veces. No se validan las fracciones. Con max_gen = 0
-    devuelve el mejor de la población inicial.
+    actualizar_mejor. Usa np.random global (reproducible con `semilla` o con
+    np.random.seed). LB y UB se convierten a arreglos de forma (d,). f_obj se
+    evalúa N*(max_gen + 1) veces. No se validan las fracciones. Con
+    max_gen = 0 devuelve el mejor de la población inicial.
     """
+    if semilla is not None:
+        np.random.seed(semilla)
+
     LB = np.broadcast_to(np.asarray(LB, dtype=float), (d,)).copy()
     UB = np.broadcast_to(np.asarray(UB, dtype=float), (d,)).copy()
 
@@ -640,18 +679,23 @@ def mi_algoritmo_evolutivo(f_obj, d, LB=-5.12, UB=5.12, N=50, max_gen=200,
     best_sol, best_fit = Pob[0].copy(), fitness[0]
     historial = np.zeros(max_gen + 1)
     historial[0] = best_fit
+    poblaciones = [Pob] if guardar_poblaciones else None
 
     for gen in range(max_gen):
-        Pob = next_gen(Pob, fr_elitismo, fr_mutacion, LB, UB)
+        Pob = next_gen(Pob, fr_elitismo, fr_mutacion, LB, UB, tipo_mutacion)
         Pob, fitness = pob_eval(Pob, f_obj)
         best_sol, best_fit = actualizar_mejor(Pob, fitness, best_sol, best_fit)
         historial[gen + 1] = best_fit
+        if guardar_poblaciones:
+            poblaciones.append(Pob)
 
+    if guardar_poblaciones:
+        return best_sol, best_fit, historial, poblaciones
     return best_sol, best_fit, historial
 
 
 # =====================================================================
-# 4. OPTIMIZACIÓN POR ENJAMBRE DE PARTÍCULAS (PSO)
+# 3. OPTIMIZACIÓN POR ENJAMBRE DE PARTÍCULAS (PSO)
 # =====================================================================
 
 def vel_inicial(N, d, v_max):
@@ -857,8 +901,8 @@ def actualizar_gbest(pbest_pos, pbest_fit, gbest_pos, gbest_fit):
     return gbest_pos, gbest_fit
 
 
-def mi_pso(f_obj, d, LB=-5.12, UB=5.12, N=40, max_iter=200,
-           w=0.7, c1=1.5, c2=1.5, frac_vmax=0.2):
+def mi_pso(f_obj, d, LB, UB, N=40, max_iter=200,
+           w=0.7, c1=1.5, c2=1.5, frac_vmax=0.2, guardar_poblaciones=False):
     """Minimiza una función objetivo con Optimización por Enjambre de Partículas.
 
     Por iteración: actualizar_velocidad -> actualizar_posicion ->
@@ -877,9 +921,9 @@ def mi_pso(f_obj, d, LB=-5.12, UB=5.12, N=40, max_iter=200,
     d : int
         Número de variables por partícula.
     LB : float o array_like, forma (d,)
-        Límite inferior (por defecto -5.12).
+        Límite inferior.
     UB : float o array_like, forma (d,)
-        Límite superior (por defecto 5.12).
+        Límite superior.
     N : int
         Tamaño del enjambre (por defecto 40).
     max_iter : int
@@ -893,6 +937,9 @@ def mi_pso(f_obj, d, LB=-5.12, UB=5.12, N=40, max_iter=200,
     frac_vmax : float
         Fracción del rango (UB - LB) usada como velocidad máxima
         (por defecto 0.2).
+    guardar_poblaciones : bool
+        Si es True, retorna además las posiciones del enjambre en cada
+        iteración (por ejemplo, para animaciones). Por defecto False.
 
     Retorna
     -------
@@ -903,6 +950,9 @@ def mi_pso(f_obj, d, LB=-5.12, UB=5.12, N=40, max_iter=200,
     historial : numpy.ndarray, forma (max_iter + 1,)
         Mejor fitness tras el enjambre inicial y tras cada iteración.
         Es monótono no creciente.
+    poblaciones : list de numpy.ndarray, cada uno de forma (N, d)
+        Solo si guardar_poblaciones es True. Posiciones del enjambre inicial
+        y tras cada iteración (max_iter + 1 arreglos).
 
     Notas
     -----
@@ -929,6 +979,7 @@ def mi_pso(f_obj, d, LB=-5.12, UB=5.12, N=40, max_iter=200,
 
     historial = np.zeros(max_iter + 1)
     historial[0] = gbest_fit
+    poblaciones = [pos.copy()] if guardar_poblaciones else None
 
     for t in range(max_iter):
         vel = actualizar_velocidad(vel, pos, pbest_pos, gbest_pos,
@@ -941,24 +992,29 @@ def mi_pso(f_obj, d, LB=-5.12, UB=5.12, N=40, max_iter=200,
         gbest_pos, gbest_fit = actualizar_gbest(pbest_pos, pbest_fit,
                                                 gbest_pos, gbest_fit)
         historial[t + 1] = gbest_fit
+        if guardar_poblaciones:
+            poblaciones.append(pos.copy())
 
+    if guardar_poblaciones:
+        return gbest_pos, gbest_fit, historial, poblaciones
     return gbest_pos, gbest_fit, historial
 
 
 # =====================================================================
-# 5. EVOLUCIÓN DIFERENCIAL (DE)
+# 4. EVOLUCIÓN DIFERENCIAL (DE)
 # =====================================================================
 
 def evolucion_diferencial(
     f_obj,
     d,
-    LB=-5.12,
-    UB=5.12,
+    LB,
+    UB,
     N=50,
     max_gen=200,
     F=0.8,
     CR=0.9,
-    semilla=None
+    semilla=None,
+    guardar_poblaciones=False
 ):
     """
     Minimiza una función mediante Evolución Diferencial (DE/rand/1/bin).
@@ -986,6 +1042,9 @@ def evolucion_diferencial(
         Probabilidad de cruce, entre 0 y 1.
     semilla : int o None
         Semilla para reproducir la ejecución.
+    guardar_poblaciones : bool
+        Si es True, retorna además la población de cada generación
+        (por ejemplo, para animaciones). Por defecto False.
 
     Retorna
     -------
@@ -995,6 +1054,9 @@ def evolucion_diferencial(
         Valor de la función en la mejor solución.
     historial : numpy.ndarray, forma (max_gen + 1,)
         Mejor fitness de la población inicial y de cada generación.
+    poblaciones : list de numpy.ndarray, cada uno de forma (N, d)
+        Solo si guardar_poblaciones es True. Población inicial y de cada
+        generación (max_gen + 1 arreglos).
     """
 
     if d < 1:
@@ -1026,6 +1088,7 @@ def evolucion_diferencial(
 
     historial = np.zeros(max_gen + 1)
     historial[0] = best_fit
+    poblaciones = [Pob.copy()] if guardar_poblaciones else None
 
     # 2. Evolución de la población
     for gen in range(max_gen):
@@ -1069,5 +1132,114 @@ def evolucion_diferencial(
             best_fit = float(fitness[idx])
 
         historial[gen + 1] = best_fit
+        if guardar_poblaciones:
+            poblaciones.append(Pob.copy())
 
+    if guardar_poblaciones:
+        return best_sol, best_fit, historial, poblaciones
     return best_sol, best_fit, historial
+
+
+# =====================================================================
+# 5. VISUALIZACIÓN
+# =====================================================================
+
+def dibujar_contorno(ax, f, LB, UB, n=150):
+    """Dibuja en ax el mapa de contorno de f sobre [LB, UB]^2 (caso d = 2).
+
+    Parámetros
+    ----------
+    ax : matplotlib.axes.Axes
+        Ejes 2D donde se dibuja.
+    f : callable
+        Función objetivo vectorizada: recibe (m, 2) y devuelve (m,).
+    LB, UB : float
+        Límites del dominio (iguales en ambas coordenadas).
+    n : int
+        Puntos de la malla por eje (por defecto 150).
+    """
+    g = np.linspace(LB, UB, n)
+    X, Y = np.meshgrid(g, g)
+    Z = np.asarray(f(np.column_stack([X.ravel(), Y.ravel()]))).reshape(X.shape)
+    ax.contourf(X, Y, Z, levels=30, cmap="viridis")
+    ax.set_xlim(LB, UB)
+    ax.set_ylim(LB, UB)
+
+
+def animar_busqueda(cuadros, f, LB, UB, ruta, titulo="", estela=False,
+                    optimo=None, max_cuadros=60, fps=8, mostrar=False):
+    """Guarda un GIF animado del proceso de búsqueda de un método (d = 2 o 3).
+
+    Sirve igual para el descenso por gradiente (un punto por cuadro, con
+    estela) y para los métodos de población (varios puntos por cuadro).
+    Con d = 2 los puntos se dibujan sobre el mapa de contorno de f; con
+    d = 3 se dibujan en el espacio de las variables (3D).
+
+    Parámetros
+    ----------
+    cuadros : list de array_like, cada uno de forma (d,) o (m, d)
+        Cuadro k = puntos del paso k: un punto (descenso por gradiente) o
+        la población / enjambre completo (mi_algoritmo_evolutivo, mi_pso,
+        evolucion_diferencial con guardar_poblaciones=True).
+    f : callable
+        Función objetivo vectorizada: recibe (m, d) y devuelve (m,).
+    LB, UB : float
+        Límites del dominio (iguales en todas las coordenadas).
+    ruta : str
+        Archivo de salida, terminado en .gif.
+    titulo : str
+        Texto que encabeza cada cuadro.
+    estela : bool
+        Si es True, dibuja el recorrido acumulado (para el descenso).
+    optimo : array_like, forma (d,), opcional
+        Mínimo global, que se marca con una estrella roja.
+    max_cuadros : int
+        Máximo de cuadros del GIF; si hay más pasos se submuestrean.
+    fps : int
+        Cuadros por segundo.
+    mostrar : bool
+        Si es True, tras guardar el GIF abre una ventana emergente que
+        reproduce la animación en bucle hasta que se cierre.
+
+    Notas
+    -----
+    Requiere matplotlib y Pillow. Lanza ValueError si d no es 2 ni 3.
+    """
+    cuadros = [np.atleast_2d(c) for c in cuadros]
+    d = cuadros[0].shape[1]
+    if d not in (2, 3):
+        raise ValueError("Solo se puede animar con d = 2 o d = 3.")
+
+    # Pasos que se dibujan (siempre incluye el último)
+    paso = max(1, len(cuadros) // max_cuadros)
+    idx = list(range(0, len(cuadros), paso))
+    if idx[-1] != len(cuadros) - 1:
+        idx.append(len(cuadros) - 1)
+
+    color = "white" if d == 2 else "tab:blue"
+    fig = plt.figure(figsize=(6, 6))
+    ax = fig.add_subplot(projection="3d" if d == 3 else None)
+
+    def dibujar(j):
+        k = idx[j]
+        P = cuadros[k]
+        ax.cla()
+        if d == 2:
+            dibujar_contorno(ax, f, LB, UB)
+        else:
+            ax.set_xlim(LB, UB)
+            ax.set_ylim(LB, UB)
+            ax.set_zlim(LB, UB)
+        if estela:
+            ax.plot(*np.vstack(cuadros[:k + 1]).T, color=color, lw=1)
+        ax.scatter(*P.T, color=color, edgecolors="k", s=25)
+        if optimo is not None:
+            ax.scatter(*np.asarray(optimo, dtype=float), marker="*", s=200, color="red")
+        ax.set_title(f"{titulo} - paso {k}/{len(cuadros) - 1}\n"
+                     f"mejor f = {np.min(f(P)):.4g}")
+
+    anim = FuncAnimation(fig, dibujar, frames=len(idx), interval=1000 // fps)
+    anim.save(ruta, writer=PillowWriter(fps=fps))
+    if mostrar:
+        plt.show()  # `anim` debe seguir referenciada mientras la ventana está abierta
+    plt.close(fig)
