@@ -8,22 +8,25 @@ import time
 import numpy as np
 import pygad
 
-from .costos import costo_tour
-from .operadores_ga import CRUCES
+from costos import costo_tour
+from operadores_ga import CRUCES, hacer_mutacion
 
 
 def construir_y_correr(C, cfg, semilla):
     """Corre el GA. Devuelve un dict con el mejor tour, su costo, evaluaciones e historial.
 
     cfg: dict con claves poblacion, generaciones, padres, elite, k_torneo,
-         p_mutacion, mutacion ("inversion" | "swap" | "scramble"), cruce ("ox" | "pmx").
+         cruce ("ox" | "pmx"), mutacion ("inversion" | "insercion" | "swap"),
+         p_mutacion (probabilidad de que un hijo mute, entre 0 y 1).
     """
     n = C.shape[0]
     contador = {"evals": 0}
     historial = {"mejor_costo": [], "mejor_tour": [], "evals": []}
 
     def fitness(ga_instance, solution, solution_idx):
-        contador["evals"] += 1          # cuenta real; PyGAD no reevalúa a los élites
+        # Cuenta llamadas reales. PyGAD no llama a esta función para los élites ni para
+        # los hijos idénticos a un élite o a un padre: reutiliza la aptitud ya calculada.
+        contador["evals"] += 1
         return -costo_tour(C, solution.astype(int))
 
     def on_generation(ga_instance):
@@ -46,8 +49,7 @@ def construir_y_correr(C, cfg, semilla):
         parent_selection_type="tournament",
         K_tournament=cfg["k_torneo"],
         crossover_type=CRUCES[cfg["cruce"]],
-        mutation_type=cfg["mutacion"],
-        mutation_probability=cfg["p_mutacion"],
+        mutation_type=hacer_mutacion(cfg["mutacion"], cfg["p_mutacion"]),
         keep_elitism=cfg["elite"],
         on_generation=on_generation,
         random_seed=semilla,
@@ -65,6 +67,8 @@ def construir_y_correr(C, cfg, semilla):
         "mejor_tour": tour.tolist(),
         "mejor_costo": costo_tour(C, tour),
         "evaluaciones_fitness": contador["evals"],
+        # Tope si se evaluara a todos: población inicial + hijos de cada generación.
+        "evaluaciones_nominales": cfg["poblacion"] + cfg["generaciones"] * (cfg["poblacion"] - cfg["elite"]),
         "segundos": round(seg, 2),
         "historial": historial,
     }
