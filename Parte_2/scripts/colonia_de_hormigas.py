@@ -1,14 +1,24 @@
-"""Ejecuta el algoritmo de Colonia de Hormigas dadas la cantidad de agentes (hormigas) del algoritmo
-   y el precio del valor de la hora del conductor, los cuales se deben ingresar al programa como argumentos.
-   También el consumo homologado del vehículo y el precio del litro de gasolina se pueden ingresar
-   aunque tienen valores asignados por defecto.
+"""Ejecuta el algoritmo de Colonia de Hormigas dados:
+
+    - El precio del valor de la hora del conductor.
+    - El consumo homologado del vehículo. (Valor por defecto 5.5)
+    - El precio del litro de gasolina. (Valor por defecto 1.849)
+    - La cantidad de agentes (hormigas) del algoritmo. (Valor por defecto 40)
+    - El nivel de intnesificación de las feromonas. (Valor por defecto 2)
+    - El nivel de importancia de las feromonas (alfa). (Valor por defecto 2)
+    - El nivel de importancia de la información heurística (beta). (Valor por defecto 1)
+    - La tasa de evaporación de feromonas beta. (Valor por defecto 0)
+    - La probabilidad de que una hormiga se limite a elegir el camino con mayor peso en vez de elegir al azar. (Valor por defecto 0.1)
+   
+   Los parámetros se deben ingresar al programa desde la línea de comandos.
+   
    El programa creará un archivo json en la carpeta outputs con el recorrido óptimo encontrado,
    su costo y el valor de la hora utilizado, además de una imagen de dicho mejor recorrido y un
    gif y video mp4 mostrando la evolución del recorrido. Dichos archivos se nombrarán con un sufijo
    ingresado al programe mediante un argumento llamado version.
 
 Ejemplo:
-    python Parte_2/scripts/colonia_de_hormigas.py --valor-hora 15 --consumo 5.5 --precio 1.849 --hormigas 100 --version 0001
+    python Parte_2/scripts/colonia_de_hormigas.py --valor-hora 25 --consumo 5.5 --precio 1.849 --hormigas 100 --intensificacion 1.9 --alfa 2.1 --beta 0.9 --beta-evaporacion 0 --p-mejor 0.09 --version 0030
 """
 
 import os
@@ -193,6 +203,12 @@ def main():
     ap.add_argument("--consumo", type=float, default=5.5, help="L/100 km (WLTP del vehículo elegido)")
     ap.add_argument("--precio", type=float, default=1.849, help="EUR por litro del combustible")
     ap.add_argument("--hormigas", type=int, default=40, help="Cantidad de hormigas")
+    ap.add_argument("--evaporacion", type=float, default=0.05, help="Tasa de evaporación de feromonas")
+    ap.add_argument("--intensificacion", type=float, default=2, help="Intensificación de feromonas")
+    ap.add_argument("--alfa", type=float, default=2, help="Importancia de las feromonas")
+    ap.add_argument("--beta", type=float, default=1, help="Importancia de la heurística")
+    ap.add_argument("--beta-evaporacion", type=float, default=0, help="Tasa de evaporación beta")
+    ap.add_argument("--p-mejor", type=float, default=0.1, help="Probabilidad de que una hormiga elija el camino de mayor peso")
     ap.add_argument("--version", type=str, required=True, help="Iteración del algoritmo")
 
     a = ap.parse_args()
@@ -206,12 +222,12 @@ def main():
 
     optimizer = AntColonyOptimizer(
     ants=a.hormigas,
-    evaporation_rate=0.05,
-    intensification=2,
-    alpha=2,
-    beta=1,
-    beta_evaporation_rate=0,
-    choose_best=0.1
+    evaporation_rate=a.evaporacion,
+    intensification=a.intensificacion,
+    alpha=a.alfa,
+    beta=a.beta,
+    beta_evaporation_rate=a.beta_evaporacion,
+    choose_best=a.p_mejor
     )
 
     os.makedirs("outputs", exist_ok=True)

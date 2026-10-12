@@ -42,5 +42,5 @@ pip install requests numpy
 python Parte_2/scripts/costos.py --valor-hora 15 --consumo 5.5 --precio 1.849   # matriz de costos y prueba
 python Parte_2/scripts/obtener_osrm.py --comparar                                # vuelve a consultar OSRM y compara
 python Parte_2/scripts/obtener_peajes_here.py --modo peaje --limite 3            # prueba con 3 arcos
-python Parte_2/scripts/colonia_de_hormigas.py --valor-hora 15 --consumo 5.5 --precio 1.849 --hormigas 100 --version 0001
+python Parte_2/scripts/colonia_de_hormigas.py --valor-hora 25 --hormigas 100 --intensificacion 1.9 --alfa 2.1 --beta 0.9 --beta-evaporacion 0 --p-mejor 0.09 --version 0030--version 0001
 ```

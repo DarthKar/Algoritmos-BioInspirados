@@ -5,6 +5,7 @@ Optimización de la función de Rastrigin con cuatro métodos:
     2. Descenso por gradiente (gradiente numérico)
     3. Algoritmo evolutivo
     4. Optimización por Enjambre de Partículas (PSO)
+    5. Evolución diferencial (DE)
 
 """
 
@@ -942,3 +943,131 @@ def mi_pso(f_obj, d, LB=-5.12, UB=5.12, N=40, max_iter=200,
         historial[t + 1] = gbest_fit
 
     return gbest_pos, gbest_fit, historial
+
+
+# =====================================================================
+# 5. EVOLUCIÓN DIFERENCIAL (DE)
+# =====================================================================
+
+def evolucion_diferencial(
+    f_obj,
+    d,
+    LB=-5.12,
+    UB=5.12,
+    N=50,
+    max_gen=200,
+    F=0.8,
+    CR=0.9,
+    semilla=None
+):
+    """
+    Minimiza una función mediante Evolución Diferencial (DE/rand/1/bin).
+
+    En cada generación:
+        1. Mutación: v = x_r1 + F * (x_r2 - x_r3)
+        2. Cruce binomial entre el mutante y el individuo original.
+        3. Selección: conserva el candidato con menor fitness.
+
+    Parámetros
+    ----------
+    f_obj : callable
+        Función objetivo que recibe un vector de forma (d,).
+    d : int
+        Número de variables del problema.
+    LB, UB : float o array_like
+        Límites inferiores y superiores por variable.
+    N : int
+        Tamaño de la población. Debe ser al menos 4.
+    max_gen : int
+        Número máximo de generaciones.
+    F : float
+        Factor de mutación, normalmente entre 0 y 2.
+    CR : float
+        Probabilidad de cruce, entre 0 y 1.
+    semilla : int o None
+        Semilla para reproducir la ejecución.
+
+    Retorna
+    -------
+    best_sol : numpy.ndarray, forma (d,)
+        Mejor solución encontrada.
+    best_fit : float
+        Valor de la función en la mejor solución.
+    historial : numpy.ndarray, forma (max_gen + 1,)
+        Mejor fitness de la población inicial y de cada generación.
+    """
+
+    if d < 1:
+        raise ValueError("d debe ser mayor o igual que 1.")
+    if N < 4:
+        raise ValueError("N debe ser al menos 4.")
+    if max_gen < 0:
+        raise ValueError("max_gen no puede ser negativo.")
+    if not 0 <= CR <= 1:
+        raise ValueError("CR debe estar entre 0 y 1.")
+    if not 0 <= F <= 2:
+        raise ValueError("F debe estar entre 0 y 2.")
+
+    rng = np.random.default_rng(semilla)
+
+    LB = np.broadcast_to(np.asarray(LB, dtype=float), (d,)).copy()
+    UB = np.broadcast_to(np.asarray(UB, dtype=float), (d,)).copy()
+
+    if np.any(LB >= UB):
+        raise ValueError("Cada límite inferior debe ser menor que el superior.")
+
+    # 1. Población inicial
+    Pob = rng.uniform(LB, UB, size=(N, d))
+    fitness = np.array([f_obj(ind) for ind in Pob])
+
+    idx = np.argmin(fitness)
+    best_sol = Pob[idx].copy()
+    best_fit = float(fitness[idx])
+
+    historial = np.zeros(max_gen + 1)
+    historial[0] = best_fit
+
+    # 2. Evolución de la población
+    for gen in range(max_gen):
+        nueva_pob = Pob.copy()
+        nuevo_fitness = fitness.copy()
+
+        for i in range(N):
+            # Elegir tres individuos diferentes de i y entre sí
+            candidatos = np.delete(np.arange(N), i)
+            r1, r2, r3 = rng.choice(
+                candidatos, size=3, replace=False
+            )
+
+            # Mutación diferencial
+            mutante = Pob[r1] + F * (Pob[r2] - Pob[r3])
+
+            # Reparar coordenadas fuera del dominio
+            mutante = np.clip(mutante, LB, UB)
+
+            # Cruce binomial: al menos una coordenada viene del mutante
+            mascara = rng.random(d) < CR
+            mascara[rng.integers(d)] = True
+
+            prueba = np.where(mascara, mutante, Pob[i])
+
+            # Evaluación y selección
+            valor_prueba = f_obj(prueba)
+
+            if valor_prueba <= fitness[i]:
+                nueva_pob[i] = prueba
+                nuevo_fitness[i] = valor_prueba
+
+        Pob = nueva_pob
+        fitness = nuevo_fitness
+
+        # Mejor solución global encontrada
+        idx = np.argmin(fitness)
+
+        if fitness[idx] < best_fit:
+            best_sol = Pob[idx].copy()
+            best_fit = float(fitness[idx])
+
+        historial[gen + 1] = best_fit
+
+    return best_sol, best_fit, historial
