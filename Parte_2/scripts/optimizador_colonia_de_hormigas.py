@@ -1,3 +1,20 @@
+# ============================================================
+# Optimización por Colonia de Hormigas (ACO)
+#
+# Implementación original:
+#   Autor: johnberroa (GitHub)
+#   Repositorio:
+#   https://github.com/johnberroa/Ant-Colony-Optimization
+#   Archivo original: AntColonyOptimizer.py
+#
+# Adaptaciones realizadas para este proyecto académico:
+#   - Registro del historial de mejores rutas y costos.
+#   - Corrección de la inicialización de la mejor ruta.
+#   - Preparación de los datos para animaciones GIF y MP4.
+#
+# Basado en el código original de johnberroa.
+# ============================================================
+
 import numpy as np
 import matplotlib.pyplot as plt
 import time

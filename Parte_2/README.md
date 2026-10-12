@@ -1,7 +1,17 @@
-# Datos del TSP: 47 capitales de provincia de la España peninsular
+## Parte 2
 
-Carpeta pensada para copiarse tal cual dentro del repositorio del Trabajo 1 (Parte 2).
-Todo lo que está en `data/` se puede usar sin internet.
+## Créditos y código de terceros
+
+La implementación del algoritmo de optimización por colonia de hormigas (ACO) utilizada en este proyecto está basada en el código desarrollado por el usuario **johnberroa** y publicado en GitHub:
+
+- **Repositorio original:** [Ant-Colony-Optimization](https://github.com/johnberroa/Ant-Colony-Optimization)
+- **Archivo utilizado:** `AntColonyOptimizer.py`
+
+Para su integración en este proyecto académico se realizaron adaptaciones que permiten registrar la evolución de la mejor solución encontrada y utilizar esta información para generar visualizaciones animadas de las rutas mediante GIF y MP4.
+
+El modelo de costos aplicado al problema de las 47 capitales peninsulares, la integración de los componentes y las visualizaciones se documentan como parte del desarrollo del presente trabajo.
+
+# Datos del TSP: 47 capitales de provincia de la España peninsular
 
 ## Archivos de `data/`
 
@@ -14,29 +24,23 @@ Todo lo que está en `data/` se puede usar sin internet.
 | `vias_peaje_osrm.csv` | Por arco: vías candidatas a peaje que recorre la ruta OSRM y km | OSRM | 2026-10-10 |
 | `estado_vias_peaje_2026.csv` | Estado 2026 de cada vía (vigente, liberada, verificar) con fuente | Ver columna fuente | 2026-10-10 |
 | `combustible.csv` | Precio medio en España con impuestos | Comisión Europea, Weekly Oil Bulletin (datos al 2026-10-05) | 2026-10-10 |
-
+| `here_peaje.csv` | Información de peajes por arco dirigido de una pareja de ciudades | Obtenido de la API HERE mediante el módulo obtener_peajes_here | 2026-10-10 |
 Fila = origen, columna = destino. `[i, j]` puede ser distinto de `[j, i]`.
 
-## Lo que falta
+## En caso de querer actualizar los datos de peaje
 
-1. **Peajes en EUR**: correr `scripts/obtener_peajes_here.py` con una API key de HERE (ver el encabezado del script).
-   No usar 0 EUR: 1.046 de los 2.162 arcos pasan por alguna vía que cobra peaje en 2026 (indicativo, ver `vias_peaje_osrm.csv`).
-2. **Vehículo**: modelo, consumo homologado WLTP y combustible, con ficha citada (IDAE: https://coches.idae.es/base-datos).
+**Peajes en EUR**: correr `scripts/obtener_peajes_here.py` con una API key de HERE (ver el encabezado del script).
+
+## Vehículo seleccionado
+
+Renault Clio TCe 115, consumo homologado de 5,3–5,5 L/100 km (tomado como 5,5 L/100 km). https://www.renault.es/preguntas-frecuentes-vehiculos/clio/esta-renault-clio-disponible-con-una-caja-de-cambios-manual-o-automatica.html Revisado 2026-10-10
 
 ## Scripts
 
 ```bash
 pip install requests numpy
-python scripts/costos.py --valor-hora 15 --consumo 5.5 --precio 1.849   # matriz de costos y prueba
-python scripts/obtener_osrm.py --comparar                                # vuelve a consultar OSRM y compara
-python scripts/obtener_peajes_here.py --modo peaje --limite 3            # prueba con 3 arcos
+python Parte_2/scripts/costos.py --valor-hora 15 --consumo 5.5 --precio 1.849   # matriz de costos y prueba
+python Parte_2/scripts/obtener_osrm.py --comparar                                # vuelve a consultar OSRM y compara
+python Parte_2/scripts/obtener_peajes_here.py --modo peaje --limite 3            # prueba con 3 arcos
+python Parte_2/scripts/colonia_de_hormigas.py --valor-hora 15 --consumo 5.5 --precio 1.849 --hormigas 100 --version 0001
 ```
-
-`obtener_osrm.py` y `obtener_peajes_here.py` no se pudieron probar contra los servidores reales desde el
-entorno donde se prepararon: prueben primero con `--comparar` y `--limite 3` y revisen la salida a mano.
-
-## Advertencias
-
-- AP-68: la concesión termina el 10-11-2026 (Real Decreto 730/2026). Peajes consultados antes quedan viejos después.
-- Autopistas SEITT (R-2, R-3, R-4, R-5, M-12, AP-36, AP-41): gratis de 0:00 a 6:00 en 2026.
-- La ruta más rápida no mira el precio del peaje. Con peajes caros conviene considerar también la ruta sin peaje.
