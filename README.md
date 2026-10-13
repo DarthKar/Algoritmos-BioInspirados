@@ -380,7 +380,7 @@ Renault Clio TCe 115 con caja automática (gasolina), consumo mixto WLTP homolog
 | `colonia_de_hormigas.py` | Integrar datos y optimizador, y exportar resultados y visualizaciones. |
 | `operadores_ga.py` | Cruces (OX, PMX) y mutaciones (inversión, inserción, swap, mixta) para permutaciones. |
 | `algoritmo_genetico.py` | Algoritmo genético con PyGAD: una corrida, resultados, mapa y GIF. |
-| `experimentos_ga.py` | Varias corridas por configuración, barridos y estudio del valor de la hora. |
+| `experimentos_ga.py` | Comparación de operadores con varias corridas y estudio del valor de la hora. |
 | `../orquestador.py` | Menú interactivo y línea de comandos del algoritmo genético. |
 
 ```bash
@@ -403,7 +403,6 @@ python Parte_2/orquestador.py                                           # menú 
 python Parte_2/orquestador.py ga                                        # una corrida de demostración (JSON, mapa y GIF)
 python Parte_2/orquestador.py ga --valor-hora 25 --elite 0 --sin-gif    # cambiar parámetros sin editar código
 python Parte_2/orquestador.py comparar                                  # 30 corridas por cada pareja cruce + mutación
-python Parte_2/orquestador.py barrido --parametro elite                 # 30 corridas por cada valor de un parámetro
 python Parte_2/orquestador.py hora                                      # estudio del valor de la hora
 python Parte_2/orquestador.py limpiar                                   # borra los archivos del GA en outputs/
 ```
@@ -411,9 +410,8 @@ python Parte_2/orquestador.py limpiar                                   # borra 
 | Comando | Qué hace | Archivos en `outputs/` |
 |---|---|---|
 | `ga` | Una corrida del GA. | `resultados_GA_<v>.json`, `Recorrido_GA_<v>.png`, `Evolucion_GA_<v>.gif` |
-| `comparar` | `repeticiones` corridas por cada pareja cruce + mutación (8 parejas). | `comparar_GA_<v>_corridas.csv`, `_resumen.json`, `_cajas.png`, `_convergencia.png` |
-| `barrido` | `repeticiones` corridas por cada valor de un parámetro (`p_mutacion`, `elite`, `k_torneo`, `poblacion`, `padres` o `generaciones`). | `barrido_<parametro>_GA_<v>_...` (los mismos cuatro) |
-| `hora` | Corre el GA para cada valor de la hora y calcula en qué valores cambia la mejor ruta. | `hora_GA_<v>_corridas.csv`, `hora_GA_<v>_resumen.json`, `hora_GA_<v>.png` |
+| `comparar` | `repeticiones` corridas por cada pareja cruce + mutación (8 parejas). Imprime la tabla de media, desviación, mejor, peor y tasa de éxito. | `comparar_GA_<v>.png` (diagrama de cajas) |
+| `hora` | Corre el GA para cada valor de la hora, imprime la mejor ruta de cada tramo y el valor en que cambia. | `hora_GA_<v>.png` |
 | `limpiar` | Borra los archivos con `_GA_` en el nombre. No toca los de otros algoritmos. | |
 
 ### Archivo de configuración
@@ -446,12 +444,9 @@ python Parte_2/orquestador.py --config otra.json ga    # usa otro archivo de con
 | `--mutacion` | mixta | `inversion`, `insercion`, `swap` o `mixta` (inversión o inserción, al azar) |
 | `--p-mutacion` | 0.3 | Probabilidad de que un hijo mute |
 | `--sin-gif` | | No genera el GIF (solo JSON y PNG) |
-| `--repeticiones` | 30 | `comparar` y `barrido`: corridas independientes por configuración |
-| `--tolerancia` | 2 | Éxito si el costo es menor o igual que la referencia más este porcentaje |
-| `--referencia` | mejor del experimento | Costo de referencia en EUR para la tasa de éxito |
+| `--repeticiones` | 30 | `comparar`: corridas independientes por configuración |
+| `--tolerancia` | 2 | `comparar`: éxito si el costo es menor o igual que el mejor del experimento más este porcentaje |
 | `--procesos` | mitad de los núcleos | Procesos en paralelo. No cambia los resultados, solo el tiempo |
-| `--parametro` | p_mutacion | `barrido`: parámetro que varía |
-| `--valores` | propios del parámetro | `barrido`: valores a probar |
 | `--vh-min`, `--vh-max`, `--vh-paso` | 0, 60, 5 | `hora`: rejilla de valores de la hora (EUR/h) |
 | `--rep-hora` | 20 | `hora`: corridas por cada valor de la hora |
 

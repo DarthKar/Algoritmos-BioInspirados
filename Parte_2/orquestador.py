@@ -7,12 +7,11 @@ Uso:
     python Parte_2/orquestador.py ga --valor-hora 25 --mutacion mixta
     python Parte_2/orquestador.py aco --valor-hora 25 --hormigas 40 --semilla 7 --version 0002
     python Parte_2/orquestador.py comparar --repeticiones 30 --procesos 8
-    python Parte_2/orquestador.py barrido --parametro elite --valores 0 2 10 20
     python Parte_2/orquestador.py hora --vh-min 0 --vh-max 60 --vh-paso 5
     python Parte_2/orquestador.py limpiar        borra los archivos generados por el GA
     python Parte_2/orquestador.py --config otra.json ga      usa otro archivo de configuración
 
-Comandos: ga, comparar, barrido, hora, aco, limpiar.
+Comandos: ga, comparar, hora, aco, limpiar.
 Al arrancar se lee Parte_2/config_ejemplo.json: sus valores sustituyen a los de
 la tabla PARAMS. Prioridad: línea de comandos > archivo de configuración > tabla.
 El algoritmo está en scripts/algoritmo_genetico.py y scripts/operadores_ga.py,
@@ -43,7 +42,7 @@ from operadores_ga import CRUCES, MUTACIONES
 # =====================================================================
 # 1. PARÁMETROS (una sola tabla: alimenta la línea de comandos y el menú)
 # =====================================================================
-# nombre: (valor por defecto, tipo, descripción). None = valor propio del comando.
+# nombre: (valor por defecto, tipo, descripción).
 # El archivo de configuración puede sustituir cualquiera de estos valores por defecto.
 
 PARAMS = {
@@ -74,11 +73,8 @@ PARAMS = {
     "p_mejor": (0.1, float, "ACO: probabilidad de elegir la conexión de mayor peso (0 a 1)"),
     # Experimentos con varias corridas
     "repeticiones": (30, int, "nº de corridas independientes por configuración"),
-    "tolerancia": (2.0, float, "éxito si el costo <= referencia x (1 + tolerancia/100)"),
-    "referencia": (None, float, "costo de referencia en EUR (por defecto, el mejor del experimento)"),
+    "tolerancia": (2.0, float, "éxito si el costo <= mejor del experimento x (1 + tolerancia/100)"),
     "procesos": (max(1, (os.cpu_count() or 2) // 2), int, "procesos en paralelo (no cambia los resultados, solo el tiempo)"),
-    "parametro": ("p_mutacion", str, f"barrido: parámetro que varía ({' / '.join(ex.BARRIDOS)})"),
-    "valores": (None, list, "barrido: valores a probar (por defecto, los propios del parámetro)"),
     # Estudio del valor de la hora
     "vh_min": (0.0, float, "hora: valor de la hora mínimo (EUR/h)"),
     "vh_max": (60.0, float, "hora: valor de la hora máximo (EUR/h)"),
@@ -92,9 +88,8 @@ PARAMS_ACO = ["hormigas", "evaporacion", "intensificacion", "alfa", "beta", "bet
 PARAMS_COMANDO = {
     "ga": [*PARAMS_GA, "sin_gif"],
     "aco": PARAMS_ACO,
-    "comparar": ["repeticiones", "tolerancia", "referencia", "procesos",
+    "comparar": ["repeticiones", "tolerancia", "procesos",
                  "poblacion", "generaciones", "padres", "elite", "k_torneo", "p_mutacion"],
-    "barrido": ["parametro", "valores", "repeticiones", "tolerancia", "referencia", "procesos", *PARAMS_GA],
     "hora": ["vh_min", "vh_max", "vh_paso", "rep_hora", "procesos", *PARAMS_GA],
 }
 PARAMS_GLOBALES = ["valor_hora", "consumo", "precio", "vehiculo", "semilla", "version"]
@@ -102,17 +97,15 @@ PARAMS_GLOBALES = ["valor_hora", "consumo", "precio", "vehiculo", "semilla", "ve
 TITULOS = {
     "ga": "Algoritmo genético: una corrida (JSON, mapa y GIF)",
     "comparar": "Comparar operadores de cruce y mutación (varias corridas)",
-    "barrido": "Barrido de un parámetro del GA (varias corridas)",
     "hora": "Estudio del valor de la hora (¿cambia la ruta? ¿desde qué valor?)",
 }
 TITULOS["aco"] = "Colonia de hormigas: una corrida (JSON, mapa, GIF y MP4)"
 FUNCIONES_COMANDO = {
     "ga": ag.corrida,
     "comparar": ex.comparar_operadores,
-    "barrido": ex.barrido,
     "hora": ex.estudio_valor_hora,
 }
-OPCIONES = {"cruce": sorted(CRUCES), "mutacion": sorted(MUTACIONES), "parametro": list(ex.BARRIDOS)}
+OPCIONES = {"cruce": sorted(CRUCES), "mutacion": sorted(MUTACIONES)}
 
 # Archivo de configuración que se lee al arrancar (--config indica otro)
 CONFIG = Path(__file__).resolve().parent / "config_ejemplo.json"
@@ -136,32 +129,23 @@ def leer_config(ruta):
     if not isinstance(datos, dict):
         raise ValueError(f"{nombre}: debe ser un objeto JSON con pares parámetro: valor.")
 
-    def es_numero(v):
-        return isinstance(v, (int, float)) and not isinstance(v, bool)
-
     config = {}
     for clave, valor in datos.items():
         if clave.startswith("_"):
             continue
         if clave not in PARAMS:
             raise ValueError(f"{nombre}: parámetro desconocido '{clave}'. Válidos: {', '.join(PARAMS)}.")
-        defecto, tipo, _ = PARAMS[clave]
-        if valor is None and defecto is None:
-            pass
-        elif tipo is bool:
+        tipo = PARAMS[clave][1]
+        if tipo is bool:
             if not isinstance(valor, bool):
                 raise ValueError(f"{nombre}: '{clave}' debe ser true o false.")
         elif tipo is int:
             if not isinstance(valor, int) or isinstance(valor, bool):
                 raise ValueError(f"{nombre}: '{clave}' debe ser un número entero.")
         elif tipo is float:
-            if not es_numero(valor):
+            if not isinstance(valor, (int, float)) or isinstance(valor, bool):
                 raise ValueError(f"{nombre}: '{clave}' debe ser un número.")
             valor = float(valor)
-        elif tipo is list:
-            if not isinstance(valor, list) or not all(es_numero(v) for v in valor):
-                raise ValueError(f"{nombre}: '{clave}' debe ser una lista de números.")
-            valor = [float(v) for v in valor]
         elif not isinstance(valor, str):
             raise ValueError(f"{nombre}: '{clave}' debe ser un texto entre comillas.")
         if clave in OPCIONES and valor not in OPCIONES[clave]:
@@ -291,22 +275,16 @@ def convertir(nombre, texto):
     if nombre in OPCIONES and texto not in OPCIONES[nombre]:
         raise ValueError("elige " + ", ".join(OPCIONES[nombre]))
     try:
-        if tipo is list:
-            return [float(v) for v in texto.replace(",", " ").split()]
         return tipo(texto)
     except ValueError:
         raise ValueError("se esperaba un número entero" if tipo is int else "se esperaba un número") from None
 
 
 def mostrar(v):
-    if v is None or v == []:
-        return "(por defecto)"
     if v == "":
         return "(sin definir)"
     if isinstance(v, bool):
         return "sí" if v else "no"
-    if isinstance(v, list):
-        return " ".join(f"{x:g}" for x in v)
     return str(v)
 
 
@@ -334,9 +312,6 @@ def panel(titulo, nombres, P, ejecutar_fn=None):
             P[n] = DEFECTO[n] if texto == "" else convertir(n, texto)
         except ValueError as e:
             print(f"  Valor inválido ({e}); se conserva el actual.")
-            continue
-        if n == "parametro":  # cada parámetro del barrido tiene sus propios valores por defecto
-            P["valores"] = None
 
 
 def menu():
@@ -406,8 +381,6 @@ def main():
         flag = "--" + n.replace("_", "-")
         if tipo is bool:
             parser.add_argument(flag, dest=n, action="store_true", default=DEFECTO[n], help=ayuda)
-        elif tipo is list:
-            parser.add_argument(flag, dest=n, type=float, nargs="+", default=DEFECTO[n], help=ayuda)
         elif n in OPCIONES:
             parser.add_argument(flag, dest=n, default=DEFECTO[n], choices=OPCIONES[n], help=ayuda)
         else:

@@ -12,7 +12,7 @@ Ejemplo:
     python Parte_2/scripts/algoritmo_genetico.py --valor-hora 15 --version 0001
     python Parte_2/scripts/algoritmo_genetico.py --valor-hora 25 --poblacion 100 --generaciones 1500 --cruce ox --mutacion inversion --p-mutacion 0.3 --semilla 7 --version 0002
 
-El menú interactivo y los experimentos (30 corridas, barridos, valor de la hora)
+El menú interactivo y los experimentos (comparación de operadores, valor de la hora)
 se lanzan desde Parte_2/orquestador.py.
 """
 import argparse
