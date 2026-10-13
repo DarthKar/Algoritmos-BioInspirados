@@ -326,9 +326,21 @@ VARIANTES = [
 
 def comando_comparar(p):
     """Varias corridas independientes por método y tabla de estadísticas."""
+    if p["repeticiones"] < 30:
+        raise ValueError("Para la comparación deben ejecutarse al menos 30 corridas por método.")
+    if p["costo_grad"] is None or p["costo_grad"] <= 0:
+        raise ValueError("costo_grad debe ser un valor positivo.")
+    if p["umbral"] is None:
+        raise ValueError("Debe definirse un umbral de éxito para la comparación.")
+
     p = dict(p, x0=None)  # el punto inicial del descenso es aleatorio en cada corrida
     R = p["repeticiones"]
     res = {}
+
+    print(f"\nRegla de comparación justa: equivalente = n_f + {p['costo_grad']} * n_∇f")
+    print(f"Umbral de éxito: f_final < {p['umbral']}")
+    print(f"Se ejecutarán {R} corridas independientes por método")
+
     for etiqueta, metodo, extra in VARIANTES:
         print(f"  Corriendo {etiqueta} ({R} corridas)...")
         q = dict(p, **extra)
