@@ -104,7 +104,15 @@ def swap_ind(tour, rng):
     tour[i], tour[j] = tour[j], tour[i]
 
 
-MUTACIONES = {"inversion": inversion_ind, "insercion": insercion_ind, "swap": swap_ind}
+def mixta_ind(tour, rng):
+    """Aplica inversión o inserción, cada una con probabilidad 1/2."""
+    if rng.random() < 0.5:
+        inversion_ind(tour, rng)
+    else:
+        insercion_ind(tour, rng)
+
+
+MUTACIONES = {"inversion": inversion_ind, "insercion": insercion_ind, "swap": swap_ind, "mixta": mixta_ind}
 
 
 def hacer_mutacion(nombre, p_mutacion):

@@ -192,7 +192,7 @@ C_ij= v_h * H_ij + P_ij + D_ij * q *p_f
 | `q` | L/100 km | Consumo del vehículo. |
 | `p_f` | €/L | Precio del combustible. |
 
-Las distancias de OSRM se dividen por 1000 y sus tiempos por 3600. El consumo y el precio se consideran constantes durante todos los desplazamientos. La diagonal de la matriz económica se fija en cero.
+Distancia, duración y peaje de cada arco se leen de `here_peaje.csv`, es decir, de la misma ruta de HERE. Las distancias se dividen por 1000 y los tiempos por 3600. El consumo y el precio se consideran constantes durante todos los desplazamientos. La diagonal de la matriz económica se fija en cero.
 
 ### C.2. Funciones públicas
 
@@ -200,6 +200,7 @@ Las distancias de OSRM se dividen por 1000 y sus tiempos por 3600. El consumo y 
 |---|---|---|
 | `leer_capitales()` | Ninguno. | `(nombres, ubicaciones)`, con coordenadas NumPy de forma `(n, 2)` en orden `[lat, lon]`. |
 | `leer_matriz(nombre)` | Nombre de un CSV en `data/`. | Matriz NumPy de valores reales, omitiendo cabecera e identificadores de fila. |
+| `leer_here(n, columna, archivo="here_peaje.csv")` | Número de ciudades, columna (`dist_m`, `tiempo_s` o `peaje_eur`) y archivo. | Matriz `(n, n)` con esa columna de HERE, con diagonal cero. |
 | `leer_peajes(n, archivo="here_peaje.csv")` | Número de ciudades y archivo. | Matriz `(n, n)` de peajes en EUR, con diagonal cero. |
 | `matriz_costos(valor_hora, consumo_l_100km, precio_eur_l, peajes)` | Parámetros económicos y matriz de peajes. | `(C, partes)`. |
 | `costo_tour(C, tour)` | Matriz económica y permutación de ciudades. | Costo del circuito cerrado como `float`. |
@@ -237,13 +238,13 @@ Este ejemplo puede utilizarse desde otro script del mismo directorio. La ruta po
 python Parte_2/scripts/costos.py --valor-hora 25 --consumo 5.5 --precio 1.849
 ```
 
-Los tres argumentos son obligatorios en este script. Se imprimen la suma de todos los peajes de la matriz, el número de arcos con peaje positivo, la forma de la matriz, la máxima diferencia entre sentidos opuestos y el costo del circuito por orden de `id`. La suma de peajes de toda la matriz no es el peaje de un recorrido. No se escribe una matriz económica a disco.
+Los tres argumentos son obligatorios en este script. Se imprimen la suma de todos los peajes de la matriz, el número de arcos con peaje positivo, la forma de la matriz, la máxima diferencia entre sentidos opuestos, el costo del circuito por orden de `id` y la diferencia de distancia y tiempo entre HERE y OSRM. La suma de peajes de toda la matriz no es el peaje de un recorrido. No se escribe una matriz económica a disco.
 
 ### C.5. Supuestos y limitaciones
 
 Los identificadores deben corresponder a índices consecutivos de `0` a `n-1`. Las matrices deben conservar el mismo orden de ciudades: `leer_matriz()` descarta sus etiquetas sin comprobarlas. El programa no valida explícitamente dimensiones, finitud o signo de todos los parámetros.
 
-La implementación usa distancia y tiempo de OSRM, y peajes de HERE. Aunque HERE también guarda distancia y duración, `matriz_costos()` no utiliza esos campos. Por tanto, la matriz combina dos fuentes que podrían elegir carreteras diferentes entre las mismas capitales. El costo es el del modelo integrado; no queda demostrado que sus tres componentes correspondan al mismo trayecto vial.
+La implementación usa distancia, tiempo y peajes de HERE, de modo que las tres componentes de un arco corresponden al mismo trayecto vial (la ruta más rápida en carro, sin tráfico). Hasta el 2026-10-12 la distancia y el tiempo se tomaban de OSRM; se cambió porque OSRM elige otra carretera en algunos arcos (53 arcos difieren más de 10 % en distancia) y eso cobraba peajes de vías que su ruta no recorre. Las matrices de OSRM no entran al costo y quedan como verificación independiente: sus tiempos son en promedio 19 % mayores que los de HERE.
 
 ## D. colonia_de_hormigas.py
 
@@ -356,7 +357,7 @@ El modelo de costos aplicado al problema de las 47 capitales peninsulares, la in
 | `vias_peaje_osrm.csv` | Por arco: vías candidatas a peaje que recorre la ruta OSRM y km | OSRM | 2026-10-10 |
 | `estado_vias_peaje_2026.csv` | Estado 2026 de cada vía (vigente, liberada, verificar) con fuente | Ver columna fuente | 2026-10-10 |
 | `combustible.csv` | Precio medio en España con impuestos | Comisión Europea, Weekly Oil Bulletin (datos al 2026-10-05) | 2026-10-10 |
-| `here_peaje.csv` | Información de peajes por arco dirigido de una pareja de ciudades | Obtenido de la API HERE mediante el módulo obtener_peajes_here | 2026-10-10 |
+| `here_peaje.csv` | Distancia (m), tiempo (s) y peaje (EUR) de la ruta de cada arco dirigido; son los tres datos que usa `costos.py` | Obtenido de la API HERE mediante el módulo obtener_peajes_here | 2026-10-10 |
 | `espana.geojson` | Contorno de España (lon, lat) para dibujar el mapa sin conexión a internet | Natural Earth, Admin 0 Countries 1:50m (dominio público), entidad `ADMIN = Spain` de https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson, coordenadas redondeadas a 5 decimales | 2026-10-12 |
 Fila = origen, columna = destino. `[i, j]` puede ser distinto de `[j, i]`.
 
@@ -366,7 +367,7 @@ Fila = origen, columna = destino. `[i, j]` puede ser distinto de `[j, i]`.
 
 ## Vehículo seleccionado
 
-Renault Clio TCe 115, consumo homologado de 5,3–5,5 L/100 km (tomado como 5,5 L/100 km). https://www.renault.es/preguntas-frecuentes-vehiculos/clio/esta-renault-clio-disponible-con-una-caja-de-cambios-manual-o-automatica.html Revisado 2026-10-10
+Renault Clio TCe 115 con caja automática (gasolina), consumo mixto WLTP homologado de 5,3–5,5 L/100 km (tomado como 5,5 L/100 km, el extremo superior). La misma página da 5,2–5,4 L/100 km para la caja manual. https://www.renault.es/preguntas-frecuentes-vehiculos/clio/esta-renault-clio-disponible-con-una-caja-de-cambios-manual-o-automatica.html Revisado 2026-10-10
 
 ## Scripts
 
@@ -377,6 +378,10 @@ Renault Clio TCe 115, consumo homologado de 5,3–5,5 L/100 km (tomado como 5,5 
 | `costos.py` | Construir la matriz económica y calcular el costo de circuitos cerrados. |
 | `optimizador_colonia_de_hormigas.py` | Implementar el optimizador ACO y registrar su evolución. |
 | `colonia_de_hormigas.py` | Integrar datos y optimizador, y exportar resultados y visualizaciones. |
+| `operadores_ga.py` | Cruces (OX, PMX) y mutaciones (inversión, inserción, swap, mixta) para permutaciones. |
+| `algoritmo_genetico.py` | Algoritmo genético con PyGAD: una corrida, resultados, mapa y GIF. |
+| `experimentos_ga.py` | Varias corridas por configuración, barridos y estudio del valor de la hora. |
+| `../orquestador.py` | Menú interactivo y línea de comandos del algoritmo genético. |
 
 ```bash
 pip install requests numpy
@@ -384,30 +389,74 @@ python Parte_2/scripts/costos.py --valor-hora 15 --consumo 5.5 --precio 1.849   
 python Parte_2/scripts/obtener_osrm.py --comparar                                # vuelve a consultar OSRM y compara
 python Parte_2/scripts/obtener_peajes_here.py --modo peaje --limite 3            # prueba con 3 arcos
 python Parte_2/scripts/colonia_de_hormigas.py --valor-hora 25 --hormigas 100 --intensificacion 1.9 --alfa 2.1 --beta 0.9 --beta-evaporacion 0 --p-mejor 0.09 --version 0030--version 0001
-python Parte_2/scripts/algoritmo_genetico.py --valor-hora 15 --version 0001        # algoritmo genético con los valores por defecto
+python Parte_2/orquestador.py                                                    # menú interactivo del algoritmo genético
 ```
 
 ## Algoritmo genético
 
-`algoritmo_genetico.py` guarda en `outputs/` los archivos `resultados_GA_<version>.json`, `Recorrido_GA_<version>.png` y `Evolucion_GA_<version>.gif`. Con la misma semilla y los mismos parámetros el resultado se repite.
+### Orquestador
+
+`Parte_2/orquestador.py` es el punto de entrada del algoritmo genético. Sin argumentos abre un menú interactivo en la consola: se elige el comando, se editan los parámetros por número y se ejecuta con Enter. También acepta los mismos parámetros por la línea de comandos.
+
+```bash
+python Parte_2/orquestador.py                                           # menú interactivo
+python Parte_2/orquestador.py ga                                        # una corrida de demostración (JSON, mapa y GIF)
+python Parte_2/orquestador.py ga --valor-hora 25 --elite 0 --sin-gif    # cambiar parámetros sin editar código
+python Parte_2/orquestador.py comparar                                  # 30 corridas por cada pareja cruce + mutación
+python Parte_2/orquestador.py barrido --parametro elite                 # 30 corridas por cada valor de un parámetro
+python Parte_2/orquestador.py hora                                      # estudio del valor de la hora
+python Parte_2/orquestador.py limpiar                                   # borra los archivos del GA en outputs/
+```
+
+| Comando | Qué hace | Archivos en `outputs/` |
+|---|---|---|
+| `ga` | Una corrida del GA. | `resultados_GA_<v>.json`, `Recorrido_GA_<v>.png`, `Evolucion_GA_<v>.gif` |
+| `comparar` | `repeticiones` corridas por cada pareja cruce + mutación (8 parejas). | `comparar_GA_<v>_corridas.csv`, `_resumen.json`, `_cajas.png`, `_convergencia.png` |
+| `barrido` | `repeticiones` corridas por cada valor de un parámetro (`p_mutacion`, `elite`, `k_torneo`, `poblacion`, `padres` o `generaciones`). | `barrido_<parametro>_GA_<v>_...` (los mismos cuatro) |
+| `hora` | Corre el GA para cada valor de la hora y calcula en qué valores cambia la mejor ruta. | `hora_GA_<v>_corridas.csv`, `hora_GA_<v>_resumen.json`, `hora_GA_<v>.png` |
+| `limpiar` | Borra los archivos con `_GA_` en el nombre. No toca los de otros algoritmos. | |
+
+### Parámetros
 
 | Argumento | Por defecto | Significado |
 |---|---|---|
-| `--valor-hora` | obligatorio | EUR por hora del vendedor |
+| `--valor-hora` | 15 | EUR por hora del vendedor |
 | `--consumo` | 5.5 | L/100 km del vehículo |
 | `--precio` | 1.849 | EUR por litro de combustible |
+| `--semilla` | 0 | Semilla aleatoria. La corrida `k` de un experimento usa `semilla + k` |
+| `--version` | 0001 | Sufijo de los archivos de salida |
 | `--poblacion` | 100 | Tamaño de la población |
 | `--generaciones` | 1500 | Número de generaciones |
 | `--padres` | 50 | Padres seleccionados por generación (torneo) |
-| `--elite` | 2 | Mejores individuos que pasan sin cambios |
+| `--elite` | 2 | Mejores individuos que pasan sin cambios (0 = sin elitismo) |
 | `--k-torneo` | 3 | Tamaño del torneo |
 | `--cruce` | ox | `ox` o `pmx` |
-| `--mutacion` | inversion | `inversion`, `insercion` o `swap` |
+| `--mutacion` | mixta | `inversion`, `insercion`, `swap` o `mixta` (inversión o inserción, al azar) |
 | `--p-mutacion` | 0.3 | Probabilidad de que un hijo mute |
-| `--semilla` | 0 | Semilla aleatoria |
 | `--sin-gif` | | No genera el GIF (solo JSON y PNG) |
-| `--version` | obligatorio | Sufijo de los archivos de salida |
+| `--repeticiones` | 30 | `comparar` y `barrido`: corridas independientes por configuración |
+| `--tolerancia` | 2 | Éxito si el costo es menor o igual que la referencia más este porcentaje |
+| `--referencia` | mejor del experimento | Costo de referencia en EUR para la tasa de éxito |
+| `--procesos` | mitad de los núcleos | Procesos en paralelo. No cambia los resultados, solo el tiempo |
+| `--parametro` | p_mutacion | `barrido`: parámetro que varía |
+| `--valores` | propios del parámetro | `barrido`: valores a probar |
+| `--vh-min`, `--vh-max`, `--vh-paso` | 0, 60, 5 | `hora`: rejilla de valores de la hora (EUR/h) |
+| `--rep-hora` | 20 | `hora`: corridas por cada valor de la hora |
+
+Con la misma semilla y los mismos parámetros el resultado se repite, con uno o con varios procesos.
+
+### Conteo de evaluaciones
+
+Una evaluación es un cálculo del costo de un recorrido completo. `evaluaciones_fitness` cuenta las llamadas reales a la función de aptitud; PyGAD no la llama para los élites ni para los hijos idénticos a un élite, porque ya conoce su aptitud. `evaluaciones_nominales` es el tope si se evaluara a todos: `poblacion + generaciones x (poblacion - elite)`.
+
+### Estudio del valor de la hora
+
+El costo de un recorrido es `valor_hora x horas + (peajes + combustible)`: una recta en el valor de la hora. El comando `hora` junta todos los recorridos que encontró el GA con los distintos valores, evalúa cada uno para cualquier valor de la hora y calcula la envolvente inferior de esas rectas. El resultado es la mejor ruta conocida en cada tramo y el valor exacto en que cambia, que es igual al sobrecosto en peajes y combustible dividido por las horas que ahorra. Las rutas son las mejores encontradas por el GA; no hay garantía de que sean óptimas.
+
+### Ejecución directa del algoritmo
+
+`scripts/algoritmo_genetico.py` conserva su propia línea de comandos para una corrida (`--valor-hora` y `--version` son obligatorios):
 
 ```bash
-python Parte_2/scripts/algoritmo_genetico.py --valor-hora 25 --poblacion 200 --generaciones 800 --cruce pmx --mutacion insercion --p-mutacion 0.5 --semilla 7 --version 0002
+python Parte_2/scripts/algoritmo_genetico.py --valor-hora 15 --version 0001
 ```
