@@ -1,7 +1,15 @@
 {
- "valor_hora_eur": 15,
- "consumo_l_100km": 5.5,
- "precio_eur_l": 1.849,
- "vehiculo": "POR DEFINIR (marca, modelo, version, combustible, ficha IDAE y fecha)",
- "_nota": "valor_hora y consumo son valores de EJEMPLO, no datos. precio_eur_l = gasolina 95, Weekly Oil Bulletin, datos al 2026-10-05."
+ "_nota": "Archivo de configuración de Parte_2/orquestador.py. Cada clave es un parámetro del orquestador, con el mismo nombre que en la línea de comandos pero con guion bajo (por ejemplo p_mutacion). Las claves que empiezan por _ son comentarios: cada una explica el parámetro que tiene debajo. Prioridad: línea de comandos > este archivo > valores por defecto del código.",
+
+ "_vehiculo": "Vehículo elegido por el equipo. Es un texto informativo: el cálculo del costo usa consumo y precio.",
+ "vehiculo": "Renault Clio TCe 115 automático (gasolina)",
+
+ "_valor_hora": "Valor de la hora del vendedor, en EUR por hora. Es un valor de ejemplo: es el parámetro que se estudia.",
+ "valor_hora": 15,
+
+ "_consumo": "Consumo del vehículo, en litros por cada 100 km. Fuente: Renault España, Clio TCe 115 con caja automática, consumo mixto WLTP de 5,3 a 5,5 L/100 km (se toma 5,5), https://www.renault.es/preguntas-frecuentes-vehiculos/clio/esta-renault-clio-disponible-con-una-caja-de-cambios-manual-o-automatica.html, consultada el 2026-10-12.",
+ "consumo": 5.5,
+
+ "_precio": "Precio del combustible (gasolina 95, Euro-super 95), en EUR por litro: precio medio en España con impuestos. Fuente: Comisión Europea, Dirección General de Energía, Weekly Oil Bulletin, https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en, datos del 2026-10-05, consultado el 2026-10-10. El valor completo (1,849098 EUR/L) está en Parte_2/data/combustible.csv; aquí se redondea a 1,849.",
+ "precio": 1.849
 }
