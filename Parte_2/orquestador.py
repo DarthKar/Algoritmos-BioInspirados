@@ -9,14 +9,18 @@ Uso:
     python Parte_2/orquestador.py barrido --parametro elite --valores 0 2 10 20
     python Parte_2/orquestador.py hora --vh-min 0 --vh-max 60 --vh-paso 5
     python Parte_2/orquestador.py limpiar        borra los archivos generados por el GA
+    python Parte_2/orquestador.py --config otra.json ga      usa otro archivo de configuración
 
 Comandos: ga, comparar, barrido, hora, limpiar.
+Al arrancar se lee Parte_2/config_ejemplo.json: sus valores sustituyen a los de
+la tabla PARAMS. Prioridad: línea de comandos > archivo de configuración > tabla.
 El algoritmo está en scripts/algoritmo_genetico.py y scripts/operadores_ga.py,
 los experimentos en scripts/experimentos_ga.py y los costos en scripts/costos.py.
 Los archivos se guardan en la carpeta outputs/ de la raíz del repositorio.
 """
 
 import argparse                  # lee los parámetros de la línea de comandos
+import json                      # lee el archivo de configuración
 import os                        # cuenta los núcleos para repartir las corridas
 import re                        # valida el sufijo de los archivos de salida
 import sys                       # sale con mensaje de error si algo falla
@@ -34,9 +38,11 @@ from operadores_ga import CRUCES, MUTACIONES
 # 1. PARÁMETROS (una sola tabla: alimenta la línea de comandos y el menú)
 # =====================================================================
 # nombre: (valor por defecto, tipo, descripción). None = valor propio del comando.
+# El archivo de configuración puede sustituir cualquiera de estos valores por defecto.
 
 PARAMS = {
     # Problema y salida
+    "vehiculo": ("", str, "vehículo (texto informativo: el cálculo usa consumo y precio)"),
     "valor_hora": (15.0, float, "valor de la hora del vendedor (EUR/h)"),
     "consumo": (5.5, float, "consumo del vehículo (L/100 km)"),
     "precio": (1.849, float, "precio del combustible (EUR/L)"),
@@ -75,7 +81,7 @@ PARAMS_COMANDO = {
     "barrido": ["parametro", "valores", "repeticiones", "tolerancia", "referencia", "procesos", *PARAMS_GA],
     "hora": ["vh_min", "vh_max", "vh_paso", "rep_hora", "procesos", *PARAMS_GA],
 }
-PARAMS_GLOBALES = ["valor_hora", "consumo", "precio", "semilla", "version"]
+PARAMS_GLOBALES = ["valor_hora", "consumo", "precio", "vehiculo", "semilla", "version"]
 
 TITULOS = {
     "ga": "Algoritmo genético: una corrida (JSON, mapa y GIF)",
@@ -90,6 +96,78 @@ FUNCIONES_COMANDO = {
     "hora": ex.estudio_valor_hora,
 }
 OPCIONES = {"cruce": sorted(CRUCES), "mutacion": sorted(MUTACIONES), "parametro": list(ex.BARRIDOS)}
+
+# Archivo de configuración que se lee al arrancar (--config indica otro)
+CONFIG = Path(__file__).resolve().parent / "config_ejemplo.json"
+
+# Valor de partida de cada parámetro: el de la tabla, sustituido por el del archivo de configuración
+DEFECTO = {n: v[0] for n, v in PARAMS.items()}
+
+
+def leer_config(ruta):
+    """Lee un archivo de configuración JSON y devuelve {parámetro: valor} ya validado.
+
+    Cada clave es un nombre de PARAMS. Las claves que empiezan por "_" son comentarios.
+    Lanza ValueError si hay una clave desconocida o un valor del tipo equivocado.
+    """
+    nombre = Path(ruta).name
+    try:
+        with open(ruta, encoding="utf-8-sig") as f:      # utf-8-sig: admite el archivo con o sin BOM
+            datos = json.load(f)
+    except json.JSONDecodeError as e:
+        raise ValueError(f"{nombre}: no es un JSON válido (línea {e.lineno}: {e.msg}).") from None
+    if not isinstance(datos, dict):
+        raise ValueError(f"{nombre}: debe ser un objeto JSON con pares parámetro: valor.")
+
+    def es_numero(v):
+        return isinstance(v, (int, float)) and not isinstance(v, bool)
+
+    config = {}
+    for clave, valor in datos.items():
+        if clave.startswith("_"):
+            continue
+        if clave not in PARAMS:
+            raise ValueError(f"{nombre}: parámetro desconocido '{clave}'. Válidos: {', '.join(PARAMS)}.")
+        defecto, tipo, _ = PARAMS[clave]
+        if valor is None and defecto is None:
+            pass
+        elif tipo is bool:
+            if not isinstance(valor, bool):
+                raise ValueError(f"{nombre}: '{clave}' debe ser true o false.")
+        elif tipo is int:
+            if not isinstance(valor, int) or isinstance(valor, bool):
+                raise ValueError(f"{nombre}: '{clave}' debe ser un número entero.")
+        elif tipo is float:
+            if not es_numero(valor):
+                raise ValueError(f"{nombre}: '{clave}' debe ser un número.")
+            valor = float(valor)
+        elif tipo is list:
+            if not isinstance(valor, list) or not all(es_numero(v) for v in valor):
+                raise ValueError(f"{nombre}: '{clave}' debe ser una lista de números.")
+            valor = [float(v) for v in valor]
+        elif not isinstance(valor, str):
+            raise ValueError(f"{nombre}: '{clave}' debe ser un texto entre comillas.")
+        if clave in OPCIONES and valor not in OPCIONES[clave]:
+            raise ValueError(f"{nombre}: '{clave}' debe ser uno de: {', '.join(OPCIONES[clave])}.")
+        config[clave] = valor
+    return config
+
+
+def cargar_config(ruta=None):
+    """Aplica el archivo de configuración a DEFECTO. Devuelve la ruta leída, o None si no hay archivo.
+
+    Sin `ruta` se usa CONFIG si existe. Con `ruta`, el archivo debe existir.
+    """
+    if ruta is None:
+        if not CONFIG.is_file():
+            return None
+        ruta = CONFIG
+    elif not Path(ruta).is_file():
+        raise ValueError(f"no existe el archivo de configuración {ruta}.")
+    config = leer_config(ruta)
+    DEFECTO.update(config)
+    print(f"Configuración leída de {Path(ruta).name}: " + (", ".join(f"{k} = {v}" for k, v in config.items()) or "sin parámetros"))
+    return Path(ruta)
 
 
 # =====================================================================
@@ -108,6 +186,8 @@ def correr(comando, P):
     hora = "" if comando == "hora" else f"valor de la hora = {p['valor_hora']:g} EUR/h | "
     print(f"\n>>> {TITULOS[comando]}\n    {hora}consumo = {p['consumo']:g} L/100 km | "
           f"precio = {p['precio']:g} EUR/L | semilla = {p['semilla']} | versión = {p['version']}")
+    if p["vehiculo"]:
+        print(f"    vehículo: {p['vehiculo']}")
     FUNCIONES_COMANDO[comando](p)
 
 
@@ -161,6 +241,8 @@ def convertir(nombre, texto):
 def mostrar(v):
     if v is None or v == []:
         return "(por defecto)"
+    if v == "":
+        return "(sin definir)"
     if isinstance(v, bool):
         return "sí" if v else "no"
     if isinstance(v, list):
@@ -189,7 +271,7 @@ def panel(titulo, nombres, P, ejecutar_fn=None):
         n = nombres[int(op) - 1]
         texto = input("  Nuevo valor (vacío = valor por defecto): ").strip()
         try:
-            P[n] = PARAMS[n][0] if texto == "" else convertir(n, texto)
+            P[n] = DEFECTO[n] if texto == "" else convertir(n, texto)
         except ValueError as e:
             print(f"  Valor inválido ({e}); se conserva el actual.")
             continue
@@ -198,7 +280,7 @@ def panel(titulo, nombres, P, ejecutar_fn=None):
 
 
 def menu():
-    P = {n: v[0] for n, v in PARAMS.items()}  # parámetros compartidos por todos los comandos
+    P = dict(DEFECTO)  # parámetros compartidos por todos los comandos
     comandos = list(TITULOS)
 
     def lanzar(c):
@@ -217,7 +299,7 @@ def menu():
             print(f"  {i}. {TITULOS[c]}")
         n_lim, n_cfg = len(comandos) + 1, len(comandos) + 2
         print(f"  {n_lim}. Borrar los archivos generados por el GA")
-        print(f"  {n_cfg}. Configuración global (valor de la hora, consumo, precio, semilla, versión)")
+        print(f"  {n_cfg}. Configuración global (valor de la hora, consumo, precio, vehículo, semilla, versión)")
         print("  0. Salir")
         op = input("Opción: ").strip()
         if op in ("0", "q", "salir"):
@@ -239,27 +321,37 @@ def menu():
 # =====================================================================
 
 def main():
-    if len(sys.argv) == 1:
+    # Primero se lee solo --config, porque el archivo fija los valores por defecto del resto.
+    previo = argparse.ArgumentParser(add_help=False, allow_abbrev=False)
+    previo.add_argument("--config", type=Path, default=None,
+                        help=f"archivo de configuración JSON (por defecto, {CONFIG.name} junto a este archivo)")
+    conocido, resto = previo.parse_known_args()
+    try:
+        cargar_config(conocido.config)
+    except ValueError as e:
+        sys.exit(f"[Error de configuración] {e}")
+
+    if not resto:
         try:
             menu()
         except (KeyboardInterrupt, EOFError):
             print("\n¡Hasta luego!")
         return
 
-    parser = argparse.ArgumentParser(description=__doc__,
+    parser = argparse.ArgumentParser(description=__doc__, parents=[previo], allow_abbrev=False,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("comando", choices=[*TITULOS, "limpiar"],
                         help="comando a ejecutar, o 'limpiar' para borrar los archivos del GA")
-    for n, (defecto, tipo, ayuda) in PARAMS.items():
+    for n, (_, tipo, ayuda) in PARAMS.items():
         flag = "--" + n.replace("_", "-")
         if tipo is bool:
-            parser.add_argument(flag, dest=n, action="store_true", help=ayuda)
+            parser.add_argument(flag, dest=n, action="store_true", default=DEFECTO[n], help=ayuda)
         elif tipo is list:
-            parser.add_argument(flag, dest=n, type=float, nargs="+", help=ayuda)
+            parser.add_argument(flag, dest=n, type=float, nargs="+", default=DEFECTO[n], help=ayuda)
         elif n in OPCIONES:
-            parser.add_argument(flag, dest=n, default=defecto, choices=OPCIONES[n], help=ayuda)
+            parser.add_argument(flag, dest=n, default=DEFECTO[n], choices=OPCIONES[n], help=ayuda)
         else:
-            parser.add_argument(flag, dest=n, type=tipo, default=defecto, help=ayuda)
+            parser.add_argument(flag, dest=n, type=tipo, default=DEFECTO[n], help=ayuda)
     args = parser.parse_args()
 
     if args.comando == "limpiar":

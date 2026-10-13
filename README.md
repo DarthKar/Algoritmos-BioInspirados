@@ -416,13 +416,25 @@ python Parte_2/orquestador.py limpiar                                   # borra 
 | `hora` | Corre el GA para cada valor de la hora y calcula en qué valores cambia la mejor ruta. | `hora_GA_<v>_corridas.csv`, `hora_GA_<v>_resumen.json`, `hora_GA_<v>.png` |
 | `limpiar` | Borra los archivos con `_GA_` en el nombre. No toca los de otros algoritmos. | |
 
+### Archivo de configuración
+
+Al arrancar, el orquestador lee `Parte_2/config_ejemplo.json`. Cada clave es un parámetro de la tabla siguiente, con el mismo nombre que en la línea de comandos pero con guion bajo (`valor_hora`, `p_mutacion`). Las claves que empiezan por `_` son comentarios. El archivo trae el vehículo, el valor de la hora, el consumo y el precio del combustible, con sus fuentes; se le puede agregar cualquier otro parámetro, por ejemplo `"elite": 0`.
+
+Prioridad: línea de comandos, luego archivo de configuración, luego valores por defecto del código. Una clave desconocida o un valor del tipo equivocado detienen el programa con un mensaje que indica cuál es.
+
+```bash
+python Parte_2/orquestador.py --config otra.json ga    # usa otro archivo de configuración
+```
+
 ### Parámetros
 
 | Argumento | Por defecto | Significado |
 |---|---|---|
-| `--valor-hora` | 15 | EUR por hora del vendedor |
-| `--consumo` | 5.5 | L/100 km del vehículo |
-| `--precio` | 1.849 | EUR por litro de combustible |
+| `--config` | `config_ejemplo.json` | Archivo de configuración JSON |
+| `--vehiculo` | del archivo | Texto informativo; el cálculo usa `consumo` y `precio` |
+| `--valor-hora` | del archivo (15) | EUR por hora del vendedor |
+| `--consumo` | del archivo (5.5) | L/100 km del vehículo |
+| `--precio` | del archivo (1.849) | EUR por litro de combustible |
 | `--semilla` | 0 | Semilla aleatoria. La corrida `k` de un experimento usa `semilla + k` |
 | `--version` | 0001 | Sufijo de los archivos de salida |
 | `--poblacion` | 100 | Tamaño de la población |
