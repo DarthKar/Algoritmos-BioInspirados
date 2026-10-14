@@ -1,22 +1,25 @@
 """
 Orquestador de la Parte 2: recorrido de las 47 capitales de provincia de la
-España peninsular (TSP) con algoritmo genético.
+España peninsular (TSP) con algoritmo genético y colonia de hormigas.
 
 Uso:
     python Parte_2/orquestador.py                menú interactivo
     python Parte_2/orquestador.py ga --valor-hora 25 --mutacion mixta
+    python Parte_2/orquestador.py aco --valor-hora 25 --hormigas 40 --semilla 7 --version 0002
     python Parte_2/orquestador.py comparar --repeticiones 30 --procesos 8
-    python Parte_2/orquestador.py barrido --parametro elite --valores 0 2 10 20
     python Parte_2/orquestador.py hora --vh-min 0 --vh-max 60 --vh-paso 5
     python Parte_2/orquestador.py limpiar        borra los archivos generados por el GA
     python Parte_2/orquestador.py --config otra.json ga      usa otro archivo de configuración
 
-Comandos: ga, comparar, barrido, hora, limpiar.
+Comandos: ga, comparar, hora, aco, limpiar.
 Al arrancar se lee Parte_2/config_ejemplo.json: sus valores sustituyen a los de
 la tabla PARAMS. Prioridad: línea de comandos > archivo de configuración > tabla.
 El algoritmo está en scripts/algoritmo_genetico.py y scripts/operadores_ga.py,
 los experimentos en scripts/experimentos_ga.py y los costos en scripts/costos.py.
 Los archivos se guardan en la carpeta outputs/ de la raíz del repositorio.
+ACO se ejecuta en un proceso independiente mediante scripts/colonia_de_hormigas.py.
+Su semilla se toma de "semilla" y se transmite como ACO_RANDOM_SEED al proceso hijo.
+Mantiene el máximo de 500 iteraciones y la parada anticipada del script original.
 """
 
 import argparse                  # lee los parámetros de la línea de comandos
@@ -24,6 +27,8 @@ import json                      # lee el archivo de configuración
 import os                        # cuenta los núcleos para repartir las corridas
 import re                        # valida el sufijo de los archivos de salida
 import sys                       # sale con mensaje de error si algo falla
+import math                      # valida parámetros ACO finitos
+import subprocess                # ejecuta ACO sin cambiar el estado del GA
 from pathlib import Path
 
 # Los módulos de la Parte 2 están en scripts/, junto a este archivo.
@@ -37,7 +42,7 @@ from operadores_ga import CRUCES, MUTACIONES
 # =====================================================================
 # 1. PARÁMETROS (una sola tabla: alimenta la línea de comandos y el menú)
 # =====================================================================
-# nombre: (valor por defecto, tipo, descripción). None = valor propio del comando.
+# nombre: (valor por defecto, tipo, descripción).
 # El archivo de configuración puede sustituir cualquiera de estos valores por defecto.
 
 PARAMS = {
@@ -58,13 +63,18 @@ PARAMS = {
     "mutacion": ("mixta", str, f"operador de mutación ({' / '.join(sorted(MUTACIONES))})"),
     "p_mutacion": (0.3, float, "probabilidad de que un hijo mute (0 a 1)"),
     "sin_gif": (False, bool, "no generar el GIF (solo JSON y PNG)"),
+    # Colonia de hormigas (solo el comando aco)
+    "hormigas": (40, int, "ACO: cantidad de hormigas por iteración"),
+    "evaporacion": (0.05, float, "ACO: tasa de evaporación de feromonas (0 <= valor < 1)"),
+    "intensificacion": (2.0, float, "ACO: depósito constante de feromonas"),
+    "alfa": (2.0, float, "ACO: importancia de las feromonas"),
+    "beta": (1.0, float, "ACO: importancia de la información heurística"),
+    "beta_evaporacion": (0.0, float, "ACO: reducción de beta por iteración (0 a 1)"),
+    "p_mejor": (0.1, float, "ACO: probabilidad de elegir la conexión de mayor peso (0 a 1)"),
     # Experimentos con varias corridas
     "repeticiones": (30, int, "nº de corridas independientes por configuración"),
-    "tolerancia": (2.0, float, "éxito si el costo <= referencia x (1 + tolerancia/100)"),
-    "referencia": (None, float, "costo de referencia en EUR (por defecto, el mejor del experimento)"),
+    "tolerancia": (2.0, float, "éxito si el costo <= mejor del experimento x (1 + tolerancia/100)"),
     "procesos": (max(1, (os.cpu_count() or 2) // 2), int, "procesos en paralelo (no cambia los resultados, solo el tiempo)"),
-    "parametro": ("p_mutacion", str, f"barrido: parámetro que varía ({' / '.join(ex.BARRIDOS)})"),
-    "valores": (None, list, "barrido: valores a probar (por defecto, los propios del parámetro)"),
     # Estudio del valor de la hora
     "vh_min": (0.0, float, "hora: valor de la hora mínimo (EUR/h)"),
     "vh_max": (60.0, float, "hora: valor de la hora máximo (EUR/h)"),
@@ -74,11 +84,12 @@ PARAMS = {
 
 # Parámetros que muestra el menú de cada comando
 PARAMS_GA = ["poblacion", "generaciones", "padres", "elite", "k_torneo", "cruce", "mutacion", "p_mutacion"]
+PARAMS_ACO = ["hormigas", "evaporacion", "intensificacion", "alfa", "beta", "beta_evaporacion", "p_mejor"]
 PARAMS_COMANDO = {
     "ga": [*PARAMS_GA, "sin_gif"],
-    "comparar": ["repeticiones", "tolerancia", "referencia", "procesos",
+    "aco": PARAMS_ACO,
+    "comparar": ["repeticiones", "tolerancia", "procesos",
                  "poblacion", "generaciones", "padres", "elite", "k_torneo", "p_mutacion"],
-    "barrido": ["parametro", "valores", "repeticiones", "tolerancia", "referencia", "procesos", *PARAMS_GA],
     "hora": ["vh_min", "vh_max", "vh_paso", "rep_hora", "procesos", *PARAMS_GA],
 }
 PARAMS_GLOBALES = ["valor_hora", "consumo", "precio", "vehiculo", "semilla", "version"]
@@ -86,16 +97,15 @@ PARAMS_GLOBALES = ["valor_hora", "consumo", "precio", "vehiculo", "semilla", "ve
 TITULOS = {
     "ga": "Algoritmo genético: una corrida (JSON, mapa y GIF)",
     "comparar": "Comparar operadores de cruce y mutación (varias corridas)",
-    "barrido": "Barrido de un parámetro del GA (varias corridas)",
     "hora": "Estudio del valor de la hora (¿cambia la ruta? ¿desde qué valor?)",
 }
+TITULOS["aco"] = "Colonia de hormigas: una corrida (JSON, mapa, GIF y MP4)"
 FUNCIONES_COMANDO = {
     "ga": ag.corrida,
     "comparar": ex.comparar_operadores,
-    "barrido": ex.barrido,
     "hora": ex.estudio_valor_hora,
 }
-OPCIONES = {"cruce": sorted(CRUCES), "mutacion": sorted(MUTACIONES), "parametro": list(ex.BARRIDOS)}
+OPCIONES = {"cruce": sorted(CRUCES), "mutacion": sorted(MUTACIONES)}
 
 # Archivo de configuración que se lee al arrancar (--config indica otro)
 CONFIG = Path(__file__).resolve().parent / "config_ejemplo.json"
@@ -119,32 +129,23 @@ def leer_config(ruta):
     if not isinstance(datos, dict):
         raise ValueError(f"{nombre}: debe ser un objeto JSON con pares parámetro: valor.")
 
-    def es_numero(v):
-        return isinstance(v, (int, float)) and not isinstance(v, bool)
-
     config = {}
     for clave, valor in datos.items():
         if clave.startswith("_"):
             continue
         if clave not in PARAMS:
             raise ValueError(f"{nombre}: parámetro desconocido '{clave}'. Válidos: {', '.join(PARAMS)}.")
-        defecto, tipo, _ = PARAMS[clave]
-        if valor is None and defecto is None:
-            pass
-        elif tipo is bool:
+        tipo = PARAMS[clave][1]
+        if tipo is bool:
             if not isinstance(valor, bool):
                 raise ValueError(f"{nombre}: '{clave}' debe ser true o false.")
         elif tipo is int:
             if not isinstance(valor, int) or isinstance(valor, bool):
                 raise ValueError(f"{nombre}: '{clave}' debe ser un número entero.")
         elif tipo is float:
-            if not es_numero(valor):
+            if not isinstance(valor, (int, float)) or isinstance(valor, bool):
                 raise ValueError(f"{nombre}: '{clave}' debe ser un número.")
             valor = float(valor)
-        elif tipo is list:
-            if not isinstance(valor, list) or not all(es_numero(v) for v in valor):
-                raise ValueError(f"{nombre}: '{clave}' debe ser una lista de números.")
-            valor = [float(v) for v in valor]
         elif not isinstance(valor, str):
             raise ValueError(f"{nombre}: '{clave}' debe ser un texto entre comillas.")
         if clave in OPCIONES and valor not in OPCIONES[clave]:
@@ -173,6 +174,49 @@ def cargar_config(ruta=None):
 # =====================================================================
 # 2. COMANDOS
 # =====================================================================
+
+def correr_aco(p):
+    """Ejecuta el script ACO original con parámetros del orquestador.
+
+    Usa el mismo intérprete de Python y la raíz del proyecto como directorio
+    de trabajo. La semilla solo se modifica en el entorno del proceso hijo.
+    Los comandos, módulos y archivos de salida del GA no se modifican.
+    """
+    for n in ["valor_hora", "consumo", "precio", *PARAMS_ACO]:
+        if not math.isfinite(p[n]):
+            raise ValueError(f"{n} debe ser un número finito.")
+    if p["hormigas"] < 1:
+        raise ValueError("hormigas debe ser al menos 1.")
+    if not 0 <= p["semilla"] <= 2**32 - 1:
+        raise ValueError("semilla para ACO debe estar entre 0 y 4294967295.")
+    if not 0 <= p["evaporacion"] < 1:
+        raise ValueError("evaporacion debe estar entre 0 (incluido) y 1 (excluido).")
+    for n in ("beta_evaporacion", "p_mejor"):
+        if not 0 <= p[n] <= 1:
+            raise ValueError(f"{n} debe estar entre 0 y 1.")
+    for n in ("intensificacion", "alfa", "beta"):
+        if p[n] < 0:
+            raise ValueError(f"{n} no puede ser negativo.")
+
+    parte_2 = Path(__file__).resolve().parent
+    script = parte_2 / "scripts" / "colonia_de_hormigas.py"
+    if not script.is_file():
+        raise ValueError(f"no existe el script ACO: {script}.")
+    comando = [sys.executable, str(script)]
+    for n in ["valor_hora", "consumo", "precio", *PARAMS_ACO, "version"]:
+        comando.extend(["--" + n.replace("_", "-"), str(p[n])])
+    entorno = os.environ.copy()
+    entorno["ACO_RANDOM_SEED"] = str(p["semilla"])
+    print("    ACO: máximo de 500 iteraciones; parada anticipada del optimizador.", flush=True)
+    print(f"    Salidas: {parte_2.parent / 'outputs'}", flush=True)
+    try:
+        subprocess.run(comando, cwd=parte_2.parent, env=entorno, check=True)
+    except subprocess.CalledProcessError as e:
+        raise ValueError(f"ACO terminó con código {e.returncode}; revisa el mensaje del script mostrado arriba.") from None
+
+
+FUNCIONES_COMANDO["aco"] = correr_aco
+
 
 def correr(comando, P):
     """Valida los parámetros comunes y ejecuta un comando."""
@@ -231,22 +275,16 @@ def convertir(nombre, texto):
     if nombre in OPCIONES and texto not in OPCIONES[nombre]:
         raise ValueError("elige " + ", ".join(OPCIONES[nombre]))
     try:
-        if tipo is list:
-            return [float(v) for v in texto.replace(",", " ").split()]
         return tipo(texto)
     except ValueError:
         raise ValueError("se esperaba un número entero" if tipo is int else "se esperaba un número") from None
 
 
 def mostrar(v):
-    if v is None or v == []:
-        return "(por defecto)"
     if v == "":
         return "(sin definir)"
     if isinstance(v, bool):
         return "sí" if v else "no"
-    if isinstance(v, list):
-        return " ".join(f"{x:g}" for x in v)
     return str(v)
 
 
@@ -274,9 +312,6 @@ def panel(titulo, nombres, P, ejecutar_fn=None):
             P[n] = DEFECTO[n] if texto == "" else convertir(n, texto)
         except ValueError as e:
             print(f"  Valor inválido ({e}); se conserva el actual.")
-            continue
-        if n == "parametro":  # cada parámetro del barrido tiene sus propios valores por defecto
-            P["valores"] = None
 
 
 def menu():
@@ -291,7 +326,7 @@ def menu():
         except Exception as e:  # mostrar el error sin cerrar el menú
             print(f"\n[Error] {type(e).__name__}: {e}")
 
-    print("\n=== Parte 2: recorrido de las 47 capitales (algoritmo genético) ===")
+    print("\n=== Parte 2: recorrido de las 47 capitales (GA y ACO) ===")
     while True:
         print(f"\nConfig: valor de la hora={P['valor_hora']:g} EUR/h  consumo={P['consumo']:g} L/100 km  "
               f"precio={P['precio']:g} EUR/L  semilla={P['semilla']}  versión={P['version']}")
@@ -346,8 +381,6 @@ def main():
         flag = "--" + n.replace("_", "-")
         if tipo is bool:
             parser.add_argument(flag, dest=n, action="store_true", default=DEFECTO[n], help=ayuda)
-        elif tipo is list:
-            parser.add_argument(flag, dest=n, type=float, nargs="+", default=DEFECTO[n], help=ayuda)
         elif n in OPCIONES:
             parser.add_argument(flag, dest=n, default=DEFECTO[n], choices=OPCIONES[n], help=ayuda)
         else:
