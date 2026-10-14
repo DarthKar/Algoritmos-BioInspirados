@@ -1,3 +1,164 @@
+# Parte 1: optimización de Rastrigin y Schwefel
+
+## Objetivo y organización
+
+La Parte 1 implementa y compara cinco métodos para minimizar las funciones de Rastrigin y Schwefel: descenso por gradiente analítico, descenso por gradiente numérico, algoritmo evolutivo, optimización por enjambre de partículas (PSO) y evolución diferencial (DE).
+
+La implementación separa las responsabilidades en dos archivos:
+
+| Archivo | Responsabilidad |
+|---|---|
+| `Parte 1/orquestador.py` | Define las funciones objetivo y sus parámetros, ofrece el menú y la interfaz de línea de comandos, ejecuta experimentos y prepara resultados, figuras y GIF. |
+| `Parte 1/funciones.py` | Contiene los algoritmos de optimización, operadores del algoritmo evolutivo y herramientas de visualización. Recibe la función objetivo y los límites como argumentos, por lo que no está ligado a Rastrigin ni a Schwefel. |
+| `Parte 1/salidas/` | Carpeta creada junto al orquestador para las figuras y GIF generados. |
+
+El módulo `funciones.py` es la implementación común. Las funciones objetivo y gradientes se pasan como argumentos, mientras que `orquestador.py` selecciona la función, el dominio y los valores predeterminados apropiados.
+
+## Instalación y ejecución
+
+Desde la raíz del repositorio, instala las dependencias del proyecto:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+La Parte 1 necesita NumPy y Matplotlib. Para abrir el menú interactivo:
+
+```bash
+python "Parte 1/orquestador.py"
+```
+
+El menú permite elegir un método, editar sus parámetros y ejecutarlo con Enter. La configuración se conserva mientras el proceso siga abierto. La opción de configuración global permite cambiar la función, la dimensión, los límites, la semilla y la visualización.
+
+También se puede ejecutar directamente desde la consola:
+
+```bash
+python "Parte 1/orquestador.py" gd --funcion rastrigin --d 2 --x0 3 -2 --iter-gd 250
+python "Parte 1/orquestador.py" gdnum --funcion schwefel --d 3 --seed 12 --gif
+python "Parte 1/orquestador.py" evo --tipo-mutacion gaussiana --N 80 --iter 300
+python "Parte 1/orquestador.py" comparar --funcion ambas --d 2 --repeticiones 30 --seed 0
+python "Parte 1/orquestador.py" limpiar
+```
+
+### Comandos
+
+| Comando | Acción |
+|---|---|
+| `gd` | Descenso por gradiente analítico. |
+| `gdnum` | Descenso por gradiente con diferencias finitas. |
+| `evo` | Algoritmo evolutivo; admite mutación uniforme o gaussiana. |
+| `pso` | Optimización por enjambre de partículas. |
+| `de` | Evolución diferencial `DE/rand/1/bin`. |
+| `comparar` | Ejecuta varias corridas de los métodos y variantes, presenta estadísticas y guarda un diagrama de cajas. Requiere al menos 30 repeticiones. |
+| `limpiar` | Elimina los archivos `.png` y `.gif` directamente dentro de `Parte 1/salidas/`. |
+
+Si se omite el comando y no se proporcionan argumentos, se abre el menú. `--funcion ambas` ejecuta el comando por separado para Rastrigin y Schwefel, aplicando a cada una sus límites y valores predeterminados.
+
+### Parámetros de consola y del menú
+
+Los parámetros siguientes están definidos en `orquestador.py`. Los nombres de consola se forman con `--` y guiones, por ejemplo `iter_gd` se escribe `--iter-gd`. El menú presenta los parámetros relevantes para cada comando; la línea de comandos admite los parámetros de la tabla.
+
+| Parámetro | Predeterminado | Uso |
+|---|---:|---|
+| `funcion` | `rastrigin` | `rastrigin`, `schwefel` o `ambas`. |
+| `d` | `2` | Número de variables. Los GIF admiten únicamente `d=2` o `d=3`. |
+| `lb`, `ub` | Según la función | Límites inferior y superior; Rastrigin usa `[-5.12, 5.12]` y Schwefel `[-500, 500]`. Se pueden sobrescribir. |
+| `seed` | `0` | Semilla aleatoria. La corrida `k` en `comparar` usa `seed + k`; una misma semilla y configuración reproducen la corrida. |
+| `no_plot` | `False` | `--no-plot` evita mostrar las figuras en pantalla, pero estas se siguen guardando. También evita abrir el GIF en una ventana. |
+| `gif` | `False` | `--gif` genera una animación de la búsqueda, además de la figura estática. |
+| `x0` | Aleatorio | Punto inicial para `gd` y `gdnum`; debe tener `d` coordenadas. En consola: `--x0 1.0 -2.0`. |
+| `iter_gd` | `250` | Máximo de actualizaciones de los métodos GD. |
+| `lr` | Según la función | Tasa de aprendizaje. Predeterminada: `0.002` para Rastrigin y `1.0` para Schwefel. |
+| `tol` | `1e-5` | GD se detiene cuando la norma del cambio entre puntos es menor que esta tolerancia. |
+| `h` | `1e-3` | Tamaño de paso para aproximar el gradiente en `gdnum`. |
+| `N` | `50` | Tamaño de población o de enjambre. Para DE debe ser al menos `4`. |
+| `iter` | `200` | Generaciones de `evo` y `de`, o iteraciones de `pso`. |
+| `elitismo` | `0.1` | Fracción nominal de élites del evolutivo. |
+| `mutacion` | `0.2` | Fracción de individuos mutados en el evolutivo. |
+| `tipo_mutacion` | `uniforme` | `uniforme` reemplaza una coordenada por un valor aleatorio; `gaussiana` perturba una coordenada según la dispersión de la población y recorta al dominio. |
+| `w` | `0.7` | Coeficiente de inercia de PSO. |
+| `c1`, `c2` | `1.5`, `1.5` | Coeficientes cognitivo y social de PSO. |
+| `frac_vmax` | `0.2` | Fracción del rango del dominio que determina la velocidad máxima de PSO. |
+| `F` | `0.8` | Factor de mutación de DE; el algoritmo valida que esté entre `0` y `2`. |
+| `CR` | `0.9` | Probabilidad de cruce de DE; el algoritmo valida que esté entre `0` y `1`. |
+| `repeticiones` | `30` | Número de corridas independientes por método en `comparar`; debe ser al menos `30`. |
+| `umbral` | Según la función | Un resultado cuenta como éxito si `f_final < umbral`. Predeterminados: `0.1` para Rastrigin y `1.0` para Schwefel. |
+| `costo_grad` | `2*d` | Peso asignado a cada evaluación de gradiente analítico en la métrica equivalente de `comparar`: `evaluaciones_f + costo_grad * evaluaciones_gradiente`. |
+
+Para los parámetros booleanos, la línea de comandos los activa incluyendo la opción, por ejemplo `--gif` o `--no-plot`. En el menú se editan con respuestas afirmativas o negativas.
+
+### Resultados
+
+Las salidas se guardan en `Parte 1/salidas/`, una ruta calculada respecto al propio archivo del orquestador; por ello no depende del directorio desde el que se ejecute el comando. Se crea al guardar la primera figura o GIF.
+
+| Salida | Nombre |
+|---|---|
+| Figura de convergencia y, si `d=2`, contorno de la búsqueda | `<metodo>_<funcion>_d<d>.png` |
+| Animación, si se activa `gif` | `<metodo>_<funcion>_d<d>.gif` |
+| Comparación de corridas | `comparar_<funcion>_d<d>.png` |
+
+La figura PNG se guarda aunque se use `--no-plot`; esa opción solo controla su visualización. El GIF puede tardar más que la figura porque conserva cuadros de la trayectoria o de las poblaciones. El comando `limpiar` borra los PNG y GIF de esa carpeta, no archivos JSON ni subcarpetas. En el menú solicita confirmación; como comando de consola borra sin preguntar.
+
+La comparación incluye GD analítico y numérico, evolutivo con mutación uniforme y gaussiana, PSO y DE. Presenta media, desviación estándar, mejor y peor fitness, porcentaje de éxito, evaluaciones de la función objetivo y del gradiente, costo equivalente y tiempo. El contador no incluye las evaluaciones realizadas únicamente para dibujar las curvas.
+
+## API de optimización (`funciones.py`)
+
+Las funciones siguientes son independientes de la función objetivo, siempre que esta reciba un vector individual y devuelva un valor escalar. En los métodos de población, cada fila de una matriz representa un individuo. Los métodos minimizan: un fitness menor es mejor.
+
+### Descenso por gradiente
+
+| Función | Parámetros y comportamiento |
+|---|---|
+| `grad_desc(x0, grad_func, max_iter=250, learning_rate=0.002, tolerancia=1e-5, limites=None)` | Usa el gradiente analítico `grad_func`; `x0` es el punto inicial; `limites=(LB, UB)` recorta cada nuevo punto si se proporciona. Devuelve la lista de puntos visitados. |
+| `dif_marginal(x, f, i=0, h=0.001)` | Aproxima la derivada parcial de `f` en la coordenada `i` mediante diferencia hacia adelante. `h` es la perturbación. |
+| `gradiente_numerico(x, f, h=0.001)` | Calcula una diferencia parcial por coordenada y devuelve un vector con la aproximación del gradiente. |
+| `grad_desc_num(x0, f_obj, max_iter=250, learning_rate=0.002, tolerancia=1e-5, h=0.001, limites=None)` | Desciende usando `gradiente_numerico`; `h` controla la diferencia finita y `limites` recorta los puntos actualizados. Devuelve la trayectoria. |
+| `historial_fitness(puntos, f)` | Evalúa la función objetivo `f` en cada punto de una trayectoria; devuelve un array con los valores para el análisis de convergencia. |
+
+El recorte de `limites` ocurre después de calcular la actualización. En GD numérico, las perturbaciones usadas para estimar el gradiente no se recortan; si `f` no está definida fuera del dominio, debe tenerse en cuenta al elegir el punto y `h`.
+
+### Algoritmo evolutivo
+
+| Función | Parámetros y comportamiento |
+|---|---|
+| `pob_inicial(N=30, d=5, LB=None, UB=None)` | Genera `N` vectores de dimensión `d` uniformemente en los límites. Si se omiten, usa `[-1, 1]` por coordenada. |
+| `pob_eval(Pob, f_obj)` | Evalúa cada fila con `f_obj` y devuelve una copia de la población y su fitness ordenados de menor a mayor. |
+| `calcular_conteos(N, fr_elitismo, fr_mutacion)` | Calcula el número de élites, cruces y mutantes; fuerza un número par de descendientes de cruce para formar parejas. |
+| `elitismo(Pob, n_elite)` | Copia las primeras `n_elite` filas de una población ya ordenada. |
+| `cruzamiento(Pob_cruce)` | Cruza por un punto pares de individuos, emparejando filas de la primera mitad con las de la segunda. Se espera un número par de padres. |
+| `mutacion(Pob, id_mutantes=None, coord_mut=None, LB=None, UB=None)` | En cada fila elegida en `id_mutantes`, reemplaza la coordenada indicada por `coord_mut` (o una aleatoria) con un valor uniforme en los límites. Devuelve las filas mutadas. |
+| `mutacion_gaussiana(Poblacion, frac_m, lim_inf, lim_sup)` | Elige `int(N*frac_m)` individuos sin reemplazo y perturba una coordenada por individuo con una normal escalada por la desviación estándar de esa coordenada; recorta el resultado a los límites. |
+| `next_gen(Pob, fr_elitismo=0.2, fr_mutacion=0.1, LB=None, UB=None, tipo_mutacion="uniforme")` | Construye una población nueva con élites, cruces y mutantes. `tipo_mutacion` admite `uniforme` o `gaussiana`. Requiere una población ordenada por fitness. |
+| `actualizar_mejor(Pob, fitness, best_sol, best_fit)` | Compara el primer individuo (el mejor de la población ordenada) con el mejor histórico y conserva el mejor de ambos. |
+| `mi_algoritmo_evolutivo(f_obj, d, LB, UB, N=50, max_gen=200, fr_elitismo=0.1, fr_mutacion=0.2, tipo_mutacion="uniforme", semilla=None, guardar_poblaciones=False)` | Ejecuta el evolutivo y devuelve `(mejor_solución, mejor_fitness, historial)`. Si `guardar_poblaciones=True`, añade al retorno la lista de poblaciones de la generación inicial a la final. `f_obj`, `LB` y `UB` se suministran para cada problema. |
+
+Los porcentajes de elitismo y mutación determinan cuántas filas se reservan a cada operador. El resto se asigna al cruce, ajustando el conteo para que el número de padres sea par. Las fracciones deben elegirse de modo que los conteos sean válidos para el tamaño de población.
+
+### PSO
+
+| Función | Parámetros y comportamiento |
+|---|---|
+| `vel_inicial(N, d, v_max)` | Inicializa las velocidades de `N` partículas dentro de `[-v_max, v_max]`. |
+| `evaluar_enjambre(Pob, f_obj)` | Evalúa las posiciones sin reordenar filas, porque cada fila corresponde a una partícula concreta. |
+| `actualizar_velocidad(vel, pos, pbest_pos, gbest_pos, w, c1, c2, v_max)` | Combina inercia, mejor posición propia y mejor posición global; limita la velocidad a `[-v_max, v_max]`. |
+| `actualizar_posicion(pos, vel, LB, UB)` | Suma velocidad a posición y recorta el resultado al dominio. |
+| `actualizar_pbest(pos, fitness, pbest_pos, pbest_fit)` | Actualiza la mejor posición histórica individual cuando mejora estrictamente el fitness. |
+| `actualizar_gbest(pbest_pos, pbest_fit, gbest_pos, gbest_fit)` | Actualiza la mejor posición global si alguna memoria individual la supera. |
+| `mi_pso(f_obj, d, LB, UB, N=40, max_iter=200, w=0.7, c1=1.5, c2=1.5, frac_vmax=0.2, guardar_poblaciones=False)` | Ejecuta PSO y devuelve `(mejor_posición, mejor_fitness, historial)`. Con `guardar_poblaciones=True`, añade el enjambre inicial y el de cada iteración. |
+
+### Evolución diferencial
+
+`evolucion_diferencial(f_obj, d, LB, UB, N=50, max_gen=200, F=0.8, CR=0.9, semilla=None, guardar_poblaciones=False)` implementa `DE/rand/1/bin`: genera un vector mutante usando tres individuos distintos, aplica cruce binomial y conserva el candidato si su fitness no empeora. Recorta los mutantes al dominio y garantiza que al menos una coordenada proceda del mutante.
+
+Devuelve `(mejor_solución, mejor_fitness, historial)`; con `guardar_poblaciones=True` agrega la población inicial y la de cada generación. Valida `d >= 1`, `N >= 4`, `max_gen >= 0`, `0 <= F <= 2`, `0 <= CR <= 1` y que todos los límites inferiores sean menores que los superiores.
+
+### Visualización
+
+| Función | Parámetros y comportamiento |
+|---|---|
+| `dibujar_contorno(ax, f, LB, UB, n=150)` | Dibuja sobre `ax` el contorno de una función vectorizada en una malla de `n × n`; se usa para problemas de dos dimensiones. |
+| `animar_busqueda(cuadros, f, LB, UB, ruta, titulo="", estela=False, optimo=None, max_cuadros=60, fps=8, mostrar=False)` | Genera un GIF a partir de puntos de una trayectoria o poblaciones sucesivas. Admite `d=2` (contorno) o `d=3` (espacio de variables), submuestrea hasta `max_cuadros` conservando el último cuadro y puede reproducirlo en una ventana. |
+
 ## Parte 2
 
 ## Problema y organización del sistema
