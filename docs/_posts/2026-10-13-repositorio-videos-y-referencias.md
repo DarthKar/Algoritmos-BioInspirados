@@ -11,10 +11,10 @@ categories: [anexos]
 
 ## 6. Videos de los integrantes
 
-- Juan Pablo Gaviria Orozco
-- Samuel Cataño Cataño
-- Miguel Ángel Peña Marín
-- Andrés Felipe Guerra Amaris (video `Andres Guerra.mp4`)
+- Juan Pablo Gaviria Orozco https://youtu.be/0oL8F5Uw34Q
+- Samuel Cataño Cataño https://drive.google.com/file/d/1_CnnPF2-PoXI-OW5vGVN4-qpgpBwibik/view?usp=sharing
+- Miguel Ángel Peña Marín https://youtu.be/RnuP06bD7mE?si=nWMA6PqVRGGxQI9a
+- Andrés Felipe Guerra Amaris 
 - Sergio Ahumada Ortiz
 
 ## 7. Referencias
