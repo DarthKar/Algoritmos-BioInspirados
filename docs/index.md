@@ -23,5 +23,3 @@ Este blog reproduce el informe técnico por secciones, con sus tablas y figuras.
 9. [3. Uso de IA]({{ site.baseurl }}{% post_url 2026-10-11-uso-de-ia %})
 10. [4. Cacería de la alucinación]({{ site.baseurl }}{% post_url 2026-10-12-caceria-de-la-alucinacion %})
 11. [5 a 7. Repositorio, videos y referencias]({{ site.baseurl }}{% post_url 2026-10-13-repositorio-videos-y-referencias %})
-
-## Entradas
