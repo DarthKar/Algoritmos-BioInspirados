@@ -11,9 +11,9 @@ categories: [anexos]
 
 ## 6. Videos de los integrantes
 
-- Juan Pablo Gaviria Orozco https://youtu.be/0oL8F5Uw34Q
-- Samuel Cataño Cataño https://drive.google.com/file/d/1_CnnPF2-PoXI-OW5vGVN4-qpgpBwibik/view?usp=sharing
-- Miguel Ángel Peña Marín https://youtu.be/RnuP06bD7mE?si=nWMA6PqVRGGxQI9a
+- [Juan Pablo Gaviria Orozco](https://youtu.be/0oL8F5Uw34Q)
+- [Samuel Cataño Cataño](https://youtu.be/ztQLJGpiu70?si=0ExmpgJtM2LeN1ew)
+- [Miguel Ángel Peña Marín](https://youtu.be/RnuP06bD7mE?si=nWMA6PqVRGGxQI9a)
 - Andrés Felipe Guerra Amaris 
 - Sergio Ahumada Ortiz
 
