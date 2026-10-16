@@ -5,7 +5,9 @@ markdown: kramdown
 kramdown:
   math_engine: null
 lang: es
+remote_theme: pages-themes/hacker@v0.2.0
 baseurl: "/Algoritmos-BioInspirados"
 url: "https://darthkar.github.io"
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme 
