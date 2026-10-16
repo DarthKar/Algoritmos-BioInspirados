@@ -4,11 +4,9 @@ layout: home
 
 Blog de la entrega 1 de **Introducción a Redes Neuronales y Algoritmos Bioinspirados** (Universidad Nacional de Colombia, Facultad de Minas, 2026). Aquí contamos, por partes, lo que hicimos y lo que aprendimos.
 
-Equipo: Juan Pablo Gaviria Orozco, Samuel Cataño Cataño, Miguel Ángel Peña Marín, Andrés Felipe Guerra Amaris y Sergio Ahumada Ortiz. Profesor: Juan David Ospina Arango.
+**Presentado por:** Juan Pablo Gaviria Orozco, Samuel Cataño Cataño, Miguel Ángel Peña Marín, Andrés Felipe Guerra Amaris y Sergio Ahumada Ortiz.
 
 **Profesor:** Juan David Ospina Arango
-
-Universidad Nacional de Colombia · Facultad de Minas
 
 Este blog reproduce el informe técnico por secciones, con sus tablas y figuras. El código está en [github.com/DarthKar/Algoritmos-BioInspirados](https://github.com/DarthKar/Algoritmos-BioInspirados).
 
