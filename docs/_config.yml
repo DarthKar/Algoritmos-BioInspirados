@@ -1,9 +1,13 @@
 title: Algoritmos Bioinspirados
 description: Informe técnico del Trabajo 1 - Introducción a Redes Neuronales y Algoritmos Bioinspirados
-theme: minima
+theme: jekyll-theme-hacker
 markdown: kramdown
 lang: es
 baseurl: "/Algoritmos-BioInspirados"
+<<<<<<< Updated upstream
 url: "https://darthkar.github.io"
 plugins:
   - jekyll-feed
+=======
+url: "https://darthkar.github.io"
+>>>>>>> Stashed changes
