@@ -15,7 +15,7 @@ categories: [anexos]
 - [Samuel Cataño Cataño](https://youtu.be/ztQLJGpiu70?si=0ExmpgJtM2LeN1ew)
 - [Miguel Ángel Peña Marín](https://youtu.be/RnuP06bD7mE?si=nWMA6PqVRGGxQI9a)
 - [Andrés Felipe Guerra Amaris](https://youtu.be/IysPNpaHi7o) 
-- Sergio Ahumada Ortiz
+- [Sergio Ahumada Ortiz](https://youtu.be/0w0vEtWyRpg)
 
 ## 7. Referencias
 
