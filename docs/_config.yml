@@ -1,0 +1,9 @@
+title: Algoritmos Bioinspirados
+description: Optimización con Rastrigin y Schwefel, y el viajero por las capitales de España
+theme: minima
+markdown: kramdown
+lang: es
+baseurl: "/Algoritmos-BioInspirados"
+url: "https://darthkar.github.io"
+plugins:
+  - jekyll-feed
