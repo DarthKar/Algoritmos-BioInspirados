@@ -1,5 +1,7 @@
 # Parte 1: optimización de Rastrigin y Schwefel
 
+## Link al blog: https://darthkar.github.io/Algoritmos-BioInspirados/
+
 ## Objetivo y organización
 
 La Parte 1 implementa y compara cinco métodos para minimizar las funciones de Rastrigin y Schwefel: descenso por gradiente analítico, descenso por gradiente numérico, algoritmo evolutivo, optimización por enjambre de partículas (PSO) y evolución diferencial (DE).
