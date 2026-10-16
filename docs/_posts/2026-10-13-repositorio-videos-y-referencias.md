@@ -14,7 +14,7 @@ categories: [anexos]
 - [Juan Pablo Gaviria Orozco](https://youtu.be/0oL8F5Uw34Q)
 - [Samuel Cataño Cataño](https://youtu.be/ztQLJGpiu70?si=0ExmpgJtM2LeN1ew)
 - [Miguel Ángel Peña Marín](https://youtu.be/RnuP06bD7mE?si=nWMA6PqVRGGxQI9a)
-- Andrés Felipe Guerra Amaris 
+- [Andrés Felipe Guerra Amaris](https://youtu.be/IysPNpaHi7o) 
 - Sergio Ahumada Ortiz
 
 ## 7. Referencias

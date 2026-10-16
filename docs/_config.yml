@@ -2,6 +2,8 @@ title: Algoritmos Bioinspirados
 description: Informe técnico del Trabajo 1 - Introducción a Redes Neuronales y Algoritmos Bioinspirados
 theme: minima
 markdown: kramdown
+kramdown:
+  math_engine: null
 lang: es
 baseurl: "/Algoritmos-BioInspirados"
 url: "https://darthkar.github.io"
